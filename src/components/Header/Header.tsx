@@ -30,15 +30,15 @@ const Logo = styled(Link)`
   align-items: center;
   font-size: 24px;
   font-weight: ${theme.typography.weights.bold};
-  color: ${theme.colors.primary.dark};
+  color: ${theme.colors.primary.black};
   text-decoration: none;
 
   .work {
-    color: ${theme.colors.primary.dark};
+    color: ${theme.colors.primary.black};
   }
 
   .buddy {
-    color: ${theme.colors.primary.yellow};
+    color: ${theme.colors.accent.orange};
   }
 `;
 
@@ -66,7 +66,7 @@ const NavItem = styled.div`
 `;
 
 const NavLink = styled(Link)`
-  color: ${theme.colors.primary.dark};
+  color: ${theme.colors.primary.black};
   text-decoration: none;
   font-weight: ${theme.typography.weights.regular};
   display: flex;
@@ -102,13 +102,13 @@ const DropdownMenu = styled.div<{ isOpen: boolean }>`
 const DropdownLink = styled(Link)`
   display: block;
   padding: ${theme.spacing.xs} ${theme.spacing.s};
-  color: ${theme.colors.primary.dark};
+  color: ${theme.colors.primary.black};
   text-decoration: none;
   border-radius: 4px;
   transition: background 0.2s ease;
 
   &:hover {
-    background: ${theme.colors.secondary.cream};
+    background: ${theme.colors.surface.secondary};
   }
 `;
 
@@ -128,7 +128,7 @@ const AuthButtons = styled.div`
 `;
 
 const LoginLink = styled(Link)`
-  color: ${theme.colors.primary.dark};
+  color: ${theme.colors.primary.black};
   text-decoration: none;
   font-weight: ${theme.typography.weights.regular};
   padding: ${theme.spacing.xs} ${theme.spacing.s};
@@ -144,7 +144,7 @@ const MobileMenuButton = styled.button`
   background: none;
   border: none;
   font-size: 24px;
-  color: ${theme.colors.primary.dark};
+  color: ${theme.colors.primary.black};
   cursor: pointer;
 
   @media (max-width: ${theme.breakpoints.tablet}) {

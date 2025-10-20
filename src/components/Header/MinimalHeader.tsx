@@ -10,10 +10,9 @@ const HeaderWrapper = styled.header`
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(${theme.blur.lg});
   -webkit-backdrop-filter: blur(${theme.blur.lg});
-  border-bottom: 1px solid ${theme.colors.neutral.gray200};
   transition: all ${theme.transitions.normal};
 `;
 

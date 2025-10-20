@@ -9,7 +9,7 @@ const HomepageWrapper = styled.div`
 `;
 
 const HeroSection = styled.section`
-  background: linear-gradient(135deg, ${theme.colors.primary.blue} 0%, ${theme.colors.primary.dark} 100%);
+  background: linear-gradient(135deg, ${theme.colors.primary.blue} 0%, ${theme.colors.primary.black} 100%);
   color: ${theme.colors.neutral.white};
   padding: ${theme.spacing.xxl} 0;
   text-align: center;

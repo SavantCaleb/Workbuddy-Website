@@ -5,7 +5,7 @@ import { FiTwitter, FiLinkedin, FiFacebook, FiMail, FiPhone, FiMapPin } from 're
 import { theme } from '../../styles/theme';
 
 const FooterWrapper = styled.footer`
-  background: ${theme.colors.primary.dark};
+  background: ${theme.colors.primary.black};
   color: ${theme.colors.neutral.white};
   padding: ${theme.spacing.xl} 0 ${theme.spacing.l};
 `;
@@ -46,7 +46,7 @@ const Logo = styled(Link)`
   }
 
   .buddy {
-    color: ${theme.colors.primary.yellow};
+    color: ${theme.colors.accent.orange};
   }
 `;
 
@@ -59,7 +59,7 @@ const CompanyDescription = styled.p`
 
 const ColumnTitle = styled.h4`
   font-size: 16px;
-  font-weight: ${theme.typography.weights.semiBold};
+  font-weight: ${theme.typography.weights.semibold};
   margin-bottom: ${theme.spacing.m};
   color: ${theme.colors.neutral.white};
 `;
@@ -78,7 +78,7 @@ const FooterLink = styled(Link)`
   transition: color 0.2s ease;
 
   &:hover {
-    color: ${theme.colors.primary.yellow};
+    color: ${theme.colors.accent.orange};
   }
 `;
 
@@ -93,7 +93,7 @@ const ContactItem = styled.a`
   transition: color 0.2s ease;
 
   &:hover {
-    color: ${theme.colors.primary.yellow};
+    color: ${theme.colors.accent.orange};
   }
 
   svg {
@@ -119,8 +119,8 @@ const SocialLink = styled.a`
   transition: all 0.2s ease;
 
   &:hover {
-    background: ${theme.colors.primary.yellow};
-    color: ${theme.colors.primary.dark};
+    background: ${theme.colors.accent.orange};
+    color: ${theme.colors.primary.black};
     transform: translateY(-2px);
   }
 `;
@@ -150,7 +150,7 @@ const LegalLinks = styled.div`
     transition: color 0.2s ease;
 
     &:hover {
-      color: ${theme.colors.primary.yellow};
+      color: ${theme.colors.accent.orange};
     }
   }
 `;
