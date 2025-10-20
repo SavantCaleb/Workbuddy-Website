@@ -1,7 +1,8 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 import { Button } from '../../components/Button/Button';
+import { WaitingListModal } from '../../components/WaitingListModal/WaitingListModal';
 
 const PageWrapper = styled.div`
   min-height: 100vh;
@@ -182,13 +183,6 @@ const StepsSection = styled.section`
   text-align: center;
 `;
 
-const SectionTitle = styled.h2`
-  font-size: ${theme.typography.sizes.title1.desktop};
-  font-weight: ${theme.typography.weights.semibold};
-  color: ${theme.colors.neutral.label};
-  margin-bottom: ${theme.spacing.xxxl};
-  letter-spacing: -0.025em;
-`;
 
 const StepsGrid = styled.div`
   display: grid;
@@ -382,6 +376,11 @@ const NoCard = styled.p`
 `;
 
 export const NewHomepage: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <PageWrapper>
       {/* Section 1: The Emotional Hook */}
@@ -396,8 +395,8 @@ export const NewHomepage: React.FC = () => {
           We'll take that call.
         </SolutionStatement>
         
-        <PrimaryCTA size="large">
-          Try Free for 30 Days
+        <PrimaryCTA size="large" onClick={openModal}>
+          Join Waiting List
         </PrimaryCTA>
       </HeroSection>
 
@@ -515,11 +514,13 @@ export const NewHomepage: React.FC = () => {
         <Container>
           <FinalQuestion>Ready to sleep through the night?</FinalQuestion>
           
-          <FinalCTA size="large">Start Free Trial</FinalCTA>
+          <FinalCTA size="large" onClick={openModal}>Join Waiting List</FinalCTA>
           
           <NoCard>No credit card required.</NoCard>
         </Container>
       </FinalSection>
+      
+      <WaitingListModal isOpen={isModalOpen} onClose={closeModal} />
     </PageWrapper>
   );
 };

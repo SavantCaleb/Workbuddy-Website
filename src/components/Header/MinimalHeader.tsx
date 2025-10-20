@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { theme } from '../../styles/theme';
 import { Button } from '../Button/Button';
+import { WaitingListModal } from '../WaitingListModal/WaitingListModal';
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -52,63 +53,17 @@ const Logo = styled(Link)`
   }
 `;
 
-const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-  gap: ${theme.spacing.xxl};
-
-  @media (max-width: ${theme.breakpoints.tablet}) {
-    display: none;
-  }
-`;
-
-const NavLink = styled.a`
-  color: ${theme.colors.neutral.secondary};
-  text-decoration: none;
-  font-weight: ${theme.typography.weights.regular};
-  font-size: ${theme.typography.sizes.body.desktop};
-  transition: all ${theme.transitions.fast};
-  cursor: pointer;
-  letter-spacing: -0.01em;
-
-  &:hover {
-    color: ${theme.colors.neutral.label};
-  }
-`;
-
 const CTAWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: ${theme.spacing.l};
-
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    .secondary-link {
-      display: none;
-    }
-  }
-`;
-
-const SecondaryLink = styled.a`
-  color: ${theme.colors.neutral.secondary};
-  text-decoration: none;
-  font-weight: ${theme.typography.weights.regular};
-  font-size: ${theme.typography.sizes.body.desktop};
-  transition: all ${theme.transitions.fast};
-  cursor: pointer;
-  letter-spacing: -0.01em;
-
-  &:hover {
-    color: ${theme.colors.neutral.label};
-  }
 `;
 
 export const MinimalHeader: React.FC = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <HeaderWrapper>
@@ -118,28 +73,12 @@ export const MinimalHeader: React.FC = () => {
           <span className="buddy">buddy</span>
         </Logo>
 
-        <Nav>
-          <NavLink onClick={() => scrollToSection('how-it-works')}>
-            How It Works
-          </NavLink>
-          <NavLink onClick={() => scrollToSection('pricing')}>
-            Pricing
-          </NavLink>
-          <NavLink href="mailto:caleb@getworkbuddy.com">
-            Contact
-          </NavLink>
-        </Nav>
-
         <CTAWrapper>
-          <SecondaryLink 
-            className="secondary-link"
-            onClick={() => scrollToSection('demo')}
-          >
-            Watch Demo
-          </SecondaryLink>
-          <Button size="medium">Try Free</Button>
+          <Button size="medium" onClick={openModal}>Join List</Button>
         </CTAWrapper>
       </HeaderContainer>
+      
+      <WaitingListModal isOpen={isModalOpen} onClose={closeModal} />
     </HeaderWrapper>
   );
 };
