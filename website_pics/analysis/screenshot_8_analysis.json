@@ -1,0 +1,239 @@
+{
+  "screenshot_info": {
+    "filename": "Screenshot 2025-10-18 at 6.34.07 PM.png",
+    "sequence_number": 8,
+    "description": "Setup process section with dark green background and three-step setup visualization"
+  },
+  "layout": {
+    "type": "setup_process_section",
+    "structure": "centered_content_with_step_cards",
+    "background": {
+      "color": "#1B4332",
+      "type": "solid",
+      "description": "Dark forest/teal green background matching hero section"
+    },
+    "content_positioning": "center_aligned"
+  },
+  "header": {
+    "brand": {
+      "name": "upfirst",
+      "logo_style": "text_only",
+      "color": "#FFFFFF",
+      "font_weight": "normal",
+      "position": "top_left"
+    },
+    "navigation": {
+      "items": ["Features", "Industries", "Solutions", "Resources", "Pricing"],
+      "style": "horizontal_menu",
+      "color": "#FFFFFF",
+      "font_size": "14px",
+      "position": "center"
+    },
+    "call_to_action": {
+      "phone": {
+        "text": "Call Us: (833) 564-4778",
+        "color": "#FFFFFF",
+        "icon": "phone"
+      },
+      "login": {
+        "text": "Login",
+        "color": "#FFFFFF",
+        "style": "text_link"
+      },
+      "cta_button": {
+        "text": "Try for free",
+        "background_color": "#4ADE80",
+        "text_color": "#000000",
+        "border_radius": "6px",
+        "padding": "8px 16px",
+        "font_weight": "medium"
+      }
+    }
+  },
+  "section_content": {
+    "eyebrow_text": {
+      "text": "HOW DOES IT WORK?",
+      "color": "#D1D5DB",
+      "font_size": "12px",
+      "font_weight": "600",
+      "letter_spacing": "0.1em",
+      "text_transform": "uppercase",
+      "margin_bottom": "16px",
+      "text_align": "center"
+    },
+    "section_title": {
+      "text": "Set up your first AI answering service in minutes",
+      "color": "#FFFFFF",
+      "font_size": "48px",
+      "font_weight": "700",
+      "line_height": "1.1",
+      "max_width": "600px",
+      "margin_bottom": "80px",
+      "text_align": "center"
+    },
+    "setup_steps": {
+      "layout": "three_column_grid",
+      "gap": "40px",
+      "max_width": "1000px",
+      "steps": [
+        {
+          "step_number": "1",
+          "title": "Pick a number or connect yours",
+          "description": "Forward your phone calls to Upfirst or select a new number for your area code.",
+          "visual": {
+            "type": "phone_number_card",
+            "background_color": "#FFFFFF",
+            "border_radius": "8px",
+            "width": "250px",
+            "height": "150px",
+            "content": {
+              "phone_number": "954-802-4104",
+              "number_color": "#111827",
+              "number_font_size": "24px",
+              "number_font_weight": "600",
+              "button": {
+                "text": "Continue",
+                "background_color": "#4ADE80",
+                "text_color": "#000000",
+                "border_radius": "6px",
+                "padding": "8px 16px"
+              }
+            }
+          },
+          "step_indicator": {
+            "background_color": "#4ADE80",
+            "text_color": "#000000",
+            "size": "32px",
+            "border_radius": "50%",
+            "font_weight": "600"
+          }
+        },
+        {
+          "step_number": "2",
+          "title": "Customize your agent",
+          "description": "Add details about your business, write a custom greeting, and set call handling preferences.",
+          "visual": {
+            "type": "agent_summary_card",
+            "background_color": "#FFFFFF",
+            "border_radius": "8px",
+            "width": "250px",
+            "height": "150px",
+            "content": {
+              "title": "Agent Call Summary",
+              "form_fields": [
+                "Name",
+                "Phone number",
+                "Email address",
+                "Company"
+              ],
+              "field_color": "#6B7280",
+              "field_font_size": "12px"
+            }
+          },
+          "step_indicator": {
+            "background_color": "#4ADE80",
+            "text_color": "#000000",
+            "size": "32px",
+            "border_radius": "50%",
+            "font_weight": "600"
+          }
+        },
+        {
+          "step_number": "3",
+          "title": "Set your answering service live",
+          "description": "Sit back and let Upfirst answer for you. Enjoy easy-to-scan summaries and happy customers.",
+          "visual": {
+            "type": "live_status_card",
+            "background_color": "#FFFFFF",
+            "border_radius": "8px",
+            "width": "250px",
+            "height": "150px",
+            "content": {
+              "status_indicator": {
+                "color": "#10B981",
+                "text": "● Live answering",
+                "font_size": "14px",
+                "font_weight": "500"
+              },
+              "description": "Add knowledge for AI"
+            }
+          },
+          "step_indicator": {
+            "background_color": "#4ADE80",
+            "text_color": "#000000",
+            "size": "32px",
+            "border_radius": "50%",
+            "font_weight": "600"
+          }
+        }
+      ]
+    }
+  },
+  "visual_elements": {
+    "gradients": [],
+    "shadows": [
+      "0 10px 30px rgba(0, 0, 0, 0.2) on step cards"
+    ],
+    "animations": "none_visible",
+    "icons": [
+      "numbered step indicators (1, 2, 3)",
+      "green dot indicator for live status"
+    ]
+  },
+  "typography": {
+    "primary_font": "Inter or similar sans-serif",
+    "font_sizes": {
+      "eyebrow": "12px",
+      "section_title": "48px",
+      "step_title": "18px",
+      "step_description": "16px",
+      "card_phone_number": "24px",
+      "card_text": "12px-14px"
+    },
+    "font_weights": {
+      "eyebrow": "600",
+      "section_title": "700",
+      "step_title": "600",
+      "step_description": "400",
+      "card_phone_number": "600",
+      "step_indicator": "600"
+    }
+  },
+  "color_palette": {
+    "primary": {
+      "dark_green": "#1B4332",
+      "white": "#FFFFFF",
+      "bright_green": "#4ADE80"
+    },
+    "secondary": {
+      "light_gray": "#D1D5DB",
+      "medium_gray": "#6B7280",
+      "dark_gray": "#111827"
+    },
+    "accents": {
+      "success_green": "#10B981"
+    },
+    "text": {
+      "primary_light": "#FFFFFF",
+      "secondary_light": "#D1D5DB",
+      "primary_dark": "#111827",
+      "secondary_dark": "#6B7280"
+    }
+  },
+  "spacing": {
+    "section_padding": "100px 0",
+    "content_max_width": "1000px",
+    "step_gap": "40px",
+    "element_margins": {
+      "eyebrow_to_title": "16px",
+      "title_to_steps": "80px",
+      "step_title_to_description": "8px",
+      "step_to_visual": "24px"
+    }
+  },
+  "responsive_behavior": {
+    "mobile_breakpoint": "768px",
+    "tablet_breakpoint": "1024px",
+    "layout_changes": "stack steps vertically on mobile, maintain card styling"
+  }
+}

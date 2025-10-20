@@ -1,0 +1,282 @@
+{
+  "screenshot_info": {
+    "filename": "Screenshot 2025-10-18 at 6.33.22 PM.png",
+    "sequence_number": 2,
+    "description": "Call interface expanded view showing call details, audio player, and conversation summary"
+  },
+  "layout": {
+    "type": "modal_overlay",
+    "structure": "full_screen_call_interface",
+    "background": {
+      "color": "#1B4332",
+      "type": "solid",
+      "description": "Same dark green background as hero but blurred/dimmed"
+    },
+    "modal_positioning": "center_screen"
+  },
+  "header": {
+    "brand": {
+      "name": "upfirst",
+      "logo_style": "text_only",
+      "color": "#FFFFFF",
+      "font_weight": "normal",
+      "position": "top_left"
+    },
+    "navigation": {
+      "items": ["Features", "Industries", "Solutions", "Resources", "Pricing"],
+      "style": "horizontal_menu",
+      "color": "#FFFFFF",
+      "font_size": "14px",
+      "position": "center"
+    },
+    "call_to_action": {
+      "phone": {
+        "text": "Call Us: (833) 564-4778",
+        "color": "#FFFFFF",
+        "icon": "phone"
+      },
+      "login": {
+        "text": "Login",
+        "color": "#FFFFFF",
+        "style": "text_link"
+      },
+      "cta_button": {
+        "text": "Try for free",
+        "background_color": "#4ADE80",
+        "text_color": "#000000",
+        "border_radius": "6px",
+        "padding": "8px 16px",
+        "font_weight": "medium"
+      }
+    }
+  },
+  "call_interface_expanded": {
+    "position": "center_screen",
+    "background_color": "#FFFFFF",
+    "border_radius": "12px",
+    "width": "800px",
+    "height": "500px",
+    "shadow": "0 25px 80px rgba(0, 0, 0, 0.4)",
+    "header": {
+      "logo": "upfirst",
+      "close_button": "×",
+      "phone_number": "(212) 555-3872",
+      "timestamp": "03/05/2025 11:22 AM",
+      "background_color": "#FFFFFF",
+      "border_bottom": "1px solid #E5E7EB"
+    },
+    "sidebar": {
+      "background_color": "#F9FAFB",
+      "width": "220px",
+      "sections": [
+        {
+          "title": "Calls",
+          "icon": "phone",
+          "active": true,
+          "background_color": "#E5E7EB"
+        },
+        {
+          "title": "Agent",
+          "icon": "user",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Agent settings",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Knowledge",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Send texts",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Transfer calls",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Ask questions",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Settings",
+          "icon": "gear",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Account",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Subscription",
+          "color": "#6B7280"
+        }
+      ]
+    },
+    "main_content": {
+      "call_header": {
+        "title": "Calls",
+        "phone_number": "(212) 555-3872",
+        "timestamp": "03/05/2025 11:22 AM"
+      },
+      "call_summary": {
+        "caller_name": "Mike Smith",
+        "phone": "(212) 555-3872",
+        "email": "mikesmith@gmail.com",
+        "summary_text": "Mike Smith called about updating his living trust, drafted by another firm in 2015. He also purchased second home in Florida which he wants to add to his trust. He also has questions about adding grandchild as beneficiary. Mike prefers afternoon appointments when..."
+      },
+      "audio_player": {
+        "position": "center",
+        "play_button": {
+          "background_color": "#4ADE80",
+          "icon_color": "#FFFFFF",
+          "size": "40px",
+          "border_radius": "50%"
+        },
+        "waveform": {
+          "active_color": "#4ADE80",
+          "inactive_color": "#E5E7EB",
+          "progress": "25%"
+        },
+        "duration": "1:32",
+        "current_time": "0:23"
+      },
+      "transcript_section": {
+        "title": "Transcript",
+        "messages": [
+          {
+            "speaker": "AI",
+            "text": "Thank you for calling Anderson & Mitchell Estate Planning. How may I assist you today?",
+            "time": "0:02"
+          },
+          {
+            "speaker": "Caller",
+            "text": "Hi, I'm hoping to update my family trust. My husband and I set one up about 8 years ago. Hi, we're hoping to add our granddaughter as a beneficiary and also bought a vacation home last year.",
+            "time": "0:08"
+          },
+          {
+            "speaker": "AI",
+            "text": "I'd be happy to connect you to an attorney to get that process started. First, may I have your name?",
+            "time": "0:18"
+          },
+          {
+            "speaker": "Caller",
+            "text": "Yes, it's Mike Smith.",
+            "time": "0:22"
+          }
+        ]
+      },
+      "call_list": {
+        "pagination": "Prev 1 2 3 4 5 Next",
+        "current_page": 1,
+        "call_entries": [
+          "(212) 555-3872",
+          "(312) 555-6290",
+          "(404) 555-1738",
+          "(206) 555-4209",
+          "(617) 555-8354",
+          "(702) 555-8976",
+          "(310) 555-1234"
+        ]
+      },
+      "contact_info": {
+        "email_input": "mikesmith@gmail.com",
+        "phone_input": "",
+        "send_button": {
+          "text": "Send",
+          "background_color": "#4ADE80",
+          "text_color": "#FFFFFF"
+        }
+      }
+    }
+  },
+  "visual_elements": {
+    "gradients": [],
+    "shadows": [
+      "0 25px 80px rgba(0, 0, 0, 0.4) on expanded interface"
+    ],
+    "animations": [
+      "audio waveform animation",
+      "play button interaction"
+    ],
+    "icons": [
+      "play button in audio player",
+      "phone icon in sidebar",
+      "user icon in sidebar",
+      "gear icon in sidebar",
+      "close button (×)"
+    ]
+  },
+  "typography": {
+    "primary_font": "Inter or similar sans-serif",
+    "font_sizes": {
+      "section_title": "16px",
+      "caller_name": "14px",
+      "contact_info": "12px",
+      "transcript_text": "14px",
+      "timestamp": "12px",
+      "sidebar_items": "14px"
+    },
+    "font_weights": {
+      "section_title": "600",
+      "caller_name": "600",
+      "contact_info": "400",
+      "transcript_text": "400",
+      "sidebar_items": "400"
+    }
+  },
+  "color_palette": {
+    "primary": {
+      "white": "#FFFFFF",
+      "bright_green": "#4ADE80",
+      "dark_green": "#1B4332"
+    },
+    "secondary": {
+      "light_gray": "#F9FAFB",
+      "border_gray": "#E5E7EB",
+      "medium_gray": "#6B7280",
+      "dark_gray": "#374151"
+    },
+    "text": {
+      "primary_dark": "#111827",
+      "secondary_dark": "#6B7280",
+      "timestamp": "#9CA3AF"
+    },
+    "interactive": {
+      "hover_gray": "#E5E7EB",
+      "active_green": "#4ADE80"
+    }
+  },
+  "spacing": {
+    "modal_padding": "0",
+    "sidebar_width": "220px",
+    "content_padding": "24px",
+    "element_margins": {
+      "section_spacing": "16px",
+      "transcript_message_spacing": "12px",
+      "contact_field_spacing": "8px"
+    }
+  },
+  "interactive_elements": {
+    "audio_controls": {
+      "play_pause_button": "clickable",
+      "waveform": "clickable_for_seeking",
+      "volume_control": "not_visible"
+    },
+    "transcript": {
+      "scrollable": true,
+      "expandable": false
+    },
+    "contact_form": {
+      "email_field": "editable",
+      "phone_field": "editable",
+      "send_button": "clickable"
+    },
+    "pagination": {
+      "numbered_buttons": "clickable",
+      "prev_next": "clickable"
+    }
+  }
+}

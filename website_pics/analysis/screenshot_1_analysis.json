@@ -1,0 +1,236 @@
+{
+  "screenshot_info": {
+    "filename": "Screenshot 2025-10-18 at 6.33.14 PM.png",
+    "sequence_number": 1,
+    "description": "Hero section with dark green background, call interface mockup, and CTA buttons"
+  },
+  "layout": {
+    "type": "hero_section",
+    "structure": "full_width_background_with_content_overlay",
+    "background": {
+      "color": "#1B4332",
+      "type": "solid",
+      "description": "Dark forest/teal green background"
+    },
+    "content_positioning": "center_aligned"
+  },
+  "header": {
+    "brand": {
+      "name": "upfirst",
+      "logo_style": "text_only",
+      "color": "#FFFFFF",
+      "font_weight": "normal",
+      "position": "top_left"
+    },
+    "navigation": {
+      "items": ["Features", "Industries", "Solutions", "Resources", "Pricing"],
+      "style": "horizontal_menu",
+      "color": "#FFFFFF",
+      "font_size": "14px",
+      "position": "center"
+    },
+    "call_to_action": {
+      "phone": {
+        "text": "Call Us: (833) 564-4778",
+        "color": "#FFFFFF",
+        "icon": "phone"
+      },
+      "login": {
+        "text": "Login",
+        "color": "#FFFFFF",
+        "style": "text_link"
+      },
+      "cta_button": {
+        "text": "Try for free",
+        "background_color": "#4ADE80",
+        "text_color": "#000000",
+        "border_radius": "6px",
+        "padding": "8px 16px",
+        "font_weight": "medium"
+      }
+    }
+  },
+  "hero_content": {
+    "alert_bar": {
+      "icon": "⚠️",
+      "text": "Call our AI receptionist (833) 564-4778",
+      "background_color": "rgba(251, 191, 36, 0.2)",
+      "text_color": "#FCD34D",
+      "border_radius": "full",
+      "padding": "8px 16px",
+      "position": "top_center"
+    },
+    "headline": {
+      "text": "AI that answers the phone while you run your small business",
+      "color": "#FFFFFF",
+      "font_size": "48px",
+      "font_weight": "bold",
+      "line_height": "1.1",
+      "max_width": "600px",
+      "text_align": "center",
+      "highlight_words": {
+        "run your small business": {
+          "color": "#4ADE80"
+        }
+      }
+    },
+    "subheadline": {
+      "text": "Upfirst is the AI answering service that handles your calls exactly how you'd want a human to, at a fraction of the cost",
+      "color": "#D1D5DB",
+      "font_size": "18px",
+      "line_height": "1.6",
+      "max_width": "500px",
+      "text_align": "center",
+      "margin_top": "16px"
+    },
+    "cta_buttons": {
+      "primary": {
+        "text": "Try for free",
+        "background_color": "#4ADE80",
+        "text_color": "#000000",
+        "border_radius": "6px",
+        "padding": "12px 24px",
+        "font_weight": "medium",
+        "margin_right": "16px"
+      },
+      "secondary": {
+        "text": "Book a demo",
+        "background_color": "transparent",
+        "text_color": "#FFFFFF",
+        "border": "1px solid #FFFFFF",
+        "border_radius": "6px",
+        "padding": "12px 24px",
+        "font_weight": "medium"
+      }
+    }
+  },
+  "call_interface_mockup": {
+    "position": "center_bottom",
+    "background_color": "#FFFFFF",
+    "border_radius": "12px",
+    "width": "600px",
+    "height": "400px",
+    "shadow": "0 20px 60px rgba(0, 0, 0, 0.3)",
+    "header": {
+      "logo": "upfirst",
+      "close_button": "×",
+      "phone_number": "(212) 555-3872",
+      "timestamp": "03/05/2025 11:22 AM"
+    },
+    "sidebar": {
+      "background_color": "#F9FAFB",
+      "width": "200px",
+      "sections": [
+        {
+          "title": "Calls",
+          "icon": "phone"
+        },
+        {
+          "title": "Agent",
+          "icon": "user"
+        },
+        {
+          "title": "Agent settings",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Knowledge",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Send texts",
+          "color": "#6B7280"
+        },
+        {
+          "title": "Transfer calls",
+          "color": "#6B7280"
+        }
+      ]
+    },
+    "main_content": {
+      "call_details": {
+        "number": "(415) 555-9031",
+        "duration": "1:32",
+        "status": "completed"
+      },
+      "caller_info": {
+        "name": "Mike Smith",
+        "phone": "(212) 555-3872",
+        "email": "mikesmith@gmail.com",
+        "summary_text": "Mike Smith called about updating his living trust, drafted by another firm in 2015. He also purchased second home in Florida which he wants to add to his trust. He also has questions about adding grandchild as beneficiary. Mike prefers afternoon appointments when..."
+      },
+      "additional_calls": [
+        "(212) 555-3872",
+        "(713) 555-2468",
+        "(305) 555-7142",
+        "(312) 555-6290",
+        "(404) 555-1738",
+        "(206) 555-4209",
+        "(617) 555-8354",
+        "(702) 555-8976",
+        "(310) 555-1234"
+      ]
+    }
+  },
+  "visual_elements": {
+    "gradients": [],
+    "shadows": [
+      "0 20px 60px rgba(0, 0, 0, 0.3) on call interface mockup"
+    ],
+    "animations": "none_visible",
+    "icons": [
+      "phone icon in header",
+      "warning icon in alert bar",
+      "close button (×) in interface"
+    ]
+  },
+  "typography": {
+    "primary_font": "Inter or similar sans-serif",
+    "font_sizes": {
+      "hero_headline": "48px",
+      "hero_subheadline": "18px",
+      "navigation": "14px",
+      "button_text": "14px",
+      "interface_text": "12px-14px"
+    },
+    "font_weights": {
+      "hero_headline": "700",
+      "hero_subheadline": "400",
+      "navigation": "400",
+      "button_text": "500"
+    }
+  },
+  "color_palette": {
+    "primary": {
+      "dark_green": "#1B4332",
+      "bright_green": "#4ADE80",
+      "white": "#FFFFFF"
+    },
+    "secondary": {
+      "yellow_accent": "#FCD34D",
+      "light_gray": "#F9FAFB",
+      "medium_gray": "#6B7280",
+      "dark_gray": "#374151"
+    },
+    "text": {
+      "primary_light": "#FFFFFF",
+      "secondary_light": "#D1D5DB",
+      "primary_dark": "#111827",
+      "secondary_dark": "#6B7280"
+    }
+  },
+  "spacing": {
+    "section_padding": "80px 0",
+    "content_max_width": "1200px",
+    "element_margins": {
+      "headline_to_subheadline": "16px",
+      "subheadline_to_buttons": "32px",
+      "button_spacing": "16px"
+    }
+  },
+  "responsive_behavior": {
+    "mobile_breakpoint": "768px",
+    "tablet_breakpoint": "1024px",
+    "layout_changes": "stack vertically on mobile, reduce font sizes"
+  }
+}

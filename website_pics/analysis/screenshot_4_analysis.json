@@ -1,0 +1,246 @@
+{
+  "screenshot_info": {
+    "filename": "Screenshot 2025-10-18 at 6.33.37 PM.png",
+    "sequence_number": 4,
+    "description": "Testimonial section featuring Dr. Steve Pelton with video testimonial and customer profile cards"
+  },
+  "layout": {
+    "type": "testimonial_section",
+    "structure": "split_layout_testimonial_and_video",
+    "background": {
+      "color": "#FFFFFF",
+      "type": "solid",
+      "description": "Clean white background"
+    },
+    "content_positioning": "left_text_right_video"
+  },
+  "header": {
+    "brand": {
+      "name": "upfirst",
+      "logo_style": "text_only",
+      "color": "#000000",
+      "font_weight": "normal",
+      "position": "top_left"
+    },
+    "navigation": {
+      "items": ["Features", "Industries", "Solutions", "Resources", "Pricing"],
+      "style": "horizontal_menu",
+      "color": "#000000",
+      "font_size": "14px",
+      "position": "center"
+    },
+    "call_to_action": {
+      "phone": {
+        "text": "Call Us: (833) 564-4778",
+        "color": "#000000",
+        "icon": "phone"
+      },
+      "login": {
+        "text": "Login",
+        "color": "#000000",
+        "style": "text_link"
+      },
+      "cta_button": {
+        "text": "Try for free",
+        "background_color": "#4ADE80",
+        "text_color": "#000000",
+        "border_radius": "6px",
+        "padding": "8px 16px",
+        "font_weight": "medium"
+      }
+    }
+  },
+  "testimonial_section": {
+    "layout": "two_column",
+    "left_column": {
+      "customer_info": {
+        "name": "Dr. Steve Pelton",
+        "title": "OWNER, HEARTHSTONE ANIMAL CLINIC",
+        "star_rating": {
+          "stars": 5,
+          "color": "#F59E0B",
+          "size": "20px"
+        }
+      },
+      "testimonial_quote": {
+        "text": "\"With Upfirst, someone who would've been on hold now gets help right away. Whether they just want to know the exam fee or refill a prescription, the AI can handle it. Clients love that.\"",
+        "font_size": "18px",
+        "line_height": "1.6",
+        "color": "#111827",
+        "font_style": "normal",
+        "max_width": "400px"
+      }
+    },
+    "right_column": {
+      "video_testimonial": {
+        "width": "500px",
+        "height": "300px",
+        "border_radius": "12px",
+        "shadow": "0 10px 40px rgba(0, 0, 0, 0.15)",
+        "thumbnail": {
+          "background_image": "doctor_in_office_setting",
+          "description": "Dr. Steve Pelton sitting in his veterinary office, smiling, wearing scrubs"
+        },
+        "play_button": {
+          "background_color": "#FFFFFF",
+          "icon_color": "#111827",
+          "size": "60px",
+          "border_radius": "50%",
+          "shadow": "0 4px 12px rgba(0, 0, 0, 0.15)",
+          "position": "center"
+        },
+        "video_controls": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "customer_profiles": {
+    "layout": "horizontal_row",
+    "position": "bottom_center",
+    "gap": "24px",
+    "profiles": [
+      {
+        "name": "Steve",
+        "title": "Owner, Hearthstone Animal Clinic",
+        "avatar": {
+          "image": "professional_headshot",
+          "background_color": "#F3F4F6",
+          "border_radius": "50%",
+          "size": "48px"
+        },
+        "card_style": {
+          "background_color": "#FFFFFF",
+          "border": "1px solid #E5E7EB",
+          "border_radius": "8px",
+          "padding": "16px",
+          "width": "200px",
+          "shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+        }
+      },
+      {
+        "name": "Natalie",
+        "title": "Partner, Business law Practice & Commercial",
+        "avatar": {
+          "image": "professional_headshot",
+          "background_color": "#FED7D7",
+          "border_radius": "50%",
+          "size": "48px"
+        },
+        "card_style": {
+          "background_color": "#FFFFFF",
+          "border": "1px solid #E5E7EB",
+          "border_radius": "8px",
+          "padding": "16px",
+          "width": "200px",
+          "shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+        }
+      },
+      {
+        "name": "Jody",
+        "title": "Property Manager, ZPR Commercial & Consulting Co.",
+        "avatar": {
+          "image": "professional_headshot",
+          "background_color": "#F3F4F6",
+          "border_radius": "50%",
+          "size": "48px"
+        },
+        "card_style": {
+          "background_color": "#FFFFFF",
+          "border": "1px solid #E5E7EB",
+          "border_radius": "8px",
+          "padding": "16px",
+          "width": "200px",
+          "shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+        }
+      },
+      {
+        "name": "Niccil",
+        "title": "Executive Director, AFC Life Community Services",
+        "avatar": {
+          "image": "professional_headshot",
+          "background_color": "#F3F4F6",
+          "border_radius": "50%",
+          "size": "48px"
+        },
+        "card_style": {
+          "background_color": "#FFFFFF",
+          "border": "1px solid #E5E7EB",
+          "border_radius": "8px",
+          "padding": "16px",
+          "width": "200px",
+          "shadow": "0 2px 8px rgba(0, 0, 0, 0.05)"
+        }
+      }
+    ]
+  },
+  "visual_elements": {
+    "gradients": [],
+    "shadows": [
+      "0 10px 40px rgba(0, 0, 0, 0.15) on video",
+      "0 4px 12px rgba(0, 0, 0, 0.15) on play button",
+      "0 2px 8px rgba(0, 0, 0, 0.05) on customer cards"
+    ],
+    "animations": "none_visible",
+    "icons": [
+      "play button triangle icon",
+      "5 star rating icons"
+    ]
+  },
+  "typography": {
+    "primary_font": "Inter or similar sans-serif",
+    "font_sizes": {
+      "customer_name": "18px",
+      "customer_title": "12px",
+      "testimonial_quote": "18px",
+      "card_name": "14px",
+      "card_title": "12px"
+    },
+    "font_weights": {
+      "customer_name": "600",
+      "customer_title": "400",
+      "testimonial_quote": "400",
+      "card_name": "600",
+      "card_title": "400"
+    }
+  },
+  "color_palette": {
+    "primary": {
+      "white": "#FFFFFF",
+      "black": "#000000",
+      "bright_green": "#4ADE80"
+    },
+    "secondary": {
+      "light_gray": "#F3F4F6",
+      "border_gray": "#E5E7EB",
+      "medium_gray": "#6B7280",
+      "dark_gray": "#111827"
+    },
+    "accents": {
+      "star_yellow": "#F59E0B",
+      "avatar_red": "#FED7D7"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#6B7280",
+      "uppercase": "#6B7280"
+    }
+  },
+  "spacing": {
+    "section_padding": "100px 0",
+    "content_max_width": "1200px",
+    "column_gap": "80px",
+    "element_margins": {
+      "name_to_title": "4px",
+      "title_to_stars": "8px",
+      "stars_to_quote": "16px",
+      "section_to_profiles": "60px",
+      "profile_cards_gap": "24px"
+    }
+  },
+  "responsive_behavior": {
+    "mobile_breakpoint": "768px",
+    "tablet_breakpoint": "1024px",
+    "layout_changes": "stack testimonial above video on mobile, customer cards become scrollable row"
+  }
+}

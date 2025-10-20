@@ -1,0 +1,207 @@
+{
+  "screenshot_info": {
+    "filename": "Screenshot 2025-10-18 at 6.33.50 PM.png",
+    "sequence_number": 6,
+    "description": "Industry-specific section with 'If people call your business, you need our AI answering service' and industry categories"
+  },
+  "layout": {
+    "type": "industry_section",
+    "structure": "centered_content_with_industry_grid",
+    "background": {
+      "color": "#F9FAFB",
+      "type": "solid",
+      "description": "Light gray background"
+    },
+    "content_positioning": "center_aligned"
+  },
+  "header": {
+    "brand": {
+      "name": "upfirst",
+      "logo_style": "text_only",
+      "color": "#000000",
+      "font_weight": "normal",
+      "position": "top_left"
+    },
+    "navigation": {
+      "items": ["Features", "Industries", "Solutions", "Resources", "Pricing"],
+      "style": "horizontal_menu",
+      "color": "#000000",
+      "font_size": "14px",
+      "position": "center"
+    },
+    "call_to_action": {
+      "phone": {
+        "text": "Call Us: (833) 564-4778",
+        "color": "#000000",
+        "icon": "phone"
+      },
+      "login": {
+        "text": "Login",
+        "color": "#000000",
+        "style": "text_link"
+      },
+      "cta_button": {
+        "text": "Try for free",
+        "background_color": "#4ADE80",
+        "text_color": "#000000",
+        "border_radius": "6px",
+        "padding": "8px 16px",
+        "font_weight": "medium"
+      }
+    }
+  },
+  "section_content": {
+    "eyebrow_text": {
+      "text": "HEAR UPFIRST IN ACTION",
+      "color": "#6B7280",
+      "font_size": "12px",
+      "font_weight": "600",
+      "letter_spacing": "0.1em",
+      "text_transform": "uppercase",
+      "margin_bottom": "16px",
+      "text_align": "center"
+    },
+    "section_title": {
+      "text": "If people call your business, you need our AI answering service",
+      "color": "#111827",
+      "font_size": "48px",
+      "font_weight": "700",
+      "line_height": "1.1",
+      "max_width": "600px",
+      "margin_bottom": "80px",
+      "text_align": "center"
+    },
+    "industry_grid": {
+      "layout": "2x3_grid",
+      "gap": "32px",
+      "max_width": "800px",
+      "industries": [
+        {
+          "position": "top_left",
+          "icon": "▶️",
+          "title": "Law firms",
+          "text_color": "#111827",
+          "font_size": "20px",
+          "font_weight": "600",
+          "text_align": "left",
+          "padding": "16px 0"
+        },
+        {
+          "position": "top_right",
+          "icon": "▶️",
+          "title": "Restaurants",
+          "text_color": "#111827",
+          "font_size": "20px",
+          "font_weight": "600",
+          "text_align": "left",
+          "padding": "16px 0"
+        },
+        {
+          "position": "middle_left",
+          "icon": "▶️",
+          "title": "Real estate",
+          "text_color": "#111827",
+          "font_size": "20px",
+          "font_weight": "600",
+          "text_align": "left",
+          "padding": "16px 0"
+        },
+        {
+          "position": "middle_right",
+          "icon": "▶️",
+          "title": "Insurance",
+          "text_color": "#111827",
+          "font_size": "20px",
+          "font_weight": "600",
+          "text_align": "left",
+          "padding": "16px 0"
+        },
+        {
+          "position": "bottom_left",
+          "icon": "▶️",
+          "title": "Accountants",
+          "text_color": "#111827",
+          "font_size": "20px",
+          "font_weight": "600",
+          "text_align": "left",
+          "padding": "16px 0"
+        },
+        {
+          "position": "bottom_right",
+          "icon": "▶️",
+          "title": "Electricians",
+          "text_color": "#111827",
+          "font_size": "20px",
+          "font_weight": "600",
+          "text_align": "left",
+          "padding": "16px 0"
+        }
+      ]
+    }
+  },
+  "visual_elements": {
+    "gradients": [],
+    "shadows": [],
+    "animations": "none_visible",
+    "icons": [
+      "▶️ (play button) icons for each industry"
+    ],
+    "interactive_elements": {
+      "industry_items": "clickable_with_hover_effects"
+    }
+  },
+  "typography": {
+    "primary_font": "Inter or similar sans-serif",
+    "font_sizes": {
+      "eyebrow": "12px",
+      "section_title": "48px",
+      "industry_title": "20px",
+      "navigation": "14px"
+    },
+    "font_weights": {
+      "eyebrow": "600",
+      "section_title": "700",
+      "industry_title": "600",
+      "navigation": "400"
+    }
+  },
+  "color_palette": {
+    "primary": {
+      "white": "#FFFFFF",
+      "black": "#000000",
+      "bright_green": "#4ADE80"
+    },
+    "secondary": {
+      "light_gray": "#F9FAFB",
+      "medium_gray": "#6B7280",
+      "dark_gray": "#111827"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#6B7280"
+    }
+  },
+  "spacing": {
+    "section_padding": "100px 0",
+    "content_max_width": "1200px",
+    "grid_max_width": "800px",
+    "grid_gap": "32px",
+    "element_margins": {
+      "eyebrow_to_title": "16px",
+      "title_to_grid": "80px",
+      "industry_item_padding": "16px 0"
+    }
+  },
+  "responsive_behavior": {
+    "mobile_breakpoint": "768px",
+    "tablet_breakpoint": "1024px",
+    "layout_changes": "grid becomes single column on mobile, reduce font sizes"
+  },
+  "interaction_design": {
+    "industry_items": {
+      "default_state": "normal",
+      "hover_state": "slight_color_change_or_underline",
+      "click_action": "navigate_to_industry_specific_page_or_demo"
+    }
+  }
+}

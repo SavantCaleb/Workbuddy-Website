@@ -1,0 +1,175 @@
+{
+  "screenshot_info": {
+    "filename": "Screenshot 2025-10-18 at 6.34.22 PM.png",
+    "sequence_number": 9,
+    "description": "Mission/About section with white background explaining why Upfirst was created"
+  },
+  "layout": {
+    "type": "about_section",
+    "structure": "centered_text_content",
+    "background": {
+      "color": "#FFFFFF",
+      "type": "solid",
+      "description": "Clean white background"
+    },
+    "content_positioning": "center_aligned"
+  },
+  "header": {
+    "brand": {
+      "name": "upfirst",
+      "logo_style": "text_only",
+      "color": "#000000",
+      "font_weight": "normal",
+      "position": "top_left"
+    },
+    "navigation": {
+      "items": ["Features", "Industries", "Solutions", "Resources", "Pricing"],
+      "style": "horizontal_menu",
+      "color": "#000000",
+      "font_size": "14px",
+      "position": "center"
+    },
+    "call_to_action": {
+      "phone": {
+        "text": "Call Us: (833) 564-4778",
+        "color": "#000000",
+        "icon": "phone"
+      },
+      "login": {
+        "text": "Login",
+        "color": "#000000",
+        "style": "text_link"
+      },
+      "cta_button": {
+        "text": "Try for free",
+        "background_color": "#4ADE80",
+        "text_color": "#000000",
+        "border_radius": "6px",
+        "padding": "8px 16px",
+        "font_weight": "medium"
+      }
+    }
+  },
+  "section_content": {
+    "eyebrow_text": {
+      "text": "WHY DID WE BUILD UPFIRST?",
+      "color": "#6B7280",
+      "font_size": "12px",
+      "font_weight": "600",
+      "letter_spacing": "0.1em",
+      "text_transform": "uppercase",
+      "margin_bottom": "24px",
+      "text_align": "center"
+    },
+    "content_blocks": [
+      {
+        "type": "main_paragraph",
+        "text": "A phone call is a first impression. No one likes being sent to voicemail — but hiring full-time staff just to run the phones is expensive. For small businesses, it's",
+        "color": "#111827",
+        "font_size": "24px",
+        "line_height": "1.6",
+        "font_weight": "400",
+        "max_width": "600px",
+        "text_align": "center",
+        "margin_bottom": "16px"
+      },
+      {
+        "type": "emphasized_text",
+        "text": "just not an option.",
+        "color": "#9CA3AF",
+        "font_size": "24px",
+        "line_height": "1.6",
+        "font_weight": "400",
+        "text_align": "center",
+        "margin_bottom": "40px"
+      },
+      {
+        "type": "secondary_paragraph",
+        "text": "That's why we created Upfirst: to make it easy for companies of any size to deliver great customer experiences using AI.",
+        "color": "#9CA3AF",
+        "font_size": "20px",
+        "line_height": "1.6",
+        "font_weight": "400",
+        "max_width": "600px",
+        "text_align": "center",
+        "margin_bottom": "40px"
+      },
+      {
+        "type": "final_paragraph",
+        "text": "With Upfirst, every call is answered, every lead is captured, and every customer feels valued.",
+        "color": "#9CA3AF",
+        "font_size": "20px",
+        "line_height": "1.6",
+        "font_weight": "400",
+        "max_width": "600px",
+        "text_align": "center",
+        "margin_bottom": "0"
+      }
+    ]
+  },
+  "visual_elements": {
+    "gradients": [],
+    "shadows": [],
+    "animations": "none_visible",
+    "icons": [],
+    "text_styling": {
+      "emphasis_technique": "color_variation",
+      "hierarchy": "font_size_and_color"
+    }
+  },
+  "typography": {
+    "primary_font": "Inter or similar sans-serif",
+    "font_sizes": {
+      "eyebrow": "12px",
+      "main_text": "24px",
+      "secondary_text": "20px",
+      "navigation": "14px"
+    },
+    "font_weights": {
+      "eyebrow": "600",
+      "main_text": "400",
+      "secondary_text": "400",
+      "navigation": "400"
+    }
+  },
+  "color_palette": {
+    "primary": {
+      "white": "#FFFFFF",
+      "black": "#000000",
+      "bright_green": "#4ADE80"
+    },
+    "secondary": {
+      "medium_gray": "#6B7280",
+      "light_gray": "#9CA3AF",
+      "dark_gray": "#111827"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#6B7280",
+      "muted": "#9CA3AF"
+    }
+  },
+  "spacing": {
+    "section_padding": "120px 0",
+    "content_max_width": "600px",
+    "element_margins": {
+      "eyebrow_to_content": "24px",
+      "paragraph_spacing": "16px-40px",
+      "content_centering": "auto"
+    }
+  },
+  "responsive_behavior": {
+    "mobile_breakpoint": "768px",
+    "tablet_breakpoint": "1024px",
+    "layout_changes": "reduce font sizes on mobile, maintain center alignment"
+  },
+  "content_structure": {
+    "narrative_flow": "problem_statement -> solution -> outcome",
+    "emphasis_points": [
+      "expensive hiring",
+      "not an option for small businesses",
+      "AI solution accessibility",
+      "comprehensive coverage"
+    ]
+  }
+}
