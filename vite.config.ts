@@ -17,5 +17,13 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['styled-components', 'react', 'react-dom', 'react-router-dom', 'react-icons', 'framer-motion']
+  },
+  preview: {
+    port: 4173,
+    strictPort: true,
+  },
+  server: {
+    port: 5173,
+    strictPort: true,
   }
 })
