@@ -176,10 +176,61 @@ const CustomerAttribution = styled.cite`
   font-weight: ${theme.typography.weights.medium};
 `;
 
+// Section: Property Management Use Cases
+const PropertySection = styled.section`
+  padding: ${theme.spacing.xxxxxl} ${theme.spacing.xl};
+  background: ${theme.colors.surface.secondary};
+  text-align: center;
+`;
+
+const SectionTitle = styled.h2`
+  font-size: ${theme.typography.sizes.title2.desktop};
+  font-weight: ${theme.typography.weights.semibold};
+  color: ${theme.colors.neutral.label};
+  margin-bottom: ${theme.spacing.xxxl};
+  letter-spacing: -0.020em;
+`;
+
+const UseCaseGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: ${theme.spacing.xl};
+  max-width: ${theme.maxWidth.content};
+  margin: 0 auto;
+`;
+
+const UseCaseItem = styled.div`
+  padding: ${theme.spacing.xl};
+  background: ${theme.colors.surface.primary};
+  border-radius: ${theme.borderRadius.xxl};
+  text-align: left;
+  border: 1px solid ${theme.colors.neutral.gray200};
+  transition: all ${theme.transitions.normal};
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: ${theme.shadows.medium};
+  }
+`;
+
+const UseCaseTitle = styled.h3`
+  font-size: ${theme.typography.sizes.headline.desktop};
+  font-weight: ${theme.typography.weights.semibold};
+  color: ${theme.colors.neutral.label};
+  margin-bottom: ${theme.spacing.s};
+`;
+
+const UseCaseDescription = styled.p`
+  font-size: ${theme.typography.sizes.body.desktop};
+  color: ${theme.colors.neutral.secondary};
+  line-height: ${theme.typography.lineHeight.relaxed};
+  margin: 0;
+`;
+
 // Section 4: The Elegant Simplicity
 const StepsSection = styled.section`
   padding: ${theme.spacing.xxxxxl} ${theme.spacing.xl};
-  background: ${theme.colors.surface.secondary};
+  background: ${theme.colors.surface.primary};
   text-align: center;
 `;
 
@@ -405,7 +456,7 @@ export const NewHomepage: React.FC = () => {
         <Container>
           <DemoContainer>
             <DemoText>
-              Thank you for calling Mike's Plumbing. I can help you schedule an appointment or answer questions about our services. How can I help you today?
+              Hi, thanks for calling Work Buddy Properties! I'd be happy to help you with information about our available units. We have a lovely 2-bedroom at 123 Oak St available for $1,450 per month. Would you like to schedule a viewing this week?
             </DemoText>
           </DemoContainer>
           
@@ -422,33 +473,78 @@ export const NewHomepage: React.FC = () => {
           <TestimonialGrid>
             <TestimonialCard>
               <CustomerQuote>
-                "I haven't missed a call in 6 months."
+                "Managing 50 units used to mean missing calls at all hours. Now tenants get instant responses."
               </CustomerQuote>
               <CustomerAttribution>
-                — Maria Rodriguez, Sunshine Laundromat
+                — Property Manager, Connecticut
               </CustomerAttribution>
             </TestimonialCard>
-            
+
             <TestimonialCard>
               <CustomerQuote>
-                "My customers think I hired someone."
+                "Tenant calls at 2am used to wake me up. Now they get immediate help and I get my sleep."
               </CustomerQuote>
               <CustomerAttribution>
-                — David Chen, Chen's Auto Repair
+                — Apartment Owner, New Haven
               </CustomerAttribution>
             </TestimonialCard>
-            
+
             <TestimonialCard>
               <CustomerQuote>
-                "I sleep through the night now."
+                "Our vacancy rate dropped because prospects get instant responses about available units."
               </CustomerQuote>
               <CustomerAttribution>
-                — Sarah Williams, Williams Law Firm
+                — Property Management Company, CT
               </CustomerAttribution>
             </TestimonialCard>
           </TestimonialGrid>
         </Container>
       </SocialSection>
+
+      {/* Section: Property Management Use Cases */}
+      <PropertySection>
+        <Container>
+          <SectionTitle>For Property Managers</SectionTitle>
+          <UseCaseGrid>
+            <UseCaseItem>
+              <UseCaseTitle>Prospective Tenant Inquiries</UseCaseTitle>
+              <UseCaseDescription>
+                Answer questions about available units, pricing, amenities, and schedule property viewings instantly.
+              </UseCaseDescription>
+            </UseCaseItem>
+            <UseCaseItem>
+              <UseCaseTitle>Maintenance Requests</UseCaseTitle>
+              <UseCaseDescription>
+                Log and acknowledge repair requests 24/7, ensuring tenants always feel heard.
+              </UseCaseDescription>
+            </UseCaseItem>
+            <UseCaseItem>
+              <UseCaseTitle>Payment Reminders</UseCaseTitle>
+              <UseCaseDescription>
+                Send automated payment notifications and answer billing questions professionally.
+              </UseCaseDescription>
+            </UseCaseItem>
+            <UseCaseItem>
+              <UseCaseTitle>Lease Information</UseCaseTitle>
+              <UseCaseDescription>
+                Provide details about lease terms, renewals, and move-in/move-out procedures.
+              </UseCaseDescription>
+            </UseCaseItem>
+            <UseCaseItem>
+              <UseCaseTitle>Property Viewings</UseCaseTitle>
+              <UseCaseDescription>
+                Schedule and confirm showing appointments with prospective tenants automatically.
+              </UseCaseDescription>
+            </UseCaseItem>
+            <UseCaseItem>
+              <UseCaseTitle>Emergency Response</UseCaseTitle>
+              <UseCaseDescription>
+                Handle urgent calls outside business hours and escalate critical issues immediately.
+              </UseCaseDescription>
+            </UseCaseItem>
+          </UseCaseGrid>
+        </Container>
+      </PropertySection>
 
       {/* Section 4: The Elegant Simplicity */}
       <StepsSection>
