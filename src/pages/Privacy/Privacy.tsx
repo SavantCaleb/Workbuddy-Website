@@ -155,14 +155,35 @@ export const Privacy: React.FC = () => {
         <Section>
           <SectionTitle>5. SMS and Communication Data</SectionTitle>
           <Paragraph>
-            As an AI-powered phone and SMS answering service, we process communications on behalf 
-            of our clients. We handle this data with strict confidentiality and use it only to 
+            As an AI-powered phone and SMS answering service, we process communications on behalf
+            of our clients. We handle this data with strict confidentiality and use it only to
             provide our services and improve our AI capabilities.
           </Paragraph>
         </Section>
 
         <Section>
-          <SectionTitle>6. Your Rights</SectionTitle>
+
+          <SectionTitle>6. SMS Messaging Services</SectionTitle>
+          <Paragraph>
+            Work Buddy provides SMS messaging services to property management companies. When you
+            provide your phone number to a property using Work Buddy's platform:
+          </Paragraph>
+          <List>
+            <li>You consent to receive text messages from that property regarding your rental inquiry, lease, maintenance, and account</li>
+            <li>Message frequency varies based on your interactions</li>
+            <li>Message and data rates may apply</li>
+            <li>Reply STOP to any message to opt out</li>
+            <li>Reply HELP for assistance</li>
+            <li>Your phone number and consent information will not be shared with third parties for marketing purposes</li>
+          </List>
+          <Paragraph>
+            The property management company is responsible for obtaining your consent before
+            messages are sent. All messages will identify the property name.
+          </Paragraph>
+        </Section>
+
+        <Section>
+          <SectionTitle>7. Your Rights</SectionTitle>
           <Paragraph>
             You have the right to:
           </Paragraph>
@@ -176,7 +197,7 @@ export const Privacy: React.FC = () => {
         </Section>
 
         <Section>
-          <SectionTitle>7. Data Retention</SectionTitle>
+          <SectionTitle>8. Data Retention</SectionTitle>
           <Paragraph>
             We retain your information for as long as necessary to provide our services and 
             comply with legal obligations. Communication data may be retained for up to 7 years 
@@ -185,7 +206,7 @@ export const Privacy: React.FC = () => {
         </Section>
 
         <Section>
-          <SectionTitle>8. Changes to This Policy</SectionTitle>
+          <SectionTitle>9. Changes to This Policy</SectionTitle>
           <Paragraph>
             We may update this privacy policy from time to time. We will notify you of any 
             material changes by posting the new policy on this page and updating the "Last 

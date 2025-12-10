@@ -439,13 +439,13 @@ export const NewHomepage: React.FC = () => {
         <EmotionalStatement>
           It's <strong>11 PM</strong>. Your phone is ringing.
         </EmotionalStatement>
-        
+
         <PauseSpace />
-        
+
         <SolutionStatement>
           We'll take that call.
         </SolutionStatement>
-        
+
         <PrimaryCTA size="large" onClick={openModal}>
           Join Waiting List
         </PrimaryCTA>
@@ -456,10 +456,11 @@ export const NewHomepage: React.FC = () => {
         <Container>
           <DemoContainer>
             <DemoText>
-              Hi, thanks for calling Work Buddy Properties! I'd be happy to help you with information about our available units. We have a lovely 2-bedroom at 123 Oak St available for $1,450 per month. Would you like to schedule a viewing this week?
+              Hi, thanks for calling The Woodlands! I'd be happy to help you with information about our available units. We have a lovely 2-bedroom at 3 Evergreen Drive available for $2,700 per
+              month. Would you like to schedule a viewing this week?
             </DemoText>
           </DemoContainer>
-          
+
           <PricingIntro>
             <StartingPrice>Starting at $199/month</StartingPrice>
             <PriceSubtext>No contracts. Cancel anytime.</PriceSubtext>
@@ -563,7 +564,7 @@ export const NewHomepage: React.FC = () => {
               <StepDescription>Never miss another customer</StepDescription>
             </StepItem>
           </StepsGrid>
-          
+
           <SetupTime>Setup takes 10 minutes.</SetupTime>
         </Container>
       </StepsSection>
@@ -573,14 +574,14 @@ export const NewHomepage: React.FC = () => {
         <Container>
           <PricingCard>
             <MainPrice>$199/month</MainPrice>
-            
+
             <IncludedList>
               <li>24/7 answering</li>
               <li>SMS handling</li>
               <li>Appointment booking</li>
               <li>Your business personality</li>
             </IncludedList>
-            
+
             <ValueProposition>
               <p>Less than hiring part-time help.</p>
               <p>More reliable than hoping you hear the phone.</p>
@@ -597,7 +598,7 @@ export const NewHomepage: React.FC = () => {
             <TrustPoint>Your customers never know it's AI.</TrustPoint>
             <TrustPoint>Start free. Cancel anytime.</TrustPoint>
           </TrustPoints>
-          
+
           <ContactPrompt>
             <p>Questions? Call us now:</p>
             <a href="tel:+12036051105">(203) 605-1105</a>
@@ -609,13 +610,13 @@ export const NewHomepage: React.FC = () => {
       <FinalSection>
         <Container>
           <FinalQuestion>Ready to sleep through the night?</FinalQuestion>
-          
+
           <FinalCTA size="large" onClick={openModal}>Join Waiting List</FinalCTA>
-          
+
           <NoCard>No credit card required.</NoCard>
         </Container>
       </FinalSection>
-      
+
       <WaitingListModal isOpen={isModalOpen} onClose={closeModal} />
     </PageWrapper>
   );
