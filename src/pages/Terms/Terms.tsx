@@ -112,58 +112,66 @@ export const Terms: React.FC = () => {
         <Section>
           <SectionTitle>2. Description of Service</SectionTitle>
           <Paragraph>
-            Work Buddy provides an AI-powered phone and SMS answering service for small businesses. 
+            Work Buddy Inc ("Work Buddy", "we", "us") provides AI-powered customer service
+            for residential apartment communities. We handle tenant and prospect communications
+            including tour scheduling, maintenance request acknowledgments, payment reminders,
+            and property inquiries via voice and SMS for the apartment communities we serve.
+          </Paragraph>
+          <Paragraph>
+            When you contact an apartment community using Work Buddy's customer service,
+            you are communicating directly with Work Buddy. All SMS messages will identify
+            Work Buddy as the sender and include the specific property name for context.
+          </Paragraph>
+          <Paragraph>
             Our service includes:
           </Paragraph>
           <List>
-            <li>24/7 AI-powered call answering and routing</li>
-            <li>SMS message handling and responses</li>
-            <li>Customer inquiry management</li>
-            <li>Appointment scheduling assistance</li>
-            <li>Business-specific customization and training</li>
+            <li>24/7 AI-powered call answering for apartment communities</li>
+            <li>SMS message handling for tenant and prospect communications</li>
+            <li>Tour scheduling and property inquiry responses</li>
+            <li>Maintenance request acknowledgments</li>
+            <li>Payment reminder communications</li>
           </List>
         </Section>
 
         <Section>
-          <SectionTitle>3. User Responsibilities</SectionTitle>
+          <SectionTitle>3. User Conduct</SectionTitle>
           <Paragraph>
-            As a user of Work Buddy, you agree to:
+            When communicating with Work Buddy's customer service, you agree to:
           </Paragraph>
           <List>
-            <li>Provide accurate and complete information about your business</li>
-            <li>Maintain the security of your account credentials</li>
-            <li>Use the service only for lawful business purposes</li>
-            <li>Comply with all applicable telecommunications regulations</li>
+            <li>Provide accurate information about your inquiry or request</li>
+            <li>Use the service only for legitimate rental inquiries, maintenance requests, and property communications</li>
             <li>Not attempt to interfere with or disrupt our service</li>
             <li>Respect the intellectual property rights of Work Buddy</li>
+            <li>Not use the service for any unlawful purpose</li>
           </List>
         </Section>
 
         <Section>
           <SectionTitle>4. SMS and Communication Compliance</SectionTitle>
           <Paragraph>
-            By using our SMS services, you acknowledge and agree that:
+            Work Buddy's SMS services comply with TCPA, CAN-SPAM, and other applicable regulations.
+            By using our services, you acknowledge and agree that:
           </Paragraph>
           <List>
-            <li>You have obtained proper consent from recipients for SMS communications</li>
-            <li>You will comply with TCPA, CAN-SPAM, and other applicable regulations</li>
-            <li>Recipients can opt out by replying STOP, and you will honor these requests</li>
+            <li>Work Buddy obtains consent from recipients through verbal consent at property offices or inbound SMS initiation as described in our Privacy Policy</li>
+            <li>Recipients can opt out by replying STOP, and Work Buddy will honor these requests</li>
             <li>Message and data rates may apply to recipients</li>
-            <li>You are responsible for the content and compliance of your business communications</li>
+            <li>All messages will identify Work Buddy as the sender and include the property name</li>
           </List>
         </Section>
 
         <Section>
-          <SectionTitle>5. Payment Terms</SectionTitle>
+          <SectionTitle>5. Service Terms</SectionTitle>
           <Paragraph>
-            Work Buddy operates on a subscription basis starting at $199/month. Payment terms include:
+            Work Buddy provides customer service to apartment communities. As a tenant, resident,
+            or prospective renter communicating with Work Buddy:
           </Paragraph>
           <List>
-            <li>Monthly billing in advance</li>
-            <li>No long-term contracts required</li>
-            <li>Automatic renewal unless cancelled</li>
-            <li>30-day notice required for cancellation</li>
-            <li>Refunds at our discretion for unused service periods</li>
+            <li>There is no charge to you for using Work Buddy's customer service</li>
+            <li>Standard message and data rates from your carrier may apply</li>
+            <li>Service availability depends on the apartment community's enrollment</li>
           </List>
         </Section>
 
@@ -197,18 +205,18 @@ export const Terms: React.FC = () => {
         <Section>
           <SectionTitle>9. Limitation of Liability</SectionTitle>
           <Paragraph>
-            Work Buddy's liability is limited to the amount you have paid for our service in the 
-            preceding 12 months. We are not liable for indirect, incidental, or consequential 
-            damages arising from your use of our service.
+            Work Buddy is not liable for indirect, incidental, or consequential damages arising
+            from your use of our service. Our customer service is provided as-is, and we make no
+            warranties regarding the accuracy or completeness of information provided.
           </Paragraph>
         </Section>
 
         <Section>
-          <SectionTitle>10. Termination</SectionTitle>
+          <SectionTitle>10. Service Discontinuation</SectionTitle>
           <Paragraph>
-            Either party may terminate this agreement with 30 days' notice. Work Buddy reserves 
-            the right to suspend or terminate service immediately for violation of these terms or 
-            non-payment.
+            Work Buddy reserves the right to discontinue service to any apartment community at any
+            time. If service is discontinued for a property you contact, you will need to reach the
+            property directly through other means.
           </Paragraph>
         </Section>
 

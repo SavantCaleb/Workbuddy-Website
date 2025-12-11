@@ -176,7 +176,7 @@ const CustomerAttribution = styled.cite`
   font-weight: ${theme.typography.weights.medium};
 `;
 
-// Section: Property Management Use Cases
+// Section: Customer Service for Apartment Communities
 const PropertySection = styled.section`
   padding: ${theme.spacing.xxxxxl} ${theme.spacing.xl};
   background: ${theme.colors.surface.secondary};
@@ -456,14 +456,13 @@ export const NewHomepage: React.FC = () => {
         <Container>
           <DemoContainer>
             <DemoText>
-              Hi, thanks for calling The Woodlands! I'd be happy to help you with information about our available units. We have a lovely 2-bedroom at 3 Evergreen Drive available for $2,700 per
-              month. Would you like to schedule a viewing this week?
+              Hi, this is Work Buddy helping The Woodlands! I'd be happy to assist with information about available units. We have a lovely 2-bedroom at 3 Evergreen Drive for $2,700 per month. Would you like to schedule a viewing?
             </DemoText>
           </DemoContainer>
 
           <PricingIntro>
-            <StartingPrice>Starting at $199/month</StartingPrice>
-            <PriceSubtext>No contracts. Cancel anytime.</PriceSubtext>
+            <StartingPrice>AI-Powered Customer Service</StartingPrice>
+            <PriceSubtext>For residential apartment communities across Connecticut.</PriceSubtext>
           </PricingIntro>
         </Container>
       </ProductSection>
@@ -474,117 +473,117 @@ export const NewHomepage: React.FC = () => {
           <TestimonialGrid>
             <TestimonialCard>
               <CustomerQuote>
-                "Managing 50 units used to mean missing calls at all hours. Now tenants get instant responses."
+                "I called about an apartment at 10pm and got all my questions answered immediately. Scheduled a tour for the next day!"
               </CustomerQuote>
               <CustomerAttribution>
-                — Property Manager, Connecticut
+                — Tenant, Hartford
               </CustomerAttribution>
             </TestimonialCard>
 
             <TestimonialCard>
               <CustomerQuote>
-                "Tenant calls at 2am used to wake me up. Now they get immediate help and I get my sleep."
+                "Reported a maintenance issue over text and got confirmation within seconds. They actually followed up the next morning."
               </CustomerQuote>
               <CustomerAttribution>
-                — Apartment Owner, New Haven
+                — Resident, New Haven
               </CustomerAttribution>
             </TestimonialCard>
 
             <TestimonialCard>
               <CustomerQuote>
-                "Our vacancy rate dropped because prospects get instant responses about available units."
+                "Finally an apartment community that responds after hours. No more waiting until Monday to get answers."
               </CustomerQuote>
               <CustomerAttribution>
-                — Property Management Company, CT
+                — Prospective Tenant, CT
               </CustomerAttribution>
             </TestimonialCard>
           </TestimonialGrid>
         </Container>
       </SocialSection>
 
-      {/* Section: Property Management Use Cases */}
+      {/* Section: 24/7 Customer Service for Apartment Communities */}
       <PropertySection>
         <Container>
-          <SectionTitle>For Property Managers</SectionTitle>
+          <SectionTitle>24/7 Customer Service for Apartment Communities</SectionTitle>
           <UseCaseGrid>
             <UseCaseItem>
-              <UseCaseTitle>Prospective Tenant Inquiries</UseCaseTitle>
+              <UseCaseTitle>Tour Scheduling</UseCaseTitle>
               <UseCaseDescription>
-                Answer questions about available units, pricing, amenities, and schedule property viewings instantly.
+                Work Buddy handles prospective tenant inquiries, answers questions about available units, and schedules property viewings instantly.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
               <UseCaseTitle>Maintenance Requests</UseCaseTitle>
               <UseCaseDescription>
-                Log and acknowledge repair requests 24/7, ensuring tenants always feel heard.
+                Work Buddy logs and acknowledges repair requests 24/7, ensuring tenants always feel heard.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
               <UseCaseTitle>Payment Reminders</UseCaseTitle>
               <UseCaseDescription>
-                Send automated payment notifications and answer billing questions professionally.
+                Work Buddy sends payment notifications and answers billing questions professionally for the property.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
-              <UseCaseTitle>Lease Information</UseCaseTitle>
+              <UseCaseTitle>Tenant Inquiries</UseCaseTitle>
               <UseCaseDescription>
-                Provide details about lease terms, renewals, and move-in/move-out procedures.
+                Work Buddy communicates with tenants about lease terms, renewals, and move-in/move-out procedures.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
-              <UseCaseTitle>Property Viewings</UseCaseTitle>
+              <UseCaseTitle>Prospect Communication</UseCaseTitle>
               <UseCaseDescription>
-                Schedule and confirm showing appointments with prospective tenants automatically.
+                Work Buddy responds to prospects instantly, providing unit availability, pricing, and amenity information.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
-              <UseCaseTitle>Emergency Response</UseCaseTitle>
+              <UseCaseTitle>After-Hours Support</UseCaseTitle>
               <UseCaseDescription>
-                Handle urgent calls outside business hours and escalate critical issues immediately.
+                Work Buddy handles urgent calls outside business hours and escalates critical issues immediately.
               </UseCaseDescription>
             </UseCaseItem>
           </UseCaseGrid>
         </Container>
       </PropertySection>
 
-      {/* Section 4: The Elegant Simplicity */}
+      {/* Section 4: How We Serve Your Community */}
       <StepsSection>
         <Container>
           <StepsGrid>
             <StepItem>
               <StepNumber>1</StepNumber>
-              <StepDescription>Connect your phone number</StepDescription>
+              <StepDescription>Call or text the property</StepDescription>
             </StepItem>
             <StepItem>
               <StepNumber>2</StepNumber>
-              <StepDescription>We learn your business</StepDescription>
+              <StepDescription>Work Buddy answers instantly</StepDescription>
             </StepItem>
             <StepItem>
               <StepNumber>3</StepNumber>
-              <StepDescription>Never miss another customer</StepDescription>
+              <StepDescription>Get help any time, day or night</StepDescription>
             </StepItem>
           </StepsGrid>
 
-          <SetupTime>Setup takes 10 minutes.</SetupTime>
+          <SetupTime>Always available. Always helpful.</SetupTime>
         </Container>
       </StepsSection>
 
-      {/* Section 5: The Confident Economics */}
+      {/* Section 5: Why Apartment Communities Choose Work Buddy */}
       <EconomicsSection>
         <Container>
           <PricingCard>
-            <MainPrice>$199/month</MainPrice>
+            <MainPrice>24/7 Service</MainPrice>
 
             <IncludedList>
-              <li>24/7 answering</li>
-              <li>SMS handling</li>
-              <li>Appointment booking</li>
-              <li>Your business personality</li>
+              <li>Instant response to calls and texts</li>
+              <li>Tour scheduling any time</li>
+              <li>Maintenance request handling</li>
+              <li>Professional, friendly service</li>
             </IncludedList>
 
             <ValueProposition>
-              <p>Less than hiring part-time help.</p>
-              <p>More reliable than hoping you hear the phone.</p>
+              <p>Real help when you need it.</p>
+              <p>No waiting until business hours.</p>
             </ValueProposition>
           </PricingCard>
         </Container>
@@ -594,9 +593,9 @@ export const NewHomepage: React.FC = () => {
       <TrustSection>
         <Container>
           <TrustPoints>
-            <TrustPoint>Works with your existing phone system.</TrustPoint>
-            <TrustPoint>Your customers never know it's AI.</TrustPoint>
-            <TrustPoint>Start free. Cancel anytime.</TrustPoint>
+            <TrustPoint>Available 24/7, 365 days a year.</TrustPoint>
+            <TrustPoint>Friendly, professional responses every time.</TrustPoint>
+            <TrustPoint>Real help from Work Buddy.</TrustPoint>
           </TrustPoints>
 
           <ContactPrompt>
