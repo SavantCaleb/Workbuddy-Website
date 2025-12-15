@@ -456,13 +456,13 @@ export const NewHomepage: React.FC = () => {
         <Container>
           <DemoContainer>
             <DemoText>
-              Hi, this is Work Buddy helping The Woodlands! I'd be happy to assist with information about available units. We have a lovely 2-bedroom at 3 Evergreen Drive for $2,700 per month. Would you like to schedule a viewing?
+              Hi, this is Work Buddy! I'd be happy to help with information about available units. We have a lovely 2-bedroom available for $2,700 per month. Would you like to schedule a viewing?
             </DemoText>
           </DemoContainer>
 
           <PricingIntro>
-            <StartingPrice>AI-Powered Customer Service</StartingPrice>
-            <PriceSubtext>For residential apartment communities across Connecticut.</PriceSubtext>
+            <StartingPrice>AI-Powered Customer Care</StartingPrice>
+            <PriceSubtext>24/7 support for renters and residents across Connecticut.</PriceSubtext>
           </PricingIntro>
         </Container>
       </ProductSection>
@@ -491,7 +491,7 @@ export const NewHomepage: React.FC = () => {
 
             <TestimonialCard>
               <CustomerQuote>
-                "Finally an apartment community that responds after hours. No more waiting until Monday to get answers."
+                "Finally someone who responds after hours. No more waiting until Monday to get answers."
               </CustomerQuote>
               <CustomerAttribution>
                 — Prospective Tenant, CT
@@ -504,42 +504,42 @@ export const NewHomepage: React.FC = () => {
       {/* Section: 24/7 Customer Service for Apartment Communities */}
       <PropertySection>
         <Container>
-          <SectionTitle>24/7 Customer Service for Apartment Communities</SectionTitle>
+          <SectionTitle>24/7 Customer Care</SectionTitle>
           <UseCaseGrid>
             <UseCaseItem>
               <UseCaseTitle>Tour Scheduling</UseCaseTitle>
               <UseCaseDescription>
-                Work Buddy handles prospective tenant inquiries, answers questions about available units, and schedules property viewings instantly.
+                Work Buddy answers your questions about available units and schedules property viewings instantly.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
               <UseCaseTitle>Maintenance Requests</UseCaseTitle>
               <UseCaseDescription>
-                Work Buddy logs and acknowledges repair requests 24/7, ensuring tenants always feel heard.
+                Work Buddy logs and acknowledges your repair requests 24/7, ensuring you always feel heard.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
               <UseCaseTitle>Payment Reminders</UseCaseTitle>
               <UseCaseDescription>
-                Work Buddy sends payment notifications and answers billing questions professionally for the property.
+                Work Buddy sends you payment reminders and answers your billing questions professionally.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
               <UseCaseTitle>Tenant Inquiries</UseCaseTitle>
               <UseCaseDescription>
-                Work Buddy communicates with tenants about lease terms, renewals, and move-in/move-out procedures.
+                Work Buddy helps you with lease terms, renewals, and move-in/move-out procedures.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
               <UseCaseTitle>Prospect Communication</UseCaseTitle>
               <UseCaseDescription>
-                Work Buddy responds to prospects instantly, providing unit availability, pricing, and amenity information.
+                Work Buddy responds to you instantly with unit availability, pricing, and amenity information.
               </UseCaseDescription>
             </UseCaseItem>
             <UseCaseItem>
               <UseCaseTitle>After-Hours Support</UseCaseTitle>
               <UseCaseDescription>
-                Work Buddy handles urgent calls outside business hours and escalates critical issues immediately.
+                Work Buddy handles your urgent calls outside business hours and escalates critical issues immediately.
               </UseCaseDescription>
             </UseCaseItem>
           </UseCaseGrid>
@@ -552,11 +552,11 @@ export const NewHomepage: React.FC = () => {
           <StepsGrid>
             <StepItem>
               <StepNumber>1</StepNumber>
-              <StepDescription>Call or text the property</StepDescription>
+              <StepDescription>Call or text Work Buddy</StepDescription>
             </StepItem>
             <StepItem>
               <StepNumber>2</StepNumber>
-              <StepDescription>Work Buddy answers instantly</StepDescription>
+              <StepDescription>Get an instant response</StepDescription>
             </StepItem>
             <StepItem>
               <StepNumber>3</StepNumber>

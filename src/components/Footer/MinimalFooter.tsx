@@ -117,8 +117,8 @@ export const MinimalFooter: React.FC = () => {
         
         <SMSCompliance>
           <p>
-            <strong>SMS Compliance:</strong> By providing your phone number, you consent to receive SMS messages from businesses using Work Buddy. 
-            Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help.
+            <strong>SMS Compliance:</strong> By providing your phone number, you consent to receive SMS messages from Work Buddy regarding your rental inquiry and account.
+            Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. Your mobile information will not be sold or shared with third parties for promotional purposes.
           </p>
         </SMSCompliance>
 

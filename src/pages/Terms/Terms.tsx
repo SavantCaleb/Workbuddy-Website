@@ -112,25 +112,24 @@ export const Terms: React.FC = () => {
         <Section>
           <SectionTitle>2. Description of Service</SectionTitle>
           <Paragraph>
-            Work Buddy Inc ("Work Buddy", "we", "us") provides AI-powered customer service
-            for residential apartment communities. We handle tenant and prospect communications
-            including tour scheduling, maintenance request acknowledgments, payment reminders,
-            and property inquiries via voice and SMS for the apartment communities we serve.
+            Work Buddy Inc ("Work Buddy", "we", "us") provides AI-powered customer care
+            for renters and residents. We handle your communications including tour
+            scheduling, maintenance requests, payment reminders, and rental inquiries
+            via voice and SMS.
           </Paragraph>
           <Paragraph>
-            When you contact an apartment community using Work Buddy's customer service,
-            you are communicating directly with Work Buddy. All SMS messages will identify
-            Work Buddy as the sender and include the specific property name for context.
+            When you contact Work Buddy, you are communicating directly with our customer
+            care team. All SMS messages will clearly identify Work Buddy as the sender.
           </Paragraph>
           <Paragraph>
             Our service includes:
           </Paragraph>
           <List>
-            <li>24/7 AI-powered call answering for apartment communities</li>
-            <li>SMS message handling for tenant and prospect communications</li>
-            <li>Tour scheduling and property inquiry responses</li>
-            <li>Maintenance request acknowledgments</li>
-            <li>Payment reminder communications</li>
+            <li>24/7 AI-powered call and text support</li>
+            <li>Tour scheduling and rental inquiry responses</li>
+            <li>Maintenance request handling</li>
+            <li>Payment reminders and billing support</li>
+            <li>Account and lease information assistance</li>
           </List>
         </Section>
 
@@ -155,23 +154,23 @@ export const Terms: React.FC = () => {
             By using our services, you acknowledge and agree that:
           </Paragraph>
           <List>
-            <li>Work Buddy obtains consent from recipients through verbal consent at property offices or inbound SMS initiation as described in our Privacy Policy</li>
-            <li>Recipients can opt out by replying STOP, and Work Buddy will honor these requests</li>
-            <li>Message and data rates may apply to recipients</li>
-            <li>All messages will identify Work Buddy as the sender and include the property name</li>
+            <li>Work Buddy obtains your consent through verbal consent during service interactions or when you initiate contact via SMS</li>
+            <li>You can opt out by replying STOP, and Work Buddy will honor your request</li>
+            <li>Message and data rates may apply</li>
+            <li>All messages will clearly identify Work Buddy as the sender</li>
+            <li>Your mobile information will not be sold or shared with third parties for promotional or marketing purposes</li>
           </List>
         </Section>
 
         <Section>
           <SectionTitle>5. Service Terms</SectionTitle>
           <Paragraph>
-            Work Buddy provides customer service to apartment communities. As a tenant, resident,
-            or prospective renter communicating with Work Buddy:
+            Work Buddy provides customer care directly to you. As a Work Buddy customer:
           </Paragraph>
           <List>
-            <li>There is no charge to you for using Work Buddy's customer service</li>
+            <li>There is no charge to you for using Work Buddy's customer care service</li>
             <li>Standard message and data rates from your carrier may apply</li>
-            <li>Service availability depends on the apartment community's enrollment</li>
+            <li>Service availability is 24/7, 365 days a year</li>
           </List>
         </Section>
 
@@ -214,9 +213,9 @@ export const Terms: React.FC = () => {
         <Section>
           <SectionTitle>10. Service Discontinuation</SectionTitle>
           <Paragraph>
-            Work Buddy reserves the right to discontinue service to any apartment community at any
-            time. If service is discontinued for a property you contact, you will need to reach the
-            property directly through other means.
+            Work Buddy reserves the right to modify or discontinue service at any time
+            with reasonable notice. If service changes affect you, we will notify you
+            through available contact methods.
           </Paragraph>
         </Section>
 

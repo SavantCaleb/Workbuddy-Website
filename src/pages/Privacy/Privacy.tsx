@@ -125,7 +125,7 @@ export const Privacy: React.FC = () => {
             <li>Process transactions and send related information</li>
             <li>Send technical notices, updates, security alerts, and support messages</li>
             <li>Respond to your comments, questions, and customer service requests</li>
-            <li>Train and improve our AI models to better serve apartment community residents</li>
+            <li>Train and improve our AI models to better serve our customers</li>
             <li>Comply with legal obligations and protect our rights</li>
           </List>
         </Section>
@@ -155,8 +155,9 @@ export const Privacy: React.FC = () => {
         <Section>
           <SectionTitle>5. SMS and Communication Data</SectionTitle>
           <Paragraph>
-            As an AI-powered phone and SMS customer service, we process communications for
-            apartment communities we serve. We handle this data with strict confidentiality
+            As an AI-powered phone and SMS customer care service, we process your
+            communications to provide support for your rental inquiries, maintenance
+            requests, and account questions. We handle this data with strict confidentiality
             and use it only to provide our services and improve our AI capabilities.
           </Paragraph>
         </Section>
@@ -164,13 +165,12 @@ export const Privacy: React.FC = () => {
         <Section>
           <SectionTitle>6. SMS Messaging Services</SectionTitle>
           <Paragraph>
-            Work Buddy Inc provides AI-powered customer service for residential apartment
-            communities via SMS. When you contact an apartment community that uses Work Buddy's
-            customer service:
+            Work Buddy Inc provides AI-powered customer care via SMS. When you contact
+            Work Buddy:
           </Paragraph>
           <List>
-            <li>You consent to receive text messages from Work Buddy regarding your rental inquiry, apartment, maintenance, and account</li>
-            <li>All messages will be sent from Work Buddy and identify the specific property</li>
+            <li>You consent to receive text messages from Work Buddy regarding your rental inquiry, account, maintenance requests, and appointments</li>
+            <li>All messages will be sent from Work Buddy and clearly identify the sender</li>
             <li>Message frequency varies based on your interactions</li>
             <li>Message and data rates may apply</li>
             <li>Reply STOP to any message to opt out</li>
