@@ -12,6 +12,8 @@ interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
   href?: string;
   as?: 'button' | 'a';
+  target?: string;
+  rel?: string;
 }
 
 const buttonSizes = {
@@ -34,18 +36,18 @@ const buttonSizes = {
 
 const buttonVariants = {
   primary: css`
-    background: ${theme.colors.primary.blue};
+    background: ${theme.colors.primary.azure};
     color: ${theme.colors.primary.white};
     border: none;
     font-weight: ${theme.typography.weights.semibold};
 
     &:hover:not(:disabled) {
-      background: #0056CC;
+      background: #5AA0B8;
       transform: translateY(-0.5px);
     }
 
     &:active:not(:disabled) {
-      background: #004499;
+      background: #4D8A9E;
       transform: translateY(0);
     }
   `,
@@ -68,18 +70,18 @@ const buttonVariants = {
   `,
   outline: css`
     background: transparent;
-    color: ${theme.colors.primary.blue};
-    border: 1px solid ${theme.colors.primary.blue};
+    color: ${theme.colors.primary.azure};
+    border: 1px solid ${theme.colors.primary.azure};
     font-weight: ${theme.typography.weights.medium};
 
     &:hover:not(:disabled) {
-      background: ${theme.colors.primary.blue};
+      background: ${theme.colors.primary.azure};
       color: ${theme.colors.primary.white};
       transform: translateY(-0.5px);
     }
 
     &:active:not(:disabled) {
-      background: #0056CC;
+      background: #5AA0B8;
       transform: translateY(0);
     }
   `,
@@ -101,10 +103,10 @@ const buttonVariants = {
 };
 
 const StyledButton = styled.button<ButtonProps>`
-  font-family: ${theme.typography.fontFamily};
+  font-family: ${theme.typography.fontFamily.body};
   border-radius: ${theme.borderRadius.l};
   cursor: pointer;
-  transition: all ${theme.transitions.fast};
+  transition: all ${theme.transitions.default};
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +118,7 @@ const StyledButton = styled.button<ButtonProps>`
   letter-spacing: -0.01em;
 
   &:focus-visible {
-    outline: 2px solid ${theme.colors.primary.blue};
+    outline: 2px solid ${theme.colors.primary.azure};
     outline-offset: 2px;
   }
 

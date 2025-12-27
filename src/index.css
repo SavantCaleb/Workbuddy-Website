@@ -16,10 +16,7 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
   line-height: 1.23529;
-  color: #1D1D1F;
-  background: #FFFFFF;
   min-width: 320px;
   font-size: 17px;
   letter-spacing: -0.022em;
@@ -29,6 +26,7 @@ body {
 /* Apple Typography Hierarchy */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-family: 'Forma DJR Deck', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 700;
   line-height: 1.08333;
   letter-spacing: -0.022em;

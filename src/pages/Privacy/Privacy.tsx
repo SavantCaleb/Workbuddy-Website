@@ -4,91 +4,91 @@ import { theme } from '../../styles/theme';
 
 const PageWrapper = styled.div`
   min-height: 100vh;
-  background: ${theme.colors.surface.primary};
-  padding-top: 80px;
+  background: ${theme.colors.bg.default};
+  padding-top: 100px;
 `;
 
 const Container = styled.div`
-  max-width: ${theme.maxWidth.reading};
+  max-width: ${theme.layout.maxWidth};
   margin: 0 auto;
-  padding: ${theme.spacing.xxxxl} ${theme.spacing.xl};
-
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    padding: ${theme.spacing.xxxl} ${theme.spacing.l};
-  }
+  padding: 0 ${theme.layout.pagePadding};
 `;
 
 const Title = styled.h1`
-  font-size: ${theme.typography.sizes.title1.desktop};
+  font-size: 48px;
   font-weight: ${theme.typography.weights.bold};
-  color: ${theme.colors.neutral.label};
-  margin-bottom: ${theme.spacing.xl};
-  letter-spacing: -0.022em;
-
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    font-size: ${theme.typography.sizes.title1.mobile};
+  color: ${theme.colors.text.primary};
+  margin-bottom: 24px;
+  letter-spacing: ${theme.typography.tracking.tight};
+  
+  @media (max-width: 768px) {
+    font-size: 36px;
   }
 `;
 
 const LastUpdated = styled.p`
-  color: ${theme.colors.neutral.secondary};
-  font-size: ${theme.typography.sizes.subhead.desktop};
-  margin-bottom: ${theme.spacing.xxxl};
+  color: ${theme.colors.text.secondary};
+  font-size: 15px;
+  margin-bottom: 64px;
 `;
 
 const Section = styled.section`
-  margin-bottom: ${theme.spacing.xxxl};
+  margin-bottom: 48px;
 `;
 
 const SectionTitle = styled.h2`
-  font-size: ${theme.typography.sizes.title3.desktop};
+  font-size: 24px;
   font-weight: ${theme.typography.weights.semibold};
-  color: ${theme.colors.neutral.label};
-  margin-bottom: ${theme.spacing.l};
-  letter-spacing: -0.015em;
+  color: ${theme.colors.text.primary};
+  margin-bottom: 16px;
+  letter-spacing: ${theme.typography.tracking.tight};
 `;
 
 const Paragraph = styled.p`
-  color: ${theme.colors.neutral.secondary};
-  line-height: ${theme.typography.lineHeight.relaxed};
-  margin-bottom: ${theme.spacing.l};
-  font-size: ${theme.typography.sizes.body.desktop};
+  color: ${theme.colors.text.secondary};
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 17px;
 `;
 
 const List = styled.ul`
-  color: ${theme.colors.neutral.secondary};
-  line-height: ${theme.typography.lineHeight.relaxed};
-  margin-bottom: ${theme.spacing.l};
-  padding-left: ${theme.spacing.l};
+  color: ${theme.colors.text.secondary};
+  line-height: 1.6;
+  margin-bottom: 24px;
+  padding-left: 24px;
+  font-size: 17px;
   
   li {
-    margin-bottom: ${theme.spacing.s};
+    margin-bottom: 8px;
   }
 `;
 
 const ContactInfo = styled.div`
-  background: ${theme.colors.surface.secondary};
-  border-radius: ${theme.borderRadius.xl};
-  padding: ${theme.spacing.xl};
-  margin-top: ${theme.spacing.xxxl};
+  background: ${theme.colors.bg.subtle};
+  border-radius: 24px;
+  padding: 32px;
+  margin-top: 64px;
+  margin-bottom: 64px;
   
   h3 {
-    font-size: ${theme.typography.sizes.headline.desktop};
+    font-size: 20px;
     font-weight: ${theme.typography.weights.semibold};
-    color: ${theme.colors.neutral.label};
-    margin-bottom: ${theme.spacing.m};
+    color: ${theme.colors.text.primary};
+    margin-bottom: 16px;
   }
   
   p {
-    color: ${theme.colors.neutral.secondary};
-    margin-bottom: ${theme.spacing.s};
+    color: ${theme.colors.text.secondary};
+    margin-bottom: 8px;
+    font-size: 15px;
   }
   
   a {
-    color: ${theme.colors.primary.blue};
+    color: ${theme.colors.brand.azure};
+    font-weight: 500;
     
     &:hover {
-      opacity: 0.8;
+      text-decoration: underline;
     }
   }
 `;

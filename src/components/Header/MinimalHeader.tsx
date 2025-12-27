@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { theme } from '../../styles/theme';
 import { Button } from '../Button/Button';
-import { WaitingListModal } from '../WaitingListModal/WaitingListModal';
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -45,7 +44,7 @@ const Logo = styled(Link)`
   }
 
   .buddy {
-    color: ${theme.colors.primary.blue};
+    color: ${theme.colors.primary.azure};
   }
 
   &:hover {
@@ -60,11 +59,6 @@ const CTAWrapper = styled.div`
 `;
 
 export const MinimalHeader: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
   return (
     <HeaderWrapper>
       <HeaderContainer>
@@ -74,11 +68,16 @@ export const MinimalHeader: React.FC = () => {
         </Logo>
 
         <CTAWrapper>
-          <Button size="medium" onClick={openModal}>Join List</Button>
+          <Button 
+            size="medium" 
+            data-cal-link="caleb-benedict-4rrqhq/demo"
+            data-cal-namespace="demo"
+            data-cal-config='{"layout":"month_view"}'
+          >
+            Book a Demo
+          </Button>
         </CTAWrapper>
       </HeaderContainer>
-      
-      <WaitingListModal isOpen={isModalOpen} onClose={closeModal} />
     </HeaderWrapper>
   );
 };

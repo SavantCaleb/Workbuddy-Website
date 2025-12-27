@@ -33,7 +33,7 @@ const Logo = styled(Link)`
   }
 
   .buddy {
-    color: ${theme.colors.primary.blue};
+    color: ${theme.colors.primary.azure};
   }
 
   &:hover {
@@ -47,7 +47,7 @@ const ContactLine = styled.p`
   margin: ${theme.spacing.xs} 0;
   
   a {
-    color: ${theme.colors.primary.blue};
+    color: ${theme.colors.primary.azure};
     text-decoration: none;
     
     &:hover {
@@ -83,7 +83,7 @@ const LegalLinks = styled.div`
     color: ${theme.colors.neutral.secondary};
     text-decoration: none;
     font-size: ${theme.typography.sizes.footnote.desktop};
-    transition: all ${theme.transitions.fast};
+    transition: all ${theme.transitions.default};
 
     &:hover {
       color: ${theme.colors.neutral.label};

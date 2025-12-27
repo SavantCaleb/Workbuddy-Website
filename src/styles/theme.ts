@@ -1,149 +1,136 @@
 export const theme = {
   colors: {
+    brand: {
+      azure: '#67B7D1',      // Azure Blue - PANTONE 7702 C
+      slate: '#324A5F',      // Deep Slate Blue - PANTONE 5405 C
+      gold: '#DCAB58',       // Warm Honey Gold - PANTONE 7408 C
+      black: '#111111',      // Black (17/17/17)
+      white: '#FFFFFF',      // White (255/255/255)
+    },
     primary: {
-      blue: '#007AFF',      // Apple Blue
-      indigo: '#5856D6',    // Apple Indigo  
-      black: '#1D1D1F',     // Apple Black
+      azure: '#67B7D1',
       white: '#FFFFFF',
-    },
-    accent: {
-      orange: '#FF9500',    // Apple Orange
-      green: '#30D158',     // Apple Green
-      red: '#FF3B30',       // Apple Red
-      purple: '#AF52DE',    // Apple Purple
-    },
-    neutral: {
-      white: '#FFFFFF',
-      gray100: '#F2F2F7',   // Apple Light Gray
-      gray200: '#E5E5EA',   // Apple Medium Light Gray
-      gray300: '#D1D1D6',   // Apple Medium Gray
-      gray400: '#C7C7CC',   // Apple Medium Dark Gray
-      gray500: '#AEAEB2',   // Apple Dark Gray
-      gray600: '#8E8E93',   // Apple Very Dark Gray
-      black: '#000000',
-      label: '#1D1D1F',     // Primary text
-      secondary: '#3C3C43',  // Secondary text
-      tertiary: '#48484A',   // Tertiary text
     },
     surface: {
-      primary: '#FFFFFF',
-      secondary: '#F2F2F7',
-      tertiary: '#FFFFFF',
-      elevated: '#FFFFFF',
+      primary: '#F8F9FA',
+      secondary: '#FFFFFF',
+    },
+    neutral: {
+      label: '#324A5F',
+      secondary: '#677888',
+      tertiary: '#8B9AAB',
+      gray200: '#E2E8F0',
+      gray300: '#CBD5E0',
+      gray400: '#A0AEC0',
+    },
+    bg: {
+      default: '#FFFFFF',
+      subtle: '#F8F9FA',     // Softer neutral background
+      dark: '#324A5F',       // Using brand slate for dark sections
+      card: '#FFFFFF',
+    },
+    text: {
+      primary: '#324A5F',    // Using brand slate for primary text
+      secondary: '#677888',  // Muted version of slate
+      tertiary: '#8B9AAB',   // Even lighter slate
+      inverse: '#FFFFFF',
+      inverseSecondary: 'rgba(255, 255, 255, 0.8)',
+    },
+    gradients: {
+      primary: 'linear-gradient(135deg, #67B7D1 0%, #324A5F 100%)',
+      secondary: 'linear-gradient(135deg, #DCAB58 0%, #67B7D1 100%)',
+      glow: 'radial-gradient(circle at 50% 50%, rgba(103, 183, 209, 0.15) 0%, rgba(255, 255, 255, 0) 70%)',
+      goldGlow: 'radial-gradient(circle at 50% 50%, rgba(220, 171, 88, 0.15) 0%, rgba(255, 255, 255, 0) 70%)',
+      darkGlow: 'radial-gradient(circle at 50% 50%, rgba(103, 183, 209, 0.1) 0%, rgba(50, 74, 95, 0) 70%)',
     }
   },
   typography: {
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif",
-    sizes: {
-      largeTitle: {
-        desktop: '68px',     // Apple Large Title
-        mobile: '48px',
-      },
-      title1: {
-        desktop: '48px',     // Apple Title 1
-        mobile: '32px',
-      },
-      title2: {
-        desktop: '40px',     // Apple Title 2
-        mobile: '28px',
-      },
-      title3: {
-        desktop: '32px',     // Apple Title 3
-        mobile: '24px',
-      },
-      headline: {
-        desktop: '24px',     // Apple Headline
-        mobile: '21px',
-      },
-      body: {
-        desktop: '17px',     // Apple Body
-        mobile: '17px',
-      },
-      callout: {
-        desktop: '19px',     // Apple Callout
-        mobile: '19px',
-      },
-      subhead: {
-        desktop: '15px',     // Apple Subhead
-        mobile: '15px',
-      },
-      footnote: {
-        desktop: '13px',     // Apple Footnote
-        mobile: '13px',
-      },
-      caption: {
-        desktop: '12px',     // Apple Caption
-        mobile: '12px',
-      },
+    fontFamily: {
+      heading: "'Forma DJR Deck', -apple-system, BlinkMacSystemFont, sans-serif",
+      body: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
     },
     weights: {
-      ultraLight: 100,
-      thin: 200,
-      light: 300,
       regular: 400,
       medium: 500,
       semibold: 600,
       bold: 700,
       heavy: 800,
-      black: 900,
+    },
+    sizes: {
+      xs: '12px',
+      sm: '14px',
+      base: '16px',
+      lg: '18px',
+      xl: '20px',
+      '2xl': '24px',
+      caption: { desktop: '12px', mobile: '10px' },
+      footnote: { desktop: '13px', mobile: '12px' },
+      subhead: { desktop: '15px', mobile: '14px' },
+      body: { desktop: '17px', mobile: '16px' },
+      callout: { desktop: '16px', mobile: '15px' },
+      headline: { desktop: '22px', mobile: '20px' },
     },
     lineHeight: {
-      tight: 1.08333,      // Apple tight
-      normal: 1.23529,     // Apple normal 
-      relaxed: 1.38095,    // Apple relaxed
+      tight: 1.2,
+      normal: 1.5,
+      relaxed: 1.6,
     },
+    tracking: {
+      tight: '-0.02em',
+      tighter: '-0.04em',
+      normal: '0',
+      wide: '0.02em',
+    }
   },
   spacing: {
     xs: '4px',
+    sm: '8px',
     s: '8px',
+    md: '16px',
     m: '16px',
+    lg: '24px',
     l: '24px',
     xl: '32px',
+    '2xl': '48px',
     xxl: '48px',
     xxxl: '64px',
-    xxxxl: '80px',
-    xxxxxl: '120px',
   },
   breakpoints: {
-    mobile: '767px',
-    tablet: '1023px',
-    desktop: '1024px',
-    large: '1440px',
+    sm: '640px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1280px',
+    mobile: '768px',
+  },
+  layout: {
+    maxWidth: '1280px',     // Wider for comprehensive tech feel
+    pagePadding: '24px',
+  },
+  shadows: {
+    soft: '0 4px 20px rgba(0, 0, 0, 0.05)',
+    medium: '0 12px 40px rgba(50, 74, 95, 0.08)',
+    glow: '0 0 40px rgba(103, 183, 209, 0.3)',
+  },
+  transitions: {
+    smooth: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+    fast: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+    default: '0.2s ease',
+    normal: '0.2s ease',
   },
   borderRadius: {
     xs: '4px',
-    s: '6px',
-    m: '8px',
+    sm: '6px',
+    md: '8px',
     l: '12px',
     xl: '16px',
-    xxl: '20px',
-    xxxl: '24px',
-    pill: '999px',
-  },
-  shadows: {
-    small: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
-    medium: '0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12)',
-    large: '0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10)',
-    xl: '0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05)',
   },
   blur: {
-    none: '0',
     sm: '4px',
     md: '8px',
-    lg: '16px',
-    xl: '24px',
+    lg: '12px',
+    xl: '16px',
   },
   maxWidth: {
-    content: '1120px',     // Apple-style max width
-    reading: '672px',      // Optimal reading width
-    narrow: '512px',       // Narrow content
-  },
-  transitions: {
-    fast: '0.15s cubic-bezier(0.4, 0.0, 0.2, 1)',      // Apple fast
-    normal: '0.3s cubic-bezier(0.4, 0.0, 0.2, 1)',     // Apple normal
-    slow: '0.5s cubic-bezier(0.4, 0.0, 0.2, 1)',       // Apple slow
-    spring: '0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)', // Spring
-  },
+    content: '1280px',
+  }
 } as const;
-
-export type Theme = typeof theme;
