@@ -635,7 +635,7 @@ export const ArtOfAISection: React.FC = () => {
                       <VoicePlayer>
                         <Avatar src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" />
                         <div style={{ flex: 1 }}>
-                          <div style={{ fontSize: 13, fontWeight: 600 }}>Sarah Professional, warm</div>
+                          <div style={{ fontSize: 13, fontWeight: 600 }}>Bella Professional, warm</div>
                           <Waveform>
                              {[...Array(12)].map((_, i) => (
                                <motion.div 
