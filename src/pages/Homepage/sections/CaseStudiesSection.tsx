@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { theme } from '../../../styles/theme';
 import { FiArrowRight, FiPlay } from 'react-icons/fi';
+import woodlandsImage from '../../../assets/woodlands.jpg';
 
 const Section = styled.section`
   padding: 80px 0;
@@ -248,7 +249,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ id }) =>
           transition={{ duration: 0.6 }}
         >
           <VideoSide>
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Property Manager" />
+            <img src={woodlandsImage} alt="The Woodlands Aerial View" />
             <PlayButton>
               <FiPlay size={20} fill="black" stroke="none" />
             </PlayButton>
