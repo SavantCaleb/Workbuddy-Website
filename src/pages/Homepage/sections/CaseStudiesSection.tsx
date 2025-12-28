@@ -276,7 +276,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ id }) =>
             </Quote>
 
             <Author>
-              <strong>Sarah Jenkins</strong>
+              <strong>Linda Montanez</strong>
               <span>Property Manager, The Woodlands</span>
             </Author>
           </ContentSide>
