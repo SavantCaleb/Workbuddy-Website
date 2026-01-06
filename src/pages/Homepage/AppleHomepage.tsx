@@ -5,7 +5,7 @@ import { theme } from '../../styles/theme';
 import { CaseStudiesSection } from './sections/CaseStudiesSection';
 import { ArtOfAISection } from './sections/ArtOfAISection';
 import logo from '../../assets/logo.png';
-import { FiPlay, FiPause, FiCheckCircle, FiClock, FiActivity, FiX, FiMenu, FiPhoneIncoming, FiCalendar, FiUser, FiDatabase, FiSmartphone, FiCheck, FiMessageSquare, FiSend } from 'react-icons/fi';
+import { FiPlay, FiPause, FiCheckCircle, FiClock, FiActivity, FiX, FiMenu, FiPhoneIncoming, FiCalendar, FiUser, FiDatabase, FiSmartphone, FiCheck, FiSend } from 'react-icons/fi';
 
 // -----------------------------------------------------------------------------
 // Shared Components
