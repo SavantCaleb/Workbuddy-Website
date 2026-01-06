@@ -235,9 +235,9 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ id }) =>
                 background: theme.colors.text.tertiary,
                 borderRadius: '50%'
               }} />
-              CASE STUDIES
+              RESULTS
             </div>
-            <Title>How leading property managers <br />run on WorkBuddy</Title>
+            <Title>How businesses fill their calendars <br />with WorkBuddy</Title>
           </motion.div>
         </Header>
 
@@ -272,7 +272,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ id }) =>
             </StatsGrid>
 
             <Quote>
-              “Everything goes through WorkBuddy, and ultimately we found that to be the best resident experience.”
+              "WorkBuddy handles our entire follow-up process. Our team just shows up to appointments that are already booked."
             </Quote>
 
             <Author>
@@ -285,10 +285,10 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ id }) =>
         {/* Combined Company + Stat Cards */}
         <BentoGrid>
           {[
-            { name: "Summit Housing", stat: "9k", label: "appointments booked" },
-            { name: "Metro Living", stat: "$30k", label: "additional revenue" },
-            { name: "Coastal Mgmt", stat: "43", label: "Hrs saved per week" },
-            { name: "Urban Spaces", stat: "100%", label: "staff satisfaction" }
+            { name: "Healthcare Plus", stat: "9k", label: "appointments booked" },
+            { name: "Legal Partners", stat: "$30k", label: "additional revenue" },
+            { name: "Consulting Pro", stat: "43", label: "hrs saved per week" },
+            { name: "Service Group", stat: "100%", label: "staff satisfaction" }
           ].map((company, i) => (
             <StatItemCard
               key={i}

@@ -182,8 +182,8 @@ const ActivityIcon = styled.div<{ $color: string }>`
 const LiveActivityFeed = () => {
   const [activities] = useState([
     { id: 1, type: 'call', text: 'Missed Call (After Hours)', sub: 'From: (617) 555-0123', icon: FiPhoneIncoming, color: '#FF5A5F' },
-    { id: 2, type: 'ai', text: 'WorkBuddy Answering...', sub: 'Engaging prospect', icon: FiActivity, color: theme.colors.brand.azure },
-    { id: 3, type: 'success', text: 'Tour Scheduled', sub: 'Synced to Appfolio', icon: FiCalendar, color: '#34C759' },
+    { id: 2, type: 'ai', text: 'Outbound call in progress...', sub: 'Booking appointment', icon: FiActivity, color: theme.colors.brand.azure },
+    { id: 3, type: 'success', text: 'Appointment Booked', sub: 'Added to calendar', icon: FiCalendar, color: '#34C759' },
   ]);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -510,20 +510,20 @@ const InboundAutomation = () => {
 
   const features = [
     { 
-      title: "Tour Scheduling", 
-      desc: "Never miss a call or new prospect opportunity again, period. Let WorkBuddy schedule appointments directly into your calendar and PMS."
+      title: "Outbound Calls", 
+      desc: "AI that sounds human. Persistent follow-up until they book or say no."
     },
     { 
-      title: "Full Store Receptionist", 
-      desc: "Let WorkBuddy be the front line of your property. Schedule appointments, answer regular inquiries, and transfer to the right team or person on autopilot."
+      title: "SMS Sequences", 
+      desc: "Smart texts that feel personal, not spammy."
     },
     { 
-      title: "Automated Reminders", 
-      desc: "Reduce no-shows and keep vacancy low with automated texts and calls that remind prospects of upcoming tours, all without lifting a finger."
+      title: "Email Outreach", 
+      desc: "Personalized emails that actually get replies."
     },
     { 
-      title: "Dropped Call SMS", 
-      desc: "When someone hangs up or loses connection, WorkBuddy instantly follows up with a text, so every missed call turns into a second chance to book or help."
+      title: "Inbound Handling", 
+      desc: "Never miss a callback. We answer 24/7."
     }
   ];
 
@@ -563,15 +563,15 @@ const InboundAutomation = () => {
                  background: theme.colors.text.tertiary,
                  borderRadius: '50%'
                }} />
-               PROTECT YOUR REVENUE
+               FILL YOUR CALENDAR
              </div>
              
              <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 500, color: theme.colors.brand.slate, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: 20, fontFamily: theme.typography.fontFamily.heading }}>
-               Inbound automation
+               Outbound automation
              </h2>
              
              <p style={{ fontSize: 16, color: theme.colors.text.secondary, marginBottom: 32, lineHeight: 1.6, maxWidth: 480 }}>
-               Our AI handles every inbound request with real-time responses, booking appointments, qualifying leads, and routing complex inquiries to your team.
+               Our AI contacts every lead within minutes—by phone, text, and email—and books qualified appointments directly on your calendar.
              </p>
 
              <Button 
@@ -693,7 +693,7 @@ const InboundAutomation = () => {
                            transition={{ delay: 0.2 }}
                            style={{ alignSelf: 'flex-end', background: '#007AFF', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
                          >
-                           Can I book a tour for Tuesday?
+                           Hi, this is Sarah from [Company]. Do you have 15 minutes Thursday to discuss your project?
                          </motion.div>
                          <motion.div 
                            initial={{ opacity: 0, y: 10, scale: 0.9 }}
@@ -992,7 +992,7 @@ const RelationshipManagement = () => {
               background: theme.colors.text.tertiary,
               borderRadius: '50%'
             }} />
-            INBOX
+            PIPELINE
           </div>
           <h2 style={{ 
             fontSize: 'clamp(32px, 4vw, 48px)', 
@@ -1003,7 +1003,7 @@ const RelationshipManagement = () => {
             maxWidth: 800,
             fontFamily: theme.typography.fontFamily.heading
           }}>
-            A better way to manage relationships
+            A better way to manage leads
           </h2>
         </div>
 
@@ -1011,9 +1011,9 @@ const RelationshipManagement = () => {
           {/* Column 1 */}
           <div>
             <div style={{ fontSize: 14, fontWeight: 600, color: theme.colors.text.tertiary, marginBottom: 16 }}>1</div>
-            <h3 style={{ fontSize: 20, fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 12, lineHeight: 1.1, letterSpacing: '-0.03em', fontFamily: theme.typography.fontFamily.heading }}>Unify resident interaction</h3>
+            <h3 style={{ fontSize: 20, fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 12, lineHeight: 1.1, letterSpacing: '-0.03em', fontFamily: theme.typography.fontFamily.heading }}>See every touchpoint</h3>
             <p style={{ fontSize: 16, color: theme.colors.text.secondary, lineHeight: 1.6, marginBottom: 32 }}>
-              See every call, text, and message in one place. WorkBuddy brings all prospect and resident conversations together so your team can respond faster and stay aligned.
+              Every call, text, and email in one view. Know exactly where each lead stands without digging through your CRM.
             </p>
             
             {/* Visual 1: Notification List */}
@@ -1029,11 +1029,11 @@ const RelationshipManagement = () => {
               boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
             }}>
               {[
-                { icon: FiPhoneIncoming, text: "[Follow-up] Prospect waiting on...", color: "#FF5A5F" },
-                { icon: FiActivity, text: "[Voicemail] Update from maintenance", color: "#67B7D1" },
-                { icon: FiSmartphone, text: "Inbound SMS: Is my application...", color: "#DCAB58" },
-                { icon: FiUser, text: "Missed Call: Unit 4B (Urgent)", opacity: 0.5 },
-                { icon: FiCalendar, text: "Tour Confirmation: 2PM Today", opacity: 0.3 }
+                { icon: FiPhoneIncoming, text: "[Follow-up] Lead waiting on...", color: "#FF5A5F" },
+                { icon: FiActivity, text: "[Call] Connected with prospect", color: "#67B7D1" },
+                { icon: FiSmartphone, text: "Inbound SMS: When can we meet?", color: "#DCAB58" },
+                { icon: FiUser, text: "Missed Call: New inquiry", opacity: 0.5 },
+                { icon: FiCalendar, text: "Appointment: 2PM Today", opacity: 0.3 }
               ].map((item, i) => (
                 <div key={i} style={{ 
                   background: 'rgba(255, 255, 255, 0.95)', 
@@ -1056,9 +1056,9 @@ const RelationshipManagement = () => {
           {/* Column 2 */}
           <div>
             <div style={{ fontSize: 14, fontWeight: 600, color: theme.colors.text.tertiary, marginBottom: 16 }}>2</div>
-            <h3 style={{ fontSize: 20, fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 12, lineHeight: 1.1, letterSpacing: '-0.03em', fontFamily: theme.typography.fontFamily.heading }}>Act fast and stay organized</h3>
+            <h3 style={{ fontSize: 20, fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 12, lineHeight: 1.1, letterSpacing: '-0.03em', fontFamily: theme.typography.fontFamily.heading }}>Never drop a lead</h3>
             <p style={{ fontSize: 16, color: theme.colors.text.secondary, lineHeight: 1.6, marginBottom: 32 }}>
-              WorkBuddy automatically assigns follow-ups, flags urgent maintenance requests, and keeps your staff on top of every inquiry without juggling multiple systems.
+              WorkBuddy automatically follows up until they book, buy, or tell us to stop. No lead falls through the cracks.
             </p>
 
             {/* Visual 2: Assignee Dropdown */}
@@ -1089,10 +1089,10 @@ const RelationshipManagement = () => {
                 </div>
                 <div style={{ background: 'white', borderRadius: 12, overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>
                   {[
-                    { name: "Sarah", role: "Leasing Agent", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=50&q=80" },
-                    { name: "Mike", role: "Maintenance Mgr", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=50&q=80" },
-                    { name: "Jessica", role: "Property Manager", img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=50&q=80" },
-                    { name: "David", role: "Leasing Agent", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=50&q=80" }
+                    { name: "Sarah", role: "Sales Rep", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=50&q=80" },
+                    { name: "Mike", role: "Account Mgr", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=50&q=80" },
+                    { name: "Jessica", role: "Team Lead", img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=50&q=80" },
+                    { name: "David", role: "Sales Rep", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=50&q=80" }
                   ].map((p, i) => (
                     <div key={i} style={{ padding: '12px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: i < 3 ? '1px solid #f0f0f0' : 'none' }}>
                       <img src={p.img} alt={p.name} style={{ width: 32, height: 32, borderRadius: '50%', objectFit: 'cover' }} />
@@ -1115,7 +1115,7 @@ const RelationshipManagement = () => {
             <div style={{ fontSize: 14, fontWeight: 600, color: theme.colors.text.tertiary, marginBottom: 16 }}>3</div>
             <h3 style={{ fontSize: 20, fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 12, lineHeight: 1.1, letterSpacing: '-0.03em', fontFamily: theme.typography.fontFamily.heading }}>Complete visibility</h3>
             <p style={{ fontSize: 16, color: theme.colors.text.secondary, lineHeight: 1.6, marginBottom: 32 }}>
-              Track every lease interaction from start to finish. With full transcripts, sentiment, and outcomes in one dashboard, your team always knows what's been handled.
+              Full transcripts, recordings, and outcomes in one dashboard. Your team always knows what happened.
             </p>
 
             {/* Visual 3: Player */}
@@ -1135,7 +1135,7 @@ const RelationshipManagement = () => {
                     <FiPhoneIncoming color={theme.colors.brand.slate} />
                   </div>
                   <div>
-                    <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.primary }}>Call with Jordan</div>
+                    <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.primary }}>Call with Lead</div>
                     <div style={{ fontSize: 12, color: theme.colors.text.tertiary }}>1 (555) 345-6789</div>
                   </div>
                 </div>
@@ -1218,8 +1218,8 @@ export const LandingPage: React.FC = () => {
                 marginBottom: 18,
                 fontFamily: theme.typography.fontFamily.heading
               }}>
-                Your AI Operating System for <br />
-                <span style={{ color: theme.colors.brand.azure }}>Property Management</span>
+                <span style={{ color: theme.colors.brand.azure }}>AI That Books Appointments</span> <br />
+                For You
               </h1>
 
               <p style={{ 
@@ -1229,7 +1229,7 @@ export const LandingPage: React.FC = () => {
                 lineHeight: 1.6,
                 maxWidth: 540 
               }}>
-                What if you never missed another qualified prospect again? While your competitors lose leads to voicemail, WorkBuddy answers every call, qualifies every prospect, and books tours instantly—even at 2 AM.
+                You pay for leads. We make sure they show up. WorkBuddy follows up by phone, text, and email—until they book or tell us to stop.
               </p>
 
               <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
@@ -1319,8 +1319,8 @@ export const LandingPage: React.FC = () => {
                 style={{ position: 'absolute', right: -40, top: 100, zIndex: 2 }}
               >
                 <div style={{ background: 'white', padding: 16, borderRadius: 16, boxShadow: '0 20px 40px rgba(0,0,0,0.1)', border: `2px solid ${theme.colors.brand.gold}20` }}>
-                  <div style={{ fontSize: 12, color: theme.colors.text.secondary, marginBottom: 4 }}>Revenue Saved</div>
-                  <div style={{ fontSize: 20, fontWeight: 700, color: theme.colors.brand.gold }}>$4,200</div>
+                  <div style={{ fontSize: 12, color: theme.colors.text.secondary, marginBottom: 4 }}>Appointments Today</div>
+                  <div style={{ fontSize: 20, fontWeight: 700, color: theme.colors.brand.gold }}>14</div>
                 </div>
               </motion.div>
 
@@ -1350,19 +1350,17 @@ export const LandingPage: React.FC = () => {
             >
               <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 500, color: theme.colors.brand.slate, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: 20, fontFamily: theme.typography.fontFamily.heading }}>
                 The hidden cost of <br />
-                <span style={{ color: theme.colors.text.tertiary }}>"I'll call them back tomorrow."</span>
+                <span style={{ color: theme.colors.text.tertiary }}>"I'll follow up tomorrow."</span>
               </h2>
               <p style={{ fontSize: 18, color: theme.colors.text.secondary, marginBottom: 32, lineHeight: 1.6 }}>
-                In today's on-demand economy, renters don't wait. If you don't answer, they call the next listing. 
-                <br /><br />
-                Most property managers are overwhelmed, handling maintenance, tours, and resident issues—leaving thousands of dollars in leasing revenue to vanish into voicemail.
+                You already paid for the leads. But your team is too busy, too slow, or too small to follow up with everyone. By the time someone calls back, they've booked with your competitor.
               </p>
               
                   <div style={{ display: 'grid', gap: 24 }}>
                     {[
-                      { icon: FiClock, title: "60% of inquiries", desc: "happen after business hours or on weekends." },
+                      { icon: FiClock, title: "Only 27% of leads", desc: "ever get a follow-up call." },
                       { icon: FiActivity, title: "5 minute rule", desc: "Leads are 9x more likely to convert if answered in 5 mins." },
-                      { icon: FiX, title: "Zero patience", desc: "72% of callers hang up if they reach voicemail." }
+                      { icon: FiX, title: "First to respond", desc: "wins 78% of deals." }
                     ].map((item, i) => (
                       <div key={i} style={{ display: 'flex', gap: 16 }}>
                         <div style={{ 
@@ -1400,19 +1398,19 @@ export const LandingPage: React.FC = () => {
                 boxShadow: theme.shadows.medium,
                 border: `1px solid ${theme.colors.brand.slate}10`
               }}>
-                <h3 style={{ fontSize: 18, fontWeight: 500, marginBottom: 16, color: theme.colors.brand.slate, lineHeight: 1.1, letterSpacing: '-0.03em', fontFamily: theme.typography.fontFamily.heading }}>Monthly Missed Opportunity</h3>
+                <h3 style={{ fontSize: 18, fontWeight: 500, marginBottom: 16, color: theme.colors.brand.slate, lineHeight: 1.1, letterSpacing: '-0.03em', fontFamily: theme.typography.fontFamily.heading }}>Leads That Die in Your CRM</h3>
                 
                 <div style={{ display: 'flex', alignItems: 'flex-end', gap: 12, height: 200, paddingBottom: 24, borderBottom: `1px solid ${theme.colors.brand.slate}10` }}>
                   <div style={{ flex: 1, background: theme.colors.neutral.gray300, height: '40%', borderRadius: '8px 8px 0 0', position: 'relative' }}>
-                    <div style={{ position: 'absolute', top: -30, left: 0, right: 0, textAlign: 'center', fontSize: 13, color: theme.colors.text.tertiary }}>Office Hours</div>
+                    <div style={{ position: 'absolute', top: -30, left: 0, right: 0, textAlign: 'center', fontSize: 13, color: theme.colors.text.tertiary }}>Contacted</div>
                   </div>
                   <div style={{ flex: 1, background: `linear-gradient(to top, ${theme.colors.brand.gold}, ${theme.colors.brand.gold}80)`, height: '85%', borderRadius: '8px 8px 0 0', position: 'relative' }}>
-                     <div style={{ position: 'absolute', top: -30, left: 0, right: 0, textAlign: 'center', fontWeight: 700, color: theme.colors.brand.gold }}>After Hours</div>
+                     <div style={{ position: 'absolute', top: -30, left: 0, right: 0, textAlign: 'center', fontWeight: 700, color: theme.colors.brand.gold }}>Never Called</div>
                   </div>
                 </div>
                 
                 <div style={{ marginTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ color: theme.colors.text.secondary }}>Estimated Revenue Loss</span>
+                  <span style={{ color: theme.colors.text.secondary }}>Revenue Lost to Slow Follow-Up</span>
                   <span style={{ fontSize: 24, fontWeight: 700, color: theme.colors.brand.slate }}>$12,400<span style={{ fontSize: 14, color: theme.colors.text.tertiary }}>/mo</span></span>
                 </div>
               </div>
@@ -1449,19 +1447,19 @@ export const LandingPage: React.FC = () => {
               { 
                 step: "01", 
                 title: "Connect", 
-                desc: "We sync directly with your Appfolio account to pull real-time unit availability, pricing, and tour slots.",
+                desc: "We sync with your CRM, calendar, and lead sources to pull contacts and availability.",
                 icon: FiDatabase 
               },
               { 
                 step: "02", 
                 title: "Train", 
-                desc: "Upload your property manuals, FAQs, and scripts. Our AI absorbs your specific policies instantly.",
+                desc: "Upload your scripts, FAQs, and qualification criteria. Our AI learns your business instantly.",
                 icon: FiActivity 
               },
               { 
                 step: "03", 
                 title: "Deploy", 
-                desc: "Simply set up call forwarding to your dedicated WorkBuddy number. You are now live 24/7.",
+                desc: "Turn it on. WorkBuddy starts contacting your leads within minutes.",
                 icon: FiPhoneIncoming 
               }
             ].map((item, i) => (
@@ -1523,9 +1521,9 @@ export const LandingPage: React.FC = () => {
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
              {[
-               { q: "Will my customers know it's a robot?", a: "Most don't. The voice quality and latency are so good that callers often thank the 'person' they spoke with. We aim for human-level empathy." },
-               { q: "How hard is it to set up?", a: "It takes about 10 minutes. We connect to your existing phone line (via forwarding) and sync with your Appfolio account. No hardware needed." },
-               { q: "What if the AI doesn't know the answer?", a: "You can train it on your specific policies. If it gets stumped, it can gracefully take a message or escalate urgent issues to your on-call staff." }
+               { q: "Will leads know it's AI?", a: "Most don't. The voice quality and latency are so good that prospects often thank the 'person' they spoke with. We aim for human-level empathy." },
+               { q: "How hard is it to set up?", a: "About 10 minutes. We connect to your CRM and calendar. No hardware, no code." },
+               { q: "What if someone wants to talk to a human?", a: "You can train it on your specific policies. If it gets stumped, it can gracefully take a message or escalate urgent issues to your on-call staff." }
              ].map((item, i) => (
                <details key={i} style={{ 
                  background: theme.colors.brand.white, 
@@ -1551,10 +1549,10 @@ export const LandingPage: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 500, color: theme.colors.brand.slate, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: 20, fontFamily: theme.typography.fontFamily.heading }}>
-              Stop leaving money <br /> on the table.
+              Stop letting leads die <br /> in your CRM.
             </h2>
             <p style={{ fontSize: 20, color: theme.colors.text.secondary, marginBottom: 32, maxWidth: 600, margin: '0 auto 48px' }}>
-              Join the property managers who have automated their leasing lines and reclaimed their freedom.
+              Join the businesses that automated follow-up and filled their calendars.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
               <Button 
@@ -1580,7 +1578,7 @@ export const LandingPage: React.FC = () => {
             <div>
               <img src={logo} alt="WorkBuddy" style={{ height: 40, marginBottom: 16 }} />
               <p style={{ maxWidth: 300, lineHeight: 1.6 }}>
-                The AI receptionist built for modern property management.
+                AI that books appointments for you.
               </p>
             </div>
             <div style={{ display: 'flex', gap: 40, justifyContent: 'flex-end' }}>

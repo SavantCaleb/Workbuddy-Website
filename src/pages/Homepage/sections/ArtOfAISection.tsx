@@ -599,9 +599,9 @@ export const ArtOfAISection: React.FC = () => {
           {/* LEFT COLUMN - Sticky Info */}
           <LeftColumn>
             <Tag>How it works</Tag>
-            <Title>Property Intelligence</Title>
+            <Title>Your AI, trained on your business</Title>
             <Description>
-              How WorkBuddy approaches building and deploying AI agents personalized to each property to protect revenue and resident experience.
+              WorkBuddy builds AI agents customized to your industry, your scripts, and your qualification criteria. Leads convert when AI feels human, not robotic.
             </Description>
 
             <InsightBox>
@@ -664,7 +664,7 @@ export const ArtOfAISection: React.FC = () => {
                     <SettingCard>
                       <Label>Customize your greeting</Label>
                       <div style={{ background: 'white', padding: 16, borderRadius: 12, fontSize: 14, fontStyle: 'italic', color: '#677888', border: '1px solid rgba(0,0,0,0.08)' }}>
-                        "Hi, thank you for calling Metro Living downtown! This is Sarah, your AI leasing assistant. How can I help you today?"
+                        "Hi, this is Sarah calling from [Company]. I'm following up on your inquiry—do you have a few minutes?"
                       </div>
                     </SettingCard>
                   </VisualCard>
@@ -777,21 +777,21 @@ export const ArtOfAISection: React.FC = () => {
             <StepItem $isActive={activeStep === 0} onClick={() => window.scrollTo({ top: containerRef.current?.offsetTop, behavior: 'smooth' })}>
               <StepNumber><span>1</span> Adoption</StepNumber>
               <StepDesc>
-                Build AI agents that residents actually want to speak to, with customized voices, tones, and ultra-low latency.
+                AI agents that leads actually want to talk to—with natural voices and zero latency.
               </StepDesc>
             </StepItem>
 
             <StepItem $isActive={activeStep === 1} onClick={() => window.scrollTo({ top: (containerRef.current?.offsetTop || 0) + window.innerHeight, behavior: 'smooth' })}>
               <StepNumber><span>2</span> Resolution</StepNumber>
               <StepDesc>
-                Resolve complex queries with deep integrations into AppFolio, Yardi, and your existing calendar systems.
+                Connects to your CRM, calendar, and lead sources. Books directly into your system.
               </StepDesc>
             </StepItem>
 
             <StepItem $isActive={activeStep === 2} onClick={() => window.scrollTo({ top: (containerRef.current?.offsetTop || 0) + (window.innerHeight * 2), behavior: 'smooth' })}>
               <StepNumber><span>3</span> Tailor</StepNumber>
               <StepDesc>
-                Truly tailoring each AI agent so it is a one-size-fits-one agent that mimics your best leasing consultant.
+                Tailored to your scripts and sales process. Like cloning your best rep.
               </StepDesc>
             </StepItem>
           </RightColumn>
