@@ -8,6 +8,32 @@ import logo from '../../assets/logo.png';
 import { FiPlay, FiPause, FiCheckCircle, FiClock, FiActivity, FiX, FiMenu, FiPhoneIncoming, FiCalendar, FiUser, FiDatabase, FiSmartphone, FiCheck, FiSend } from 'react-icons/fi';
 
 // -----------------------------------------------------------------------------
+// Mobile Detection Utility
+// -----------------------------------------------------------------------------
+
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      // Check for actual mobile devices, not just screen size
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      const isSmallScreen = window.innerWidth < 768;
+      const isMobileUserAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      // True mobile: touch device + small screen + mobile user agent
+      setIsMobile(isTouchDevice && isSmallScreen && isMobileUserAgent);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  return isMobile;
+};
+
+// -----------------------------------------------------------------------------
 // Shared Components
 // -----------------------------------------------------------------------------
 
@@ -151,9 +177,11 @@ const AuroraBackground = styled.div`
 // Live Activity Feed Component
 // -----------------------------------------------------------------------------
 
-const ActivityCard = styled(motion.div)`
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
+const ActivityCard = styled(motion.div)<{ $isMobile?: boolean }>`
+  background: ${props => props.$isMobile 
+    ? 'rgba(255, 255, 255, 0.98)' 
+    : 'rgba(255, 255, 255, 0.9)'};
+  ${props => !props.$isMobile && css`backdrop-filter: blur(12px);`}
   border-radius: 16px;
   padding: 16px;
   display: flex;
@@ -162,6 +190,10 @@ const ActivityCard = styled(motion.div)`
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   width: 320px;
   position: absolute;
+  ${props => props.$isMobile && css`
+    will-change: transform;
+    transform: translateZ(0);
+  `}
   border: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 10;
 `;
@@ -180,6 +212,7 @@ const ActivityIcon = styled.div<{ $color: string }>`
 `;
 
 const LiveActivityFeed = () => {
+  const isMobile = useIsMobile();
   const [activities] = useState([
     { id: 1, type: 'call', text: 'Missed Call (After Hours)', sub: 'From: (617) 555-0123', icon: FiPhoneIncoming, color: '#FF5A5F' },
     { id: 2, type: 'ai', text: 'Outbound call in progress...', sub: 'Booking appointment', icon: FiActivity, color: theme.colors.brand.azure },
@@ -199,11 +232,15 @@ const LiveActivityFeed = () => {
     <div style={{ position: 'relative', width: 320, height: 100 }}>
       <AnimatePresence mode="wait">
         <ActivityCard
+          $isMobile={isMobile}
           key={activeIndex}
           initial={{ opacity: 0, y: 20, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -20, scale: 0.95 }}
-          transition={{ duration: 0.4 }}
+          transition={{ 
+            duration: isMobile ? 0.2 : 0.4,
+            ease: isMobile ? "easeOut" : "easeInOut"
+          }}
         >
           <ActivityIcon $color={activities[activeIndex].color}>
             {React.createElement(activities[activeIndex].icon)}
@@ -222,9 +259,11 @@ const LiveActivityFeed = () => {
 // Audio Player Component
 // -----------------------------------------------------------------------------
 
-const AudioPlayerWrapper = styled(motion.div)`
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
+const AudioPlayerWrapper = styled(motion.div)<{ $isMobile?: boolean }>`
+  background: ${props => props.$isMobile 
+    ? 'rgba(255, 255, 255, 0.98)' 
+    : 'rgba(255, 255, 255, 0.8)'};
+  ${props => !props.$isMobile && css`backdrop-filter: blur(20px);`}
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 24px;
   padding: 24px;
@@ -234,6 +273,10 @@ const AudioPlayerWrapper = styled(motion.div)`
   gap: 20px;
   width: 100%;
   max-width: 500px;
+  ${props => props.$isMobile && css`
+    will-change: transform;
+    transform: translateZ(0);
+  `}
 `;
 
 const PlayButton = styled.button`
@@ -279,6 +322,7 @@ const Bar = styled(motion.div)<{ $height: number }>`
 `;
 
 const Player = () => {
+  const isMobile = useIsMobile();
   const [isPlaying, setIsPlaying] = useState(false);
   const [autoplayPending, setAutoplayPending] = useState(false);
   const audioRef = React.useRef<HTMLAudioElement>(null);
@@ -344,7 +388,7 @@ const Player = () => {
   }, []);
 
   return (
-    <AudioPlayerWrapper>
+    <AudioPlayerWrapper $isMobile={isMobile}>
       <audio ref={audioRef} src={audioUrl} preload="metadata" />
       <PlayButton onClick={toggleAudio} style={{ 
         animation: autoplayPending && !isPlaying ? 'pulse 2s infinite' : 'none'
@@ -506,6 +550,7 @@ const VisualContainer = styled.div`
 `;
 
 const InboundAutomation = () => {
+  const isMobile = useIsMobile();
   const [activeFeature, setActiveFeature] = useState(0);
 
   const features = [
@@ -719,14 +764,14 @@ const InboundAutomation = () => {
                          animate={{ y: 0, opacity: 1 }}
                          transition={{ delay: 3, type: "spring" }}
                          style={{
-                           background: 'rgba(255,255,255,0.9)',
+                           background: isMobile ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.9)',
                            borderRadius: 16,
                            padding: 16,
                            display: 'flex',
                            alignItems: 'center',
                            gap: 16,
                            boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
-                           backdropFilter: 'blur(10px)'
+                           ...(isMobile ? { willChange: 'transform', transform: 'translateZ(0)' } : { backdropFilter: 'blur(10px)' })
                          }}
                        >
                          <div style={{ width: 48, height: 48, background: '#34C759', borderRadius: 12, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
@@ -774,10 +819,11 @@ const InboundAutomation = () => {
                            transition={{ delay: 1.0 }}
                            style={{ 
                              position: 'absolute', right: 0, top: 0, bottom: 0,
-                             background: 'rgba(255,255,255,0.9)', padding: '10px 16px', borderRadius: 12,
+                             background: isMobile ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.9)', 
+                             padding: '10px 16px', borderRadius: 12,
                              display: 'flex', alignItems: 'center', gap: 10,
                              boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
-                             backdropFilter: 'blur(10px)'
+                             ...(isMobile ? { willChange: 'transform', transform: 'translateZ(0)' } : { backdropFilter: 'blur(10px)' })
                            }}
                          >
                            <div style={{ width: 32, height: 32, background: '#FF9500', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
@@ -913,8 +959,8 @@ const InboundAutomation = () => {
                            alignItems: 'center',
                            gap: 16,
                            boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
-                           backdropFilter: 'blur(10px)',
-                           marginBottom: 20
+                           marginBottom: 20,
+                           ...(isMobile ? { willChange: 'transform', transform: 'translateZ(0)' } : { backdropFilter: 'blur(10px)' })
                          }}
                        >
                          <motion.div 
@@ -1340,9 +1386,12 @@ export const LandingPage: React.FC = () => {
 
               {/* Floating Elements (Parallax) */}
               <motion.div 
-                animate={{ y: [0, -15, 0] }} 
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                style={{ position: 'absolute', right: -40, top: 100, zIndex: 2 }}
+                animate={isMobile ? {} : { y: [0, -15, 0] }} 
+                transition={isMobile ? {} : { duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                style={{ 
+                  position: 'absolute', right: -40, top: 100, zIndex: 2,
+                  ...(isMobile && { willChange: 'transform', transform: 'translateZ(0)' })
+                }}
               >
                 <div style={{ background: 'white', padding: 16, borderRadius: 16, boxShadow: '0 20px 40px rgba(0,0,0,0.1)', border: `2px solid ${theme.colors.brand.gold}20` }}>
                   <div style={{ fontSize: 12, color: theme.colors.text.secondary, marginBottom: 4 }}>Appointments Today</div>
@@ -1351,9 +1400,12 @@ export const LandingPage: React.FC = () => {
               </motion.div>
 
               <motion.div 
-                animate={{ y: [0, 20, 0] }} 
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                style={{ position: 'absolute', left: -40, bottom: 150, zIndex: 2 }}
+                animate={isMobile ? {} : { y: [0, 20, 0] }} 
+                transition={isMobile ? {} : { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                style={{ 
+                  position: 'absolute', left: -40, bottom: 150, zIndex: 2,
+                  ...(isMobile && { willChange: 'transform', transform: 'translateZ(0)' })
+                }}
               >
                 <div style={{ background: 'white', padding: 16, borderRadius: 16, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
                   <Player />
