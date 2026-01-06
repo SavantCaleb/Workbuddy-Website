@@ -691,9 +691,9 @@ const InboundAutomation = () => {
                            initial={{ opacity: 0, y: 10, scale: 0.9 }}
                            animate={{ opacity: 1, y: 0, scale: 1 }}
                            transition={{ delay: 0.2 }}
-                           style={{ alignSelf: 'flex-end', background: '#007AFF', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
+                           style={{ alignSelf: 'flex-end', background: '#67B7D1', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
                          >
-                           Hi, this is Sarah from [Company]. Do you have 15 minutes Thursday to discuss your project?
+                           Hi, this is Sarah from Apex Legal. Do you have 15 minutes Thursday to discuss your case?
                          </motion.div>
                          <motion.div 
                            initial={{ opacity: 0, y: 10, scale: 0.9 }}
@@ -707,9 +707,9 @@ const InboundAutomation = () => {
                            initial={{ opacity: 0, y: 10, scale: 0.9 }}
                            animate={{ opacity: 1, y: 0, scale: 1 }}
                            transition={{ delay: 2.2 }}
-                           style={{ alignSelf: 'flex-end', background: '#007AFF', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
+                           style={{ alignSelf: 'flex-end', background: '#67B7D1', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
                          >
-                           Perfect, book it.
+                           Perfect! You are scheduled for 2pm!
                          </motion.div>
                        </div>
 
@@ -734,8 +734,8 @@ const InboundAutomation = () => {
                            <span style={{ fontSize: 18, fontWeight: 700, lineHeight: 1 }}>24</span>
                          </div>
                          <div>
-                           <div style={{ fontSize: 15, fontWeight: 600, color: '#1d1d1f' }}>Tour Confirmed</div>
-                           <div style={{ fontSize: 13, color: '#86868b' }}>2:00 PM • 1 Bedroom</div>
+                           <div style={{ fontSize: 15, fontWeight: 600, color: '#1d1d1f' }}>Appointment Booked</div>
+                           <div style={{ fontSize: 13, color: '#86868b' }}>2:00 PM • Meeting</div>
                          </div>
                          <div style={{ marginLeft: 'auto', width: 24, height: 24, background: '#34C759', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                            <FiCheck size={14} color="white" />
@@ -744,34 +744,15 @@ const InboundAutomation = () => {
                      </div>
                   )}
 
-                  {/* Feature 1: Full Store Receptionist - "The Handoff" */}
+                  {/* Feature 1: SMS Sequences - "Smart Follow-up" */}
                   {activeFeature === 1 && (
                     <div style={{ position: 'relative', width: 320, height: 400, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                       <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 30 }}>
-                         <motion.div 
-                           initial={{ opacity: 0, x: -10 }}
-                           animate={{ opacity: 1, x: 0 }}
-                           transition={{ delay: 0.2 }}
-                           style={{ alignSelf: 'flex-start', background: 'rgba(255,255,255,0.1)', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 16px 4px', fontSize: 14, maxWidth: '80%' }}
-                         >
-                           My kitchen sink is leaking everywhere!
-                         </motion.div>
-                         <motion.div 
-                           initial={{ opacity: 0, x: 10 }}
-                           animate={{ opacity: 1, x: 0 }}
-                           transition={{ delay: 1.2 }}
-                           style={{ alignSelf: 'flex-end', background: '#34C759', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
-                         >
-                           I'm alerting the maintenance team immediately.
-                         </motion.div>
-                       </div>
-
-                       {/* Action Visualization */}
-                       <div style={{ position: 'relative', height: 60 }}>
+                       {/* Action Visualization Line - FIRST */}
+                       <div style={{ position: 'relative', height: 60, marginBottom: 20 }}>
                          <motion.div
                            initial={{ width: 0 }}
                            animate={{ width: '100%' }}
-                           transition={{ delay: 2, duration: 0.8, ease: "easeInOut" }}
+                           transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
                            style={{ position: 'absolute', top: '50%', left: 0, height: 2, background: 'rgba(255,255,255,0.2)', borderRadius: 1 }}
                          />
                          
@@ -779,7 +760,7 @@ const InboundAutomation = () => {
                          <motion.div
                            initial={{ left: 0, opacity: 0 }}
                            animate={{ left: '100%', opacity: [0, 1, 1, 0] }}
-                           transition={{ delay: 2, duration: 0.8, ease: "easeInOut" }}
+                           transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
                            style={{ 
                              position: 'absolute', top: '50%', marginTop: -6, 
                              width: 12, height: 12, background: '#34C759', borderRadius: '50%',
@@ -790,7 +771,7 @@ const InboundAutomation = () => {
                          <motion.div
                            initial={{ scale: 0.8, opacity: 0 }}
                            animate={{ scale: 1, opacity: 1 }}
-                           transition={{ delay: 2.6 }}
+                           transition={{ delay: 1.0 }}
                            style={{ 
                              position: 'absolute', right: 0, top: 0, bottom: 0,
                              background: 'rgba(255,255,255,0.9)', padding: '10px 16px', borderRadius: 12,
@@ -803,9 +784,29 @@ const InboundAutomation = () => {
                              <FiActivity size={16} />
                            </div>
                            <div>
-                             <div style={{ fontSize: 13, fontWeight: 700, color: '#1d1d1f' }}>Mike (Maintenance)</div>
-                             <div style={{ fontSize: 11, color: '#FF3B30', fontWeight: 600 }}>URGENT ALERT</div>
+                             <div style={{ fontSize: 13, fontWeight: 700, color: '#1d1d1f' }}>SMS Sequence</div>
+                             <div style={{ fontSize: 11, color: '#67B7D1', fontWeight: 600 }}>FOLLOW-UP #2</div>
                            </div>
+                         </motion.div>
+                       </div>
+
+                       {/* Conversation Messages - SECOND */}
+                       <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                         <motion.div 
+                           initial={{ opacity: 0, x: 10 }}
+                           animate={{ opacity: 1, x: 0 }}
+                           transition={{ delay: 1.8 }}
+                           style={{ alignSelf: 'flex-end', background: '#34C759', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
+                         >
+                           Hi! I help businesses like Summit Consulting book more qualified appointments. Would you be interested in a 15-min demo?
+                         </motion.div>
+                         <motion.div 
+                           initial={{ opacity: 0, x: -10 }}
+                           animate={{ opacity: 1, x: 0 }}
+                           transition={{ delay: 2.8 }}
+                           style={{ alignSelf: 'flex-start', background: 'rgba(255,255,255,0.1)', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 16px 4px', fontSize: 14, maxWidth: '80%' }}
+                         >
+                           Yes, that sounds interesting! When works best?
                          </motion.div>
                        </div>
                     </div>
@@ -832,9 +833,9 @@ const InboundAutomation = () => {
                            zIndex: 2
                          }}
                        >
-                          <div style={{ fontSize: 13, color: '#FF3B30', fontWeight: 600, textTransform: 'uppercase' }}>Tomorrow</div>
-                          <div style={{ fontSize: 42, fontWeight: 700, color: '#1d1d1f', lineHeight: 1 }}>2</div>
-                          <div style={{ fontSize: 13, color: '#86868b', fontWeight: 500 }}>PM</div>
+                          <div style={{ fontSize: 13, color: '#67B7D1', fontWeight: 600, textTransform: 'uppercase' }}>Email</div>
+                          <div style={{ fontSize: 32, fontWeight: 700, color: '#1d1d1f', lineHeight: 1 }}>Sent</div>
+                          <div style={{ fontSize: 13, color: '#86868b', fontWeight: 500 }}>3:42 PM</div>
 
                           {/* Success Badge */}
                           <motion.div
@@ -853,7 +854,7 @@ const InboundAutomation = () => {
                               boxShadow: '0 4px 10px rgba(52, 199, 89, 0.3)'
                             }}
                           >
-                            Confirmed
+                            Replied
                           </motion.div>
                        </motion.div>
 
@@ -896,64 +897,89 @@ const InboundAutomation = () => {
                     </div>
                   )}
 
-                  {/* Feature 3: Dropped Call SMS - "The Rescue" */}
+                  {/* Feature 3: Inbound Handling - "Always Available" */}
                   {activeFeature === 3 && (
-                    <div style={{ position: 'relative', width: 320, height: 400, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                       {/* Background: The Dropped Call Screen */}
-                       <motion.div
-                         initial={{ opacity: 1, scale: 1 }}
-                         animate={{ opacity: 0.2, scale: 0.95, filter: 'blur(4px)' }}
-                         transition={{ delay: 1.5, duration: 0.5 }}
+                    <div style={{ position: 'relative', width: 320, height: 400, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                       {/* Transforming Call Interface */}
+                       <motion.div 
+                         initial={{ opacity: 0, scale: 0.9 }}
+                         animate={{ opacity: 1, scale: 1 }}
+                         transition={{ delay: 0.2 }}
                          style={{ 
-                           width: 240, height: 360, 
-                           background: 'rgba(255, 59, 48, 0.1)', 
-                           border: '1px solid rgba(255, 59, 48, 0.3)',
-                           borderRadius: 32, 
-                           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                           position: 'absolute'
+                           background: 'rgba(255,255,255,0.9)', 
+                           borderRadius: 16,
+                           padding: 16,
+                           display: 'flex',
+                           alignItems: 'center',
+                           gap: 16,
+                           boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
+                           backdropFilter: 'blur(10px)',
+                           marginBottom: 20
                          }}
                        >
-                          <div style={{ fontSize: 48, color: '#FF3B30', marginBottom: 16 }}><FiPhoneIncoming /></div>
-                          <div style={{ fontSize: 18, color: '#FF3B30', fontWeight: 600 }}>Call Failed</div>
+                         <motion.div 
+                           initial={{ background: '#FF9500' }}
+                           animate={{ background: '#67B7D1' }}
+                           transition={{ delay: 0.8, duration: 0.3 }}
+                           style={{ width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}
+                         >
+                           <motion.div
+                             initial={{ rotate: 0 }}
+                             animate={{ rotate: 360 }}
+                             transition={{ delay: 0.8, duration: 0.3 }}
+                           >
+                             <FiPhoneIncoming size={24} />
+                           </motion.div>
+                         </motion.div>
+                         <div>
+                           <motion.div 
+                             initial={{ opacity: 1 }}
+                             animate={{ opacity: 0 }}
+                             transition={{ delay: 0.8, duration: 0.2 }}
+                             style={{ fontSize: 15, fontWeight: 600, color: '#1d1d1f', position: 'absolute' }}
+                           >
+                             Incoming Call
+                           </motion.div>
+                           <motion.div 
+                             initial={{ opacity: 0, y: 5 }}
+                             animate={{ opacity: 1, y: 0 }}
+                             transition={{ delay: 1.0, duration: 0.2 }}
+                             style={{ fontSize: 15, fontWeight: 600, color: '#1d1d1f' }}
+                           >
+                             Call Answered
+                           </motion.div>
+                           <div style={{ fontSize: 13, color: '#86868b' }}>Saturday, 8:30 PM</div>
+                         </div>
+                         <motion.div 
+                           initial={{ scale: 0 }}
+                           animate={{ scale: 1 }}
+                           transition={{ delay: 1.0, type: 'spring' }}
+                           style={{ marginLeft: 'auto', width: 24, height: 24, background: '#34C759', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                         >
+                           <FiCheck size={14} color="white" />
+                         </motion.div>
                        </motion.div>
 
-                       {/* The SMS Rescue */}
-                       <motion.div 
-                         initial={{ y: 50, opacity: 0 }}
-                         animate={{ y: 0, opacity: 1 }}
-                         transition={{ delay: 1.8, type: "spring" }}
-                         style={{ 
-                           width: 300, 
-                           background: 'rgba(255,255,255,0.9)', 
-                           backdropFilter: 'blur(20px)',
-                           borderRadius: 24, 
-                           padding: 20,
-                           boxShadow: '0 20px 50px rgba(0,0,0,0.3)',
-                           zIndex: 10,
-                           border: '1px solid rgba(255,255,255,0.5)'
-                         }}
-                       >
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
-                             <div style={{ 
-                               width: 36, height: 36, 
-                               background: 'black', 
-                               borderRadius: 10, 
-                               display: 'flex', alignItems: 'center', justifyContent: 'center', 
-                               color: 'white' 
-                             }}>
-                               <FiMessageSquare size={18}/>
-                             </div>
-                             <div>
-                               <div style={{ fontWeight: 600, fontSize: 14, color: '#1d1d1f' }}>WorkBuddy AI</div>
-                               <div style={{ fontSize: 12, color: '#86868b' }}>Just now</div>
-                             </div>
-                          </div>
-                          <div style={{ fontSize: 15, lineHeight: 1.4, color: '#1d1d1f' }}>
-                            Oops, we got disconnected! No worries, I can still help you book that tour. 
-                            <br/><br/>
-                            <strong>Reply Y to continue via text.</strong>
-                          </div>
-                       </motion.div>
+                       {/* Conversation Messages */}
+                       <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                         <motion.div 
+                           initial={{ opacity: 0, y: 10 }}
+                           animate={{ opacity: 1, y: 0 }}
+                           transition={{ delay: 1.6 }}
+                           style={{ alignSelf: 'flex-end', background: '#67B7D1', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 4px 16px', fontSize: 14, maxWidth: '80%' }}
+                         >
+                           Hi! Thanks for calling. How can I help you today?
+                         </motion.div>
+                         
+                         <motion.div 
+                           initial={{ opacity: 0, y: 10 }}
+                           animate={{ opacity: 1, y: 0 }}
+                           transition={{ delay: 2.6 }}
+                           style={{ alignSelf: 'flex-start', background: 'rgba(255,255,255,0.1)', color: 'white', padding: '10px 16px', borderRadius: '16px 16px 16px 4px', fontSize: 14, maxWidth: '80%' }}
+                         >
+                           I'd like to schedule a consultation.
+                         </motion.div>
+                       </div>
                     </div>
                   )}
                </motion.div>
