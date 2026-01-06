@@ -1242,6 +1242,7 @@ const RelationshipManagement = () => {
 // -----------------------------------------------------------------------------
 
 export const LandingPage: React.FC = () => {
+  const isMobile = useIsMobile();
 
   return (
     <>
