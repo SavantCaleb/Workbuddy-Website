@@ -197,10 +197,10 @@ export const AuditFormSection = () => {
           // I will proceed without saving UTM to DB since I can't update schema.
       }
 
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error('Submission error:', err);
       setStatus('error');
-      setErrorMessage(err.message || 'Something went wrong. Please try again.');
+      setErrorMessage(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
     }
   };
 

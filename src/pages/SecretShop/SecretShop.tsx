@@ -401,9 +401,9 @@ const RequestStation = () => {
       if (error) throw error;
       
       setStatus('success');
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus('error');
-      setErrorMessage(err.message || 'Error submitting form');
+      setErrorMessage(err instanceof Error ? err.message : 'Error submitting form');
     }
   };
 
