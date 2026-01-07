@@ -23,6 +23,27 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  /* Lenis recommended styles */
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: ${theme.typography.fontFamily.heading};
     color: ${theme.colors.text.primary};

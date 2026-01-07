@@ -14,6 +14,7 @@ interface ButtonProps {
   as?: 'button' | 'a';
   target?: string;
   rel?: string;
+  style?: React.CSSProperties;
 }
 
 const buttonSizes = {
