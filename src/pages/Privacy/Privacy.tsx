@@ -138,11 +138,6 @@ export const Privacy: React.FC = () => {
             purposes under any circumstances, even with user consent.
           </Paragraph>
           <Paragraph>
-            We may share your information with third-party service providers only as necessary to 
-            provide our services (such as SMS delivery, payment processing, or cloud hosting) or as 
-            required by law.
-          </Paragraph>
-          <Paragraph>
             We do not transfer your personal data to any external organizations under any circumstances, 
             even with your consent. We maintain strict internal controls and security measures to 
             prevent unauthorized sharing of user data.
@@ -238,8 +233,7 @@ export const Privacy: React.FC = () => {
 
         <ContactInfo>
           <h3>Contact Us</h3>
-          <p>If you have any questions or concerns about this privacy policy, your data, or our SMS messaging practices, please contact us:</p>
-          <p>Email: <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a></p>
+          <p>If you have any questions or concerns about this privacy policy or your data, please contact us at <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a>.</p>
           <p>Address: 2329 Long Hill Road, Guilford, CT 06437</p>
           <p>Phone: <a href="tel:+12036051105">+1 (203) 605-1105</a></p>
         </ContactInfo>
