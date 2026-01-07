@@ -118,10 +118,11 @@ export const Privacy: React.FC = () => {
         <Section>
           <SectionTitle>2. How We Use Your Information</SectionTitle>
           <Paragraph>
-            We use the information we collect to:
+            We use your data to provide and improve our services, communicate with you, and process payments. Specifically, we use the information we collect to:
           </Paragraph>
           <List>
             <li>Provide, maintain, and improve our AI answering service</li>
+            <li>Create and manage your account</li>
             <li>Process transactions and send related information</li>
             <li>Send technical notices, updates, security alerts, and support messages</li>
             <li>Respond to your comments, questions, and customer service requests</li>
@@ -133,22 +134,23 @@ export const Privacy: React.FC = () => {
         <Section>
           <SectionTitle>3. Information Sharing</SectionTitle>
           <Paragraph>
-            We do not sell your personal information to third parties. We do not share, sell, or 
-            transfer your personal or mobile information to third parties for marketing or promotional 
-            purposes under any circumstances, even with user consent.
+            We use your data to provide and improve our services, communicate with you, and process payments. We may share your information with third-party service providers as necessary to operate our business, but we do not sell your personal information to third parties.
           </Paragraph>
           <Paragraph>
-            We do not transfer your personal data to any external organizations under any circumstances, 
-            even with your consent. We maintain strict internal controls and security measures to 
-            prevent unauthorized sharing of user data.
-          </Paragraph>
-          <Paragraph>
-            Information may only be disclosed:
+            Specifically, we may share your information with:
           </Paragraph>
           <List>
-            <li>When required by law or to protect our rights</li>
-            <li>In connection with a business transfer or acquisition</li>
+            <li>SMS delivery and communication service providers to facilitate our AI customer care services</li>
+            <li>Payment processors to handle transactions securely</li>
+            <li>Cloud hosting and infrastructure providers to maintain our services</li>
+            <li>Analytics providers to improve our service performance</li>
           </List>
+          <Paragraph>
+            We do not share, sell, or transfer your personal or mobile information to third parties for marketing or promotional purposes under any circumstances, even with user consent.
+          </Paragraph>
+          <Paragraph>
+            Information may also be disclosed when required by law or to protect our rights, or in connection with a business transfer or acquisition.
+          </Paragraph>
         </Section>
 
         <Section>
