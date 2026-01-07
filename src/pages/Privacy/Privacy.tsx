@@ -98,7 +98,7 @@ export const Privacy: React.FC = () => {
     <PageWrapper>
       <Container>
         <Title>Privacy Policy</Title>
-        <LastUpdated>Last updated: {new Date().toLocaleDateString()}</LastUpdated>
+        <LastUpdated>Last updated: 1/7/2026</LastUpdated>
 
         <Section>
           <SectionTitle>1. Information We Collect</SectionTitle>
@@ -133,11 +133,24 @@ export const Privacy: React.FC = () => {
         <Section>
           <SectionTitle>3. Information Sharing</SectionTitle>
           <Paragraph>
-            We do not sell, trade, or otherwise transfer your personal information to third parties except:
+            We do not sell your personal information to third parties. We do not share, sell, or 
+            transfer your personal or mobile information to third parties for marketing or promotional 
+            purposes under any circumstances, even with user consent.
+          </Paragraph>
+          <Paragraph>
+            We may share your information with third-party service providers only as necessary to 
+            provide our services (such as SMS delivery, payment processing, or cloud hosting) or as 
+            required by law.
+          </Paragraph>
+          <Paragraph>
+            We do not transfer your personal information to external organizations beyond what is 
+            strictly necessary to deliver our services. We maintain strict internal controls and 
+            security measures to prevent unauthorized sharing of user data.
+          </Paragraph>
+          <Paragraph>
+            Information may also be shared:
           </Paragraph>
           <List>
-            <li>With your explicit consent</li>
-            <li>To trusted service providers who assist in operating our service</li>
             <li>When required by law or to protect our rights</li>
             <li>In connection with a business transfer or acquisition</li>
           </List>
@@ -149,6 +162,11 @@ export const Privacy: React.FC = () => {
             We implement appropriate technical and organizational measures to protect your personal 
             information against unauthorized access, alteration, disclosure, or destruction. All 
             communications are encrypted, and we regularly review our security practices.
+          </Paragraph>
+          <Paragraph>
+            We do not transfer your personal data to any external organizations under any circumstances 
+            beyond what is necessary to provide our services. We have strict internal policies, security 
+            measures, and regular audits to prevent unauthorized data sharing.
           </Paragraph>
         </Section>
 
@@ -165,20 +183,24 @@ export const Privacy: React.FC = () => {
         <Section>
           <SectionTitle>6. SMS Messaging Services</SectionTitle>
           <Paragraph>
-            Work Buddy Inc provides AI-powered customer care via SMS. When you contact
-            Work Buddy:
+            Work Buddy Inc. provides AI-powered customer care via SMS. When you contact Work Buddy 
+            or opt in to receive messages:
           </Paragraph>
           <List>
-            <li>You consent to receive text messages from Work Buddy regarding your rental inquiry, account, maintenance requests, and appointments</li>
+            <li>You consent to receive customer care messages including answers to questions and conversational business communication from Work Buddy</li>
             <li>All messages will be sent from Work Buddy and clearly identify the sender</li>
             <li>Message frequency varies based on your interactions</li>
             <li>Message and data rates may apply</li>
             <li>Reply STOP to any message to opt out</li>
             <li>Reply HELP for assistance</li>
           </List>
+          
+          <SectionTitle style={{marginTop: '32px'}}>Mobile Information Protection</SectionTitle>
           <Paragraph>
-            Your mobile information will not be sold, shared, or transferred to third parties
-            for promotional or marketing purposes. Consent is not a condition of purchase.
+            We do not share, sell, or transfer your mobile information or SMS opt-in data to third 
+            parties for marketing or promotional purposes under any circumstances, even with user consent. 
+            Mobile opt-in data and consent information is never shared with any third party for any purpose. 
+            Consent to receive SMS messages is not a condition of purchase.
           </Paragraph>
         </Section>
 
@@ -216,7 +238,7 @@ export const Privacy: React.FC = () => {
 
         <ContactInfo>
           <h3>Contact Us</h3>
-          <p>If you have any questions about this Privacy Policy, please contact us:</p>
+          <p>If you have any questions about this Privacy Policy, your data, or our SMS messaging practices, please contact us:</p>
           <p>Email: <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a></p>
           <p>Address: 2329 Long Hill Road, Guilford, CT 06437</p>
           <p>Phone: <a href="tel:+12036051105">+1 (203) 605-1105</a></p>
