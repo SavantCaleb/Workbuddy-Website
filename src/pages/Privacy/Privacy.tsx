@@ -231,6 +231,13 @@ export const Privacy: React.FC = () => {
           </Paragraph>
         </Section>
 
+        <Section>
+          <SectionTitle>Contact for Privacy Questions</SectionTitle>
+          <Paragraph>
+            If you have any questions about this privacy policy or your data, please contact us at <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a>.
+          </Paragraph>
+        </Section>
+
         <ContactInfo>
           <h3>Contact Us</h3>
           <p>If you have any questions or concerns about this privacy policy or your data, please contact us at <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a>.</p>
