@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { theme } from '../../styles/theme';
 import { MainNavbar } from '../../components/Header/MainNavbar';
-/* Unused import removed */
+import { SEO } from '../../components/SEO/SEO';
 import { Button } from '../../components/Button/Button';
 import { supabase } from '../../lib/supabase';
 import { FiLayout, FiVideo, FiDollarSign, FiCheck, FiLoader, FiChevronDown } from 'react-icons/fi';
@@ -595,6 +595,11 @@ const RequestStation = () => {
 export const SecretShop: React.FC = () => {
   return (
     <div style={{ background: '#F5F5F7', minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
+      <SEO
+        title="Free Business Audit"
+        description="Get a free secret shop audit of your business. We'll call your business as a lead, grade your response, and show you exactly where you're losing money."
+        canonical="/secret-shop"
+      />
       <MainNavbar />
       
       {/* Continuous Aurora Background */}

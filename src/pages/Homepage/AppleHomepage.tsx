@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { theme } from '../../styles/theme';
 import { CaseStudiesSection } from './sections/CaseStudiesSection';
 import { ArtOfAISection } from './sections/ArtOfAISection';
+import { SEO } from '../../components/SEO/SEO';
 import logo from '../../assets/logo.png';
 import { FiPlay, FiPause, FiCheckCircle, FiClock, FiActivity, FiX, FiMenu, FiPhoneIncoming, FiCalendar, FiUser, FiDatabase, FiSmartphone, FiCheck, FiSend } from 'react-icons/fi';
 
@@ -1241,11 +1242,100 @@ const RelationshipManagement = () => {
 // Page Sections
 // -----------------------------------------------------------------------------
 
+// Structured data for the landing page
+const landingPageStructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://getworkbuddy.com/#organization",
+      "name": "WorkBuddy AI",
+      "url": "https://getworkbuddy.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://getworkbuddy.com/favicon.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-203-605-1105",
+        "contactType": "customer service",
+        "email": "caleb@getworkbuddy.com",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2329 Long Hill Road",
+        "addressLocality": "Guilford",
+        "addressRegion": "CT",
+        "postalCode": "06437",
+        "addressCountry": "US"
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://getworkbuddy.com/#website",
+      "url": "https://getworkbuddy.com",
+      "name": "WorkBuddy",
+      "publisher": {
+        "@id": "https://getworkbuddy.com/#organization"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "WorkBuddy",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI-powered receptionist that follows up with leads by phone, text, and email until they book or say no.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Contact for pricing"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will leads know it's AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most don't. The voice quality and latency are so good that prospects often thank the 'person' they spoke with. We aim for human-level empathy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How hard is it to set up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 10 minutes. We connect to your CRM and calendar. No hardware, no code."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if someone wants to talk to a human?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can train it on your specific policies. If it gets stumped, it can gracefully take a message or escalate urgent issues to your on-call staff."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 export const LandingPage: React.FC = () => {
   const isMobile = useIsMobile();
 
   return (
     <>
+      <SEO
+        canonical="/"
+        structuredData={landingPageStructuredData}
+      />
       <Navbar />
       
       {/* REVOLUTIONARY HERO SECTION */}

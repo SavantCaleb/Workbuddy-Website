@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
+import { SEO } from '../../components/SEO/SEO';
 
 const PageWrapper = styled.div`
   min-height: 100vh;
@@ -96,6 +97,11 @@ const ContactInfo = styled.div`
 export const Terms: React.FC = () => {
   return (
     <PageWrapper>
+      <SEO
+        title="Terms of Service"
+        description="WorkBuddy's Terms of Service outlines the rules and guidelines for using our AI-powered receptionist and appointment booking service."
+        canonical="/terms"
+      />
       <Container>
         <Title>Terms of Service</Title>
         <LastUpdated>Last updated: {new Date().toLocaleDateString()}</LastUpdated>

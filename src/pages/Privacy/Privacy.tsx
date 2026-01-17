@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
+import { SEO } from '../../components/SEO/SEO';
 
 const PageWrapper = styled.div`
   min-height: 100vh;
@@ -96,6 +97,11 @@ const ContactInfo = styled.div`
 export const Privacy: React.FC = () => {
   return (
     <PageWrapper>
+      <SEO
+        title="Privacy Policy"
+        description="WorkBuddy's Privacy Policy explains how we collect, use, and protect your personal information when you use our AI receptionist service."
+        canonical="/privacy"
+      />
       <Container>
         <Title>Privacy Policy</Title>
         <LastUpdated>Last updated: 1/7/2026</LastUpdated>
