@@ -60,7 +60,7 @@ export const BellaLP = () => {
   return (
     <>
       <SEO
-        title="Bella Migration | WorkBuddy"
+        title="Bella Migration"
         description="Bella shutting down? Migrate to WorkBuddy - built by the creator of Bella. Same pricing, all your training data migrated, live before February 1st."
         canonical="/bella"
         structuredData={bellaStructuredData}

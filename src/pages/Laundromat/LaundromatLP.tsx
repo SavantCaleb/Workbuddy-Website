@@ -100,7 +100,7 @@ export const LaundromatLP = () => {
   return (
     <>
       <SEO
-        title="AI Receptionist for Laundromats | WorkBuddy"
+        title="AI Receptionist for Laundromats"
         description="Never miss a laundromat call again. WorkBuddy handles refunds, WDF orders, machine questions, and emergencies 24/7. Built by the creator of Bella AI. From $99/mo."
         canonical="/laundromats"
         structuredData={laundromatStructuredData}
