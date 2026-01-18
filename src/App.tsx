@@ -6,6 +6,7 @@ import { SmoothScroll } from './components/SmoothScroll';
 // Pages
 import { LandingPage } from './pages/Homepage/AppleHomepage';
 import { LaundromatLP } from './pages/Laundromat/LaundromatLP';
+import { ThankYou } from './pages/Laundromat/ThankYou';
 import { PropertyManagementLP } from './pages/PropertyManagement/PropertyManagementLP';
 import { BellaLP } from './pages/Bella/BellaLP';
 import { Pricing } from './pages/Pricing/Pricing';
@@ -28,6 +29,7 @@ function App() {
 
         {/* Solutions / Verticals */}
         <Route path="/laundromats" element={<LaundromatLP />} />
+        <Route path="/laundromats/thank-you" element={<ThankYou />} />
         <Route path="/property-management" element={<PropertyManagementLP />} />
         <Route path="/bella" element={<BellaLP />} />
 

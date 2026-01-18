@@ -203,6 +203,7 @@ export const LaundromatLP = () => {
                   method="POST"
                   style={{ display: 'flex', flexDirection: 'column', gap: 16 }}
                 >
+                  <input type="hidden" name="_next" value="https://getworkbuddy.com/laundromats/thank-you" />
                   <input
                     type="text"
                     name="name"
