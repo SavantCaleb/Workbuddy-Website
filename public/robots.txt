@@ -2,8 +2,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://getworkbuddy.com/sitemap.xml
+# Disallow paths that shouldn't be indexed
+Disallow: /secret-shop
 
-# Disallow admin or private paths (none currently)
-# Disallow: /admin/
+# Sitemap location
+Sitemap: https://getworkbuddy.com/sitemap.xml
