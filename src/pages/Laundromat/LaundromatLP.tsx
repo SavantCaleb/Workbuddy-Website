@@ -111,7 +111,7 @@ export const LaundromatLP = () => {
       <MigrationBanner>
         <Container>
           <p style={{ margin: 0, fontSize: 16, color: 'white', lineHeight: 1.5 }}>
-            <strong>🚨 Bella/Savants User?</strong> I'm personally migrating operators this week. Same price, zero downtime.{' '}
+            <strong>🚨 Need an AI receptionist before Feb 1?</strong> I'm personally onboarding operators this week. Same price, zero downtime.{' '}
             Fill out the form below or text me: <strong>(203) 605-1105</strong>
           </p>
         </Container>
