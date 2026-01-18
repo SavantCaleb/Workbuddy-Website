@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { SmoothScroll } from './components/SmoothScroll';
@@ -25,7 +25,7 @@ function App() {
       <GlobalStyles />
       <SmoothScroll />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<Navigate to="/laundromats" replace />} />
 
         {/* Solutions / Verticals */}
         <Route path="/laundromats" element={<LaundromatLP />} />
@@ -47,7 +47,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
 
         {/* Fallback */}
-        <Route path="*" element={<LandingPage />} />
+        <Route path="*" element={<Navigate to="/laundromats" replace />} />
       </Routes>
       <Analytics />
     </Router>
