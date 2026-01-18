@@ -13,6 +13,12 @@ const NavbarOffset = createGlobalStyle`
   nav[style*="position: fixed"] {
     top: 48px !important;
   }
+
+  @media (max-width: 768px) {
+    nav[style*="position: fixed"] {
+      top: 38px !important;
+    }
+  }
 `;
 
 const MigrationBanner = styled.div`
@@ -24,6 +30,14 @@ const MigrationBanner = styled.div`
   left: 0;
   right: 0;
   z-index: 1001;
+
+  @media (max-width: 768px) {
+    padding: 10px 16px;
+
+    p {
+      font-size: 13px !important;
+    }
+  }
 `;
 
 const laundromatStructuredData = {
