@@ -58,29 +58,6 @@ const UseCaseCard = styled.div`
   border: 1px solid ${theme.colors.brand.slate}10;
 `;
 
-const FeatureRow = styled.div`
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  padding: 16px 0;
-  border-bottom: 1px solid ${theme.colors.brand.slate}08;
-
-  &:last-child {
-    border-bottom: none;
-  }
-`;
-
-const CheckIcon = styled.div`
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: ${theme.colors.brand.azure}15;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-`;
-
 const ComparisonTable = styled.table`
   width: 100%;
   border-collapse: collapse;
@@ -140,7 +117,7 @@ export const LaundromatLP = () => {
         </Container>
       </MigrationBanner>
 
-      <Navbar />
+      <Navbar logoLink="/laundromats" />
 
       {/* HERO SECTION - Extra padding for fixed banner + navbar */}
       <Section style={{
@@ -177,9 +154,10 @@ export const LaundromatLP = () => {
 
               <div style={{ marginBottom: 32, display: 'flex', flexDirection: 'column', gap: 14 }}>
                 {[
-                  'Answers in under 3 rings, 24/7/365',
-                  'Bilingual English/Spanish support',
-                  'Integrates with Curbside, CleanCloud, FastCard & LaundryCard'
+                  'Captures WDF orders',
+                  'Prevents bad reviews',
+                  'Escalates real emergencies',
+                  'Filters junk calls'
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, color: theme.colors.text.primary }}>
                     <FiCheckCircle color={theme.colors.brand.azure} size={20} /> {item}
@@ -368,7 +346,7 @@ export const LaundromatLP = () => {
                 Caleb spent years learning what laundromat customers actually call about. The refund requests. The "is my laundry ready?" calls at 9pm. The emergencies at 2am. He built Bella to solve these problems. Now he's taking everything he learned and making it available to you.
               </p>
               <blockquote style={{ borderLeft: `4px solid ${theme.colors.brand.azure}`, paddingLeft: 24, margin: 0, fontStyle: 'italic', fontSize: 17, color: theme.colors.brand.slate, lineHeight: 1.6 }}>
-                "I've handled hundreds of thousands of laundromat calls. I know what your customers are asking before they ask it."
+                "Most laundromat owners don't need more calls answered—they need fewer problems reaching them."
               </blockquote>
             </div>
             <div>
@@ -421,43 +399,43 @@ export const LaundromatLP = () => {
         <Container>
           <div style={{ textAlign: 'center', maxWidth: 800, margin: '0 auto 60px' }}>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 20, lineHeight: 1.2 }}>
-              You Didn't Open a Laundromat to <br/>Answer Phones All Day
+              Every Missed Call Has Consequences
             </h2>
             <p style={{ fontSize: 18, color: theme.colors.text.secondary, lineHeight: 1.7 }}>
-              By the time you call back, they've already driven to your competitor. Or worse—they leave a 1-star review about "no one ever answering."
+              Your laundromat should not be able to fail silently. Here's what's at stake when no one answers.
             </p>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
             <PainCard>
-              <div style={{ fontSize: 36, marginBottom: 16 }}>💸</div>
-              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>Lost WDF Revenue</h3>
+              <div style={{ fontSize: 36, marginBottom: 16 }}>🚨</div>
+              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>Silent Emergencies</h3>
               <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6 }}>
-                Every missed wash-and-fold inquiry is a $30-75 order walking out the door. Multiply that by 2-3 per day.
+                You don't miss emergencies because you're lazy. You miss them because you're asleep. That 2am flood? You find out at 8am with thousands in damage.
+              </p>
+            </PainCard>
+
+            <PainCard>
+              <div style={{ fontSize: 36, marginBottom: 16 }}>💸</div>
+              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>Your Best Customers</h3>
+              <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6 }}>
+                The calls you miss aren't random—they're your best customers. WDF orders, commercial accounts, the ones worth $30-75 each.
               </p>
             </PainCard>
 
             <PainCard>
               <div style={{ fontSize: 36, marginBottom: 16 }}>⭐</div>
-              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>Bad Reviews</h3>
+              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>Permanent Review Damage</h3>
               <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6 }}>
-                "Called three times, no answer" shows up on Google and stays there forever. One missed call can cost you dozens of customers.
+                Reviews don't punish bad laundromats. They punish <em>unreachable</em> ones. "Called three times, no answer" stays on Google forever.
               </p>
             </PainCard>
 
             <PainCard>
               <div style={{ fontSize: 36, marginBottom: 16 }}>😡</div>
-              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>Refund Frustrations</h3>
+              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>Small Issues Go Public</h3>
               <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6 }}>
-                A $1.50 machine malfunction becomes a 1-star review and angry Facebook post when no one answers the phone.
-              </p>
-            </PainCard>
-
-            <PainCard>
-              <div style={{ fontSize: 36, marginBottom: 16 }}>🚨</div>
-              <h3 style={{ fontSize: 19, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>After-Hours Emergencies</h3>
-              <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6 }}>
-                That water leak at 2am? You find out at 8am when there's 3 inches of water on your floor and thousands in damage.
+                A $1.50 refund request becomes a 1-star review and angry Facebook post. Small issues turn into public problems when no one answers.
               </p>
             </PainCard>
           </div>
@@ -468,72 +446,65 @@ export const LaundromatLP = () => {
       <Section>
         <Container>
           <div style={{ textAlign: 'center', marginBottom: 60 }}>
-            <Badge>Purpose-Built Features</Badge>
+            <Badge>How It Works</Badge>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 500, color: theme.colors.brand.slate }}>
-              An AI That Actually Speaks Laundromat
+              What Happens When Someone Calls Your Laundromat
             </h2>
           </div>
 
           <ResponsiveGrid style={{ alignItems: 'start' }}>
             <div>
-              <h3 style={{ fontSize: 22, fontWeight: 600, marginBottom: 28, color: theme.colors.brand.slate }}>What WorkBuddy Handles</h3>
-              <div>
-                <FeatureRow>
-                  <CheckIcon><FiCheck size={14} color={theme.colors.brand.azure} /></CheckIcon>
-                  <div>
-                    <div style={{ fontWeight: 600, color: theme.colors.brand.slate, marginBottom: 4 }}>Vend Refund Requests</div>
-                    <div style={{ fontSize: 14, color: theme.colors.text.secondary, lineHeight: 1.5 }}>Logs machine number, amount, and customer info. Can send coupons or process small refunds automatically.</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+                <div style={{ background: 'white', padding: 28, borderRadius: 16, boxShadow: '0 4px 16px rgba(50, 74, 95, 0.06)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+                    <div style={{ width: 40, height: 40, borderRadius: 10, background: '#E8F4FD', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20 }}>📋</div>
+                    <h3 style={{ fontSize: 19, fontWeight: 600, color: theme.colors.brand.slate, margin: 0 }}>If It's Routine</h3>
                   </div>
-                </FeatureRow>
-                <FeatureRow>
-                  <CheckIcon><FiCheck size={14} color={theme.colors.brand.azure} /></CheckIcon>
-                  <div>
-                    <div style={{ fontWeight: 600, color: theme.colors.brand.slate, marginBottom: 4 }}>Wash & Fold Orders</div>
-                    <div style={{ fontSize: 14, color: theme.colors.text.secondary, lineHeight: 1.5 }}>Takes complete orders with weight estimates, special instructions, and pickup/delivery preferences.</div>
+                  <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6, margin: 0 }}>
+                    <strong style={{ color: theme.colors.brand.azure }}>WorkBuddy resolves it instantly.</strong> Hours, pricing, machine status, directions—the questions that make up 60% of calls get answered without bothering you.
+                  </p>
+                </div>
+
+                <div style={{ background: 'white', padding: 28, borderRadius: 16, boxShadow: '0 4px 16px rgba(50, 74, 95, 0.06)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+                    <div style={{ width: 40, height: 40, borderRadius: 10, background: '#E6F9EE', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20 }}>💰</div>
+                    <h3 style={{ fontSize: 19, fontWeight: 600, color: theme.colors.brand.slate, margin: 0 }}>If It's Revenue</h3>
                   </div>
-                </FeatureRow>
-                <FeatureRow>
-                  <CheckIcon><FiCheck size={14} color={theme.colors.brand.azure} /></CheckIcon>
-                  <div>
-                    <div style={{ fontWeight: 600, color: theme.colors.brand.slate, marginBottom: 4 }}>Hours, Location & Pricing</div>
-                    <div style={{ fontSize: 14, color: theme.colors.text.secondary, lineHeight: 1.5 }}>Answers the questions that make up 60% of calls without you lifting a finger.</div>
+                  <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6, margin: 0 }}>
+                    <strong style={{ color: theme.colors.brand.azure }}>WorkBuddy captures it.</strong> WDF orders, commercial inquiries, pickup scheduling—the high-value calls get taken properly, not lost to voicemail.
+                  </p>
+                </div>
+
+                <div style={{ background: 'white', padding: 28, borderRadius: 16, boxShadow: '0 4px 16px rgba(50, 74, 95, 0.06)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+                    <div style={{ width: 40, height: 40, borderRadius: 10, background: '#FEE8E8', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20 }}>🚨</div>
+                    <h3 style={{ fontSize: 19, fontWeight: 600, color: theme.colors.brand.slate, margin: 0 }}>If It's Serious</h3>
                   </div>
-                </FeatureRow>
-                <FeatureRow>
-                  <CheckIcon><FiCheck size={14} color={theme.colors.brand.azure} /></CheckIcon>
-                  <div>
-                    <div style={{ fontWeight: 600, color: theme.colors.brand.slate, marginBottom: 4 }}>Emergency Escalation</div>
-                    <div style={{ fontSize: 14, color: theme.colors.text.secondary, lineHeight: 1.5 }}>Floods, fires, and security issues get to you immediately via call, text, or both.</div>
-                  </div>
-                </FeatureRow>
-                <FeatureRow>
-                  <CheckIcon><FiCheck size={14} color={theme.colors.brand.azure} /></CheckIcon>
-                  <div>
-                    <div style={{ fontWeight: 600, color: theme.colors.brand.slate, marginBottom: 4 }}>Machine Status Updates</div>
-                    <div style={{ fontSize: 14, color: theme.colors.text.secondary, lineHeight: 1.5 }}>Tells callers about out-of-service machines and alternative options.</div>
-                  </div>
-                </FeatureRow>
+                  <p style={{ fontSize: 15, color: theme.colors.text.secondary, lineHeight: 1.6, margin: 0 }}>
+                    <strong style={{ color: theme.colors.brand.azure }}>You're notified immediately.</strong> Floods, fires, break-ins, equipment failures—real emergencies reach you via call, text, or both. No delay.
+                  </p>
+                </div>
               </div>
             </div>
 
             <div style={{ background: '#F8F9FA', padding: 32, borderRadius: 20 }}>
-              <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 24, color: theme.colors.brand.slate }}>Works for Every Type</h3>
+              <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 24, color: theme.colors.brand.slate }}>Built For How You Operate</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                 <UseCaseCard>
-                  <strong style={{ color: theme.colors.brand.slate }}>🪙 Coin-Op & Card-Op</strong>
-                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>Handle hours, pricing, machine issues, and refund requests 24/7.</p>
+                  <strong style={{ color: theme.colors.brand.slate }}>🪙 Unattended / Card-Op</strong>
+                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>24/7 coverage for stores where you can't always be there. Emergencies never go unnoticed.</p>
                 </UseCaseCard>
                 <UseCaseCard>
                   <strong style={{ color: theme.colors.brand.slate }}>👕 Wash-and-Fold</strong>
-                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>Capture every order, quote prices, and schedule pickups automatically.</p>
+                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>Never miss a WDF order again. Every inquiry captured, every pickup scheduled.</p>
                 </UseCaseCard>
                 <UseCaseCard>
                   <strong style={{ color: theme.colors.brand.slate }}>🚚 Pickup & Delivery</strong>
-                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>Coordinate routes, confirm addresses, and manage delivery windows.</p>
+                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>Coordinate routes, confirm addresses, and keep customers informed automatically.</p>
                 </UseCaseCard>
                 <UseCaseCard>
                   <strong style={{ color: theme.colors.brand.slate }}>🏢 Multi-Location</strong>
-                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>Route calls to the right location and maintain consistent service quality.</p>
+                  <p style={{ fontSize: 14, color: theme.colors.text.secondary, marginTop: 8, lineHeight: 1.5 }}>Consistent service quality across all your stores. One system, no gaps.</p>
                 </UseCaseCard>
               </div>
             </div>
@@ -618,8 +589,8 @@ export const LaundromatLP = () => {
           <div style={{ display: 'flex', justifyContent: 'center', gap: 48, flexWrap: 'wrap', alignItems: 'center', marginBottom: 48 }}>
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: 13, textTransform: 'uppercase', color: theme.colors.text.tertiary, fontWeight: 700, marginBottom: 8 }}>Missed WDF Revenue</div>
-              <div style={{ fontSize: 'clamp(36px, 6vw, 56px)', fontWeight: 700, color: '#E53935' }}>$2,700<span style={{ fontSize: 18 }}>/mo</span></div>
-              <div style={{ fontSize: 14, color: theme.colors.text.secondary }}>Based on 2 missed orders/day @ $45 avg</div>
+              <div style={{ fontSize: 'clamp(36px, 6vw, 56px)', fontWeight: 700, color: '#E53935' }}>$1,800<span style={{ fontSize: 18 }}>/mo</span></div>
+              <div style={{ fontSize: 14, color: theme.colors.text.secondary }}>Based on 2 missed orders/day @ $30 avg</div>
             </div>
             <div style={{ fontSize: 36, color: theme.colors.text.tertiary }}>vs</div>
             <div style={{ textAlign: 'center' }}>
@@ -653,7 +624,7 @@ export const LaundromatLP = () => {
               <div style={{ fontSize: 14, color: theme.colors.text.tertiary }}>Locations Served</div>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: 40, fontWeight: 700, color: theme.colors.brand.azure }}>500K+</div>
+              <div style={{ fontSize: 40, fontWeight: 700, color: theme.colors.brand.azure }}>75K+</div>
               <div style={{ fontSize: 14, color: theme.colors.text.tertiary }}>Calls Handled</div>
             </div>
             <div style={{ textAlign: 'center' }}>
@@ -690,14 +661,48 @@ export const LaundromatLP = () => {
         </Container>
       </Section>
 
+      {/* WHO THIS IS NOT FOR */}
+      <Section style={{ background: '#F8F9FA' }}>
+        <Container style={{ maxWidth: 700 }}>
+          <h2 style={{ fontSize: 'clamp(24px, 4vw, 32px)', fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 32, textAlign: 'center' }}>
+            WorkBuddy Probably Isn't For You If...
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[
+              "You personally enjoy answering every customer call",
+              "You're rarely away from your store",
+              "You don't offer WDF or commercial services",
+              "A missed call doesn't cost you sleep or money"
+            ].map((item, i) => (
+              <div key={i} style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 14,
+                padding: '16px 20px',
+                background: 'white',
+                borderRadius: 12,
+                fontSize: 16,
+                color: theme.colors.text.secondary
+              }}>
+                <FiX size={20} color="#9CA3AF" />
+                {item}
+              </div>
+            ))}
+          </div>
+          <p style={{ textAlign: 'center', marginTop: 32, fontSize: 15, color: theme.colors.text.tertiary }}>
+            But if missed calls cost you money, sleep, or reputation—we should talk.
+          </p>
+        </Container>
+      </Section>
+
       {/* PRICING PREVIEW */}
       <Section>
         <Container style={{ maxWidth: 900, textAlign: 'center' }}>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 36px)', fontWeight: 500, color: theme.colors.brand.slate, marginBottom: 16 }}>
-            Simple, Transparent Pricing
+            Pick Your Level of Protection
           </h2>
           <p style={{ color: theme.colors.text.secondary, marginBottom: 40, fontSize: 18 }}>
-            No per-minute fees. No hidden costs. Just flat-rate service.
+            No per-minute fees. No hidden costs. Peace of mind at your level of exposure.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 24 }}>
