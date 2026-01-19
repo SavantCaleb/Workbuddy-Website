@@ -202,13 +202,15 @@ const SliderMarkers = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
-  padding: 0 14px;
+  padding: 0 4px;
 `;
 
 const SliderMarker = styled.span<{ $active?: boolean }>`
   font-size: 12px;
   color: ${props => props.$active ? theme.colors.brand.azure : theme.colors.text.tertiary};
   font-weight: ${props => props.$active ? 600 : 400};
+  min-width: 20px;
+  text-align: center;
 `;
 
 export const Pricing = () => {
