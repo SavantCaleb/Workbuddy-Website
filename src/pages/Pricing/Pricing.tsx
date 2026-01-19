@@ -250,7 +250,7 @@ export const Pricing = () => {
               <PricingCard key={i} $featured={plan.featured}>
                 {plan.featured && <PopularBadge>Most Popular</PopularBadge>}
                 <PricingHeader $featured={plan.featured} $enterprise={(plan as any).enterprise}>
-                  <h3 style={{ fontSize: 22, fontWeight: 600, marginBottom: 8 }}>{plan.name}</h3>
+                  <h3 style={{ fontSize: 22, fontWeight: 600, marginBottom: 8, color: (plan as any).enterprise ? theme.colors.brand.slate : 'white' }}>{plan.name}</h3>
                   <div style={{ fontSize: 48, fontWeight: 700, marginBottom: 4 }}>
                     {plan.price}<span style={{ fontSize: 16, fontWeight: 400 }}>{plan.period}</span>
                   </div>
