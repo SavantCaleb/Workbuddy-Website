@@ -724,12 +724,12 @@ export const LaundromatLP = () => {
             <div style={{ background: 'white', padding: 32, borderRadius: 20, boxShadow: '0 4px 20px rgba(50, 74, 95, 0.06)' }}>
               <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.tertiary, textTransform: 'uppercase', marginBottom: 12 }}>Basic</div>
               <div style={{ fontSize: 40, fontWeight: 700, color: theme.colors.brand.slate, marginBottom: 8 }}><span style={{ fontSize: 16, fontWeight: 400, color: theme.colors.text.tertiary }}>From </span>$129<span style={{ fontSize: 16, fontWeight: 400, color: theme.colors.text.tertiary }}>/mo</span></div>
-              <div style={{ color: theme.colors.text.secondary, fontSize: 14 }}>Single location, coin-op focus</div>
+              <div style={{ color: theme.colors.text.secondary, fontSize: 14 }}>Answers every call, coin-op focus</div>
             </div>
             <div style={{ background: theme.colors.brand.azure, padding: 32, borderRadius: 20, color: 'white' }}>
               <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.9, textTransform: 'uppercase', marginBottom: 12 }}>Pro</div>
               <div style={{ fontSize: 40, fontWeight: 700, marginBottom: 8 }}><span style={{ fontSize: 16, fontWeight: 400, opacity: 0.7 }}>From </span>$199<span style={{ fontSize: 16, fontWeight: 400, opacity: 0.7 }}>/mo</span></div>
-              <div style={{ fontSize: 14, opacity: 0.9 }}>Integrations with CleanCloud, Curbside & CCI</div>
+              <div style={{ fontSize: 14, opacity: 0.9 }}>+WDF orders & scheduling</div>
             </div>
           </div>
 
