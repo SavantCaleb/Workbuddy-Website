@@ -729,7 +729,7 @@ export const LaundromatLP = () => {
             <div style={{ background: theme.colors.brand.azure, padding: 32, borderRadius: 20, color: 'white' }}>
               <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.9, textTransform: 'uppercase', marginBottom: 12 }}>Pro</div>
               <div style={{ fontSize: 40, fontWeight: 700, marginBottom: 8 }}><span style={{ fontSize: 16, fontWeight: 400, opacity: 0.7 }}>From </span>$199<span style={{ fontSize: 16, fontWeight: 400, opacity: 0.7 }}>/mo</span></div>
-              <div style={{ fontSize: 14, opacity: 0.9 }}>+WDF orders & scheduling</div>
+              <div style={{ fontSize: 14, opacity: 0.9 }}>+ WDF orders & scheduling</div>
             </div>
           </div>
 
