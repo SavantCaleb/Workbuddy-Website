@@ -662,7 +662,7 @@ export const LaundromatLP = () => {
               { q: "Can it actually take wash-and-fold orders?", a: "Absolutely. WorkBuddy captures customer details, weight estimates, special instructions (like detergent preferences), and pickup/delivery times. Orders go directly to your system or as notifications." },
               { q: "How does it handle refund requests?", a: "WorkBuddy documents the machine number, amount, and customer contact info. You can set up automatic refunds for small amounts, or have all requests sent to you for review." },
               { q: "What if there's a flood at 2am?", a: "You define what constitutes an emergency during setup. For floods, fires, or security issues, WorkBuddy immediately calls/texts you and can even dispatch emergency services." },
-              { q: "How much does it cost?", a: "Basic plans start at $129/month. Pro plans with integrations (Curbside, CleanCloud, etc.) start at $199/month. No per-call fees." }
+              { q: "How much does it cost?", a: "Coin-Op plans start at $129/month. Full-Service plans with WDF orders & scheduling start at $199/month. No per-call fees." }
             ].map((item, i) => (
               <div key={i} style={{ padding: 24, background: 'white', borderRadius: 14, boxShadow: '0 2px 12px rgba(50, 74, 95, 0.04)' }}>
                 <h4 style={{ fontSize: 17, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>{item.q}</h4>
@@ -722,12 +722,12 @@ export const LaundromatLP = () => {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 24 }}>
             <div style={{ background: 'white', padding: 32, borderRadius: 20, boxShadow: '0 4px 20px rgba(50, 74, 95, 0.06)' }}>
-              <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.tertiary, textTransform: 'uppercase', marginBottom: 12 }}>Basic</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.tertiary, textTransform: 'uppercase', marginBottom: 12 }}>Coin-Op</div>
               <div style={{ fontSize: 40, fontWeight: 700, color: theme.colors.brand.slate, marginBottom: 8 }}><span style={{ fontSize: 16, fontWeight: 400, color: theme.colors.text.tertiary }}>From </span>$129<span style={{ fontSize: 16, fontWeight: 400, color: theme.colors.text.tertiary }}>/mo</span></div>
-              <div style={{ color: theme.colors.text.secondary, fontSize: 14 }}>Answers every call, coin-op focus</div>
+              <div style={{ color: theme.colors.text.secondary, fontSize: 14 }}>Answers every call, 24/7</div>
             </div>
             <div style={{ background: theme.colors.brand.azure, padding: 32, borderRadius: 20, color: 'white' }}>
-              <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.9, textTransform: 'uppercase', marginBottom: 12 }}>Pro</div>
+              <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.9, textTransform: 'uppercase', marginBottom: 12 }}>Full-Service</div>
               <div style={{ fontSize: 40, fontWeight: 700, marginBottom: 8 }}><span style={{ fontSize: 16, fontWeight: 400, opacity: 0.7 }}>From </span>$199<span style={{ fontSize: 16, fontWeight: 400, opacity: 0.7 }}>/mo</span></div>
               <div style={{ fontSize: 14, opacity: 0.9 }}>+ WDF orders & scheduling</div>
             </div>

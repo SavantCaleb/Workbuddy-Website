@@ -133,10 +133,10 @@ export const Pricing = () => {
 
   const laundromatPlans = [
     {
-      name: 'Basic',
+      name: 'Coin-Op',
       price: 'From $129',
       period: '/mo',
-      description: 'For single-location operators',
+      description: 'Answers every call, 24/7',
       features: [
         'Unlimited inbound calls',
         '24/7 answering',
@@ -147,13 +147,13 @@ export const Pricing = () => {
       ]
     },
     {
-      name: 'Pro',
+      name: 'Full-Service',
       price: 'From $199',
       period: '/mo',
-      description: 'With integrations',
+      description: '+ WDF orders & scheduling',
       featured: true,
       features: [
-        'Everything in Basic, plus:',
+        'Everything in Coin-Op, plus:',
         'WDF order intake',
         'Pickup/delivery scheduling',
         'SMS notifications',
