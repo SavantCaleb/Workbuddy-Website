@@ -129,14 +129,100 @@ const FAQItem = styled.div`
   }
 `;
 
+// Pricing by location count
+const locationPricing: { [key: number]: { coinOp: number | null; fullService: number | null } } = {
+  1: { coinOp: 129, fullService: 199 },
+  2: { coinOp: 199, fullService: 249 },
+  3: { coinOp: 249, fullService: 299 },
+  4: { coinOp: 299, fullService: 349 },
+  5: { coinOp: 349, fullService: 399 },
+  6: { coinOp: 399, fullService: 449 },
+  7: { coinOp: 429, fullService: 489 },
+  8: { coinOp: 459, fullService: 529 },
+  9: { coinOp: 489, fullService: 569 },
+  10: { coinOp: null, fullService: null }, // Custom pricing
+};
+
+const SliderContainer = styled.div`
+  max-width: 500px;
+  margin: 0 auto 48px;
+  text-align: center;
+`;
+
+const SliderLabel = styled.div`
+  font-size: 18px;
+  color: ${theme.colors.text.secondary};
+  margin-bottom: 16px;
+`;
+
+const LocationCount = styled.span`
+  font-size: 24px;
+  font-weight: 700;
+  color: ${theme.colors.brand.slate};
+`;
+
+const StyledSlider = styled.input`
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: ${theme.colors.brand.slate}15;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: ${theme.colors.brand.azure};
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(103, 183, 209, 0.4);
+    transition: transform 0.15s ease;
+  }
+
+  &::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+  }
+
+  &::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: ${theme.colors.brand.azure};
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(103, 183, 209, 0.4);
+  }
+`;
+
+const SliderMarkers = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 0 2px;
+`;
+
+const SliderMarker = styled.span<{ $active?: boolean }>`
+  font-size: 12px;
+  color: ${props => props.$active ? theme.colors.brand.azure : theme.colors.text.tertiary};
+  font-weight: ${props => props.$active ? 600 : 400};
+`;
+
 export const Pricing = () => {
   const [activeTab, setActiveTab] = useState<'laundromat' | 'pm'>('laundromat');
+  const [locationCount, setLocationCount] = useState(1);
+
+  const pricing = locationPricing[locationCount] || locationPricing[10];
+  const isCustomPricing = locationCount >= 10;
 
   const laundromatPlans = [
     {
       name: 'Coin Op',
-      price: 'From $129',
-      period: '/mo',
+      price: isCustomPricing ? 'Custom' : `$${pricing.coinOp}`,
+      period: isCustomPricing ? '' : '/mo',
       description: 'Answers every call, 24/7',
       features: [
         'Unlimited inbound calls',
@@ -149,8 +235,8 @@ export const Pricing = () => {
     },
     {
       name: 'Full Service',
-      price: 'From $199',
-      period: '/mo',
+      price: isCustomPricing ? 'Custom' : `$${pricing.fullService}`,
+      period: isCustomPricing ? '' : '/mo',
       description: '+ WDF orders & scheduling',
       featured: true,
       features: [
@@ -246,6 +332,28 @@ export const Pricing = () => {
 
       <Section style={{ paddingTop: 0 }}>
         <Container>
+          {activeTab === 'laundromat' && (
+            <SliderContainer>
+              <SliderLabel>
+                How many locations? <LocationCount>{locationCount === 10 ? '10+' : locationCount}</LocationCount>
+              </SliderLabel>
+              <StyledSlider
+                type="range"
+                min="1"
+                max="10"
+                value={locationCount}
+                onChange={(e) => setLocationCount(parseInt(e.target.value))}
+              />
+              <SliderMarkers>
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, '10+'].map((num, i) => (
+                  <SliderMarker key={i} $active={locationCount === (num === '10+' ? 10 : num)}>
+                    {num}
+                  </SliderMarker>
+                ))}
+              </SliderMarkers>
+            </SliderContainer>
+          )}
+
           <PricingGrid>
             {plans.map((plan, i) => (
               <PricingCard key={i} $featured={plan.featured}>
