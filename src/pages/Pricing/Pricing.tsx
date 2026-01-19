@@ -10,7 +10,7 @@ import { FiCheck, FiHelpCircle } from 'react-icons/fi';
 const pricingStructuredData = {
   "@context": "https://schema.org",
   "@type": "PriceSpecification",
-  "price": "99.00",
+  "price": "129.00",
   "priceCurrency": "USD",
   "description": "Starting price for Laundromat plan"
 };
@@ -133,10 +133,10 @@ export const Pricing = () => {
 
   const laundromatPlans = [
     {
-      name: 'Starter',
-      price: '$99',
+      name: 'Basic',
+      price: 'From $129',
       period: '/mo',
-      description: 'Perfect for single-location coin-op',
+      description: 'For single-location operators',
       features: [
         'Unlimited inbound calls',
         '24/7 answering',
@@ -147,32 +147,18 @@ export const Pricing = () => {
       ]
     },
     {
-      name: 'Growth',
-      price: '$199',
+      name: 'Pro',
+      price: 'From $199',
       period: '/mo',
-      description: 'For wash-and-fold operators',
+      description: 'With integrations',
       featured: true,
       features: [
-        'Everything in Starter, plus:',
+        'Everything in Basic, plus:',
         'WDF order intake',
         'Pickup/delivery scheduling',
         'SMS notifications',
-        'Custom greetings',
-        'POS integration (Cents, etc.)'
-      ]
-    },
-    {
-      name: 'Multi-Location',
-      price: '$299',
-      period: '/mo',
-      description: 'For 2+ locations',
-      features: [
-        'Everything in Growth, plus:',
-        'Multiple location routing',
-        'Dashboard analytics',
-        'Priority support',
-        'Volume discounts available',
-        'Dedicated onboarding'
+        'Integrations (Curbside, CleanCloud, etc.)',
+        'Priority support'
       ]
     }
   ];
@@ -230,7 +216,7 @@ export const Pricing = () => {
     <>
       <SEO
         title="Pricing | WorkBuddy AI Receptionist"
-        description="Simple, transparent pricing. Laundromats from $99/mo. Property management from $299/mo. No hidden fees, no per-minute charges."
+        description="Simple, transparent pricing. Laundromats from $129/mo. Property management from $299/mo. No hidden fees, no per-minute charges."
         canonical="/pricing"
         structuredData={pricingStructuredData}
       />

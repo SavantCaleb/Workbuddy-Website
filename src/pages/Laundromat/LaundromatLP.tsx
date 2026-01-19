@@ -51,7 +51,7 @@ const laundromatStructuredData = {
   },
   "offers": {
     "@type": "Offer",
-    "price": "99.00",
+    "price": "129.00",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
   }
@@ -115,7 +115,7 @@ export const LaundromatLP = () => {
     <>
       <SEO
         title="AI Receptionist for Laundromats"
-        description="Never miss a laundromat call again. WorkBuddy handles refunds, WDF orders, machine questions, and emergencies 24/7. Built by the creator of Bella AI. From $99/mo."
+        description="Never miss a laundromat call again. WorkBuddy handles refunds, WDF orders, machine questions, and emergencies 24/7. Built by the creator of Bella AI. From $129/mo."
         canonical="/laundromats"
         structuredData={laundromatStructuredData}
       />
@@ -185,7 +185,7 @@ export const LaundromatLP = () => {
 
               <div style={{ marginTop: 16, display: 'flex', gap: 24, color: theme.colors.text.tertiary, fontSize: 14 }}>
                 <span>✓ 30-day guarantee</span>
-                <span>✓ From $99/mo</span>
+                <span>✓ From $129/mo</span>
               </div>
             </motion.div>
 
@@ -610,7 +610,7 @@ export const LaundromatLP = () => {
             <div style={{ fontSize: 36, color: theme.colors.text.tertiary }}>vs</div>
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: 13, textTransform: 'uppercase', color: theme.colors.text.tertiary, fontWeight: 700, marginBottom: 8 }}>WorkBuddy Cost</div>
-              <div style={{ fontSize: 'clamp(36px, 6vw, 56px)', fontWeight: 700, color: theme.colors.brand.azure }}>$99<span style={{ fontSize: 18 }}>/mo</span></div>
+              <div style={{ fontSize: 'clamp(36px, 6vw, 56px)', fontWeight: 700, color: theme.colors.brand.azure }}>$129<span style={{ fontSize: 18 }}>/mo</span></div>
               <div style={{ fontSize: 14, color: theme.colors.text.secondary }}>Starting price, unlimited calls</div>
             </div>
           </div>
@@ -662,7 +662,7 @@ export const LaundromatLP = () => {
               { q: "Can it actually take wash-and-fold orders?", a: "Absolutely. WorkBuddy captures customer details, weight estimates, special instructions (like detergent preferences), and pickup/delivery times. Orders go directly to your system or as notifications." },
               { q: "How does it handle refund requests?", a: "WorkBuddy documents the machine number, amount, and customer contact info. You can set up automatic refunds for small amounts, or have all requests sent to you for review." },
               { q: "What if there's a flood at 2am?", a: "You define what constitutes an emergency during setup. For floods, fires, or security issues, WorkBuddy immediately calls/texts you and can even dispatch emergency services." },
-              { q: "How much does it cost?", a: "Plans start at $99/month for single-location operators. WDF and scheduling features are included in the $199/month Growth plan. No per-call fees." }
+              { q: "How much does it cost?", a: "Basic plans start at $129/month. Pro plans with integrations (Curbside, CleanCloud, etc.) start at $199/month. No per-call fees." }
             ].map((item, i) => (
               <div key={i} style={{ padding: 24, background: 'white', borderRadius: 14, boxShadow: '0 2px 12px rgba(50, 74, 95, 0.04)' }}>
                 <h4 style={{ fontSize: 17, fontWeight: 600, marginBottom: 10, color: theme.colors.brand.slate }}>{item.q}</h4>
@@ -722,19 +722,16 @@ export const LaundromatLP = () => {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 24 }}>
             <div style={{ background: 'white', padding: 32, borderRadius: 20, boxShadow: '0 4px 20px rgba(50, 74, 95, 0.06)' }}>
-              <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.tertiary, textTransform: 'uppercase', marginBottom: 8 }}>Starter</div>
-              <div style={{ fontSize: 40, fontWeight: 700, color: theme.colors.brand.slate, marginBottom: 8 }}>$99<span style={{ fontSize: 16, fontWeight: 400 }}>/mo</span></div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.tertiary, textTransform: 'uppercase', marginBottom: 8 }}>Basic</div>
+              <div style={{ fontSize: 14, color: theme.colors.text.secondary, marginBottom: 4 }}>From</div>
+              <div style={{ fontSize: 40, fontWeight: 700, color: theme.colors.brand.slate, marginBottom: 8 }}>$129<span style={{ fontSize: 16, fontWeight: 400 }}>/mo</span></div>
               <div style={{ color: theme.colors.text.secondary, fontSize: 14 }}>Single location, coin-op focus</div>
             </div>
             <div style={{ background: theme.colors.brand.azure, padding: 32, borderRadius: 20, color: 'white' }}>
-              <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.9, textTransform: 'uppercase', marginBottom: 8 }}>Growth</div>
+              <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.9, textTransform: 'uppercase', marginBottom: 8 }}>Pro</div>
+              <div style={{ fontSize: 14, opacity: 0.7, marginBottom: 4 }}>From</div>
               <div style={{ fontSize: 40, fontWeight: 700, marginBottom: 8 }}>$199<span style={{ fontSize: 16, fontWeight: 400 }}>/mo</span></div>
-              <div style={{ fontSize: 14, opacity: 0.9 }}>+ WDF orders & scheduling</div>
-            </div>
-            <div style={{ background: 'white', padding: 32, borderRadius: 20, boxShadow: '0 4px 20px rgba(50, 74, 95, 0.06)' }}>
-              <div style={{ fontSize: 14, fontWeight: 700, color: theme.colors.text.tertiary, textTransform: 'uppercase', marginBottom: 8 }}>Multi-Location</div>
-              <div style={{ fontSize: 40, fontWeight: 700, color: theme.colors.brand.slate, marginBottom: 8 }}>$299<span style={{ fontSize: 16, fontWeight: 400 }}>/mo</span></div>
-              <div style={{ color: theme.colors.text.secondary, fontSize: 14 }}>2+ locations, priority support</div>
+              <div style={{ fontSize: 14, opacity: 0.9 }}>+ Integrations</div>
             </div>
           </div>
 
