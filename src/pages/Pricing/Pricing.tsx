@@ -203,7 +203,7 @@ const SliderMarkers = styled.div`
   justify-content: space-between;
   margin-top: 8px;
   margin-left: 14px;
-  margin-right: 14px;
+  margin-right: 6px;
 `;
 
 const SliderMarker = styled.span<{ $active?: boolean }>`
