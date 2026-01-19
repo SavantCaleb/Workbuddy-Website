@@ -51,6 +51,7 @@ const PricingGrid = styled.div`
   gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 10px;
 `;
 
 const PricingCard = styled.div<{ $featured?: boolean }>`
@@ -60,6 +61,7 @@ const PricingCard = styled.div<{ $featured?: boolean }>`
   box-shadow: ${props => props.$featured ? '0 20px 50px rgba(50, 74, 95, 0.15)' : theme.shadows.medium};
   border: ${props => props.$featured ? `2px solid ${theme.colors.brand.azure}` : 'none'};
   position: relative;
+  transform: ${props => props.$featured ? 'scale(1.02)' : 'none'};
 `;
 
 const PricingHeader = styled.div<{ $featured?: boolean; $enterprise?: boolean }>`
