@@ -385,7 +385,7 @@ export const Pricing = () => {
                     $variant={(plan as any).enterprise ? 'outline' : 'primary'}
                     style={{ width: '100%', marginTop: 32, background: (plan as any).enterprise ? undefined : !plan.featured ? theme.colors.brand.slate : undefined }}
                   >
-                    {(plan as any).enterprise ? 'Contact Sales' : 'Start Free Trial'}
+                    {(plan as any).enterprise ? 'Contact Sales' : 'Try for Free'}
                   </Button>
                 </div>
               </PricingCard>
