@@ -162,8 +162,7 @@ const LocationCount = styled.span`
 `;
 
 const StyledSlider = styled.input`
-  width: calc(100% - 28px);
-  margin: 0 14px;
+  width: 100%;
   height: 8px;
   border-radius: 4px;
   background: ${theme.colors.brand.slate}15;
@@ -203,7 +202,7 @@ const SliderMarkers = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
-  padding: 0;
+  padding: 0 14px;
 `;
 
 const SliderMarker = styled.span<{ $active?: boolean }>`
