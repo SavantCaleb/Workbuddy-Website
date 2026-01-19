@@ -199,14 +199,17 @@ const StyledSlider = styled.input`
 `;
 
 const SliderMarkers = styled.div`
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  height: 20px;
   margin-top: 8px;
   margin-left: 14px;
-  margin-right: 6px;
+  margin-right: 14px;
 `;
 
-const SliderMarker = styled.span<{ $active?: boolean }>`
+const SliderMarker = styled.span<{ $active?: boolean; $position: number }>`
+  position: absolute;
+  left: ${props => (props.$position / 9) * 100}%;
+  transform: translateX(-50%);
   font-size: 12px;
   color: ${props => props.$active ? theme.colors.brand.azure : theme.colors.text.tertiary};
   font-weight: ${props => props.$active ? 600 : 400};
@@ -347,7 +350,7 @@ export const Pricing = () => {
               />
               <SliderMarkers>
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, '10+'].map((num, i) => (
-                  <SliderMarker key={i} $active={locationCount === (num === '10+' ? 10 : num)}>
+                  <SliderMarker key={i} $active={locationCount === (num === '10+' ? 10 : num)} $position={i}>
                     {num}
                   </SliderMarker>
                 ))}
