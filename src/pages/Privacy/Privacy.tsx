@@ -190,7 +190,7 @@ export const Privacy: React.FC = () => {
             or opt in to receive messages:
           </Paragraph>
           <List>
-            <li>You consent to receive customer care messages including answers to questions and conversational business communication from Work Buddy</li>
+            <li>You consent to receive text messages from Work Buddy regarding your rental inquiry, account, maintenance requests, and appointments</li>
             <li>All messages will be sent from Work Buddy and clearly identify the sender</li>
             <li>Message frequency varies based on your interactions</li>
             <li>Message and data rates may apply</li>

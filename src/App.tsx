@@ -4,6 +4,7 @@ import { GlobalStyles } from './styles/GlobalStyles';
 import { SmoothScroll } from './components/SmoothScroll';
 
 // Pages
+import { NewHomepage } from './pages/Homepage/NewHomepage';
 import { LandingPage } from './pages/Homepage/AppleHomepage';
 import { LaundromatLP } from './pages/Laundromat/LaundromatLP';
 import { ThankYou } from './pages/Laundromat/ThankYou';
@@ -25,7 +26,7 @@ function App() {
       <GlobalStyles />
       <SmoothScroll />
       <Routes>
-        <Route path="/" element={<Navigate to="/laundromats" replace />} />
+        <Route path="/" element={<NewHomepage />} />
 
         {/* Solutions / Verticals */}
         <Route path="/laundromats" element={<LaundromatLP />} />
