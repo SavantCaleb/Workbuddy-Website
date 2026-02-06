@@ -137,6 +137,61 @@ const StepsGrid = styled.div`
   }
 `;
 
+// SMS CTA Section styled components
+const SMSCTACard = styled.div`
+  background: white;
+  border: 2px solid ${theme.colors.brand.azure};
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(50, 74, 95, 0.08);
+`;
+
+const PhoneNumber = styled.a`
+  display: inline-block;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: ${theme.typography.weights.bold};
+  color: ${theme.colors.brand.azure};
+  text-decoration: none;
+  margin: 24px 0;
+  padding: 16px 32px;
+  background: ${theme.colors.brand.azure}10;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: ${theme.colors.brand.azure}20;
+    transform: translateY(-2px);
+  }
+`;
+
+const SMSDisclosure = styled.div`
+  background: #F0F4F8;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 24px;
+  text-align: left;
+
+  p {
+    font-size: 13px;
+    color: ${theme.colors.text.secondary};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  a {
+    color: ${theme.colors.brand.azure};
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
 export const NewHomepage: React.FC = () => {
   return (
     <>
@@ -529,6 +584,64 @@ export const NewHomepage: React.FC = () => {
               </a>
             </div>
           </div>
+        </Container>
+      </Section>
+
+      {/* SMS OPT-IN CTA SECTION */}
+      <Section $bg="#F0F4F8">
+        <Container>
+          <div style={{ textAlign: 'center', marginBottom: 32 }}>
+            <Badge>Text Us 24/7</Badge>
+            <h2 style={{
+              fontSize: 'clamp(28px, 4vw, 40px)',
+              fontWeight: 500,
+              color: theme.colors.brand.slate,
+              lineHeight: 1.2,
+              marginBottom: 16,
+              fontFamily: theme.typography.fontFamily.heading
+            }}>
+              Get Instant Support via Text
+            </h2>
+            <p style={{
+              fontSize: 17,
+              color: theme.colors.text.secondary,
+              maxWidth: 500,
+              margin: '0 auto'
+            }}>
+              Have a question? Text us anytime and get an immediate response from Work Buddy.
+            </p>
+          </div>
+
+          <SMSCTACard>
+            <p style={{
+              fontSize: 17,
+              color: theme.colors.text.secondary,
+              marginBottom: 8
+            }}>
+              Text us now at:
+            </p>
+            <PhoneNumber href="sms:+12036051105">
+              (203) 605-1105
+            </PhoneNumber>
+            <p style={{
+              fontSize: 15,
+              color: theme.colors.brand.slate,
+              fontWeight: 500
+            }}>
+              Available 24/7, 365 days a year
+            </p>
+
+            <SMSDisclosure>
+              <p>
+                By texting this number, you consent to receive SMS messages from Work Buddy
+                regarding your inquiry. <strong>Message frequency varies. Message and data
+                rates may apply.</strong> Reply STOP to opt out or HELP for assistance.
+                Consent is not required to make a purchase. Your mobile information will not
+                be shared with third parties for promotional purposes.{' '}
+                <Link to="/privacy">Privacy Policy</Link>
+              </p>
+            </SMSDisclosure>
+          </SMSCTACard>
         </Container>
       </Section>
 

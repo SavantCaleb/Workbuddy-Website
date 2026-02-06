@@ -70,28 +70,79 @@ const ContactInfo = styled.div`
   padding: 32px;
   margin-top: 64px;
   margin-bottom: 64px;
-  
+
   h3 {
     font-size: 20px;
     font-weight: ${theme.typography.weights.semibold};
     color: ${theme.colors.text.primary};
     margin-bottom: 16px;
   }
-  
+
   p {
     color: ${theme.colors.text.secondary};
     margin-bottom: 8px;
     font-size: 15px;
   }
-  
+
   a {
     color: ${theme.colors.brand.azure};
     font-weight: 500;
-    
+
     &:hover {
       text-decoration: underline;
     }
   }
+`;
+
+const SMSComplianceBox = styled.div`
+  background: ${theme.colors.brand.azure}08;
+  border: 2px solid ${theme.colors.brand.azure};
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 48px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: ${theme.typography.weights.semibold};
+    color: ${theme.colors.text.primary};
+    margin-bottom: 20px;
+  }
+`;
+
+const SMSQuickRef = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: grid;
+  gap: 12px;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: ${theme.colors.text.secondary};
+    font-size: 16px;
+    line-height: 1.5;
+
+    &::before {
+      content: '✓';
+      color: ${theme.colors.brand.azure};
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    strong {
+      color: ${theme.colors.text.primary};
+    }
+  }
+`;
+
+const SMSNote = styled.p`
+  font-size: 14px;
+  color: ${theme.colors.text.secondary};
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid ${theme.colors.brand.azure}20;
 `;
 
 export const Privacy: React.FC = () => {
@@ -105,6 +156,23 @@ export const Privacy: React.FC = () => {
       <Container>
         <Title>Privacy Policy</Title>
         <LastUpdated>Last updated: 1/7/2026</LastUpdated>
+
+        {/* SMS COMPLIANCE BOX - Prominent at top for MNO verification */}
+        <SMSComplianceBox>
+          <h2>SMS Messaging Terms</h2>
+          <SMSQuickRef>
+            <li><strong>Opt-In:</strong> Text <a href="sms:+12036051105">(203) 605-1105</a> to start receiving messages</li>
+            <li><strong>Opt-Out:</strong> Reply STOP to any message to unsubscribe</li>
+            <li><strong>Help:</strong> Reply HELP for assistance</li>
+            <li><strong>Frequency:</strong> Message frequency varies based on your interactions</li>
+            <li><strong>Rates:</strong> Message and data rates may apply</li>
+            <li><strong>No Purchase Required:</strong> Consent to receive SMS is not required to make a purchase</li>
+          </SMSQuickRef>
+          <SMSNote>
+            We do not share, sell, or transfer your mobile information to third parties for marketing or promotional purposes.
+            See Section 6 below for complete SMS terms.
+          </SMSNote>
+        </SMSComplianceBox>
 
         <Section>
           <SectionTitle>1. Information We Collect</SectionTitle>

@@ -117,8 +117,11 @@ export const MinimalFooter: React.FC = () => {
         
         <SMSCompliance>
           <p>
-            <strong>SMS Compliance:</strong> By providing your phone number, you consent to receive SMS messages from Work Buddy regarding your rental inquiry and account.
-            Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. Your mobile information will not be sold or shared with third parties for promotional purposes.
+            <strong>SMS Messaging:</strong> Text <a href="sms:+12036051105">(203) 605-1105</a> to
+            opt in to receive SMS messages from Work Buddy. Message frequency varies. Message and
+            data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not
+            required to make a purchase. Your mobile information will not be shared with third
+            parties for promotional purposes. <Link to="/privacy">Privacy Policy</Link>
           </p>
         </SMSCompliance>
 
