@@ -7,7 +7,10 @@ import { SmoothScroll } from './components/SmoothScroll';
 import { NewHomepage } from './pages/Homepage/NewHomepage';
 import { LandingPage } from './pages/Homepage/AppleHomepage';
 import { LaundromatLP } from './pages/Laundromat/LaundromatLP';
+import { LaundromatAdsLP } from './pages/LaundromatAds/LaundromatAdsLP';
+import { LaundromatAdsShortLP } from './pages/LaundromatAds/LaundromatAdsShortLP';
 import { ThankYou } from './pages/Laundromat/ThankYou';
+import { LaundromatAdsThankYou } from './pages/LaundromatAds/ThankYou';
 import { PropertyManagementLP } from './pages/PropertyManagement/PropertyManagementLP';
 import { BellaLP } from './pages/Bella/BellaLP';
 import { Pricing } from './pages/Pricing/Pricing';
@@ -30,6 +33,9 @@ function App() {
 
         {/* Solutions / Verticals */}
         <Route path="/laundromats" element={<LaundromatLP />} />
+        <Route path="/laundromat-ads" element={<LaundromatAdsLP />} />
+        <Route path="/laundromat-ads-short" element={<LaundromatAdsShortLP />} />
+        <Route path="/laundromat-ads/thank-you" element={<LaundromatAdsThankYou />} />
         <Route path="/laundromats/thank-you" element={<ThankYou />} />
         <Route path="/property-management" element={<PropertyManagementLP />} />
         <Route path="/bella" element={<BellaLP />} />
