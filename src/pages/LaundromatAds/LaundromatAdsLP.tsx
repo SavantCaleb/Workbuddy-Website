@@ -25,7 +25,7 @@ export const LaundromatAdsLP = () => {
   const bottomCtaRef = useRef<HTMLElement>(null);
   const [formInView, setFormInView] = useState(true);
 
-  // UTM tracking
+  // UTM + hash tracking
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'gclid'];
@@ -33,6 +33,7 @@ export const LaundromatAdsLP = () => {
       const value = params.get(field);
       if (value) sessionStorage.setItem(field, value);
     });
+    if (location.hash) sessionStorage.setItem('ad_variant', location.hash.replace('#', ''));
   }, [location]);
 
   // Track form + bottom CTA visibility for sticky bar

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 import { SEO } from '../../components/SEO/SEO';
@@ -103,7 +103,23 @@ export const Demo = () => {
       }
     };
 
+    // Fire Google Ads conversion when Cal.com booking is confirmed
+    const handleCalMessage = (e: MessageEvent) => {
+      if (e.data?.event === 'booking_successful' || e.data?.type === 'booking_successful') {
+        const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+        if (gtag) {
+          gtag('event', 'conversion', {
+            send_to: 'AW-17886210357/_8JrCM7Eq_kbELXS59BC',
+            value: 100.0,
+            currency: 'USD',
+          });
+        }
+      }
+    };
+    window.addEventListener('message', handleCalMessage);
+
     return () => {
+      window.removeEventListener('message', handleCalMessage);
       if (document.body.contains(script)) {
         document.body.removeChild(script);
       }

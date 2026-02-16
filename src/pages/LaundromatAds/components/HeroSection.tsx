@@ -800,7 +800,15 @@ export const HeroSection = forwardRef<HeroSectionHandle, HeroSectionProps>(
       await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          ...(sessionStorage.getItem('utm_source') && { utm_source: sessionStorage.getItem('utm_source') }),
+          ...(sessionStorage.getItem('utm_medium') && { utm_medium: sessionStorage.getItem('utm_medium') }),
+          ...(sessionStorage.getItem('utm_campaign') && { utm_campaign: sessionStorage.getItem('utm_campaign') }),
+          ...(sessionStorage.getItem('utm_term') && { utm_term: sessionStorage.getItem('utm_term') }),
+          ...(sessionStorage.getItem('gclid') && { gclid: sessionStorage.getItem('gclid') }),
+          ...(sessionStorage.getItem('ad_variant') && { ad_variant: sessionStorage.getItem('ad_variant') }),
+        }),
       });
       navigate(thankYouPath);
     } catch {

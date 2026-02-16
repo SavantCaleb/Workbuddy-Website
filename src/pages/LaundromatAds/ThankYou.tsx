@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { theme } from '../../styles/theme';
 import { SEO } from '../../components/SEO/SEO';
 import logo from '../../assets/logo.png';
+
+declare global {
+  interface Window { gtag?: (...args: unknown[]) => void; }
+}
 
 const fadeUp = keyframes`
   from {
@@ -169,7 +174,18 @@ const Fine = styled.p`
   }
 `;
 
-export const LaundromatAdsThankYou = () => (
+export const LaundromatAdsThankYou = () => {
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17886210357/1_u4CMvEq_kbELXS59BC',
+        value: 200.0,
+        currency: 'USD',
+      });
+    }
+  }, []);
+
+  return (
   <>
     <SEO
       title="You're all set | WorkBuddy"
@@ -207,4 +223,5 @@ export const LaundromatAdsThankYou = () => (
       </Content>
     </Page>
   </>
-);
+  );
+};
