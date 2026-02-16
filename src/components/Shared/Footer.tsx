@@ -21,13 +21,13 @@ export const Footer = () => {
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 40, width: '100%' }}>
-            
+
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               <span style={{ color: 'white', fontWeight: 600 }}>Solutions</span>
-              <Link to="/laundromats" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Laundromats</Link>
+              <Link to="/" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Laundromats</Link>
               <Link to="/property-management" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Property Management</Link>
               <Link to="/pricing" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Pricing</Link>
-              <Button 
+              <Button
                 data-cal-link="caleb-benedict-4rrqhq/demo"
                 data-cal-namespace="demo"
                 data-cal-config='{"layout":"month_view"}'
@@ -43,6 +43,15 @@ export const Footer = () => {
               <Link to="/about" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>About</Link>
               <Link to="/blog" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Blog</Link>
               <a href="mailto:hello@getworkbuddy.com" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Contact</a>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              <span style={{ color: 'white', fontWeight: 600 }}>Resources</span>
+              <Link to="/blog/ai-receptionist-for-laundromats" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>AI Receptionist Guide</Link>
+              <Link to="/blog/how-to-automate-your-laundromat" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Automation Playbook</Link>
+              <Link to="/blog/ai-answering-service-guide" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>AI Answering Guide</Link>
+              <Link to="/blog/best-laundromat-software" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Best Software 2026</Link>
+              <Link to="/blog/how-to-start-a-laundromat" style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none' }}>Start a Laundromat</Link>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

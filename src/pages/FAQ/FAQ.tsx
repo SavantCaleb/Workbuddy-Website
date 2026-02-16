@@ -277,10 +277,18 @@ export const FAQ = () => {
   return (
     <>
       <SEO
-        title="FAQ | WorkBuddy AI Receptionist"
-        description="Answers to common questions about WorkBuddy's AI phone answering service for laundromats and property managers."
+        title="FAQ: AI Phone Answering for Laundromats"
+        description="Answers to common questions about WorkBuddy's AI phone answering service for laundromats and property managers. Setup, pricing, features, and more."
         canonical="/faq"
-        structuredData={faqStructuredData}
+        keywords="laundromat customer service, AI phone answering FAQ, laundromat answering service questions, WorkBuddy FAQ"
+        structuredData={[faqStructuredData, {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
+            { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://getworkbuddy.com/faq" }
+          ]
+        }]}
       />
       <Navbar />
 

@@ -7,13 +7,41 @@ import { Footer } from '../../components/Shared/Footer';
 import { Section, Container, Button, Badge } from '../../components/Shared/Layout';
 import { FiCheck, FiHelpCircle } from 'react-icons/fi';
 
-const pricingStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "PriceSpecification",
-  "price": "129.00",
-  "priceCurrency": "USD",
-  "description": "Starting price for Laundromat plan"
-};
+const pricingStructuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "WorkBuddy AI Receptionist",
+    "description": "AI-powered phone receptionist for laundromats. Handles refunds, WDF orders, emergencies, and more 24/7.",
+    "brand": { "@type": "Brand", "name": "WorkBuddy" },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Coin Op",
+        "price": "129.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "description": "24/7 call answering for coin-op laundromats"
+      },
+      {
+        "@type": "Offer",
+        "name": "Full Service",
+        "price": "199.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "description": "WDF orders, scheduling, and integrations"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
+      { "@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://getworkbuddy.com/pricing" }
+    ]
+  }
+];
 
 const TabContainer = styled.div`
   display: flex;
@@ -306,9 +334,10 @@ export const Pricing = () => {
   return (
     <>
       <SEO
-        title="Pricing | WorkBuddy AI Receptionist"
-        description="Simple, transparent pricing. Laundromats from $129/mo. Property management from $299/mo. No hidden fees, no per-minute charges."
+        title="AI Receptionist Pricing from $129/mo"
+        description="Simple, transparent pricing. Laundromats from $129/mo. Property management from $299/mo. No hidden fees, no per-minute charges, unlimited calls."
         canonical="/pricing"
+        keywords="answering service pricing, AI receptionist cost, laundromat phone service price, virtual receptionist pricing"
         structuredData={pricingStructuredData}
       />
       <Navbar />

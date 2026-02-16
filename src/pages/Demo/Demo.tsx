@@ -113,10 +113,18 @@ export const Demo = () => {
   return (
     <>
       <SEO
-        title="Book a Demo | WorkBuddy AI Receptionist"
+        title="Free Demo: See AI Handle Your Laundromat Calls"
         description="Schedule a free 15-minute demo of WorkBuddy. See how our AI receptionist can transform your phone operations for laundromats or property management."
         canonical="/demo"
-        structuredData={demoStructuredData}
+        keywords="laundromat demo, AI receptionist demo, book demo WorkBuddy, laundromat AI demo"
+        structuredData={[demoStructuredData, {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
+            { "@type": "ListItem", "position": 2, "name": "Demo", "item": "https://getworkbuddy.com/demo" }
+          ]
+        }]}
       />
       <Navbar />
 

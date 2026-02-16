@@ -62,7 +62,15 @@ export const About = () => {
         title="About WorkBuddy | Built by Operators, for Operators"
         description="WorkBuddy was created by Caleb Benedict, who built AI for 100+ laundromat locations. Learn our story and mission."
         canonical="/about"
-        structuredData={aboutStructuredData}
+        keywords="WorkBuddy about, Caleb Benedict, laundromat AI company, WorkBuddy founder"
+        structuredData={[aboutStructuredData, {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
+            { "@type": "ListItem", "position": 2, "name": "About", "item": "https://getworkbuddy.com/about" }
+          ]
+        }]}
       />
       <Navbar />
 

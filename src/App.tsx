@@ -16,6 +16,7 @@ import { BellaLP } from './pages/Bella/BellaLP';
 import { Pricing } from './pages/Pricing/Pricing';
 import { About } from './pages/About/About';
 import { Blog } from './pages/Blog/Blog';
+import { BlogArticle } from './pages/Blog/BlogArticle';
 import { FAQ } from './pages/FAQ/FAQ';
 import { Contact } from './pages/Contact/Contact';
 import { Demo } from './pages/Demo/Demo';
@@ -29,10 +30,10 @@ function App() {
       <GlobalStyles />
       <SmoothScroll />
       <Routes>
-        <Route path="/" element={<NewHomepage />} />
+        <Route path="/" element={<LaundromatLP />} />
+        <Route path="/laundromats" element={<Navigate to="/" replace />} />
 
         {/* Solutions / Verticals */}
-        <Route path="/laundromats" element={<LaundromatLP />} />
         <Route path="/laundromat-ads" element={<LaundromatAdsLP />} />
         <Route path="/laundromat-ads-short" element={<LaundromatAdsShortLP />} />
         <Route path="/laundromat-ads/thank-you" element={<LaundromatAdsThankYou />} />
@@ -44,6 +45,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogArticle />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/demo" element={<Demo />} />
@@ -54,7 +56,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
 
         {/* Fallback */}
-        <Route path="*" element={<Navigate to="/laundromats" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Analytics />
     </Router>

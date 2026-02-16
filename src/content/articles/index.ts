@@ -1,0 +1,418 @@
+import { lazy } from 'react';
+import type { ArticleEntry } from '../types';
+
+// Lazy-load article components
+const AIReceptionistForLaundromats = lazy(() => import('./ai-receptionist-for-laundromats'));
+const HowToAutomateYourLaundromat = lazy(() => import('./how-to-automate-your-laundromat'));
+const LaundromatPhoneSolutions = lazy(() => import('./laundromat-phone-solutions'));
+const ManageLaundromatRemotely = lazy(() => import('./manage-laundromat-remotely'));
+const ReduceLaundromatCosts = lazy(() => import('./reduce-laundromat-costs'));
+const AIAnsweringServiceGuide = lazy(() => import('./ai-answering-service-guide'));
+const VirtualReceptionistComparison = lazy(() => import('./virtual-receptionist-comparison'));
+const MissedCallTextBack = lazy(() => import('./missed-call-text-back'));
+const SmartLaundromatTechnology = lazy(() => import('./smart-laundromat-technology'));
+const AfterHoursAnsweringService = lazy(() => import('./after-hours-answering-service'));
+const BestLaundromatSoftware = lazy(() => import('./best-laundromat-software'));
+const LaundromatPosSystems = lazy(() => import('./laundromat-pos-systems'));
+const IsOwningALaundromatProfitable = lazy(() => import('./is-owning-a-laundromat-profitable'));
+const HowToRunALaundromat = lazy(() => import('./how-to-run-a-laundromat'));
+const CashlessLaundromatGuide = lazy(() => import('./cashless-laundromat-guide'));
+const HowToStartALaundromat = lazy(() => import('./how-to-start-a-laundromat'));
+const LaundromatMarketingGuide = lazy(() => import('./laundromat-marketing-guide'));
+const WashAndFoldServiceGuide = lazy(() => import('./wash-and-fold-service-guide'));
+const LaundromatBrandingGuide = lazy(() => import('./laundromat-branding-guide'));
+const LaundromatEquipmentGuide = lazy(() => import('./laundromat-equipment-guide'));
+const BuyingALaundromat = lazy(() => import('./buying-a-laundromat'));
+const LaundromatFinancing = lazy(() => import('./laundromat-financing'));
+const LaundromatDesignIdeas = lazy(() => import('./laundromat-design-ideas'));
+const LaundromatInsuranceGuide = lazy(() => import('./laundromat-insurance-guide'));
+
+export const articles: ArticleEntry[] = [
+  // Tier 0 — Category Creation
+  {
+    slug: 'ai-receptionist-for-laundromats',
+    title: 'The Complete Guide to AI Receptionists for Laundromats',
+    seoTitle: 'AI Receptionist for Laundromats - Complete Guide',
+    description: 'Learn how AI receptionists handle laundromat calls 24/7, from refund requests to wash-and-fold orders. See how they compare to traditional answering services.',
+    keywords: ['AI receptionist laundromat', 'laundromat AI phone', 'automated laundromat phone', 'laundromat call answering', 'AI phone answering laundromat'],
+    tier: 0,
+    category: 'AI & Automation',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 12,
+    relatedSlugs: ['ai-answering-service-guide', 'laundromat-phone-solutions', 'virtual-receptionist-comparison'],
+    ctaType: 'demo',
+    component: AIReceptionistForLaundromats,
+  },
+  {
+    slug: 'how-to-automate-your-laundromat',
+    title: 'How to Automate Your Laundromat: The 2026 Playbook',
+    seoTitle: 'How to Automate Your Laundromat in 2026',
+    description: 'The complete playbook for laundromat automation in 2026. From phone systems to payment processing, learn which technologies deliver real ROI.',
+    keywords: ['automate laundromat', 'laundromat automation', 'automated laundromat', 'laundromat technology', 'self-service laundromat automation'],
+    tier: 0,
+    category: 'AI & Automation',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 14,
+    relatedSlugs: ['smart-laundromat-technology', 'reduce-laundromat-costs', 'cashless-laundromat-guide'],
+    ctaType: 'demo',
+    component: HowToAutomateYourLaundromat,
+  },
+  {
+    slug: 'laundromat-phone-solutions',
+    title: 'Laundromat Phone Solutions: From Answering Services to AI',
+    seoTitle: 'Laundromat Phone Solutions Compared - 2026 Guide',
+    description: 'Compare every laundromat phone solution: voicemail, answering services, virtual receptionists, and AI. Find the best fit for your budget and call volume.',
+    keywords: ['laundromat phone solutions', 'laundromat answering service', 'laundromat phone system', 'laundromat voicemail', 'business phone for laundromat'],
+    tier: 0,
+    category: 'Technology',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 11,
+    relatedSlugs: ['ai-receptionist-for-laundromats', 'virtual-receptionist-comparison', 'after-hours-answering-service'],
+    ctaType: 'demo',
+    component: LaundromatPhoneSolutions,
+  },
+  {
+    slug: 'manage-laundromat-remotely',
+    title: 'How to Manage Your Laundromat Remotely',
+    seoTitle: 'How to Manage a Laundromat Remotely - Complete Guide',
+    description: 'Run your laundromat from anywhere. Learn the tools, systems, and strategies owners use to manage their laundromat business remotely in 2026.',
+    keywords: ['manage laundromat remotely', 'remote laundromat management', 'absentee laundromat owner', 'run laundromat from home', 'laundromat management tools'],
+    tier: 0,
+    category: 'Operations',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 10,
+    relatedSlugs: ['how-to-automate-your-laundromat', 'best-laundromat-software', 'how-to-run-a-laundromat'],
+    ctaType: 'demo',
+    component: ManageLaundromatRemotely,
+  },
+  {
+    slug: 'reduce-laundromat-costs',
+    title: '5 Ways to Reduce Laundromat Operating Costs',
+    seoTitle: 'Reduce Laundromat Operating Costs - 5 Proven Strategies',
+    description: 'Cut laundromat expenses without cutting quality. Proven strategies for reducing utility bills, staffing costs, maintenance, and more.',
+    keywords: ['reduce laundromat costs', 'laundromat operating costs', 'laundromat expenses', 'laundromat overhead', 'save money laundromat'],
+    tier: 0,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 9,
+    relatedSlugs: ['is-owning-a-laundromat-profitable', 'how-to-automate-your-laundromat', 'how-to-run-a-laundromat'],
+    ctaType: 'pricing',
+    component: ReduceLaundromatCosts,
+  },
+
+  // Tier 1 — Direct Product Fit
+  {
+    slug: 'ai-answering-service-guide',
+    title: 'AI Answering Service: Everything You Need to Know',
+    seoTitle: 'AI Answering Service Guide - How It Works & What It Costs',
+    description: 'Everything about AI answering services: how they work, what they cost, and how they compare to human answering services. Includes real examples and ROI analysis.',
+    keywords: ['AI answering service', 'automated answering service', 'AI phone answering', 'AI call answering service', 'virtual answering service AI'],
+    tier: 1,
+    category: 'AI & Automation',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 13,
+    relatedSlugs: ['virtual-receptionist-comparison', 'ai-receptionist-for-laundromats', 'after-hours-answering-service'],
+    ctaType: 'demo',
+    component: AIAnsweringServiceGuide,
+  },
+  {
+    slug: 'virtual-receptionist-comparison',
+    title: 'Virtual Receptionist vs. Answering Service vs. AI',
+    seoTitle: 'Virtual Receptionist vs Answering Service vs AI - Compared',
+    description: 'Side-by-side comparison of virtual receptionists, traditional answering services, and AI phone agents. Compare costs, features, and which is best for your business.',
+    keywords: ['virtual receptionist', 'answering service comparison', 'virtual receptionist vs answering service', 'AI receptionist vs human', 'phone answering service comparison'],
+    tier: 1,
+    category: 'AI & Automation',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 11,
+    relatedSlugs: ['ai-answering-service-guide', 'laundromat-phone-solutions', 'ai-receptionist-for-laundromats'],
+    ctaType: 'demo',
+    component: VirtualReceptionistComparison,
+  },
+  {
+    slug: 'missed-call-text-back',
+    title: 'Missed Call Text Back: Never Lose a Lead Again',
+    seoTitle: 'Missed Call Text Back - Recover Lost Leads Automatically',
+    description: 'How missed call text back works, why it matters, and how to set it up. Stop losing customers when you can\'t answer the phone.',
+    keywords: ['missed call text back', 'missed call auto reply', 'missed call text message', 'automatic text back', 'missed call response'],
+    tier: 1,
+    category: 'Technology',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 8,
+    relatedSlugs: ['ai-answering-service-guide', 'laundromat-phone-solutions', 'after-hours-answering-service'],
+    ctaType: 'demo',
+    component: MissedCallTextBack,
+  },
+  {
+    slug: 'smart-laundromat-technology',
+    title: "Smart Laundromat Technology: What's Worth It",
+    seoTitle: 'Smart Laundromat Technology - What\'s Actually Worth the Investment',
+    description: 'Not all laundromat tech is worth the investment. We break down smart washers, app-based payments, remote monitoring, and AI phone systems by real ROI.',
+    keywords: ['smart laundromat', 'laundromat technology', 'connected laundry', 'smart washer', 'laundromat IoT', 'laundromat tech'],
+    tier: 1,
+    category: 'Technology',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 12,
+    relatedSlugs: ['how-to-automate-your-laundromat', 'best-laundromat-software', 'cashless-laundromat-guide'],
+    ctaType: 'demo',
+    component: SmartLaundromatTechnology,
+  },
+  {
+    slug: 'after-hours-answering-service',
+    title: 'After Hours Answering: How Small Businesses Handle Calls 24/7',
+    seoTitle: 'After Hours Answering Service for Small Business - 2026 Guide',
+    description: 'How to handle business calls after hours without hiring night staff. Compare after-hours answering services, voicemail, and AI solutions.',
+    keywords: ['after hours answering service', 'after hours phone answering', '24/7 answering service', 'night answering service', 'small business after hours'],
+    tier: 1,
+    category: 'Operations',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 10,
+    relatedSlugs: ['ai-answering-service-guide', 'virtual-receptionist-comparison', 'laundromat-phone-solutions'],
+    ctaType: 'demo',
+    component: AfterHoursAnsweringService,
+  },
+
+  // Tier 2 — Strong Bridge
+  {
+    slug: 'best-laundromat-software',
+    title: 'Best Laundromat Software in 2026',
+    seoTitle: 'Best Laundromat Software 2026 - Top Picks Compared',
+    description: 'Compare the best laundromat management software in 2026. Reviews of Cents, CleanCloud, Curbside, and more. Features, pricing, and real owner feedback.',
+    keywords: ['best laundromat software', 'laundromat management software', 'laundromat POS', 'laundry management system', 'laundromat app'],
+    tier: 2,
+    category: 'Technology',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 14,
+    relatedSlugs: ['laundromat-pos-systems', 'smart-laundromat-technology', 'how-to-automate-your-laundromat'],
+    ctaType: 'demo',
+    component: BestLaundromatSoftware,
+  },
+  {
+    slug: 'laundromat-pos-systems',
+    title: 'Laundromat POS Systems Compared',
+    seoTitle: 'Laundromat POS Systems - 2026 Comparison Guide',
+    description: 'Compare top laundromat POS systems: Cents, CleanCloud, Curbside Laundries, and more. Pricing, features, and which is best for coin-op vs. full service.',
+    keywords: ['laundromat POS system', 'laundromat point of sale', 'laundry POS', 'Cents POS laundromat', 'CleanCloud laundromat'],
+    tier: 2,
+    category: 'Technology',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 12,
+    relatedSlugs: ['best-laundromat-software', 'cashless-laundromat-guide', 'smart-laundromat-technology'],
+    ctaType: 'demo',
+    component: LaundromatPosSystems,
+  },
+  {
+    slug: 'is-owning-a-laundromat-profitable',
+    title: 'Is Owning a Laundromat Profitable? Real Numbers',
+    seoTitle: 'Is Owning a Laundromat Profitable? Real Numbers & ROI',
+    description: 'Real profitability numbers from laundromat owners. Revenue ranges, operating costs, profit margins, and what affects your bottom line.',
+    keywords: ['is owning a laundromat profitable', 'laundromat profit', 'laundromat revenue', 'laundromat income', 'laundromat ROI'],
+    tier: 2,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 13,
+    relatedSlugs: ['reduce-laundromat-costs', 'buying-a-laundromat', 'how-to-start-a-laundromat'],
+    ctaType: 'pricing',
+    component: IsOwningALaundromatProfitable,
+  },
+  {
+    slug: 'how-to-run-a-laundromat',
+    title: 'How to Run a Laundromat: Complete Operations Guide',
+    seoTitle: 'How to Run a Laundromat - Complete Operations Guide',
+    description: 'The complete guide to running a laundromat. Daily operations, staffing, maintenance schedules, customer service, and technology that makes it easier.',
+    keywords: ['how to run a laundromat', 'laundromat operations', 'laundromat management', 'running a laundromat', 'laundromat daily operations'],
+    tier: 2,
+    category: 'Operations',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 15,
+    relatedSlugs: ['manage-laundromat-remotely', 'reduce-laundromat-costs', 'best-laundromat-software'],
+    ctaType: 'demo',
+    component: HowToRunALaundromat,
+  },
+  {
+    slug: 'cashless-laundromat-guide',
+    title: 'Going Cashless: The Complete Guide to Cashless Laundromats',
+    seoTitle: 'Cashless Laundromat Guide - How to Go Card & App Only',
+    description: 'Everything you need to know about going cashless at your laundromat. Payment systems, costs, customer impact, and step-by-step implementation guide.',
+    keywords: ['cashless laundromat', 'laundromat card payment', 'laundromat payment system', 'laundromat app payment', 'coin-free laundromat'],
+    tier: 2,
+    category: 'Technology',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 11,
+    relatedSlugs: ['laundromat-pos-systems', 'smart-laundromat-technology', 'how-to-automate-your-laundromat'],
+    ctaType: 'demo',
+    component: CashlessLaundromatGuide,
+  },
+
+  // Tier 3 — Top-of-Funnel
+  {
+    slug: 'how-to-start-a-laundromat',
+    title: 'How to Start a Laundromat: Step-by-Step Guide',
+    seoTitle: 'How to Start a Laundromat - Step-by-Step Guide (2026)',
+    description: 'Everything you need to start a laundromat business in 2026. Location selection, equipment, financing, licensing, and launch checklist.',
+    keywords: ['how to start a laundromat', 'start a laundromat business', 'open a laundromat', 'laundromat startup', 'laundromat business plan'],
+    tier: 3,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 18,
+    relatedSlugs: ['is-owning-a-laundromat-profitable', 'laundromat-financing', 'laundromat-equipment-guide'],
+    ctaType: 'demo',
+    component: HowToStartALaundromat,
+  },
+  {
+    slug: 'laundromat-marketing-guide',
+    title: 'Laundromat Marketing: 15 Proven Strategies',
+    seoTitle: 'Laundromat Marketing - 15 Proven Strategies That Work',
+    description: '15 marketing strategies that actually work for laundromats. From Google Business Profile to local SEO, social media, and referral programs.',
+    keywords: ['laundromat marketing', 'laundromat advertising', 'how to market a laundromat', 'laundromat promotion', 'laundromat SEO'],
+    tier: 3,
+    category: 'Marketing',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 16,
+    relatedSlugs: ['laundromat-branding-guide', 'wash-and-fold-service-guide', 'how-to-run-a-laundromat'],
+    ctaType: 'demo',
+    component: LaundromatMarketingGuide,
+  },
+  {
+    slug: 'wash-and-fold-service-guide',
+    title: 'Wash and Fold Service: How to Add & Price It',
+    seoTitle: 'Wash and Fold Service Guide - How to Add & Price It',
+    description: 'How to add wash and fold service to your laundromat. Pricing strategies, staffing, equipment needs, order management, and marketing tips.',
+    keywords: ['wash and fold service', 'laundry wash and fold', 'wash and fold pricing', 'laundromat wash and fold', 'wash dry fold service'],
+    tier: 3,
+    category: 'Operations',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 13,
+    relatedSlugs: ['how-to-run-a-laundromat', 'laundromat-pos-systems', 'ai-receptionist-for-laundromats'],
+    ctaType: 'demo',
+    component: WashAndFoldServiceGuide,
+  },
+  {
+    slug: 'laundromat-branding-guide',
+    title: 'Laundromat Branding: Stand Out in a Competitive Market',
+    seoTitle: 'Laundromat Branding Guide - Stand Out & Attract Customers',
+    description: 'Build a laundromat brand that attracts and retains customers. Naming, logo design, in-store experience, online presence, and brand consistency.',
+    keywords: ['laundromat branding', 'laundromat name ideas', 'laundromat logo', 'laundromat brand', 'laundromat identity'],
+    tier: 3,
+    category: 'Marketing',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 11,
+    relatedSlugs: ['laundromat-marketing-guide', 'laundromat-design-ideas', 'how-to-start-a-laundromat'],
+    ctaType: 'demo',
+    component: LaundromatBrandingGuide,
+  },
+
+  // Tier 4 — Domain Authority
+  {
+    slug: 'laundromat-equipment-guide',
+    title: 'Laundromat Equipment Guide: What to Buy',
+    seoTitle: 'Laundromat Equipment Guide - What to Buy in 2026',
+    description: 'Complete guide to laundromat equipment. Commercial washers, dryers, payment systems, and ancillary equipment. New vs. used, costs, and top brands.',
+    keywords: ['laundromat equipment', 'commercial washer', 'laundromat machines', 'commercial laundry equipment', 'laundromat washer dryer'],
+    tier: 4,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 15,
+    relatedSlugs: ['how-to-start-a-laundromat', 'laundromat-design-ideas', 'buying-a-laundromat'],
+    ctaType: 'demo',
+    component: LaundromatEquipmentGuide,
+  },
+  {
+    slug: 'buying-a-laundromat',
+    title: 'Buying a Laundromat: Due Diligence Checklist',
+    seoTitle: 'Buying a Laundromat - Due Diligence Checklist (2026)',
+    description: 'The complete due diligence checklist for buying a laundromat. Financials, lease review, equipment assessment, market analysis, and red flags to watch for.',
+    keywords: ['buying a laundromat', 'laundromat for sale', 'laundromat due diligence', 'buy a laundromat', 'laundromat acquisition'],
+    tier: 4,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 16,
+    relatedSlugs: ['is-owning-a-laundromat-profitable', 'laundromat-financing', 'laundromat-equipment-guide'],
+    ctaType: 'demo',
+    component: BuyingALaundromat,
+  },
+  {
+    slug: 'laundromat-financing',
+    title: 'Laundromat Financing: How to Fund Your Purchase',
+    seoTitle: 'Laundromat Financing Options - How to Fund Your Purchase',
+    description: 'All your laundromat financing options explained. SBA loans, equipment financing, seller financing, and what lenders look for.',
+    keywords: ['laundromat financing', 'laundromat loan', 'SBA loan laundromat', 'laundromat funding', 'finance a laundromat'],
+    tier: 4,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 12,
+    relatedSlugs: ['buying-a-laundromat', 'how-to-start-a-laundromat', 'is-owning-a-laundromat-profitable'],
+    ctaType: 'demo',
+    component: LaundromatFinancing,
+  },
+  {
+    slug: 'laundromat-design-ideas',
+    title: 'Laundromat Design Ideas That Maximize Revenue',
+    seoTitle: 'Laundromat Design Ideas - Layouts That Maximize Revenue',
+    description: 'Laundromat design ideas that boost revenue and customer satisfaction. Layout optimization, modern aesthetics, lighting, seating, and amenities.',
+    keywords: ['laundromat design', 'laundromat layout', 'laundromat interior design', 'laundromat remodel', 'modern laundromat design'],
+    tier: 4,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 11,
+    relatedSlugs: ['laundromat-equipment-guide', 'laundromat-branding-guide', 'how-to-start-a-laundromat'],
+    ctaType: 'demo',
+    component: LaundromatDesignIdeas,
+  },
+  {
+    slug: 'laundromat-insurance-guide',
+    title: 'Laundromat Insurance: What Coverage You Need',
+    seoTitle: 'Laundromat Insurance Guide - Coverage Types & Costs',
+    description: 'What insurance does a laundromat need? Coverage types, typical costs, common claims, and how to find the right policy for your business.',
+    keywords: ['laundromat insurance', 'laundry business insurance', 'laundromat liability', 'commercial laundry insurance', 'laundromat coverage'],
+    tier: 4,
+    category: 'Business',
+    publishDate: '2026-02-01',
+    modifiedDate: '2026-02-15',
+    readTime: 10,
+    relatedSlugs: ['buying-a-laundromat', 'how-to-start-a-laundromat', 'how-to-run-a-laundromat'],
+    ctaType: 'demo',
+    component: LaundromatInsuranceGuide,
+  },
+];
+
+export const getArticleBySlug = (slug: string): ArticleEntry | undefined => {
+  return articles.find(a => a.slug === slug);
+};
+
+export const getRelatedArticles = (slugs: string[]): ArticleEntry[] => {
+  return slugs
+    .map(slug => articles.find(a => a.slug === slug))
+    .filter((a): a is ArticleEntry => !!a);
+};
+
+export const getArticlesByCategory = (category: string): ArticleEntry[] => {
+  return articles.filter(a => a.category === category);
+};
+
+export const getFeaturedArticles = (count: number = 3): ArticleEntry[] => {
+  return articles.filter(a => a.tier <= 1).slice(0, count);
+};

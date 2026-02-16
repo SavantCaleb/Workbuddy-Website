@@ -4,6 +4,10 @@ Allow: /
 
 # Disallow paths that shouldn't be indexed
 Disallow: /secret-shop
+Disallow: /laundromat-ads
+Disallow: /laundromat-ads-short
+Disallow: /laundromat-ads/thank-you
+Disallow: /laundromats/thank-you
 
 # Sitemap location
 Sitemap: https://getworkbuddy.com/sitemap.xml

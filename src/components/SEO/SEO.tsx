@@ -7,7 +7,10 @@ interface SEOProps {
   type?: 'website' | 'article';
   image?: string;
   noindex?: boolean;
-  structuredData?: object;
+  keywords?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  structuredData?: object | object[];
 }
 
 const BASE_URL = 'https://getworkbuddy.com';
@@ -22,10 +25,17 @@ export const SEO = ({
   type = 'website',
   image = DEFAULT_IMAGE,
   noindex = false,
+  keywords,
+  publishedTime,
+  modifiedTime,
   structuredData
 }: SEOProps) => {
   const fullTitle = title ? `${title} | WorkBuddy` : DEFAULT_TITLE;
   const fullCanonical = canonical ? `${BASE_URL}${canonical}` : BASE_URL;
+
+  const structuredDataArray = structuredData
+    ? Array.isArray(structuredData) ? structuredData : [structuredData]
+    : [];
 
   return (
     <Helmet>
@@ -34,6 +44,7 @@ export const SEO = ({
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
+      {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullCanonical} />
 
       {/* Open Graph / Facebook */}
@@ -42,6 +53,11 @@ export const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:site_name" content="WorkBuddy" />
+
+      {/* Article dates (for blog posts) */}
+      {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+      {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -51,11 +67,11 @@ export const SEO = ({
       <meta property="twitter:image" content={image} />
 
       {/* Structured Data */}
-      {structuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+      {structuredDataArray.map((data, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(data)}
         </script>
-      )}
+      ))}
     </Helmet>
   );
 };

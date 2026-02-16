@@ -111,7 +111,7 @@ export const Navbar = ({ logoLink = '/' }: NavbarProps) => {
           <NavDropdown>
             <NavLink to="#">Solutions ▾</NavLink>
             <DropdownContent>
-              <DropdownItem to="/laundromats">For Laundromats</DropdownItem>
+              <DropdownItem to="/">For Laundromats</DropdownItem>
               <DropdownItem to="/property-management">For Property Management</DropdownItem>
             </DropdownContent>
           </NavDropdown>
@@ -158,7 +158,7 @@ export const Navbar = ({ logoLink = '/' }: NavbarProps) => {
               <div style={{ paddingBottom: 16, borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
                 <span style={{ fontSize: 13, textTransform: 'uppercase', color: theme.colors.text.tertiary, fontWeight: 700, letterSpacing: '0.05em' }}>Solutions</span>
                 <Link 
-                  to="/laundromats"
+                  to="/"
                   onClick={() => setMobileMenuOpen(false)}
                   style={{ display: 'block', padding: '12px 0', fontSize: 18, color: theme.colors.text.primary, textDecoration: 'none', fontWeight: 500 }}
                 >

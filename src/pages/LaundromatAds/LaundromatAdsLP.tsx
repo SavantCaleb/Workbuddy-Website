@@ -71,6 +71,7 @@ export const LaundromatAdsLP = () => {
         title="Your Laundromat's Phone, Handled"
         description="WorkBuddy picks up your laundromat's phone — 24/7, in your voice, with your prices and hours — so you don't have to."
         canonical="/laundromat-ads"
+        noindex={true}
       />
 
       <LPHeader onScrollToForm={scrollToForm} formInView={formInView} />

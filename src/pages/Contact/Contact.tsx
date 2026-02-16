@@ -76,10 +76,18 @@ export const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us | WorkBuddy"
+        title="Contact WorkBuddy - AI Receptionist for Laundromats"
         description="Get in touch with WorkBuddy. We're here to answer your questions about our AI receptionist service for laundromats and property managers."
         canonical="/contact"
-        structuredData={contactStructuredData}
+        keywords="WorkBuddy contact, laundromat phone number, AI receptionist contact, WorkBuddy support"
+        structuredData={[contactStructuredData, {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
+            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://getworkbuddy.com/contact" }
+          ]
+        }]}
       />
       <Navbar />
 

@@ -764,8 +764,14 @@ export interface HeroSectionHandle {
   getFormElement: () => HTMLDivElement | null;
 }
 
+interface HeroSectionProps {
+  formspreeId?: string;
+  thankYouPath?: string;
+}
+
 // --- Component ---
-export const HeroSection = forwardRef<HeroSectionHandle>((_props, ref) => {
+export const HeroSection = forwardRef<HeroSectionHandle, HeroSectionProps>(
+  ({ formspreeId = 'xvzbaywz', thankYouPath = '/laundromat-ads/thank-you' }, ref) => {
   const navigate = useNavigate();
   const [transcriptOpen, setTranscriptOpen] = useState(false);
   const [customSelectOpen, setCustomSelectOpen] = useState(false);
@@ -791,14 +797,14 @@ export const HeroSection = forwardRef<HeroSectionHandle>((_props, ref) => {
     if (submitting) return;
     setSubmitting(true);
     try {
-      await fetch('https://formspree.io/f/xvzbaywz', {
+      await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(formData),
       });
-      navigate('/laundromat-ads/thank-you');
+      navigate(thankYouPath);
     } catch {
-      navigate('/laundromat-ads/thank-you');
+      navigate(thankYouPath);
     }
   };
 
@@ -1183,3 +1189,4 @@ export const HeroSection = forwardRef<HeroSectionHandle>((_props, ref) => {
 });
 
 HeroSection.displayName = 'HeroSection';
+export type { HeroSectionProps };

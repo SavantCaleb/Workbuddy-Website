@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/laundromats",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!api|_next|static|public|favicon|robots|sitemap).*)",
