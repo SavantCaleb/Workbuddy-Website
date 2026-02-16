@@ -101,7 +101,7 @@ export const articles: ArticleEntry[] = [
     modifiedDate: '2026-02-15',
     readTime: 9,
     relatedSlugs: ['is-owning-a-laundromat-profitable', 'how-to-automate-your-laundromat', 'how-to-run-a-laundromat'],
-    ctaType: 'pricing',
+    ctaType: 'demo',
     component: ReduceLaundromatCosts,
   },
 
@@ -225,7 +225,7 @@ export const articles: ArticleEntry[] = [
     modifiedDate: '2026-02-15',
     readTime: 13,
     relatedSlugs: ['reduce-laundromat-costs', 'buying-a-laundromat', 'how-to-start-a-laundromat'],
-    ctaType: 'pricing',
+    ctaType: 'demo',
     component: IsOwningALaundromatProfitable,
   },
   {

@@ -307,8 +307,11 @@ export const ArticleLayout = ({ article, relatedArticles, children }: ArticleLay
 
           <ArticleContent>
             {children}
-            <CTABanner type={article.ctaType} />
           </ArticleContent>
+
+          <div style={{ maxWidth: 720, margin: '0 auto' }}>
+            <CTABanner type={article.ctaType} />
+          </div>
 
           <AuthorSection>
             <AuthorAvatar>CB</AuthorAvatar>
