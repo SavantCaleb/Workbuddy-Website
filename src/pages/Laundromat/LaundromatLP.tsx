@@ -127,6 +127,7 @@ export const LaundromatLP = () => {
       />
 
       <Navbar />
+      <main>
       <HeroSection
         ref={heroRef}
         formspreeId="xreepdpa"
@@ -164,6 +165,7 @@ export const LaundromatLP = () => {
       <FAQSection />
 
       <BottomCTA ref={bottomCtaRef} onScrollToForm={scrollToForm} />
+      </main>
       <LPFooter />
       <StickyMobileCTA onScrollToForm={scrollToForm} formInView={formInView} />
     </>

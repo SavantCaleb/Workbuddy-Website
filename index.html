@@ -1,20 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17886210357"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17886210357');
-    </script>
-
-    <!-- RB2B -->
-    <script>!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("QOQRJH9QK162");</script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fallback SEO meta tags (react-helmet-async overrides per-page when JS loads) -->
+    <title>WorkBuddy - AI Receptionist for Laundromats | Never Miss a Call</title>
+    <meta name="description" content="WorkBuddy is an AI-powered receptionist that handles refunds, WDF orders, machine questions, and emergencies 24/7. Built for laundromats. From $129/mo." />
+    <meta property="og:title" content="WorkBuddy - AI Receptionist for Laundromats" />
+    <meta property="og:description" content="AI that takes orders, processes refunds, and picks up every call. So you don't have to." />
+    <meta property="og:image" content="https://getworkbuddy.com/og-image.png" />
+    <meta property="og:url" content="https://getworkbuddy.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Theme and Mobile -->
     <meta name="theme-color" content="#67B7D1" />
@@ -33,10 +31,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Forma+DJR+Deck:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) — after meta tags to avoid render-blocking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17886210357"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17886210357');
+    </script>
   </head>
   <body>
     <div id="root"></div>
+
+    <noscript>
+      <div style="padding: 40px; text-align: center; font-family: sans-serif;">
+        <h1>WorkBuddy - AI Receptionist for Laundromats</h1>
+        <p>WorkBuddy is an AI-powered receptionist that handles refunds, WDF orders, and picks up every call 24/7. From $129/mo.</p>
+        <p>Please enable JavaScript to use this site, or call us at (203) 605-1105.</p>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- RB2B — moved to bottom of body to avoid render-blocking -->
+    <script defer>!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("QOQRJH9QK162");</script>
 
     <!-- Cal.com embed code -->
     <script type="text/javascript">

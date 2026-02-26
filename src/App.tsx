@@ -23,6 +23,7 @@ import { Demo } from './pages/Demo/Demo';
 import { SecretShop } from './pages/SecretShop/SecretShop';
 import { Privacy } from './pages/Privacy/Privacy';
 import { Terms } from './pages/Terms/Terms';
+import { NotFound } from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -55,8 +56,8 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
 
-        {/* Fallback */}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        {/* Fallback — proper 404 page */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />
     </Router>

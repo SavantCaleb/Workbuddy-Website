@@ -29,7 +29,7 @@ export const MainFooter = () => {
       <Container>
         <ResponsiveGrid style={{ marginBottom: 80, alignItems: 'start' }}>
           <div>
-            <img src={logo} alt="WorkBuddy" style={{ height: 40, marginBottom: 16 }} />
+            <img src={logo} alt="WorkBuddy" loading="lazy" style={{ height: 40, marginBottom: 16 }} />
             <p style={{ maxWidth: 300, lineHeight: 1.6 }}>
               AI that books appointments for you.
             </p>

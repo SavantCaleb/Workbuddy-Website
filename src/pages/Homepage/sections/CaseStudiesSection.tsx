@@ -249,7 +249,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ id }) =>
           transition={{ duration: 0.6 }}
         >
           <VideoSide>
-            <img src={woodlandsImage} alt="The Woodlands Aerial View" />
+            <img src={woodlandsImage} alt="The Woodlands Aerial View" loading="lazy" />
             <PlayButton>
               <FiPlay size={20} fill="black" stroke="none" />
             </PlayButton>

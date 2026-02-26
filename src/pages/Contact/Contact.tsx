@@ -90,6 +90,7 @@ export const Contact = () => {
         }]}
       />
       <Navbar />
+      <main>
 
       <Section style={{ paddingTop: 120 }}>
         <Container style={{ maxWidth: 1000, textAlign: 'center' }}>
@@ -230,6 +231,7 @@ export const Contact = () => {
           </Button>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

@@ -132,6 +132,7 @@ export const PropertyManagementLP = () => {
         structuredData={pmStructuredData}
       />
       <Navbar />
+      <main>
 
       {/* HERO SECTION */}
       <Section style={{
@@ -612,6 +613,7 @@ export const PropertyManagementLP = () => {
           </Button>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

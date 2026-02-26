@@ -152,6 +152,7 @@ export const Blog = () => {
         structuredData={blogStructuredData}
       />
       <Navbar />
+      <main>
 
       <Section style={{ paddingTop: 120 }}>
         <Container style={{ textAlign: 'center' }}>
@@ -195,6 +196,7 @@ export const Blog = () => {
           </ArticleGrid>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

@@ -143,6 +143,7 @@ export const Demo = () => {
         }]}
       />
       <Navbar />
+      <main>
 
       <Section style={{ paddingTop: 120 }}>
         <Container>
@@ -300,6 +301,7 @@ export const Demo = () => {
           </div>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

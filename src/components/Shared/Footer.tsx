@@ -11,7 +11,7 @@ export const Footer = () => {
         <ResponsiveGrid style={{ marginBottom: 80, alignItems: 'start' }}>
           <div>
             <Link to="/">
-              <img src={logo} alt="WorkBuddy" style={{ height: 40, marginBottom: 16 }} />
+              <img src={logo} alt="WorkBuddy" loading="lazy" style={{ height: 40, marginBottom: 16 }} />
             </Link>
             <p style={{ maxWidth: 300, lineHeight: 1.6 }}>
               AI-powered phone receptionist for laundromats and property management.

@@ -10,7 +10,7 @@ import { CTABanner } from './CTABanner';
 import { RelatedArticles } from './RelatedArticles';
 import type { ArticleMetadata } from '../../content/types';
 
-const ArticleWrapper = styled.div`
+const ArticleWrapper = styled.main`
   padding-top: 100px;
   padding-bottom: 80px;
 `;

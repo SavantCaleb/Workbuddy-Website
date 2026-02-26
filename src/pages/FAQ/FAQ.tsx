@@ -7,52 +7,13 @@ import { Footer } from '../../components/Shared/Footer';
 import { Section, Container, Badge, Button } from '../../components/Shared/Layout';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
-const faqStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Will my callers know they're talking to AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "WorkBuddy sounds natural and professional. Many callers don't realize they're speaking with AI. We focus on solving their problem quickly rather than making them feel like they're navigating a phone tree."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if the caller asks something WorkBuddy doesn't know?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "WorkBuddy is trained on your specific business information. For questions outside its knowledge, it will politely offer to take a message or transfer to a human when available."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do emergencies and escalations work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You define what constitutes an emergency for your business. WorkBuddy can immediately transfer urgent calls, send SMS alerts to your team, or follow any escalation protocol you set up."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How hard is it to set up? Do I need special equipment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Setup takes about 15 minutes. No special equipment needed. We simply forward your existing phone number to WorkBuddy, or we can provide you with a new number."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a free trial or contract?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! We offer a 30-day money-back guarantee. No long-term contracts required. Pay month-to-month and cancel anytime with 30 days notice."
-      }
-    }
-  ]
-};
+// Build FAQ structured data from all FAQ categories
+const buildFaqSchema = (faqs: { question: string; answer: string }[]) =>
+  faqs.map(faq => ({
+    "@type": "Question" as const,
+    "name": faq.question,
+    "acceptedAnswer": { "@type": "Answer" as const, "text": faq.answer }
+  }));
 
 const FAQCategory = styled.div`
   margin-bottom: 48px;
@@ -259,6 +220,17 @@ const pricingFAQs = [
 
 type FAQTab = 'general' | 'laundromat' | 'pm' | 'pricing';
 
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    ...buildFaqSchema(generalFAQs),
+    ...buildFaqSchema(laundromatFAQs),
+    ...buildFaqSchema(pmFAQs),
+    ...buildFaqSchema(pricingFAQs),
+  ]
+};
+
 export const FAQ = () => {
   const [activeTab, setActiveTab] = useState<FAQTab>('general');
   const [openIndex, setOpenIndex] = useState<number>(0);
@@ -291,6 +263,7 @@ export const FAQ = () => {
         }]}
       />
       <Navbar />
+      <main>
 
       <Section style={{ paddingTop: 120 }}>
         <Container style={{ maxWidth: 900, textAlign: 'center' }}>
@@ -382,6 +355,7 @@ export const FAQ = () => {
           </Button>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

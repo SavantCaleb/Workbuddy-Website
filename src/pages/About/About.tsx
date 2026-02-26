@@ -73,6 +73,7 @@ export const About = () => {
         }]}
       />
       <Navbar />
+      <main>
 
       {/* Mission Hero */}
       <Section style={{ paddingTop: 120 }}>
@@ -298,6 +299,7 @@ export const About = () => {
           </div>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

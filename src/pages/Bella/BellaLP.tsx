@@ -78,6 +78,7 @@ export const BellaLP = () => {
       </MigrationBanner>
 
       <Navbar logoLink="/laundromats" />
+      <main>
 
       {/* HERO SECTION */}
       <Section style={{
@@ -252,6 +253,7 @@ export const BellaLP = () => {
           </p>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

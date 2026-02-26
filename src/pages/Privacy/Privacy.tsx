@@ -147,7 +147,7 @@ const SMSNote = styled.p`
 
 export const Privacy: React.FC = () => {
   return (
-    <PageWrapper>
+    <PageWrapper as="main">
       <SEO
         title="Privacy Policy"
         description="WorkBuddy's Privacy Policy explains how we collect, use, and protect your personal information when you use our AI receptionist service."

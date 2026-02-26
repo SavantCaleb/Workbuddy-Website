@@ -341,6 +341,7 @@ export const Pricing = () => {
         structuredData={pricingStructuredData}
       />
       <Navbar />
+      <main>
 
       <Section style={{ paddingTop: 120, textAlign: 'center' }}>
         <Container>
@@ -503,6 +504,7 @@ export const Pricing = () => {
           </Button>
         </Container>
       </Section>
+      </main>
 
       <Footer />
     </>

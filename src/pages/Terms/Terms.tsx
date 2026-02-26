@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 import { SEO } from '../../components/SEO/SEO';
 
-const PageWrapper = styled.div`
+const PageWrapper = styled.main`
   min-height: 100vh;
   background: ${theme.colors.bg.default};
   padding-top: 100px;
