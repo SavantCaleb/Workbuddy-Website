@@ -10,8 +10,12 @@ import { FiCheck, FiClock, FiShield, FiHeadphones, FiZap, FiUsers } from 'react-
 const demoStructuredData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Book a Demo | WorkBuddy",
-  "description": "Schedule a free demo of WorkBuddy's AI receptionist service for laundromats and property management."
+  "name": "Free Demo - AI Receptionist for Laundromats | WorkBuddy",
+  "description": "Schedule a free demo of WorkBuddy's AI phone answering service for laundromats and dry cleaners. See how our AI receptionist handles calls 24/7, takes wash-and-fold orders, processes refunds, and provides multilingual customer service. The best AI phone system for laundromats.",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2"]
+  }
 };
 
 const BenefitItem = styled.div`
@@ -129,16 +133,16 @@ export const Demo = () => {
   return (
     <>
       <SEO
-        title="Free Demo: See AI Handle Your Laundromat Calls"
-        description="Schedule a free 15-minute demo of WorkBuddy. See how our AI receptionist can transform your phone operations for laundromats or property management."
+        title="Free Demo: AI Phone Answering for Laundromats"
+        description="See WorkBuddy's AI receptionist handle laundromat calls live. Free 15-min demo of 24/7 phone answering, multilingual support, and laundromat automation."
         canonical="/demo"
-        keywords="laundromat demo, AI receptionist demo, book demo WorkBuddy, laundromat AI demo"
+        keywords="AI receptionist for laundromats demo, best AI phone system for laundromats, laundromat phone automation demo, AI phone answering for laundromats, virtual receptionist laundromat, voice AI for laundromat business, AI customer service laundromat, laundromat missed calls solution, how to reduce missed calls laundromat, increase laundromat revenue automation"
         structuredData={[demoStructuredData, {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
-            { "@type": "ListItem", "position": 2, "name": "Demo", "item": "https://getworkbuddy.com/demo" }
+            { "@type": "ListItem", "position": 2, "name": "AI Receptionist Demo", "item": "https://getworkbuddy.com/demo" }
           ]
         }]}
       />

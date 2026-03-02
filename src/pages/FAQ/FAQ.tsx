@@ -249,16 +249,16 @@ export const FAQ = () => {
   return (
     <>
       <SEO
-        title="FAQ: AI Phone Answering for Laundromats"
-        description="Answers to common questions about WorkBuddy's AI phone answering service for laundromats and property managers. Setup, pricing, features, and more."
+        title="FAQ: AI Receptionist & Phone Answering for Laundromats"
+        description="Common questions about AI phone answering for laundromats. Learn about 24/7 coverage, multilingual support, laundromat payment integration, setup, pricing & more."
         canonical="/faq"
-        keywords="laundromat customer service, AI phone answering FAQ, laundromat answering service questions, WorkBuddy FAQ"
+        keywords="AI phone answering for laundromats FAQ, AI receptionist for laundromats questions, virtual receptionist laundromat, automated phone system laundromat, AI customer service laundromat, multilingual laundromat phone service, Spanish speaking laundromat service, bilingual AI receptionist laundromat, after hours laundromat phone service, laundromat missed calls solution, FasCard phone integration, Curbside laundromat AI integration, AI vs human answering service laundromat"
         structuredData={[faqStructuredData, {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
-            { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://getworkbuddy.com/faq" }
+            { "@type": "ListItem", "position": 2, "name": "AI Receptionist FAQ", "item": "https://getworkbuddy.com/faq" }
           ]
         }]}
       />

@@ -982,7 +982,7 @@ export const HeroSection = forwardRef<HeroSectionHandle, HeroSectionProps>(
 
   return (
     <>
-      <HeroSectionWrapper>
+      <HeroSectionWrapper id="hero" aria-label="AI receptionist for laundromats - stop missing calls, stop losing customers, 24/7 phone answering from $129/mo">
         <HeroInner>
           {/* Text content — always first */}
           <HeroContent>

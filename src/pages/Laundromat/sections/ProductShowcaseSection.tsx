@@ -539,7 +539,7 @@ export const ProductShowcaseSection = ({ onScrollToForm }: ProductShowcaseSectio
   const doubled = [...FEED, ...FEED];
 
   return (
-    <Section ref={ref}>
+    <Section ref={ref} id="product" aria-label="AI phone answering capabilities for laundromats - call handling, text messages, refunds, orders, emergencies">
       <Orb1 />
       <Orb2 />
       <Orb3 />

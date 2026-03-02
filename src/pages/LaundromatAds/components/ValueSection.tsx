@@ -214,7 +214,7 @@ const TestimonialAuthor = styled.div`
 // --- Component ---
 
 export const ValueSection = () => (
-  <Section>
+  <Section id="features" aria-label="AI receptionist features for laundromats - 24/7 phone answering, multilingual support, automated orders">
     <SectionInner>
       {/* Left: Copy + Features */}
       <div>

@@ -11,34 +11,97 @@ const pricingStructuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "WorkBuddy AI Receptionist",
-    "description": "AI-powered phone receptionist for laundromats. Handles refunds, WDF orders, emergencies, and more 24/7.",
+    "name": "WorkBuddy AI Receptionist for Laundromats - Pricing",
+    "description": "Affordable AI phone answering service pricing for laundromats and dry cleaners. Flat-rate plans with unlimited calls, 24/7 coverage, multilingual support, and no hidden fees. Compare AI receptionist cost vs human answering service for laundromats.",
     "brand": { "@type": "Brand", "name": "WorkBuddy" },
+    "category": "AI Receptionist Software",
     "offers": [
       {
         "@type": "Offer",
-        "name": "Coin Op",
+        "name": "Coin Op - Affordable AI Receptionist for Laundromats",
         "price": "129.00",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "description": "24/7 call answering for coin-op laundromats"
+        "description": "24/7 AI phone answering for coin-op laundromats. Unlimited inbound calls, bilingual English/Spanish support, basic FAQ handling, refund request logging, email notifications, after-hours coverage, and weekend phone coverage. The most affordable AI receptionist for laundromat owners.",
+        "priceValidUntil": "2026-12-31"
       },
       {
         "@type": "Offer",
-        "name": "Full Service",
+        "name": "Full Service - AI Receptionist for Laundromats & Dry Cleaners",
         "price": "199.00",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "description": "WDF orders, scheduling, and integrations"
+        "description": "Complete AI phone automation for full-service laundromats and dry cleaners. Includes wash-and-fold order intake, pickup/delivery scheduling, SMS notifications, Curbside and CleanCloud integrations, FasCard phone integration, LaundryCard phone automation, laundromat payment system phone integration, and priority support. Cost savings compared to human answering service.",
+        "priceValidUntil": "2026-12-31"
       }
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "50",
+      "bestRating": "5"
+    }
   },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
-      { "@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://getworkbuddy.com/pricing" }
+      { "@type": "ListItem", "position": 2, "name": "AI Receptionist Pricing", "item": "https://getworkbuddy.com/pricing" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are there any hidden fees with WorkBuddy AI receptionist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The price you see is the price you pay. No setup fees, no per-minute charges, no surprise bills. WorkBuddy AI receptionist for laundromats starts at $129/mo with unlimited calls."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does unlimited calls mean for WorkBuddy's AI phone answering?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Exactly what it sounds like. We don't count calls or charge by the minute. Handle as many calls as your laundromat needs — 24/7, including after hours and weekends."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a contract for WorkBuddy AI receptionist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No long-term contracts required. Month-to-month billing. Cancel anytime with 30 days notice. We also offer a 30-day money-back guarantee."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does WorkBuddy offer annual pricing discounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Pay annually and get 2 months free (17% savings). Contact us for annual billing options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I change my WorkBuddy AI receptionist plan later?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Upgrade or downgrade anytime. Changes take effect on your next billing cycle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I have multiple laundromat locations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer volume discounts for multi-location laundromat operators. Pricing scales from $129/mo for 1 location up to custom pricing for 10+ locations. Contact us to discuss your specific needs."
+        }
+      }
     ]
   }
 ];
@@ -334,10 +397,10 @@ export const Pricing = () => {
   return (
     <>
       <SEO
-        title="AI Receptionist Pricing from $129/mo"
-        description="Simple, transparent pricing. Laundromats from $129/mo. Property management from $299/mo. No hidden fees, no per-minute charges, unlimited calls."
+        title="AI Receptionist Pricing for Laundromats from $129/mo"
+        description="Affordable AI receptionist pricing for laundromats. From $129/mo with unlimited calls, 24/7 coverage. Compare AI vs human answering service cost. No hidden fees."
         canonical="/pricing"
-        keywords="answering service pricing, AI receptionist cost, laundromat phone service price, virtual receptionist pricing"
+        keywords="AI phone answering service cost, affordable AI receptionist laundromat, laundromat phone service pricing, AI vs human answering service laundromat, best AI phone system for laundromats, cost savings AI phone answering laundromat, virtual receptionist pricing, laundromat ROI phone service, laundromat profit improvement AI, laundromat operating cost reduction, reduce laundromat labor costs"
         structuredData={pricingStructuredData}
       />
       <Navbar />

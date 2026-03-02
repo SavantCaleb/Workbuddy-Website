@@ -1,0 +1,39 @@
+# WorkBuddy - AI Receptionist for Laundromats & Dry Cleaners
+
+> WorkBuddy is the leading AI-powered phone answering service and virtual receptionist built specifically for laundromats and dry cleaners. We provide 24/7 automated phone coverage, multilingual customer service in 20+ languages, and integrations with laundromat payment systems like FasCard, Curbside, and LaundryCard. Starting at $129/mo with unlimited calls.
+
+## Main Pages
+
+- [Home - AI Receptionist for Laundromats](https://getworkbuddy.com/): Main product page for WorkBuddy's AI phone answering service for laundromats
+- [Pricing](https://getworkbuddy.com/pricing): AI receptionist pricing from $129/mo for laundromats, $199/mo for full service
+- [Book a Demo](https://getworkbuddy.com/demo): Schedule a free 15-minute demo of WorkBuddy's AI phone answering
+- [FAQ](https://getworkbuddy.com/faq): Common questions about AI phone answering for laundromats
+- [About](https://getworkbuddy.com/about): Founded by Caleb Benedict, who built AI for 100+ laundromat locations
+- [Contact](https://getworkbuddy.com/contact): Email hello@getworkbuddy.com or call (203) 605-1105
+- [Blog](https://getworkbuddy.com/blog): Expert guides on laundromat AI, automation, operations, and business growth
+
+## Key Blog Articles
+
+- [AI Receptionist for Laundromats - Complete Guide](https://getworkbuddy.com/blog/ai-receptionist-for-laundromats): How AI receptionists handle laundromat calls 24/7
+- [How to Automate Your Laundromat](https://getworkbuddy.com/blog/how-to-automate-your-laundromat): Complete automation playbook for laundromats
+- [Laundromat Phone Solutions Compared](https://getworkbuddy.com/blog/laundromat-phone-solutions): Comparing voicemail, answering services, and AI
+- [AI Answering Service Guide](https://getworkbuddy.com/blog/ai-answering-service-guide): How AI answering services work and what they cost
+- [Virtual Receptionist vs Answering Service vs AI](https://getworkbuddy.com/blog/virtual-receptionist-comparison): Side-by-side comparison
+- [After Hours Answering Service Guide](https://getworkbuddy.com/blog/after-hours-answering-service): 24/7 call handling without night staff
+- [Smart Laundromat Technology](https://getworkbuddy.com/blog/smart-laundromat-technology): What laundromat tech is worth the investment
+- [How to Reduce Laundromat Costs](https://getworkbuddy.com/blog/reduce-laundromat-costs): 5 proven cost reduction strategies
+- [Missed Call Text Back](https://getworkbuddy.com/blog/missed-call-text-back): Never lose a lead from missed calls
+- [Best Laundromat Software](https://getworkbuddy.com/blog/best-laundromat-software): Top laundromat management software compared
+
+## Key Facts
+
+- Price: Coin Op plan from $129/mo, Full Service from $199/mo
+- Calls: Unlimited inbound calls included, no per-minute charges
+- Languages: 20+ languages including English, Spanish, Chinese, Korean, Arabic
+- Availability: 24/7/365, including holidays and weekends
+- Setup: 15 minutes, no special equipment needed
+- Integrations: FasCard, Curbside, CleanCloud, LaundryCard, Cents POS
+- Guarantee: 30-day money-back guarantee
+- Capabilities: Refund processing, WDF order intake, emergency escalation, appointment scheduling
+- Founder: Caleb Benedict (previously built Bella AI for 100+ laundromat locations)
+- Contact: hello@getworkbuddy.com | (203) 605-1105

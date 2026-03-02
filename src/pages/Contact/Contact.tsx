@@ -13,13 +13,29 @@ const contactStructuredData = {
   "mainEntity": {
     "@type": "Organization",
     "name": "WorkBuddy",
+    "description": "Contact WorkBuddy for AI receptionist and phone answering service for laundromats, dry cleaners, and laundry businesses. Get pricing for automated laundromat customer service, multilingual phone support, and 24/7 phone coverage.",
     "email": "hello@getworkbuddy.com",
     "telephone": "+1-203-605-1105",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Connecticut",
+      "addressRegion": "CT",
       "addressCountry": "US"
-    }
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+1-203-605-1105",
+        "contactType": "sales",
+        "email": "hello@getworkbuddy.com",
+        "availableLanguage": ["English", "Spanish"]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+1-203-605-1105",
+        "contactType": "customer service",
+        "email": "hello@getworkbuddy.com"
+      }
+    ]
   }
 };
 
@@ -76,16 +92,16 @@ export const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact WorkBuddy - AI Receptionist for Laundromats"
-        description="Get in touch with WorkBuddy. We're here to answer your questions about our AI receptionist service for laundromats and property managers."
+        title="Contact WorkBuddy - AI Phone Answering for Laundromats"
+        description="Contact WorkBuddy for AI receptionist pricing, laundromat phone automation demos, and multilingual answering service setup. Talk to our laundromat AI experts."
         canonical="/contact"
-        keywords="WorkBuddy contact, laundromat phone number, AI receptionist contact, WorkBuddy support"
+        keywords="WorkBuddy contact, AI receptionist for laundromats contact, laundromat phone service, affordable AI receptionist laundromat, laundromat staffing solution, laundromat employee shortage solution, AI phone answering service cost"
         structuredData={[contactStructuredData, {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
-            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://getworkbuddy.com/contact" }
+            { "@type": "ListItem", "position": 2, "name": "Contact AI Receptionist Team", "item": "https://getworkbuddy.com/contact" }
           ]
         }]}
       />

@@ -885,7 +885,7 @@ export const ROISection = ({ onScrollToForm }: ROISectionProps) => {
   };
 
   return (
-    <LPSection>
+    <LPSection id="roi-calculator" aria-label="Laundromat ROI calculator - cost savings from AI phone answering, reduce labor costs, increase revenue">
       <LPInner>
         <Header>
           <LPHeadline style={{ textAlign: 'center' }}>

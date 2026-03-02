@@ -321,7 +321,7 @@ export const GetStartedSection = ({ onScrollToForm }: GetStartedSectionProps) =>
   const step = STEPS[active];
 
   return (
-    <LPSection $alt>
+    <LPSection $alt id="how-it-works" aria-label="How to set up AI phone answering for your laundromat in 4 easy steps">
       <LPInner>
         <Header>
           <LPHeadline style={{ textAlign: 'center' }}>How it works</LPHeadline>

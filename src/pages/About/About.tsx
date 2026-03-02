@@ -15,9 +15,30 @@ const aboutStructuredData = {
     "name": "WorkBuddy",
     "founder": {
       "@type": "Person",
-      "name": "Caleb Benedict"
+      "name": "Caleb Benedict",
+      "jobTitle": "Founder & CEO",
+      "description": "Creator of AI receptionist technology for laundromats. Previously built Bella AI, powering phone operations for 100+ laundromat locations."
     },
-    "description": "AI receptionist service built specifically for laundromats and property management companies."
+    "description": "WorkBuddy is the leading AI receptionist and virtual phone answering service for laundromats, dry cleaners, and laundry businesses. Our AI-powered phone automation, smart laundry system, and laundry automation software helps laundromat owners reduce operating costs, eliminate missed calls, and provide 24/7 multilingual customer service.",
+    "url": "https://getworkbuddy.com",
+    "foundingDate": "2025",
+    "knowsAbout": [
+      "AI phone answering for laundromats",
+      "AI receptionist for laundromats",
+      "Laundromat phone automation",
+      "AI laundry business innovation",
+      "Smart laundromat solutions",
+      "Laundromat customer service automation",
+      "Voice AI for laundromat business"
+    ],
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "10"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    }
   }
 };
 
@@ -59,16 +80,16 @@ export const About = () => {
   return (
     <>
       <SEO
-        title="About WorkBuddy | Built by Operators, for Operators"
-        description="WorkBuddy was created by Caleb Benedict, who built AI for 100+ laundromat locations. Learn our story and mission."
+        title="About WorkBuddy | Built by Laundromat Operators"
+        description="WorkBuddy was created by Caleb Benedict, who built AI for 100+ laundromat locations. Leading AI laundromat innovations and smart laundromat solutions."
         canonical="/about"
-        keywords="WorkBuddy about, Caleb Benedict, laundromat AI company, WorkBuddy founder"
+        keywords="AI laundromat innovations, smart laundromat solutions, laundromat technology 2026, AI laundry business, voice AI business laundromat, WorkBuddy founder, Caleb Benedict, laundromat AI company, laundromat customer experience automation"
         structuredData={[aboutStructuredData, {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getworkbuddy.com" },
-            { "@type": "ListItem", "position": 2, "name": "About", "item": "https://getworkbuddy.com/about" }
+            { "@type": "ListItem", "position": 2, "name": "About WorkBuddy AI", "item": "https://getworkbuddy.com/about" }
           ]
         }]}
       />

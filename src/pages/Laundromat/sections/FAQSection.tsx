@@ -82,7 +82,7 @@ const FAQ_ITEMS = [
 ];
 
 export const FAQSection = () => (
-  <LPSection>
+  <LPSection id="faq" aria-label="Frequently asked questions about AI phone answering for laundromats - integrations, pricing, capabilities">
     <LPInner $narrow>
       <Header>
         <LPHeadline>Questions you'd actually ask.</LPHeadline>

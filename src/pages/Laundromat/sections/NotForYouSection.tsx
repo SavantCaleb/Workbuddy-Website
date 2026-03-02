@@ -55,7 +55,7 @@ interface NotForYouSectionProps {
 }
 
 export const NotForYouSection = ({ onScrollToForm }: NotForYouSectionProps) => (
-  <LPSection $alt>
+  <LPSection $alt id="is-it-right-for-you" aria-label="Is AI phone answering right for your laundromat - laundromat staffing solution and missed calls solution">
     <LPInner>
       <Container>
         <LPHeadline style={{ textAlign: 'center', marginBottom: 32 }}>

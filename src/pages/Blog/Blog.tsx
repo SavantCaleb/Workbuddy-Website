@@ -13,9 +13,18 @@ const blogStructuredData = [
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "WorkBuddy Blog",
-    "description": "Guides and insights on laundromat AI, automation, operations, and business growth.",
-    "url": "https://getworkbuddy.com/blog"
+    "name": "Laundromat AI, Automation & Business Guides | WorkBuddy Blog",
+    "description": "Expert guides on AI phone answering for laundromats, laundromat automation, smart laundry systems, virtual receptionist solutions, laundry business automation, and laundromat technology innovations. Written by operators, for operators.",
+    "url": "https://getworkbuddy.com/blog",
+    "about": [
+      "AI receptionist for laundromats",
+      "Laundromat phone automation",
+      "Smart laundry systems",
+      "Laundry automation software",
+      "Laundromat management software",
+      "AI laundromat innovations",
+      "Laundromat customer service automation"
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -30,7 +39,7 @@ const blogStructuredData = [
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Blog",
+        "name": "Laundromat AI & Automation Blog",
         "item": "https://getworkbuddy.com/blog"
       }
     ]
@@ -145,10 +154,10 @@ export const Blog = () => {
   return (
     <>
       <SEO
-        title="Laundromat AI & Automation Guides"
-        description="Expert guides on laundromat AI, phone automation, operations, marketing, and business growth. Written by operators, for operators."
+        title="Laundromat AI, Phone Automation & Business Guides"
+        description="Expert guides on AI phone answering for laundromats, laundromat automation, smart laundry systems, virtual receptionist solutions, and laundry business growth."
         canonical="/blog"
-        keywords="laundromat technology, laundromat automation, laundromat business guide, AI receptionist guide"
+        keywords="AI phone answering for laundromats, laundromat automation, smart laundry system, laundry automation software, AI laundry business, laundromat technology 2026, AI laundromat innovations, smart laundromat solutions, laundromat management software, laundry business automation, laundromat customer service automation, AI receptionist guide"
         structuredData={blogStructuredData}
       />
       <Navbar />

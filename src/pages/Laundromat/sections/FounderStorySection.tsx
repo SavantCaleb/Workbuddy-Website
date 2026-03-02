@@ -52,7 +52,7 @@ const Blockquote = styled.blockquote`
 `;
 
 export const FounderStorySection = () => (
-  <LPSection $alt>
+  <LPSection $alt id="founder" aria-label="WorkBuddy founder story - Caleb Benedict built AI for 100+ laundromat locations">
     <LPInner>
       <LPGrid style={{ alignItems: 'center' }}>
         <div>

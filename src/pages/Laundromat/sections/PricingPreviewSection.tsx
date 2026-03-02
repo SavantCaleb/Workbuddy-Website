@@ -298,7 +298,7 @@ export const PricingPreviewSection = () => {
   const isCustom = locationCount >= 10;
 
   return (
-    <LPSection $alt>
+    <LPSection $alt id="pricing" aria-label="AI receptionist pricing for laundromats - affordable plans from $129 per month, unlimited calls">
       <LPInner>
         <Header>
           <LPHeadline style={{ textAlign: 'center' }}>

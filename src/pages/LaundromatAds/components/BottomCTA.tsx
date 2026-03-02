@@ -111,7 +111,7 @@ interface BottomCTAProps {
 }
 
 export const BottomCTA = forwardRef<HTMLElement, BottomCTAProps>(({ onScrollToForm }, ref) => (
-  <CTASection ref={ref}>
+  <CTASection ref={ref} id="get-started" aria-label="Try WorkBuddy AI receptionist free for 14 days - no credit card needed">
     <CTAInner>
       <CTAHeadline>Try WorkBuddy free for 14 days.</CTAHeadline>
       <CTASub>We handle setup. You just keep running your business.</CTASub>

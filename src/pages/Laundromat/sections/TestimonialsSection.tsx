@@ -83,7 +83,7 @@ const TESTIMONIALS = [
 ];
 
 export const TestimonialsSection = () => (
-  <LPSection>
+  <LPSection id="testimonials" aria-label="Laundromat owner reviews of WorkBuddy AI receptionist - customer testimonials">
     <LPInner>
       <Header>
         <LPHeadline style={{ textAlign: 'center' }}>
