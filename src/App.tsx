@@ -23,6 +23,8 @@ import { Demo } from './pages/Demo/Demo';
 import { SecretShop } from './pages/SecretShop/SecretShop';
 import { Privacy } from './pages/Privacy/Privacy';
 import { Terms } from './pages/Terms/Terms';
+import { FreeMakeoverPage } from './pages/LeadMagnet/FreeMakeoverPage';
+import { FreeAuditPage } from './pages/LeadMagnet/FreeAuditPage';
 import { NotFound } from './pages/NotFound/NotFound';
 
 function App() {
@@ -50,6 +52,10 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/demo" element={<Demo />} />
+
+        {/* Lead Magnet Landing Pages */}
+        <Route path="/free-makeover" element={<FreeMakeoverPage />} />
+        <Route path="/free-audit" element={<FreeAuditPage />} />
 
         {/* Existing Routes */}
         <Route path="/secret-shop" element={<SecretShop />} />

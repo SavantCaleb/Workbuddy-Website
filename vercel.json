@@ -12,6 +12,10 @@
     }
   ],
   "rewrites": [
+    { "source": "/connect/:slug", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/connect/:slug" },
+    { "source": "/report/:slug", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/report/:slug" },
+    { "source": "/s/:slug", "destination": "/api/s/:slug" },
+    { "source": "/sitemap-business.xml", "destination": "/api/sitemap-business.xml" },
     { "source": "/", "destination": "/index.html" },
     { "source": "/pricing", "destination": "/index.html" },
     { "source": "/about", "destination": "/index.html" },
@@ -28,7 +32,9 @@
     { "source": "/laundromat-ads", "destination": "/index.html" },
     { "source": "/laundromat-ads-short", "destination": "/index.html" },
     { "source": "/laundromat-ads/thank-you", "destination": "/index.html" },
-    { "source": "/laundromats/thank-you", "destination": "/index.html" }
+    { "source": "/laundromats/thank-you", "destination": "/index.html" },
+    { "source": "/free-makeover", "destination": "/index.html" },
+    { "source": "/free-audit", "destination": "/index.html" }
   ],
   "headers": [
     {

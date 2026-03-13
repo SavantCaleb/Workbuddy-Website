@@ -9,6 +9,7 @@ Allow: /demo
 Allow: /faq
 Allow: /about
 Allow: /contact
+Allow: /s/
 
 # Disallow paths that shouldn't be indexed
 Disallow: /secret-shop
@@ -54,5 +55,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://getworkbuddy.com/sitemap.xml
+Sitemap: https://getworkbuddy.com/sitemap-business.xml
 
 # LLMs.txt: https://getworkbuddy.com/llms.txt
