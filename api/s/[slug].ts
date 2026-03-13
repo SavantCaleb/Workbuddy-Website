@@ -3,8 +3,8 @@ import { supabase } from '../_lib/supabase.js';
 import { renderBusinessPage, renderPausedPage, renderNotFound } from '../_lib/template.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== 'GET') {
-    res.setHeader('Allow', 'GET');
+  if (req.method !== 'GET' && req.method !== 'HEAD') {
+    res.setHeader('Allow', 'GET, HEAD');
     return res.status(405).send('Method Not Allowed');
   }
 
