@@ -13,30 +13,30 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(404).setHeader('Content-Type', 'text/html').send(renderNotFound());
   }
 
-  const { data: lead, error } = await supabase
-    .from('workbuddy_leads')
+  const { data: page, error } = await supabase
+    .from('business_pages')
     .select('*')
     .eq('slug', slug)
     .single();
 
-  if (error || !lead) {
+  if (error || !page) {
     return res.status(404).setHeader('Content-Type', 'text/html').send(renderNotFound());
   }
 
   // Paused: page exists but is inactive
   const pausedStatuses = ['trial_expired', 'churned'];
-  if (!lead.is_published || pausedStatuses.includes(lead.subscription_status)) {
+  if (!page.is_published || pausedStatuses.includes(page.subscription_status)) {
     return res
       .status(200)
       .setHeader('Content-Type', 'text/html')
       .setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300')
-      .send(renderPausedPage(lead.business_name));
+      .send(renderPausedPage(page.business_name));
   }
 
   // Published: active page
   const activeStatuses = ['trial', 'active'];
-  if (lead.is_published && activeStatuses.includes(lead.subscription_status)) {
-    const html = renderBusinessPage(lead);
+  if (page.is_published && activeStatuses.includes(page.subscription_status)) {
+    const html = renderBusinessPage(page);
     return res
       .status(200)
       .setHeader('Content-Type', 'text/html')

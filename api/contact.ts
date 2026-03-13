@@ -13,19 +13,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(400).json({ error: 'slug and visitor_name are required' });
   }
 
-  // Look up lead by slug
-  const { data: lead, error: leadError } = await supabase
-    .from('workbuddy_leads')
-    .select('id, is_published, subscription_status')
+  // Look up business page by slug
+  const { data: page, error: pageError } = await supabase
+    .from('business_pages')
+    .select('id, lead_id, is_published, subscription_status')
     .eq('slug', slug)
     .single();
 
-  if (leadError || !lead) {
+  if (pageError || !page) {
     return res.status(404).json({ error: 'Business not found' });
   }
 
   const activeStatuses = ['trial', 'active'];
-  if (!lead.is_published || !activeStatuses.includes(lead.subscription_status)) {
+  if (!page.is_published || !activeStatuses.includes(page.subscription_status)) {
     return res.status(403).json({ error: 'This business page is not active' });
   }
 
@@ -33,7 +33,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { error: insertError } = await supabase
     .from('contact_submissions')
     .insert({
-      lead_id: lead.id,
+      lead_id: page.lead_id,
       visitor_name,
       visitor_phone: visitor_phone || null,
       visitor_message: visitor_message || null,
