@@ -4,10 +4,11 @@ import { renderStars } from '../utils.js';
 export function renderSocialProofBar(data: BusinessData, _cta: CTAConfig): string {
   const pills: string[] = [];
 
-  if (data.cached_rating && data.cached_review_count) {
+  const rating = data.cached_rating ? Number(data.cached_rating) : null;
+  if (rating && data.cached_review_count) {
     pills.push(`<div class="proof__item">
-      <div class="proof__stars">${renderStars(data.cached_rating)}</div>
-      <div class="proof__label"><strong>${data.cached_rating.toFixed(1)}</strong> (${data.cached_review_count} reviews)</div>
+      <div class="proof__stars">${renderStars(rating)}</div>
+      <div class="proof__label"><strong>${rating.toFixed(1)}</strong> (${data.cached_review_count} reviews)</div>
     </div>`);
   }
 

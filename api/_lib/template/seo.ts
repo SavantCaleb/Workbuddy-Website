@@ -1,5 +1,5 @@
 import type { BusinessData } from './types.js';
-import { escapeHtml, buildAddress } from './utils.js';
+import { escapeHtml, buildAddress, extractPhotoUrl } from './utils.js';
 
 export function buildJsonLd(data: BusinessData, canonicalUrl: string): string {
   const ld: Record<string, unknown> = {
@@ -87,7 +87,7 @@ export function buildMetaTags(data: BusinessData, canonicalUrl: string): string 
   const title = data.meta_title || `${data.business_name}${data.address_city ? ` in ${data.address_city}` : ''}`;
   const description = data.meta_description || data.tagline || `Contact ${data.business_name}${data.address_city ? ` in ${data.address_city}, ${data.address_state || ''}`.trim() : ''}. Call today!`;
 
-  const ogImage = data.logo_url || data.gallery_photos?.[0]?.url || data.cached_photos?.[0] || '';
+  const ogImage = data.logo_url || data.gallery_photos?.[0]?.url || extractPhotoUrl(data.cached_photos?.[0]) || '';
 
   return `
   <meta charset="UTF-8" />

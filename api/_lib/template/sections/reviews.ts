@@ -8,6 +8,7 @@ function getInitials(name: string): string {
 export function renderReviewsSection(data: BusinessData, _cta: CTAConfig): string {
   if (!data.cached_reviews || data.cached_reviews.length === 0) return '';
   const reviews = data.cached_reviews.slice(0, 5);
+  const rating = data.cached_rating ? Number(data.cached_rating) : null;
 
   return `
     <section class="section section--reviews section--alt" id="reviews">
@@ -15,11 +16,11 @@ export function renderReviewsSection(data: BusinessData, _cta: CTAConfig): strin
         <div class="section__header section__header--center">
           <span class="section__label">Testimonials</span>
           <h2>What Our Customers Say</h2>
-          ${data.cached_rating && data.cached_review_count ? `
+          ${rating && data.cached_review_count ? `
             <div class="reviews__aggregate">
-              <span class="reviews__big-rating">${data.cached_rating.toFixed(1)}</span>
+              <span class="reviews__big-rating">${rating.toFixed(1)}</span>
               <div class="reviews__aggregate-detail">
-                <div class="reviews__aggregate-stars">${renderStars(data.cached_rating)}</div>
+                <div class="reviews__aggregate-stars">${renderStars(rating)}</div>
                 <span class="reviews__aggregate-count">Based on ${data.cached_review_count} reviews</span>
               </div>
             </div>
@@ -36,7 +37,7 @@ export function renderReviewsSection(data: BusinessData, _cta: CTAConfig): strin
                   <span class="review-card__author">${escapeHtml(r.author)}</span>
                   <div class="review-card__stars">${renderStars(r.rating)}</div>
                 </div>
-                ${r.relative_time ? `<span class="review-card__time">${escapeHtml(r.relative_time)}</span>` : ''}
+                ${(r.relative_time || (r as Record<string, unknown>).relativeTime) ? `<span class="review-card__time">${escapeHtml(String(r.relative_time || (r as Record<string, unknown>).relativeTime))}</span>` : ''}
               </div>
             </div>
           `).join('')}

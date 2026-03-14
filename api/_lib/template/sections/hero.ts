@@ -1,10 +1,11 @@
 import type { BusinessData, CTAConfig } from '../types.js';
-import { escapeHtml, renderStars, buildAddress } from '../utils.js';
+import { escapeHtml, renderStars, buildAddress, extractPhotoUrl } from '../utils.js';
 
 export function renderHeroSection(data: BusinessData, cta: CTAConfig): string {
   const address = buildAddress(data);
-  const hasRating = data.cached_rating && data.cached_review_count;
-  const bgImage = data.gallery_photos?.[0]?.url || data.cached_photos?.[0];
+  const rating = data.cached_rating ? Number(data.cached_rating) : null;
+  const hasRating = rating && data.cached_review_count;
+  const bgImage = data.gallery_photos?.[0]?.url || extractPhotoUrl(data.cached_photos?.[0]);
 
   const ctaHref = cta.primaryAction === 'url' && data.primary_cta_url
     ? escapeHtml(data.primary_cta_url)
@@ -23,8 +24,8 @@ export function renderHeroSection(data: BusinessData, cta: CTAConfig): string {
         ${data.tagline ? `<p class="hero__tagline">${escapeHtml(data.tagline)}</p>` : ''}
         ${hasRating ? `
           <div class="hero__rating">
-            <div class="hero__stars">${renderStars(data.cached_rating!)}</div>
-            <span class="hero__rating-text">${data.cached_rating!.toFixed(1)} &middot; ${data.cached_review_count} reviews</span>
+            <div class="hero__stars">${renderStars(rating!)}</div>
+            <span class="hero__rating-text">${rating!.toFixed(1)} &middot; ${data.cached_review_count} reviews</span>
           </div>
         ` : ''}
         ${address ? `<p class="hero__address">${escapeHtml(address)}</p>` : ''}

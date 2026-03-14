@@ -30,6 +30,15 @@ export function buildAddress(data: BusinessData): string | null {
   return parts.length > 0 ? parts.join(', ') : null;
 }
 
+/** Extract a URL string from a cached_photos entry (handles both string and {url} object formats) */
+export function extractPhotoUrl(photo: unknown): string | null {
+  if (typeof photo === 'string') return photo;
+  if (photo && typeof photo === 'object' && 'url' in photo && typeof (photo as Record<string, unknown>).url === 'string') {
+    return (photo as Record<string, string>).url;
+  }
+  return null;
+}
+
 export function summarizeHours(hours: Record<string, { open: string; close: string } | null>): string | null {
   const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
   const weekdays = days.slice(0, 5);
