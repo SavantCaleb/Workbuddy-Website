@@ -14,6 +14,11 @@
       "source": "/report/:slug*",
       "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/report/:slug*",
       "statusCode": 302
+    },
+    {
+      "source": "/offer/:slug*",
+      "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/offer/:slug*",
+      "statusCode": 302
     }
   ],
   "rewrites": [
