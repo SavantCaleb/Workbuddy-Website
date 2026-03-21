@@ -22,6 +22,7 @@
     { "source": "/connect/:slug", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/connect/:slug" },
     { "source": "/portal/:path*", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/portal/:path*" },
     { "source": "/portal", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/portal" },
+    { "source": "/welcome", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/welcome" },
     { "source": "/welcome/:slug", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/welcome/:slug" },
     { "source": "/dashboard/:slug", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/dashboard/:slug" },
     { "source": "/preview/:slug", "destination": "https://workbuddy-leadmagnet-187a824a542b.herokuapp.com/preview/:slug" },
