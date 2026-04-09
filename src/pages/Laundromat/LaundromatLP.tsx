@@ -42,7 +42,7 @@ const organizationSchema = {
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+1-203-605-1105",
+      "telephone": "+1-860-477-9542",
       "contactType": "sales",
       "email": "hello@getworkbuddy.com",
       "availableLanguage": ["English", "Spanish", "Chinese", "Korean", "Arabic", "French", "Portuguese", "Vietnamese", "Hindi", "Tagalog"],
@@ -51,7 +51,7 @@ const organizationSchema = {
     },
     {
       "@type": "ContactPoint",
-      "telephone": "+1-203-605-1105",
+      "telephone": "+1-860-477-9542",
       "contactType": "customer service",
       "email": "hello@getworkbuddy.com",
       "availableLanguage": ["English", "Spanish"],

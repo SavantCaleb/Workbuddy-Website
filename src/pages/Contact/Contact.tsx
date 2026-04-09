@@ -15,7 +15,7 @@ const contactStructuredData = {
     "name": "WorkBuddy",
     "description": "Contact WorkBuddy for AI receptionist and phone answering service for laundromats, dry cleaners, and laundry businesses. Get pricing for automated laundromat customer service, multilingual phone support, and 24/7 phone coverage.",
     "email": "hello@getworkbuddy.com",
-    "telephone": "+1-203-605-1105",
+    "telephone": "+1-860-477-9542",
     "address": {
       "@type": "PostalAddress",
       "addressRegion": "CT",
@@ -24,14 +24,14 @@ const contactStructuredData = {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+1-203-605-1105",
+        "telephone": "+1-860-477-9542",
         "contactType": "sales",
         "email": "hello@getworkbuddy.com",
         "availableLanguage": ["English", "Spanish"]
       },
       {
         "@type": "ContactPoint",
-        "telephone": "+1-203-605-1105",
+        "telephone": "+1-860-477-9542",
         "contactType": "customer service",
         "email": "hello@getworkbuddy.com"
       }
@@ -144,10 +144,10 @@ export const Contact = () => {
                 Talk to a real human on our team. We're happy to answer any questions.
               </p>
               <a
-                href="tel:2036051105"
+                href="tel:18604779542"
                 style={{ color: theme.colors.brand.azure, fontWeight: 600, textDecoration: 'none', fontSize: 17 }}
               >
-                (203) 605-1105
+                (860) 477-9542
               </a>
             </ContactCard>
 

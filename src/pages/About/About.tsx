@@ -316,7 +316,7 @@ export const About = () => {
           </div>
           <div style={{ marginTop: 40, display: 'flex', gap: 32, justifyContent: 'center', flexWrap: 'wrap', fontSize: 15 }}>
             <a href="mailto:hello@getworkbuddy.com" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>hello@getworkbuddy.com</a>
-            <a href="tel:2036051105" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>(203) 605-1105</a>
+            <a href="tel:18604779542" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>(860) 477-9542</a>
           </div>
         </Container>
       </Section>

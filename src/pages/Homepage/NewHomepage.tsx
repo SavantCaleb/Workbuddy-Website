@@ -262,8 +262,8 @@ export const NewHomepage: React.FC = () => {
 
               <p style={{ marginTop: 24, fontSize: 15, color: theme.colors.text.secondary }}>
                 Questions? Call us now:{' '}
-                <a href="tel:+12036051105" style={{ color: theme.colors.brand.azure, fontWeight: 600, textDecoration: 'none' }}>
-                  (203) 605-1105
+                <a href="tel:+18604779542" style={{ color: theme.colors.brand.azure, fontWeight: 600, textDecoration: 'none' }}>
+                  (860) 477-9542
                 </a>
               </p>
             </motion.div>
@@ -572,7 +572,7 @@ export const NewHomepage: React.FC = () => {
                 Questions? Call us now:
               </p>
               <a
-                href="tel:+12036051105"
+                href="tel:+18604779542"
                 style={{
                   fontSize: 20,
                   color: theme.colors.brand.azure,
@@ -580,7 +580,7 @@ export const NewHomepage: React.FC = () => {
                   textDecoration: 'none'
                 }}
               >
-                (203) 605-1105
+                (860) 477-9542
               </a>
             </div>
           </div>
@@ -620,8 +620,8 @@ export const NewHomepage: React.FC = () => {
             }}>
               Text us now at:
             </p>
-            <PhoneNumber href="sms:+12036051105">
-              (203) 605-1105
+            <PhoneNumber href="sms:+18604779542">
+              (860) 477-9542
             </PhoneNumber>
             <p style={{
               fontSize: 15,

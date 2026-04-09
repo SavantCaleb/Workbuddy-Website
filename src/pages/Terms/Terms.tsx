@@ -247,7 +247,7 @@ export const Terms: React.FC = () => {
           <p>If you have any questions about these Terms of Service, please contact us:</p>
           <p>Email: <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a></p>
           <p>Address: 2329 Long Hill Road, Guilford, CT 06437</p>
-          <p>Phone: <a href="tel:+12036051105">+1 (203) 605-1105</a></p>
+          <p>Phone: <a href="tel:+18604779542">+1 (860) 477-9542</a></p>
         </ContactInfo>
       </Container>
     </PageWrapper>

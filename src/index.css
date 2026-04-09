@@ -27,6 +27,36 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes msgPop {
+  from { opacity: 0; transform: translateY(12px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes sceneElIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sceneFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes sceneFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes showcaseBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes showcaseFill {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
 /*
   Base element styles — these go in @layer base so Tailwind utilities
   can still override them (critical for Tailwind v4 cascade layers).
@@ -130,6 +160,32 @@
 
   .ticker {
     animation: ticker 40s linear infinite;
+  }
+
+  .hero-msg {
+    opacity: 0;
+    animation: msgPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .scene-el {
+    opacity: 0;
+    animation: sceneElIn 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  .scene-fade-in {
+    animation: sceneFadeIn 0.5s ease-out forwards;
+  }
+
+  .scene-fade-out {
+    animation: sceneFadeOut 0.35s ease-in forwards;
+  }
+
+  .showcase-bar {
+    animation: showcaseBar linear forwards;
+  }
+
+  .showcase-fill {
+    animation: showcaseFill 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.4s forwards;
   }
 
   .nav-link {

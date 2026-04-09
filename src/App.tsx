@@ -9,6 +9,7 @@ import { HomePage } from './pages/NewHome/HomePage';
 import { AboutPage } from './pages/NewAbout/AboutPage';
 import { CustomersPage } from './pages/Customers/CustomersPage';
 import { PricingPage } from './pages/NewPricing/PricingPage';
+import { FreeReportPage } from './pages/FreeReport/FreeReportPage';
 
 // Receptionist / Laundromat pages (legacy product)
 import { LaundromatLP } from './pages/Laundromat/LaundromatLP';
@@ -75,7 +76,7 @@ function App() {
         {/* ── Lead Magnets ── */}
         <Route path="/free-makeover" element={<R><FreeMakeoverPage /></R>} />
         <Route path="/free-audit" element={<R><FreeAuditPage /></R>} />
-        <Route path="/free-report" element={<R><FreeMakeoverPage /></R>} />
+        <Route path="/free-report" element={<FreeReportPage />} />
 
         {/* ── Other ── */}
         <Route path="/secret-shop" element={<R><SecretShop /></R>} />

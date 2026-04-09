@@ -1257,7 +1257,7 @@ const landingPageStructuredData = {
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-203-605-1105",
+        "telephone": "+1-860-477-9542",
         "contactType": "customer service",
         "email": "caleb@getworkbuddy.com",
         "areaServed": "US",

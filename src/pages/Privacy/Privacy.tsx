@@ -161,7 +161,7 @@ export const Privacy: React.FC = () => {
         <SMSComplianceBox>
           <h2>SMS Messaging Terms</h2>
           <SMSQuickRef>
-            <li><strong>Opt-In:</strong> Text <a href="sms:+12036051105">(203) 605-1105</a> to start receiving messages</li>
+            <li><strong>Opt-In:</strong> Text <a href="sms:+18604779542">(860) 477-9542</a> to start receiving messages</li>
             <li><strong>Opt-Out:</strong> Reply STOP to any message to unsubscribe</li>
             <li><strong>Help:</strong> Reply HELP for assistance</li>
             <li><strong>Frequency:</strong> Message frequency varies based on your interactions</li>
@@ -318,7 +318,7 @@ export const Privacy: React.FC = () => {
           <h3>Contact Us</h3>
           <p>If you have any questions or concerns about this privacy policy or your data, please contact us at <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a>.</p>
           <p>Address: 2329 Long Hill Road, Guilford, CT 06437</p>
-          <p>Phone: <a href="tel:+12036051105">+1 (203) 605-1105</a></p>
+          <p>Phone: <a href="tel:+18604779542">+1 (860) 477-9542</a></p>
         </ContactInfo>
       </Container>
     </PageWrapper>

@@ -19,23 +19,23 @@ export const CustomersPage = () => {
       <Nav />
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-20">
-        <Eyebrow className="mb-6">Real customers &middot; Real money &middot; Real names</Eyebrow>
-        <h1 className="font-display text-5xl md:text-7xl leading-[1.05] tracking-tight mb-8 max-w-4xl">
-          Their phones started ringing. <em className="italic text-rust">Here's how.</em>
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-12 md:pt-20 md:pb-20">
+        <Eyebrow className="mb-4 md:mb-6">Real customers &middot; Real money &middot; Real names</Eyebrow>
+        <h1 className="font-display text-3xl md:text-5xl lg:text-7xl leading-[1.05] tracking-tight mb-8 max-w-4xl">
+          Their phones started ringing. <br /><em className="italic text-rust">Here's how.</em>
         </h1>
-        <p className="text-xl text-ink/70 max-w-3xl leading-relaxed">
+        <p className="text-base md:text-xl text-ink/70 max-w-3xl leading-relaxed">
           We're newer than the agencies that charge five times more. So we're not going to pretend we have a thousand case studies. We have these. They're real. The names are real. The texts are word for word. The results are what they say they are.
         </p>
       </section>
 
       {/* ── Shannon ── */}
-      <section className="border-t border-softline py-20">
+      <section className="border-t border-softline py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
             <div className="lg:col-span-4">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-rust to-rustdark flex items-center justify-center mb-6 relative">
-                <span className="font-display text-[10rem] text-paper italic leading-none">S</span>
+                <span className="font-display text-[6rem] md:text-[10rem] text-paper italic leading-none">S</span>
               </div>
               <p className="font-display text-3xl mb-1">Shannon S.</p>
               <p className="text-warmgrey mb-4">Lightning Pro Cleaning &middot; Wilmington, NC</p>
@@ -57,7 +57,7 @@ export const CustomersPage = () => {
                 <Eyebrow className="mb-3">What happened</Eyebrow>
                 <p className="font-display text-3xl italic leading-tight text-rust">She got a lead during her free trial. Before she'd paid a dollar.</p>
               </div>
-              <div className="bg-highlight border border-rust/30 rounded-2xl p-8">
+              <div className="bg-highlight border border-rust/30 rounded-2xl p-5 md:p-8">
                 <Eyebrow className="mb-4">Her actual texts to us, unedited</Eyebrow>
                 <div className="space-y-3 text-ink/85">
                   {[
@@ -81,12 +81,12 @@ export const CustomersPage = () => {
       </section>
 
       {/* ── Trey ── */}
-      <section className="border-t border-softline py-20 bg-ink text-paper relative">
+      <section className="border-t border-softline py-12 md:py-20 bg-ink text-paper relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
             <div className="lg:col-span-4">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-paper/20 to-paper/5 flex items-center justify-center mb-6 border border-paper/10">
-                <span className="font-display text-[10rem] text-paper italic leading-none">T</span>
+                <span className="font-display text-[6rem] md:text-[10rem] text-paper italic leading-none">T</span>
               </div>
               <p className="font-display text-3xl mb-1">Trey S.</p>
               <p className="text-paper/60 mb-4">Panama City Beach Lawn &middot; FL</p>
@@ -108,7 +108,7 @@ export const CustomersPage = () => {
                 <Eyebrow className="mb-3 text-paper/60">What happened</Eyebrow>
                 <p className="font-display text-3xl italic leading-tight text-rust">We told him the price. He said one word: "Deal." Total time from his first reply: 32 minutes.</p>
               </div>
-              <div className="bg-paper/5 border border-paper/10 rounded-2xl p-8">
+              <div className="bg-paper/5 border border-paper/10 rounded-2xl p-5 md:p-8">
                 <Eyebrow className="mb-4 text-paper/60">His exact texts</Eyebrow>
                 <div className="space-y-3">
                   <p className="bg-paper/10 rounded-2xl rounded-bl-sm p-4 max-w-md text-paper">"Yes" <span className="text-paper/50 text-sm">(when asked if the report surprised him)</span></p>
@@ -126,12 +126,12 @@ export const CustomersPage = () => {
       </section>
 
       {/* ── Alex ── */}
-      <section className="border-t border-softline py-20">
+      <section className="border-t border-softline py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
             <div className="lg:col-span-4">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-warmgrey to-ink flex items-center justify-center mb-6 relative">
-                <span className="font-display text-[10rem] text-paper italic leading-none">A</span>
+                <span className="font-display text-[6rem] md:text-[10rem] text-paper italic leading-none">A</span>
               </div>
               <p className="font-display text-3xl mb-1">Alex C.</p>
               <p className="text-warmgrey mb-4">Calianese Painting &middot; Bayonne, NJ</p>
@@ -153,7 +153,7 @@ export const CustomersPage = () => {
                 <Eyebrow className="mb-3">What happened</Eyebrow>
                 <p className="font-display text-3xl italic leading-tight text-rust">Total time from his first reply to a paying customer: 1 hour, 39 minutes.</p>
               </div>
-              <div className="bg-highlight border border-rust/30 rounded-2xl p-8">
+              <div className="bg-highlight border border-rust/30 rounded-2xl p-5 md:p-8">
                 <Eyebrow className="mb-4">His exact texts</Eyebrow>
                 <div className="space-y-3 text-ink/85">
                   <p className="bg-paper rounded-2xl rounded-bl-sm p-4 max-w-md">"Sure, could I add other counties as we go and what are your packages?"</p>
@@ -172,12 +172,12 @@ export const CustomersPage = () => {
       </section>
 
       {/* ── Joseph ── */}
-      <section className="border-t border-softline py-20 bg-highlight relative">
+      <section className="border-t border-softline py-12 md:py-20 bg-highlight relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-12 gap-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
             <div className="lg:col-span-4">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-ink to-warmgrey flex items-center justify-center mb-6 border border-rust/20">
-                <span className="font-display text-[10rem] text-paper italic leading-none">J</span>
+                <span className="font-display text-[6rem] md:text-[10rem] text-paper italic leading-none">J</span>
               </div>
               <p className="font-display text-3xl mb-1">Joseph R.</p>
               <p className="text-warmgrey mb-4">Levelpro Floor Solutions &middot; UT</p>
@@ -199,7 +199,7 @@ export const CustomersPage = () => {
                 <Eyebrow className="mb-3">What happened</Eyebrow>
                 <p className="font-display text-3xl italic leading-tight text-rust">He sent us 56 photos. Unprompted. He just kept sending them. We put every single one on his site.</p>
               </div>
-              <div className="bg-paper border border-rust/30 rounded-2xl p-8">
+              <div className="bg-paper border border-rust/30 rounded-2xl p-5 md:p-8">
                 <Eyebrow className="mb-4">His exact texts</Eyebrow>
                 <div className="space-y-3 text-ink/85">
                   <p className="bg-highlight rounded-2xl rounded-bl-sm p-4 max-w-md">"I would like to picture to match the description. And maybe a slide show or a gallery"</p>
@@ -217,11 +217,11 @@ export const CustomersPage = () => {
       </section>
 
       {/* By the numbers */}
-      <section className="bg-ink text-paper py-24 relative">
+      <section className="bg-ink text-paper py-14 md:py-24 relative">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
-          <Eyebrow className="mb-6 text-paper/60">By the numbers</Eyebrow>
-          <h2 className="font-display text-4xl md:text-6xl leading-[1.1] mb-12">
-            Every customer above is on the <em className="italic text-rust">first page of Google</em> for what they do, in the area they serve. That's not optional. That's the deal.
+          <Eyebrow className="mb-4 md:mb-6 text-paper/60">By the numbers</Eyebrow>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-6xl leading-[1.1] mb-12">
+            Every customer above is on the <em className="italic text-rust">first page of Google</em> for what they do, in the area they serve. That's not optional. <br /><em className="italic text-rust">That's the deal.</em>
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {[
@@ -230,7 +230,7 @@ export const CustomersPage = () => {
               { num: '$0', label: 'refunds paid out, ever' },
             ].map((stat) => (
               <div key={stat.label} className="border border-paper/20 rounded-2xl p-6">
-                <p className="font-display text-5xl mb-2">{stat.num}</p>
+                <p className="font-display text-4xl md:text-5xl mb-2">{stat.num}</p>
                 <p className="text-sm text-paper/70">{stat.label}</p>
               </div>
             ))}
@@ -239,9 +239,9 @@ export const CustomersPage = () => {
       </section>
 
       {/* Industries */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-32">
-        <Eyebrow className="mb-6">Who we work with</Eyebrow>
-        <h2 className="font-display text-5xl md:text-6xl leading-[1.05] mb-16 max-w-3xl">
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 md:py-32">
+        <Eyebrow className="mb-4 md:mb-6">Who we work with</Eyebrow>
+        <h2 className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] mb-10 md:mb-16 max-w-3xl">
           We work mostly with these kinds of <em className="italic">businesses.</em>
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
@@ -257,13 +257,13 @@ export const CustomersPage = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-highlight border-y border-rust/20 py-32 relative">
+      <section className="bg-highlight border-y border-rust/20 py-16 md:py-32 relative">
         <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
-          <Eyebrow className="mb-6 text-rust">A few spots open this month</Eyebrow>
-          <h2 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8">
-            Want to be on this page <em className="italic text-rust">in 30 days?</em>
+          <Eyebrow className="mb-4 md:mb-6 text-rust">A few spots open this month</Eyebrow>
+          <h2 className="font-display text-3xl md:text-5xl lg:text-7xl leading-[1.05] mb-8">
+            Want to be on this page <br /><em className="italic text-rust">in 30 days?</em>
           </h2>
-          <p className="text-xl text-ink/70 mb-10">
+          <p className="text-base md:text-xl text-ink/70 mb-10">
             We're a small team. We only take on a handful of new businesses each month so we can do the work right. Get your free report. If we're a fit, we get to work.
           </p>
           <Link

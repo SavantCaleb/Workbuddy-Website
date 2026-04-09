@@ -166,7 +166,7 @@ export const BellaLP = () => {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12 }}>
               <FiPhone size={20} color={theme.colors.brand.azure} />
               <span style={{ fontSize: 18, color: theme.colors.text.primary }}>
-                Or text me directly: <strong style={{ color: theme.colors.brand.azure }}>(203) 605-1105</strong>
+                Or text me directly: <strong style={{ color: theme.colors.brand.azure }}>(860) 477-9542</strong>
               </span>
             </div>
           </div>
@@ -249,7 +249,7 @@ export const BellaLP = () => {
             Book Migration Call
           </Button>
           <p style={{ marginTop: 24, fontSize: 16 }}>
-            Or text me: <strong>(203) 605-1105</strong>
+            Or text me: <strong>(860) 477-9542</strong>
           </p>
         </Container>
       </Section>

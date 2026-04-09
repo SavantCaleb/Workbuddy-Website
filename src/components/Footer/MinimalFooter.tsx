@@ -111,13 +111,13 @@ export const MinimalFooter: React.FC = () => {
           <ContactLine>2329 Long Hill Road, Guilford, CT 06437</ContactLine>
           <ContactLine>
             <a href="mailto:caleb@getworkbuddy.com">caleb@getworkbuddy.com</a> • 
-            <a href="tel:+12036051105"> (203) 605-1105</a>
+            <a href="tel:+18604779542"> (860) 477-9542</a>
           </ContactLine>
         </CompanyInfo>
         
         <SMSCompliance>
           <p>
-            <strong>SMS Messaging:</strong> Text <a href="sms:+12036051105">(203) 605-1105</a> to
+            <strong>SMS Messaging:</strong> Text <a href="sms:+18604779542">(860) 477-9542</a> to
             opt in to receive SMS messages from Work Buddy. Message frequency varies. Message and
             data rates may apply. Reply STOP to opt out or HELP for assistance. Consent is not
             required to make a purchase. Your mobile information will not be shared with third

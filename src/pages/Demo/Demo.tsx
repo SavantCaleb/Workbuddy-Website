@@ -299,8 +299,8 @@ export const Demo = () => {
             <a href="mailto:hello@getworkbuddy.com" style={{ color: theme.colors.brand.azure, fontWeight: 600, textDecoration: 'none', fontSize: 16 }}>
               hello@getworkbuddy.com
             </a>
-            <a href="tel:2036051105" style={{ color: theme.colors.brand.azure, fontWeight: 600, textDecoration: 'none', fontSize: 16 }}>
-              (203) 605-1105
+            <a href="tel:18604779542" style={{ color: theme.colors.brand.azure, fontWeight: 600, textDecoration: 'none', fontSize: 16 }}>
+              (860) 477-9542
             </a>
           </div>
         </Container>

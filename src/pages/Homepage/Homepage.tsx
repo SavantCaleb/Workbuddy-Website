@@ -511,7 +511,7 @@ export const Homepage = () => {
             Schedule Your Free Demo
           </Button>
           <div style={{ marginTop: 24, fontSize: 14, color: theme.colors.text.tertiary }}>
-            Or call us: (203) 605-1105 (Yes, WorkBuddy answers this line too.)
+            Or call us: (860) 477-9542 (Yes, WorkBuddy answers this line too.)
           </div>
         </Container>
       </Section>

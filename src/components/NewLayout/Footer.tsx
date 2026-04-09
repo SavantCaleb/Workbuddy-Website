@@ -19,7 +19,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-paper/80">
               <li><Link to="/" className="hover:text-rust transition-colors">How It Works</Link></li>
               <li><Link to="/pricing" className="hover:text-rust transition-colors">Pricing</Link></li>
-              <li><Link to="/" className="hover:text-rust transition-colors">The Free Report</Link></li>
+              <li><Link to="/free-report" className="hover:text-rust transition-colors">The Free Report</Link></li>
               <li><Link to="/customers" className="hover:text-rust transition-colors">Customers</Link></li>
             </ul>
           </div>
@@ -27,7 +27,7 @@ export const Footer = () => {
             <p className="eyebrow mb-4 text-paper/40">Get In Touch</p>
             <ul className="space-y-3 text-paper/80">
               <li><Link to="/about" className="hover:text-rust transition-colors">About</Link></li>
-              <li>Text: <span className="font-mono">(203) 605-1105</span></li>
+              <li>Text: <span className="font-mono">(860) 477-9542</span></li>
               <li>caleb@getworkbuddy.com</li>
             </ul>
           </div>

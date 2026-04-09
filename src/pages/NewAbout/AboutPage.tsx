@@ -12,30 +12,30 @@ export const AboutPage = () => {
       <Nav />
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-32">
-        <div className="grid lg:grid-cols-12 gap-12 items-end">
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-16 md:pt-20 md:pb-32">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-end">
           <div className="lg:col-span-8">
-            <Eyebrow className="mb-6">About WorkBuddy</Eyebrow>
-            <h1 className="font-display text-5xl md:text-7xl leading-[1.05] tracking-tight mb-8">
+            <Eyebrow className="mb-4 md:mb-6">About WorkBuddy</Eyebrow>
+            <h1 className="font-display text-3xl md:text-5xl lg:text-7xl leading-[1.05] tracking-tight mb-8">
               We built this because the people who actually run the place <em className="italic text-rust">deserve better</em> than what they're getting.
             </h1>
-            <p className="text-xl text-ink/75 max-w-2xl leading-relaxed">
+            <p className="text-base md:text-xl text-ink/75 max-w-2xl leading-relaxed">
               Plumbers. Painters. Cleaners. The folks who do the real work. The ones who keep the lights on in their towns. They've been getting fleeced by marketing companies for 20 years. We're trying to end that.
             </p>
           </div>
           <div className="lg:col-span-4 hidden lg:block">
             <div className="aspect-square bg-highlight border border-softline rounded-3xl flex items-center justify-center">
-              <p className="font-display text-[10rem] italic text-rust leading-none">w</p>
+              <p className="font-display text-[6rem] md:text-[10rem] italic text-rust leading-none">w</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* The thing nobody says */}
-      <section className="max-w-4xl mx-auto px-6 lg:px-12 py-20 border-t border-softline">
-        <Eyebrow className="mb-6">01 / The thing nobody says out loud</Eyebrow>
-        <h2 className="font-display text-4xl md:text-5xl leading-tight mb-12">
-          Here's the thing nobody in marketing wants to <em className="italic">say out loud.</em>
+      <section className="max-w-4xl mx-auto px-6 lg:px-12 py-12 md:py-20 border-t border-softline">
+        <Eyebrow className="mb-4 md:mb-6">01 / The thing nobody says out loud</Eyebrow>
+        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-tight mb-8 md:mb-12">
+          Here's the thing nobody in marketing wants to <br /><em className="italic">say out loud.</em>
         </h2>
         <div className="space-y-6 text-lg leading-relaxed text-ink/80">
           <p>Most marketing agencies make their money on confusion.</p>
@@ -48,11 +48,11 @@ export const AboutPage = () => {
       </section>
 
       {/* Why $99 */}
-      <section className="bg-ink text-paper py-32 relative">
+      <section className="bg-ink text-paper py-16 md:py-32 relative">
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
-          <Eyebrow className="mb-6 text-paper/60">02 / Why $99</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl leading-tight mb-12">
-            A real marketing company at <em className="italic">a fraction of the price.</em>
+          <Eyebrow className="mb-4 md:mb-6 text-paper/60">02 / Why $99</Eyebrow>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-tight mb-8 md:mb-12">
+            A real marketing company at <br /><em className="italic">a fraction of the price.</em>
           </h2>
           <div className="space-y-6 text-lg leading-relaxed text-paper/85">
             <p>What you get from WorkBuddy is the same thing the $1,000-a-month agencies sell. A custom website. A managed Google Business Profile. Review management. Local SEO. Real strategy, real execution, real results.</p>
@@ -66,12 +66,12 @@ export const AboutPage = () => {
       </section>
 
       {/* What we believe */}
-      <section className="max-w-4xl mx-auto px-6 lg:px-12 py-20">
-        <Eyebrow className="mb-6">03 / What we believe</Eyebrow>
-        <h2 className="font-display text-4xl md:text-5xl leading-tight mb-16">
+      <section className="max-w-4xl mx-auto px-6 lg:px-12 py-12 md:py-20">
+        <Eyebrow className="mb-4 md:mb-6">03 / What we believe</Eyebrow>
+        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-tight mb-10 md:mb-16">
           A few things we believe, <em className="italic">in case it helps you decide.</em>
         </h2>
-        <div className="space-y-12">
+        <div className="space-y-8 lg:space-y-12">
           {[
             { title: 'Marketing should pay for itself in the first month.', desc: "If it doesn't, something is broken. Don't let anyone tell you otherwise." },
             { title: 'The business owner is smarter than the marketer.', desc: "You know your trade. We know online. The deal is, we don't pretend to know your trade and you don't have to pretend to understand SEO." },
@@ -80,7 +80,7 @@ export const AboutPage = () => {
             { title: "If your phone isn't ringing, nothing else matters.", desc: "We don't measure success in clicks or impressions or any of the other words that mean nothing. We measure it in calls." },
           ].map((belief) => (
             <div key={belief.title} className="border-l-2 border-rust pl-8">
-              <h3 className="font-display text-3xl mb-3">{belief.title}</h3>
+              <h3 className="font-display text-2xl md:text-3xl mb-3">{belief.title}</h3>
               <p className="text-ink/70 leading-relaxed">{belief.desc}</p>
             </div>
           ))}
@@ -88,13 +88,13 @@ export const AboutPage = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-highlight border-y border-rust/20 py-32 relative">
+      <section className="bg-highlight border-y border-rust/20 py-16 md:py-32 relative">
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-5xl md:text-6xl leading-[1.05] mb-8">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] mb-8">
               The best way to know if we're for real is to <em className="italic">let us prove it.</em> Free.
             </h2>
-            <p className="text-xl text-ink/70 mb-10">Get the report. See what we see. Decide from there.</p>
+            <p className="text-base md:text-xl text-ink/70 mb-10">Get the report. See what we see. Decide from there.</p>
             <Link
               to="/free-report"
               className="inline-block btn-primary px-10 py-5 rounded-full text-lg font-medium"
@@ -109,7 +109,7 @@ export const AboutPage = () => {
               <p>If you got this far, thanks for reading. I'm a real guy in Massachusetts who built this because I watched too many good business owners get fleeced by agencies that didn't deliver.</p>
               <p>If WorkBuddy isn't a fit for you, that's fine. Tell a friend who might need it. If it is a fit, the report is the easiest way to start. No card. No call. I'll text you when it's ready.</p>
             </div>
-            <p className="text-sm text-warmgrey mt-6">&mdash; Caleb Benedict, founder &middot; <span className="font-mono">(203) 605-1105</span></p>
+            <p className="text-sm text-warmgrey mt-6">&mdash; Caleb Benedict, founder &middot; <span className="font-mono">(860) 477-9542</span></p>
           </div>
         </div>
       </section>
