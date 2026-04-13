@@ -9,14 +9,10 @@
       "source": "/favicon.ico",
       "destination": "/favicon.png",
       "statusCode": 301
-    },
-    {
-      "source": "/admin/:path*",
-      "destination": "https://api.getworkbuddy.com/admin/:path*",
-      "statusCode": 302
     }
   ],
   "rewrites": [
+    { "source": "/admin/:path*", "destination": "https://api.getworkbuddy.com/admin/:path*" },
     { "source": "/report/:slug*", "destination": "https://api.getworkbuddy.com/report/:slug*" },
     { "source": "/offer/:slug*", "destination": "https://api.getworkbuddy.com/offer/:slug*" },
     { "source": "/connect/:slug", "destination": "https://api.getworkbuddy.com/connect/:slug" },
