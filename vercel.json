@@ -36,7 +36,7 @@
     { "source": "/confirm-assets/:path*", "destination": "https://api.getworkbuddy.com/confirm-assets/:path*" },
     { "source": "/public/:path*", "destination": "https://api.getworkbuddy.com/public/:path*" },
     { "source": "/oauth/:path*", "destination": "https://api.getworkbuddy.com/oauth/:path*" },
-    { "source": "/sites/_next/:path*", "destination": "https://sites-psi-five.vercel.app/_next/:path*" },
+    { "source": "/_next/:path*", "destination": "https://sites-psi-five.vercel.app/_next/:path*" },
     { "source": "/sites/:slug*", "destination": "https://sites-psi-five.vercel.app/:slug*" },
     { "source": "/s/:slug", "destination": "/api/s/:slug" },
     { "source": "/sitemap-business.xml", "destination": "/api/sitemap-business.xml" },
