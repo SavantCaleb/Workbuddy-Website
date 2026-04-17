@@ -36,6 +36,8 @@
     { "source": "/confirm-assets/:path*", "destination": "https://api.getworkbuddy.com/confirm-assets/:path*" },
     { "source": "/public/:path*", "destination": "https://api.getworkbuddy.com/public/:path*" },
     { "source": "/oauth/:path*", "destination": "https://api.getworkbuddy.com/oauth/:path*" },
+    { "source": "/sites/_next/:path*", "destination": "https://sites-psi-five.vercel.app/_next/:path*" },
+    { "source": "/sites/:slug*", "destination": "https://sites-psi-five.vercel.app/:slug*" },
     { "source": "/s/:slug", "destination": "/api/s/:slug" },
     { "source": "/sitemap-business.xml", "destination": "/api/sitemap-business.xml" },
     { "source": "/", "destination": "/index.html" },
@@ -56,7 +58,10 @@
     { "source": "/laundromat-ads/thank-you", "destination": "/index.html" },
     { "source": "/laundromats/thank-you", "destination": "/index.html" },
     { "source": "/free-makeover", "destination": "/index.html" },
-    { "source": "/free-audit", "destination": "/index.html" }
+    { "source": "/free-audit", "destination": "/index.html" },
+    { "source": "/free-report", "destination": "/index.html" },
+    { "source": "/customers", "destination": "/index.html" },
+    { "source": "/receptionist/:path*", "destination": "/index.html" }
   ],
   "headers": [
     {
