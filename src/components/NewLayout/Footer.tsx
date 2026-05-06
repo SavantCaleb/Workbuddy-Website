@@ -34,6 +34,10 @@ export const Footer = () => {
         </div>
         <div className="border-t border-paper/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="text-sm text-paper/50">&copy; {new Date().getFullYear()} WorkBuddy. Made for local business owners.</p>
+          <div className="flex items-center gap-6 text-sm text-paper/50">
+            <Link to="/privacy" className="hover:text-rust transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-rust transition-colors">Terms of Service</Link>
+          </div>
           <p className="text-sm text-paper/50 font-mono">Powered by AI · Run by humans</p>
         </div>
       </div>
