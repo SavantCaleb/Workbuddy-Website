@@ -12,6 +12,10 @@
     }
   ],
   "rewrites": [
+    { "source": "/ads-admin/:path*", "destination": "https://api.getworkbuddy.com/ads-admin/:path*" },                                                                                                               
+    { "source": "/ads-admin", "destination": "https://api.getworkbuddy.com/ads-admin" },                                                                                                                             
+    { "source": "/ads-dashboard/:path*", "destination": "https://api.getworkbuddy.com/ads-dashboard/:path*" },
+    { "source": "/ads-dashboard", "destination": "https://api.getworkbuddy.com/ads-dashboard" },
     { "source": "/admin/:path*", "destination": "https://api.getworkbuddy.com/admin/:path*" },
     { "source": "/report/:slug*", "destination": "https://api.getworkbuddy.com/report/:slug*" },
     { "source": "/custom-plan/:slug*", "destination": "https://api.getworkbuddy.com/custom-plan/:slug*" },
