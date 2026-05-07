@@ -30,7 +30,6 @@ import { Terms } from './pages/Terms/Terms';
 import { FreeMakeoverPage } from './pages/LeadMagnet/FreeMakeoverPage';
 import { FreeAuditPage } from './pages/LeadMagnet/FreeAuditPage';
 import { NotFound } from './pages/NotFound/NotFound';
-import { JoinRedirect } from './pages/Join/JoinRedirect';
 
 /* Wrap receptionist pages so they keep their old Apple-style typography */
 const R = ({ children }: { children: React.ReactNode }) => (
@@ -83,9 +82,6 @@ function App() {
         <Route path="/secret-shop" element={<R><SecretShop /></R>} />
         <Route path="/privacy" element={<R><Privacy /></R>} />
         <Route path="/terms" element={<R><Terms /></R>} />
-
-        {/* ── Membership join redirect ── */}
-        <Route path="/join/:slug" element={<JoinRedirect />} />
 
         {/* ── 404 ── */}
         <Route path="*" element={<NotFound />} />
