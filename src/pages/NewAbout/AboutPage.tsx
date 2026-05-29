@@ -94,12 +94,12 @@ export const AboutPage = () => {
             <h2 className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] mb-8">
               The best way to know if we're for real is to <em className="italic">let us prove it.</em> Free.
             </h2>
-            <p className="text-base md:text-xl text-ink/70 mb-10">Get the report. See what we see. Decide from there.</p>
+            <p className="text-base md:text-xl text-ink/70 mb-10">Book a free call. 15 minutes. We'll tell you exactly where you stand.</p>
             <Link
               to="/free-report"
               className="inline-block btn-primary px-10 py-5 rounded-full text-lg font-medium"
             >
-              Get My Free Report
+              Book a Free Call
             </Link>
           </div>
 

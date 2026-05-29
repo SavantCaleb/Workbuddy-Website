@@ -385,9 +385,9 @@ export const HomePage = () => {
             </p>
             <div className="fade-up stagger-4 inline-block text-center">
               <Link to="/free-report" className="btn-primary px-8 py-4 rounded-full text-base font-medium inline-block">
-                Run My Free Report
+                Book a Free Call
               </Link>
-              <p className="text-xs text-warmgrey mt-3">No card. No call. Just the report.</p>
+              <p className="text-xs text-warmgrey mt-3">No card. No obligation. Just a conversation.</p>
             </div>
           </div>
 
@@ -502,7 +502,7 @@ export const HomePage = () => {
           </div>
           <div className="mt-16">
             <Link to="/free-report" className="btn-secondary border-paper text-paper hover:bg-paper hover:text-ink px-8 py-4 rounded-full text-base font-medium">
-              Run My Free Report →
+              Book a Free Call →
             </Link>
           </div>
         </div>
@@ -660,7 +660,7 @@ export const HomePage = () => {
             <p className="text-sm text-paper/60 mt-4">— Caleb, founder</p>
           </div>
           <Link to="/free-report" className="bg-paper text-ink hover:bg-ink hover:text-paper transition-all px-10 py-5 rounded-full text-lg font-medium inline-block">
-            Get My Free Report
+            Book a Free Call
           </Link>
         </div>
       </section>
@@ -705,19 +705,18 @@ export const HomePage = () => {
               </div>
             </div>
             <div className="lg:col-span-6 lg:order-1">
-              <p className="eyebrow mb-6">05 / The free report</p>
+              <p className="eyebrow mb-6">05 / The free call</p>
               <h2 className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] mb-6 md:mb-8">
-                Before you decide anything, <em className="italic text-rust">see the report.</em>
+                Before you decide anything, <em className="italic text-rust">let's talk.</em>
               </h2>
-              <p className="text-base md:text-xl text-ink/70 leading-relaxed mb-6 md:mb-8">This is the thing we're known for. It's free, it takes 60 seconds to start, and you'll have it in your hands in under an hour.</p>
+              <p className="text-base md:text-xl text-ink/70 leading-relaxed mb-6 md:mb-8">15 minutes on the phone. We'll pull up your Google listing together and tell you exactly what's working, what's not, and what to fix first.</p>
               <div className="space-y-4 text-base text-ink/75 leading-relaxed">
-                <p>You give us your business name and where you work. We do the rest.</p>
-                <p>We pull your Google page and grade it (most score under 60). We stack your reviews against your top competitor. We literally <em>ask ChatGPT</em> who the best in your area is and we screenshot the answer. We check Perplexity. We check Gemini.</p>
-                <p>Then we send you everything. One link. Two minutes to read.</p>
-                <p>And if you read the report and decide to walk away? <em className="text-ink font-medium not-italic">Fine.</em> The report is yours. We're not going to chase you.</p>
+                <p>We'll grade your Google page live on the call (most score under 60). We'll stack your reviews against your top competitor. We'll check what AI search engines say about you.</p>
+                <p>Then we'll tell you honestly whether we can help. If we can't, we'll say so.</p>
+                <p>And if you decide to walk away? <em className="text-ink font-medium not-italic">Fine.</em> You keep the advice. We're not going to chase you.</p>
               </div>
-              <Link to="/free-report" className="btn-primary mt-10 px-8 py-4 rounded-full text-base font-medium inline-block">Get My Free Report</Link>
-              <p className="text-sm text-warmgrey mt-3">We text it to you in under an hour.</p>
+              <Link to="/free-report" className="btn-primary mt-10 px-8 py-4 rounded-full text-base font-medium inline-block">Book a Free Call</Link>
+              <p className="text-sm text-warmgrey mt-3">15 minutes. No obligation.</p>
             </div>
           </div>
         </div>
@@ -861,9 +860,9 @@ export const HomePage = () => {
             Right now, your customers are calling someone else. <em className="italic">Let's fix that.</em>
           </h2>
           <p className="text-base md:text-xl text-ink/70 leading-relaxed mb-8 md:mb-12 max-w-2xl mx-auto">
-            Start with the free report. It shows you exactly where you stand and exactly what we'd do about it. No card. No call. No "let's hop on a discovery call." Just the truth.
+            Start with a free call. 15 minutes. We'll look at your Google presence together and tell you exactly where you stand. No card. No pitch. Just straight answers.
           </p>
-          <Link to="/free-report" className="btn-primary px-10 py-5 rounded-full text-lg font-medium inline-block">Get My Free Report</Link>
+          <Link to="/free-report" className="btn-primary px-10 py-5 rounded-full text-lg font-medium inline-block">Book a Free Call</Link>
           <p className="text-sm text-warmgrey mt-6">First page of Google in 30 days, guaranteed.</p>
 
           <div className="mt-20 pt-12 border-t border-rust/20 max-w-xl mx-auto">

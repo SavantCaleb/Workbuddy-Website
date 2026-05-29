@@ -264,13 +264,13 @@ export const CustomersPage = () => {
             Want to be on this page <br /><em className="italic text-rust">in 30 days?</em>
           </h2>
           <p className="text-base md:text-xl text-ink/70 mb-10">
-            We're a small team. We only take on a handful of new businesses each month so we can do the work right. Get your free report. If we're a fit, we get to work.
+            We're a small team. We only take on a handful of new businesses each month so we can do the work right. Book a free call. If we're a fit, we get to work.
           </p>
           <Link
             to="/free-report"
             className="inline-block btn-primary px-10 py-5 rounded-full text-lg font-medium"
           >
-            Get My Free Report
+            Book a Free Call
           </Link>
         </div>
       </section>

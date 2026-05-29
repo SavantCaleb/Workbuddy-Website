@@ -17,7 +17,7 @@ const faqs = [
   { q: 'Do you charge extra for the domain?', a: 'No. Domain included.' },
   { q: "What if I don't have a Google Business Profile yet?", a: "We'll set one up for you. This happens a lot. Don't worry about it." },
   { q: 'Do you handle paid ads?', a: "No. WorkBuddy is all organic. Google ads are a different game and a different cost. If you want to run ads, you can, but we're not the ones running them." },
-  { q: 'Can I see what I\'m getting before I pay?', a: "Yes. That's the whole point of the free report. You see exactly where you stand, you see exactly what we'd build, and you only move forward if you actually want to." },
+  { q: 'Can I see what I\'m getting before I pay?', a: "Yes. Book a free call and we'll walk through your Google presence together. You'll see exactly where you stand and what we'd do. Then you decide." },
   { q: 'Who owns the website if I cancel?', a: "You do. Always. We don't hold it hostage. Domain transfers to your name within 48 hours of cancellation, free." },
 ];
 
@@ -127,14 +127,14 @@ export const PricingPage = () => {
       <section className="bg-highlight border-y border-rust/20 py-16 md:py-32 relative">
         <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
           <h2 className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] mb-6 md:mb-8">
-            The best way to figure out if it's worth $99 is to <em className="italic">see the report first.</em>
+            The best way to figure out if it's worth $99 is to <em className="italic">talk to us first.</em>
           </h2>
-          <p className="text-base md:text-xl text-ink/70 mb-8 md:mb-10">Free. 60 seconds. No card needed. We do all the work. You'll have it within the hour.</p>
+          <p className="text-base md:text-xl text-ink/70 mb-8 md:mb-10">Free 15-minute call. We'll look at your Google presence together and tell you honestly what we'd do.</p>
           <Link
             to="/free-report"
             className="inline-block btn-primary px-10 py-5 rounded-full text-lg font-medium"
           >
-            Get My Free Report
+            Book a Free Call
           </Link>
 
           <div className="mt-20 pt-12 border-t border-rust/20 max-w-xl mx-auto">

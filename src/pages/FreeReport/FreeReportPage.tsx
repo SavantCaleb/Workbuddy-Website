@@ -302,7 +302,7 @@ export const FreeReportPage = () => {
                       <p className="text-sm text-ink/70">No times available right now. Text us at <span className="font-mono">(860) 477-9542</span> to schedule.</p>
                     </div>
                   ) : (
-                    <div className="space-y-4 max-h-[40vh] overflow-y-auto">
+                    <div className="space-y-4 max-h-[40vh] overflow-y-auto overscroll-contain" style={{ WebkitOverflowScrolling: 'touch' }}>
                       {Object.entries(slotsByDay).map(([dayLabel, daySlots]) => (
                         <div key={dayLabel}>
                           <p className="eyebrow mb-2">{dayLabel}</p>

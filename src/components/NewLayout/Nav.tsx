@@ -31,7 +31,7 @@ export const Nav = () => {
 
         {/* Desktop CTA */}
         <Link to="/free-report" className="hidden md:block btn-primary px-5 py-2.5 rounded-full text-sm font-medium">
-          Get My Free Report
+          Book a Free Call
         </Link>
 
         {/* Mobile hamburger */}
@@ -54,7 +54,7 @@ export const Nav = () => {
           <Link to="/pricing" className="block text-lg text-ink hover:text-rust transition-colors">Pricing</Link>
           <Link to="/about" className="block text-lg text-ink hover:text-rust transition-colors">About</Link>
           <Link to="/free-report" className="block btn-primary text-center px-5 py-3 rounded-full text-base font-medium">
-            Get My Free Report
+            Book a Free Call
           </Link>
         </div>
       )}
