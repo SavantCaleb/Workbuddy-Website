@@ -41,7 +41,8 @@ export const FreeReportPage = () => {
   const [error, setError] = useState('');
 
   // Slots
-  const [slots, setSlots] = useState<string[]>([]);
+  interface Slot { time: string; available: boolean; }
+  const [slots, setSlots] = useState<Slot[]>([]);
   const [loadingSlots, setLoadingSlots] = useState(true);
   const [selectedDay, setSelectedDay] = useState<string | null>(null);
   const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
@@ -49,16 +50,23 @@ export const FreeReportPage = () => {
   useEffect(() => {
     fetch('/api/v1/report/slots')
       .then(r => r.json())
-      .then(data => setSlots(data.slots || []))
+      .then(data => {
+        // Support both old string[] and new {time,available}[] format
+        const raw = data.slots || [];
+        const normalized: Slot[] = raw.map((s: string | Slot) =>
+          typeof s === 'string' ? { time: s, available: true } : s
+        );
+        setSlots(normalized);
+      })
       .catch(() => {})
       .finally(() => setLoadingSlots(false));
   }, []);
 
-  const slotsByDay = slots.reduce<Record<string, string[]>>((acc, iso) => {
-    const d = new Date(iso);
+  const slotsByDay = slots.reduce<Record<string, Slot[]>>((acc, slot) => {
+    const d = new Date(slot.time);
     const key = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
     if (!acc[key]) acc[key] = [];
-    acc[key].push(iso);
+    acc[key].push(slot);
     return acc;
   }, {});
 
@@ -339,7 +347,7 @@ export const FreeReportPage = () => {
                       {/* Day picker */}
                       <div className="grid grid-cols-2 gap-2.5">
                         {dayLabels.map(day => {
-                          const count = slotsByDay[day].length;
+                          const availCount = slotsByDay[day].filter(s => s.available).length;
                           const isSelected = selectedDay === day;
                           return (
                             <button
@@ -354,7 +362,7 @@ export const FreeReportPage = () => {
                             >
                               <span className="block text-sm font-medium">{day}</span>
                               <span className={`block text-xs mt-0.5 ${isSelected ? 'text-paper/70' : 'text-warmgrey'}`}>
-                                {count} slot{count !== 1 ? 's' : ''} available
+                                {availCount} slot{availCount !== 1 ? 's' : ''} left
                               </span>
                             </button>
                           );
@@ -366,19 +374,31 @@ export const FreeReportPage = () => {
                         <div>
                           <p className="eyebrow mb-2">{selectedDay}</p>
                           <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
-                            {slotsByDay[selectedDay].map((iso) => {
-                              const d = new Date(iso);
+                            {slotsByDay[selectedDay].map((slot) => {
+                              const d = new Date(slot.time);
                               const timeStr = d.toLocaleTimeString('en-US', {
                                 hour: 'numeric',
                                 minute: '2-digit',
                                 timeZone: 'America/New_York',
                               });
-                              const isSelected = selectedSlot === iso;
+
+                              if (!slot.available) {
+                                return (
+                                  <div
+                                    key={slot.time}
+                                    className="py-2.5 text-sm font-medium rounded-lg border-2 border-softline/60 bg-paper text-center line-through text-ink/25 cursor-not-allowed select-none"
+                                  >
+                                    {timeStr}
+                                  </div>
+                                );
+                              }
+
+                              const isSelected = selectedSlot === slot.time;
                               return (
                                 <button
-                                  key={iso}
+                                  key={slot.time}
                                   type="button"
-                                  onClick={() => { setSelectedSlot(iso); setError(''); }}
+                                  onClick={() => { setSelectedSlot(slot.time); setError(''); }}
                                   className={`py-2.5 text-sm font-medium rounded-lg border-2 transition-all ${
                                     isSelected
                                       ? 'border-rust bg-rust text-paper'
