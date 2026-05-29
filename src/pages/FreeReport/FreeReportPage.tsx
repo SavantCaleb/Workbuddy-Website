@@ -35,7 +35,7 @@ function formatPhone(raw: string): string {
 
 export const FreeReportPage = () => {
   const formRef = useRef<HTMLDivElement>(null);
-  const [form, setForm] = useState({ name: '', businessName: '', phone: '', city: '', goal: '' });
+  const [form, setForm] = useState({ name: '', businessName: '', phone: '', reason: '', urgency: '' });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
@@ -43,6 +43,7 @@ export const FreeReportPage = () => {
   // Slots
   const [slots, setSlots] = useState<string[]>([]);
   const [loadingSlots, setLoadingSlots] = useState(true);
+  const [selectedDay, setSelectedDay] = useState<string | null>(null);
   const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
 
   useEffect(() => {
@@ -61,8 +62,10 @@ export const FreeReportPage = () => {
     return acc;
   }, {});
 
+  const dayLabels = Object.keys(slotsByDay);
+
   const phoneDigits = form.phone.replace(/\D/g, '');
-  const canSubmit = form.name.trim() && form.businessName.trim() && form.city.trim() && phoneDigits.length >= 10 && selectedSlot;
+  const canSubmit = form.name.trim() && form.businessName.trim() && form.reason && form.urgency && phoneDigits.length >= 10 && selectedSlot;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -90,9 +93,9 @@ export const FreeReportPage = () => {
         body: JSON.stringify({
           name: form.name.trim(),
           business_name: form.businessName.trim(),
-          city: form.city.trim(),
           phone: phoneDigits,
-          dream_keyword: form.goal.trim() || undefined,
+          reason: form.reason,
+          urgency: form.urgency,
           booking_time: selectedSlot,
         }),
       });
@@ -220,6 +223,7 @@ export const FreeReportPage = () => {
               )}
 
               <form onSubmit={handleSubmit} className="space-y-5">
+                {/* 1. Name */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-ink mb-1.5">Your Name</label>
                   <input
@@ -233,6 +237,8 @@ export const FreeReportPage = () => {
                     className="w-full border border-softline rounded-xl px-4 py-3.5 text-base bg-paper text-ink placeholder:text-warmgrey/60 focus:outline-none focus:border-rust focus:ring-1 focus:ring-rust/30 transition-colors"
                   />
                 </div>
+
+                {/* 2. Business Name */}
                 <div>
                   <label htmlFor="businessName" className="block text-sm font-medium text-ink mb-1.5">Business Name</label>
                   <input
@@ -246,48 +252,75 @@ export const FreeReportPage = () => {
                     className="w-full border border-softline rounded-xl px-4 py-3.5 text-base bg-paper text-ink placeholder:text-warmgrey/60 focus:outline-none focus:border-rust focus:ring-1 focus:ring-rust/30 transition-colors"
                   />
                 </div>
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-ink mb-1.5">Phone Number</label>
-                    <input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="(555) 123-4567"
-                      value={form.phone}
-                      onChange={handleChange}
-                      required
-                      className="w-full border border-softline rounded-xl px-4 py-3.5 text-base bg-paper text-ink placeholder:text-warmgrey/60 focus:outline-none focus:border-rust focus:ring-1 focus:ring-rust/30 transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="city" className="block text-sm font-medium text-ink mb-1.5">City</label>
-                    <input
-                      id="city"
-                      name="city"
-                      type="text"
-                      placeholder="e.g. Panama City Beach"
-                      value={form.city}
-                      onChange={handleChange}
-                      required
-                      className="w-full border border-softline rounded-xl px-4 py-3.5 text-base bg-paper text-ink placeholder:text-warmgrey/60 focus:outline-none focus:border-rust focus:ring-1 focus:ring-rust/30 transition-colors"
-                    />
+
+                {/* 3. Reason */}
+                <div>
+                  <label className="block text-sm font-medium text-ink mb-2.5">What's the main reason you're looking?</label>
+                  <div className="grid sm:grid-cols-2 gap-2.5">
+                    {[
+                      { value: 'cant_find_us', label: "Customers can't find us on Google" },
+                      { value: 'not_enough_calls', label: 'Not enough calls coming in' },
+                      { value: 'no_website', label: 'No real website yet' },
+                      { value: 'reviews_hurting', label: 'Reviews are hurting us' },
+                    ].map(opt => (
+                      <button
+                        key={opt.value}
+                        type="button"
+                        onClick={() => { setForm(prev => ({ ...prev, reason: opt.value })); setError(''); }}
+                        className={`text-left px-4 py-3 text-sm font-medium rounded-xl border-2 transition-all ${
+                          form.reason === opt.value
+                            ? 'border-rust bg-rust text-paper'
+                            : 'border-softline bg-paper text-ink/70 hover:border-ink/30'
+                        }`}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
                   </div>
                 </div>
+
+                {/* 4. Urgency */}
                 <div>
-                  <label htmlFor="goal" className="block text-sm font-medium text-ink mb-1.5">What do you want help with? <span className="text-warmgrey font-normal">(optional)</span></label>
+                  <label className="block text-sm font-medium text-ink mb-2.5">How soon do you want more customers coming in?</label>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    {[
+                      { value: 'right_away', label: 'Right away' },
+                      { value: 'next_month', label: 'In the next month' },
+                      { value: 'this_quarter', label: 'This quarter' },
+                      { value: 'exploring', label: 'Just exploring' },
+                    ].map(opt => (
+                      <button
+                        key={opt.value}
+                        type="button"
+                        onClick={() => { setForm(prev => ({ ...prev, urgency: opt.value })); setError(''); }}
+                        className={`text-center px-3 py-3 text-sm font-medium rounded-xl border-2 transition-all ${
+                          form.urgency === opt.value
+                            ? 'border-rust bg-rust text-paper'
+                            : 'border-softline bg-paper text-ink/70 hover:border-ink/30'
+                        }`}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 5. Phone */}
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-ink mb-1.5">Phone Number</label>
                   <input
-                    id="goal"
-                    name="goal"
-                    type="text"
-                    placeholder="e.g. more Google reviews, show up in Maps, get more calls"
-                    value={form.goal}
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="(555) 123-4567"
+                    value={form.phone}
                     onChange={handleChange}
+                    required
                     className="w-full border border-softline rounded-xl px-4 py-3.5 text-base bg-paper text-ink placeholder:text-warmgrey/60 focus:outline-none focus:border-rust focus:ring-1 focus:ring-rust/30 transition-colors"
                   />
                 </div>
 
-                {/* Slot picker */}
+                {/* Slot picker: pick a day, then a time */}
                 <div className="pt-2">
                   <label className="block text-sm font-medium text-ink mb-1">Pick a time</label>
                   <p className="text-xs text-warmgrey mb-4">15 minutes &middot; All times Eastern</p>
@@ -297,17 +330,43 @@ export const FreeReportPage = () => {
                       <div className="w-6 h-6 border-2 border-softline border-t-rust rounded-full animate-spin mx-auto mb-3" />
                       <p className="text-sm text-warmgrey">Loading available times...</p>
                     </div>
-                  ) : Object.keys(slotsByDay).length === 0 ? (
+                  ) : dayLabels.length === 0 ? (
                     <div className="text-center py-6 bg-highlight border border-rust/20 rounded-xl">
                       <p className="text-sm text-ink/70">No times available right now. Text us at <span className="font-mono">(860) 477-9542</span> to schedule.</p>
                     </div>
                   ) : (
-                    <div className="space-y-4 max-h-[40vh] overflow-y-auto overscroll-contain" style={{ WebkitOverflowScrolling: 'touch' }}>
-                      {Object.entries(slotsByDay).map(([dayLabel, daySlots]) => (
-                        <div key={dayLabel}>
-                          <p className="eyebrow mb-2">{dayLabel}</p>
+                    <div className="space-y-4">
+                      {/* Day picker */}
+                      <div className="grid grid-cols-2 gap-2.5">
+                        {dayLabels.map(day => {
+                          const count = slotsByDay[day].length;
+                          const isSelected = selectedDay === day;
+                          return (
+                            <button
+                              key={day}
+                              type="button"
+                              onClick={() => { setSelectedDay(day); setSelectedSlot(null); setError(''); }}
+                              className={`text-left px-4 py-3 rounded-xl border-2 transition-all ${
+                                isSelected
+                                  ? 'border-rust bg-rust text-paper'
+                                  : 'border-softline bg-paper text-ink hover:border-ink/30'
+                              }`}
+                            >
+                              <span className="block text-sm font-medium">{day}</span>
+                              <span className={`block text-xs mt-0.5 ${isSelected ? 'text-paper/70' : 'text-warmgrey'}`}>
+                                {count} slot{count !== 1 ? 's' : ''} available
+                              </span>
+                            </button>
+                          );
+                        })}
+                      </div>
+
+                      {/* Time slots for selected day */}
+                      {selectedDay && slotsByDay[selectedDay] && (
+                        <div>
+                          <p className="eyebrow mb-2">{selectedDay}</p>
                           <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
-                            {daySlots.map((iso) => {
+                            {slotsByDay[selectedDay].map((iso) => {
                               const d = new Date(iso);
                               const timeStr = d.toLocaleTimeString('en-US', {
                                 hour: 'numeric',
@@ -332,7 +391,7 @@ export const FreeReportPage = () => {
                             })}
                           </div>
                         </div>
-                      ))}
+                      )}
                     </div>
                   )}
                 </div>
