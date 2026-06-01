@@ -28,6 +28,8 @@
     { "source": "/welcome/:slug", "destination": "https://api.getworkbuddy.com/welcome/:slug" },
     { "source": "/dashboard/:path*", "destination": "https://api.getworkbuddy.com/dashboard/:path*" },
     { "source": "/preview/:path*", "destination": "https://api.getworkbuddy.com/preview/:path*" },
+    { "source": "/ads/start/:path*", "destination": "https://api.getworkbuddy.com/ads/start/:path*" },
+    { "source": "/ads/start", "destination": "https://api.getworkbuddy.com/ads/start/" },
     { "source": "/start/:slug*", "destination": "https://api.getworkbuddy.com/start/:slug*" },
     { "source": "/confirm/:slug*", "destination": "https://api.getworkbuddy.com/confirm/:slug*" },
     { "source": "/unsubscribe", "destination": "https://api.getworkbuddy.com/unsubscribe" },
