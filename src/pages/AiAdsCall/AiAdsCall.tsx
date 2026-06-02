@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { SEO } from '../../components/SEO/SEO';
 
 const META_PIXEL_ID = '1763378975020525';
+const META_TEST_EVENT_CODE = 'TEST38419'; // Remove after verification
 
 declare global {
   interface Window {
@@ -249,6 +250,7 @@ export const AiAdsCall = () => {
         user_agent: navigator.userAgent,
         fbc: document.cookie.match(/_fbc=([^;]+)/)?.[1] || '',
         fbp: document.cookie.match(/_fbp=([^;]+)/)?.[1] || '',
+        test_event_code: META_TEST_EVENT_CODE,
         ...eventData,
       }),
     }).catch(() => {});

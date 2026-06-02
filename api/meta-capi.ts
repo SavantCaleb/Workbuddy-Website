@@ -24,6 +24,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     fbp,
     content_name,
     content_category,
+    test_event_code,
   } = body || {};
 
   if (!event_name) return res.status(400).json({ error: 'event_name required' });
@@ -36,7 +37,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     req.socket?.remoteAddress ||
     '';
 
-  const payload = {
+  const payload: Record<string, any> = {
+    ...(test_event_code ? { test_event_code } : {}),
     data: [
       {
         event_name,
