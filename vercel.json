@@ -71,6 +71,7 @@
     { "source": "/free-audit", "destination": "/index.html" },
     { "source": "/free-report", "destination": "/index.html" },
     { "source": "/customers", "destination": "/index.html" },
+    { "source": "/ai-ads-call", "destination": "/index.html" },
     { "source": "/receptionist/:path*", "destination": "/index.html" }
   ],
   "headers": [

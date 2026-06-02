@@ -29,6 +29,7 @@ import { Privacy } from './pages/Privacy/Privacy';
 import { Terms } from './pages/Terms/Terms';
 import { FreeMakeoverPage } from './pages/LeadMagnet/FreeMakeoverPage';
 import { FreeAuditPage } from './pages/LeadMagnet/FreeAuditPage';
+import { AiAdsCall } from './pages/AiAdsCall/AiAdsCall';
 import { NotFound } from './pages/NotFound/NotFound';
 
 /* Wrap receptionist pages so they keep their old Apple-style typography */
@@ -77,6 +78,9 @@ function App() {
         <Route path="/free-makeover" element={<R><FreeMakeoverPage /></R>} />
         <Route path="/free-audit" element={<R><FreeAuditPage /></R>} />
         <Route path="/free-report" element={<FreeReportPage />} />
+
+        {/* ── Ads funnel ── */}
+        <Route path="/ai-ads-call" element={<AiAdsCall />} />
 
         {/* ── Other ── */}
         <Route path="/secret-shop" element={<R><SecretShop /></R>} />
