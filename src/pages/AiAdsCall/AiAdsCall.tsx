@@ -1,6 +1,15 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { SEO } from '../../components/SEO/SEO';
+
+const META_PIXEL_ID = '1763378975020525';
+
+declare global {
+  interface Window {
+    fbq: any;
+    _fbq: any;
+  }
+}
 
 /* ── Analyzing overlay ── */
 
@@ -201,6 +210,49 @@ export const AiAdsCall = () => {
   const [stepsFinished, setStepsFinished] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const calLoaded = useRef(false);
+  const pixelLoaded = useRef(false);
+
+  // Initialize Meta Pixel
+  useEffect(() => {
+    if (pixelLoaded.current) return;
+    pixelLoaded.current = true;
+
+    const f = window;
+    const b = document;
+    if (f.fbq) return;
+    const n: any = (f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    });
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = true;
+    n.version = '2.0';
+    n.queue = [];
+    const t = b.createElement('script');
+    t.async = true;
+    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    const s = b.getElementsByTagName('script')[0];
+    s.parentNode!.insertBefore(t, s);
+
+    window.fbq('init', META_PIXEL_ID);
+    window.fbq('track', 'PageView');
+  }, []);
+
+  // Send server-side CAPI event
+  const sendCAPIEvent = useCallback((eventName: string, eventData: Record<string, any> = {}) => {
+    fetch('/api/meta-capi', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        event_name: eventName,
+        event_source_url: window.location.href,
+        user_agent: navigator.userAgent,
+        fbc: document.cookie.match(/_fbc=([^;]+)/)?.[1] || '',
+        fbp: document.cookie.match(/_fbp=([^;]+)/)?.[1] || '',
+        ...eventData,
+      }),
+    }).catch(() => {});
+  }, []);
 
   // Run through the analyzing steps
   useEffect(() => {
@@ -277,7 +329,26 @@ export const AiAdsCall = () => {
       hideEventTypeDetails: false,
       layout: 'month_view',
     });
-  }, []);
+
+    // Listen for successful booking
+    Cal.ns['local-biz-strategy-session']('on', {
+      action: 'bookingSuccessful',
+      callback: () => {
+        // Client-side pixel event
+        if (window.fbq) {
+          window.fbq('track', 'Schedule', {
+            content_name: 'Local Biz Strategy Session',
+            content_category: 'ai-ads-call',
+          });
+        }
+        // Server-side CAPI event
+        sendCAPIEvent('Schedule', {
+          content_name: 'Local Biz Strategy Session',
+          content_category: 'ai-ads-call',
+        });
+      },
+    });
+  }, [sendCAPIEvent]);
 
   const getStepState = (i: number): 'pending' | 'active' | 'done' => {
     if (stepsFinished) return 'done';
@@ -322,6 +393,16 @@ export const AiAdsCall = () => {
           </StepList>
         </Overlay>
       )}
+
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: 'none' }}
+          src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+          alt=""
+        />
+      </noscript>
 
       <Page>
         <TopMessage>
