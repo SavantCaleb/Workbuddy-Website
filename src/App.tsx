@@ -44,7 +44,7 @@ function App() {
       <SmoothScroll />
       <Routes>
         {/* ── New main pages ── */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<R><LaundromatLP /></R>} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/customers" element={<CustomersPage />} />
         <Route path="/pricing" element={<PricingPage />} />
