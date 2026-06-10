@@ -460,7 +460,7 @@ export const LaundromatLP = () => {
 
       <HeroSection
         ref={heroRef}
-        formspreeId="xreepdpa"
+        formspreeId="xvzbaywz"
         thankYouPath="/laundromats/thank-you"
       />
       <DesktopScrollStrip>
