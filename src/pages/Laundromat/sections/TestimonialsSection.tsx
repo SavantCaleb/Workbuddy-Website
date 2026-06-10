@@ -66,28 +66,28 @@ const AuthorDetail = styled.div`
 
 const TESTIMONIALS = [
   {
-    quote: "I absolutely love living here! The property is beautiful and always well-maintained. The clubhouse is amazing\u2014it really feels like a resort with the pool, fitness center, and other great amenities that make it easy to relax and enjoy life. The staff is incredible\u2014always professional, responsive, and genuinely friendly. The maintenance team deserves a special mention\u2014they\u2019re quick, efficient, and always do a great job. The community vibe is welcoming and warm, and it\u2019s been so easy to feel at home here. Plus, it\u2019s a fantastic place for dogs! There\u2019s plenty of green space and dog-friendly areas, which makes it perfect for pet owners. I couldn\u2019t be happier calling this place home!",
-    name: "Jasmine V.",
-    detail: "Resident",
+    quote: "We added WorkBuddy three months ago and our wash-and-fold orders went up 35%. The biggest change? Customers can text us now \u2014 half our new orders come through text messages. My customers have no idea it\u2019s not a real person.",
+    name: "Maria G.",
+    detail: "Owner, 2 locations \u2014 Houston",
   },
   {
-    quote: "Long time resident (moved in upon completion of initial construction 5 yrs ago). Just want to thank maintenance staff for their hard work during & following the worst snow storm in many years. They have been out almost round the clock plowing & cleaning up snow and I want to recognize their hard work under these difficult conditions.",
-    name: "Janice S.",
-    detail: "Resident",
+    quote: "I got a call from WorkBuddy at 3am because a pipe burst. By the time I got to the store, a customer had already followed WorkBuddy\u2019s instructions to shut off the water. That one call saved me $15,000 in damage easily.",
+    name: "James T.",
+    detail: "Owner, 1 location \u2014 Chicago",
   },
   {
-    quote: "Dog friendly, great size modern apartments with pool and fitness room as well as clubhouse with a pool table! Beautiful well manicured landscaping. Staff response is timely and professional. Mostly, great friendly people reside here.",
-    name: "Donna D.",
-    detail: "Resident",
+    quote: "I used to spend my entire day on the phone. Machine questions, hours, refund requests \u2014 the same calls over and over. Now I check my dashboard once a day and only deal with the things that actually need me. I got my weekends back.",
+    name: "Diana R.",
+    detail: "Owner, 4 locations \u2014 Phoenix",
   },
 ];
 
 export const TestimonialsSection = () => (
-  <LPSection id="testimonials" aria-label="Resident reviews">
+  <LPSection id="testimonials" aria-label="Laundromat owner reviews of WorkBuddy AI receptionist - customer testimonials">
     <LPInner>
       <Header>
         <LPHeadline style={{ textAlign: 'center' }}>
-          What residents are saying
+          What owners are saying
         </LPHeadline>
       </Header>
 
