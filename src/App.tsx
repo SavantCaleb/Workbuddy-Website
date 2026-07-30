@@ -6,10 +6,12 @@ import { ReceptionistLayout } from './components/ReceptionistLayout';
 
 // New pages (local service business marketing)
 import { HomePage } from './pages/NewHome/HomePage';
-import { AboutPage } from './pages/NewAbout/AboutPage';
 import { CustomersPage } from './pages/Customers/CustomersPage';
-import { PricingPage } from './pages/NewPricing/PricingPage';
 import { FreeReportPage } from './pages/FreeReport/FreeReportPage';
+
+// Receptionist pages
+import { Pricing } from './pages/Pricing/Pricing';
+import { About } from './pages/About/About';
 
 // Receptionist / Laundromat pages (legacy product)
 import { LaundromatLP } from './pages/Laundromat/LaundromatLP';
@@ -45,9 +47,9 @@ function App() {
       <Routes>
         {/* ── New main pages ── */}
         <Route path="/" element={<R><LaundromatLP /></R>} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about" element={<R><About /></R>} />
         <Route path="/customers" element={<CustomersPage />} />
-        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/pricing" element={<R><Pricing /></R>} />
 
         {/* ── Receptionist / Laundromat vertical (under /receptionist) ── */}
         <Route path="/receptionist" element={<R><LaundromatLP /></R>} />
