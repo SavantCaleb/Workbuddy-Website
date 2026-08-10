@@ -351,7 +351,7 @@ export const PricingPreviewSection = () => {
                 ))}
               </FeatureList>
               <CTAWrap>
-                <CTAButton href={FORM_URL}>Try for Free &rarr;</CTAButton>
+                <CTAButton href={FORM_URL}>Get Started &rarr;</CTAButton>
               </CTAWrap>
             </CardInner>
           </Card>
@@ -376,7 +376,7 @@ export const PricingPreviewSection = () => {
                 ))}
               </FeatureList>
               <CTAWrap>
-                <CTAButton href={FORM_URL}>Try for Free &rarr;</CTAButton>
+                <CTAButton href={FORM_URL}>Get Started &rarr;</CTAButton>
               </CTAWrap>
             </CardInner>
           </Card>

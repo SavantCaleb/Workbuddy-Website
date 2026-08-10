@@ -57,7 +57,7 @@ interface StickyMobileCTAProps {
 export const StickyMobileCTA = ({ onScrollToForm, formInView }: StickyMobileCTAProps) => (
   <StickyMobileCTAWrapper $visible={!formInView}>
     <StickyBtn onClick={onScrollToForm}>
-      Try WorkBuddy free &#8594;
+      Get Started &#8594;
     </StickyBtn>
   </StickyMobileCTAWrapper>
 );

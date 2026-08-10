@@ -351,7 +351,7 @@ export const FAQ = () => {
             data-cal-config='{"layout":"month_view"}'
             style={{ background: 'white', color: theme.colors.brand.slate }}
           >
-            Start Your Free Trial
+            Get Started
           </Button>
         </Container>
       </Section>

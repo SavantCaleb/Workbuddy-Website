@@ -10,8 +10,8 @@ import { FiCheck, FiClock, FiShield, FiHeadphones, FiZap, FiUsers } from 'react-
 const demoStructuredData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Free Demo - AI Receptionist for Laundromats | WorkBuddy",
-  "description": "Schedule a free demo of WorkBuddy's AI phone answering service for laundromats and dry cleaners. See how our AI receptionist handles calls 24/7, takes wash-and-fold orders, processes refunds, and provides multilingual customer service. The best AI phone system for laundromats.",
+  "name": "Demo - AI Receptionist for Laundromats | WorkBuddy",
+  "description": "Schedule a demo of WorkBuddy's AI phone answering service for laundromats and dry cleaners. See how our AI receptionist handles calls 24/7, takes wash-and-fold orders, processes refunds, and provides multilingual customer service. The best AI phone system for laundromats.",
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": ["h1", "h2"]
@@ -133,8 +133,8 @@ export const Demo = () => {
   return (
     <>
       <SEO
-        title="Free Demo: AI Phone Answering for Laundromats"
-        description="See WorkBuddy's AI receptionist handle laundromat calls live. Free 15-min demo of 24/7 phone answering, multilingual support, and laundromat automation."
+        title="Demo: AI Phone Answering for Laundromats"
+        description="See WorkBuddy's AI receptionist handle laundromat calls live. 15-min demo of 24/7 phone answering, multilingual support, and laundromat automation."
         canonical="/demo"
         keywords="AI receptionist for laundromats demo, best AI phone system for laundromats, laundromat phone automation demo, AI phone answering for laundromats, virtual receptionist laundromat, voice AI for laundromat business, AI customer service laundromat, laundromat missed calls solution, how to reduce missed calls laundromat, increase laundromat revenue automation"
         structuredData={[demoStructuredData, {
@@ -154,7 +154,7 @@ export const Demo = () => {
           <DemoGrid>
             {/* Left Column - Info */}
             <div>
-              <Badge>Free Demo</Badge>
+              <Badge>Book a Demo</Badge>
               <h1 style={{ fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: 500, color: theme.colors.brand.slate, fontFamily: theme.typography.fontFamily.heading, marginBottom: 20, lineHeight: 1.2 }}>
                 See WorkBuddy Handle Calls for <span style={{ color: theme.colors.brand.azure }}>Your Business</span>
               </h1>
@@ -233,7 +233,7 @@ export const Demo = () => {
                       30-Day Guarantee Details
                     </h4>
                     <p style={{ color: theme.colors.text.secondary, fontSize: 14, lineHeight: 1.6 }}>
-                      Learn about our risk-free trial and what makes it truly no-obligation
+                      Learn about our 30-day money-back guarantee and what makes it truly no-obligation
                     </p>
                   </div>
                 </BenefitItem>

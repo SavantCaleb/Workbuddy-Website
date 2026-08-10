@@ -602,7 +602,7 @@ export const ProductShowcaseSection = ({ onScrollToForm }: ProductShowcaseSectio
             {onScrollToForm && (
               <CTARow>
                 <CTAButton href="#form" onClick={onScrollToForm}>
-                  Try WorkBuddy Free &rarr;
+                  Get Started &rarr;
                 </CTAButton>
               </CTARow>
             )}

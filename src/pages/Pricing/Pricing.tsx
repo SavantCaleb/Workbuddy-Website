@@ -478,7 +478,7 @@ export const Pricing = () => {
                     $variant={(plan as any).enterprise ? 'outline' : 'primary'}
                     style={{ width: '100%', marginTop: 32, background: (plan as any).enterprise ? undefined : !plan.featured ? theme.colors.brand.slate : undefined }}
                   >
-                    {(plan as any).enterprise ? 'Contact Sales' : 'Try for Free'}
+                    {(plan as any).enterprise ? 'Contact Sales' : 'Get Started'}
                   </Button>
                 </div>
               </PricingCard>
@@ -545,7 +545,7 @@ export const Pricing = () => {
               data-cal-namespace="demo"
               data-cal-config='{"layout":"month_view"}'
             >
-              Start Your Free Trial
+              Get Started
             </Button>
           </div>
         </Container>

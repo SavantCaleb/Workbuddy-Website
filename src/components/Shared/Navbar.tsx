@@ -231,7 +231,7 @@ export const Navbar = ({ logoLink = '/' }: NavbarProps) => {
             data-cal-namespace="demo"
             data-cal-config='{"layout":"month_view"}'
           >
-            Try Free
+            Get Started
           </CTAButton>
         </div>
 
@@ -282,7 +282,7 @@ export const Navbar = ({ logoLink = '/' }: NavbarProps) => {
               onClick={() => setMobileMenuOpen(false)}
               style={{ width: '100%', padding: '14px 20px', marginTop: 20, fontSize: 15 }}
             >
-              Try Free
+              Get Started
             </CTAButton>
           </Container>
         </div>

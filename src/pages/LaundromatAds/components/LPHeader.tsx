@@ -113,7 +113,7 @@ export const LPHeader = ({ onScrollToForm, formInView }: LPHeaderProps) => (
             <path d="m12 5 7 7-7 7" />
           </svg>
         </HeaderBtnIcon>
-        <HeaderBtnText>Try it free &#8594;</HeaderBtnText>
+        <HeaderBtnText>Get Started &#8594;</HeaderBtnText>
       </HeaderBtn>
     </HeaderCTA>
   </Header>

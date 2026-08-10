@@ -11,6 +11,7 @@ import { BottomCTA } from '../LaundromatAds/components/BottomCTA';
 import { LPFooter } from '../LaundromatAds/components/LPFooter';
 import { StickyMobileCTA } from '../LaundromatAds/components/StickyMobileCTA';
 
+import { MissedCallPopup } from '../../components/MissedCallPopup';
 import { ProductShowcaseSection } from './sections/ProductShowcaseSection';
 import { GetStartedSection } from './sections/GetStartedSection';
 import { TestimonialsSection } from './sections/TestimonialsSection';
@@ -498,6 +499,7 @@ export const LaundromatLP = () => {
       </main>
       <LPFooter />
       <StickyMobileCTA onScrollToForm={scrollToForm} formInView={formInView} />
+      <MissedCallPopup formspreeId="xvzbaywz" />
     </>
   );
 };

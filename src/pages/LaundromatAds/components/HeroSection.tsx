@@ -1008,8 +1008,8 @@ export const HeroSection = forwardRef<HeroSectionHandle, HeroSectionProps>(
           {/* Form + Guarantee — after scroll strip on mobile, right column on desktop */}
           <FormColumn>
             <FormCard ref={formRef} id="form">
-              <FormHeadline>Try it free for 14 days.</FormHeadline>
-              <FormSub>Get started below. You'll be live in less than 24 hours.</FormSub>
+              <FormHeadline>Every call answered. Starting tomorrow.</FormHeadline>
+              <FormSub>Live in under 24 hours. $129/mo. Cancel anytime.</FormSub>
               <form onSubmit={handleSubmit}>
                 <FormGroup>
                   <FormLabel htmlFor="laundromat">Laundromat</FormLabel>
@@ -1076,7 +1076,7 @@ export const HeroSection = forwardRef<HeroSectionHandle, HeroSectionProps>(
                   )}
                 </FormGroup>
                 <FormSubmit id="form-submit" type="submit" disabled={submitting}>
-                  {submitting ? 'Submitting\u2026' : 'Try WorkBuddy free \u2192'}
+                  {submitting ? 'Submitting\u2026' : 'Get Started \u2192'}
                 </FormSubmit>
               </form>
 
@@ -1088,8 +1088,8 @@ export const HeroSection = forwardRef<HeroSectionHandle, HeroSectionProps>(
                   </svg>
                 </GuaranteeIcon>
                 <div>
-                  <GuaranteeTitle>The 3-Customer Guarantee</GuaranteeTitle>
-                  <GuaranteeText>We guarantee you'll get 3 new customers in your first 14 days — or it's free until you do.</GuaranteeText>
+                  <GuaranteeTitle>The Answered-Call Guarantee</GuaranteeTitle>
+                  <GuaranteeText>If WorkBuddy ever misses a call, that month is on us. Cancel anytime, no contract.</GuaranteeText>
                 </div>
               </GuaranteeBox>
             </FormCard>

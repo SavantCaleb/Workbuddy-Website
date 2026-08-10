@@ -85,11 +85,11 @@ const Fine = styled.p`
 
 const ctaConfig: Record<CTAType, { title: string; text: string; buttonText: string; href: string; fine?: string }> = {
   demo: {
-    title: 'Try WorkBuddy free for 14 days.',
+    title: 'Every call answered. Starting tomorrow.',
     text: 'We handle setup. You just keep running your business.',
-    buttonText: 'Try WorkBuddy free \u2192',
+    buttonText: 'Get Started \u2192',
     href: '/#form',
-    fine: 'No credit card needed.',
+    fine: '$129/mo. Cancel anytime.',
   },
   pricing: {
     title: 'Simple, Transparent Pricing',
