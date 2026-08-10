@@ -1008,8 +1008,8 @@ export const HeroSection = forwardRef<HeroSectionHandle, HeroSectionProps>(
           {/* Form + Guarantee — after scroll strip on mobile, right column on desktop */}
           <FormColumn>
             <FormCard ref={formRef} id="form">
-              <FormHeadline>Every call answered. Starting tomorrow.</FormHeadline>
-              <FormSub>Live in under 24 hours. $129/mo. Cancel anytime.</FormSub>
+              <FormHeadline>Every call answered.<br />Starting tomorrow.</FormHeadline>
+              <FormSub>Get started below. You'll be live in less than 24 hours.</FormSub>
               <form onSubmit={handleSubmit}>
                 <FormGroup>
                   <FormLabel htmlFor="laundromat">Laundromat</FormLabel>
