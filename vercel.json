@@ -30,6 +30,8 @@
     { "source": "/preview/:path*", "destination": "https://api.getworkbuddy.com/preview/:path*" },
     { "source": "/ads/start/:path*", "destination": "https://api.getworkbuddy.com/ads/start/:path*" },
     { "source": "/ads/start", "destination": "https://api.getworkbuddy.com/ads/start/" },
+    { "source": "/engineering-agency/vsl", "destination": "https://api.getworkbuddy.com/engineering-agency/vsl/" },
+    { "source": "/engineering-agency/:path*", "destination": "https://api.getworkbuddy.com/engineering-agency/:path*" },
     { "source": "/start/:slug*", "destination": "https://api.getworkbuddy.com/start/:slug*" },
     { "source": "/confirm/:slug*", "destination": "https://api.getworkbuddy.com/confirm/:slug*" },
     { "source": "/unsubscribe", "destination": "https://api.getworkbuddy.com/unsubscribe" },
