@@ -34,6 +34,8 @@
     { "source": "/engineering-agency/:path*", "destination": "https://api.getworkbuddy.com/engineering-agency/:path*" },
     { "source": "/vsl/page-one", "destination": "https://api.getworkbuddy.com/vsl/page-one/" },
     { "source": "/vsl/:path*", "destination": "https://api.getworkbuddy.com/vsl/:path*" },
+    { "source": "/progress/:slug", "destination": "https://api.getworkbuddy.com/progress/:slug/" },
+    { "source": "/progress/:slug/:file", "destination": "https://api.getworkbuddy.com/progress/:slug/:file" },
     { "source": "/start/:slug*", "destination": "https://api.getworkbuddy.com/start/:slug*" },
     { "source": "/confirm/:slug*", "destination": "https://api.getworkbuddy.com/confirm/:slug*" },
     { "source": "/unsubscribe", "destination": "https://api.getworkbuddy.com/unsubscribe" },
