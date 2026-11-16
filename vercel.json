@@ -40,6 +40,7 @@
     { "source": "/setup-img/:file", "destination": "https://api.getworkbuddy.com/setup-img/:file" },
     { "source": "/photos/:path*", "destination": "https://api.getworkbuddy.com/photos/:path*" },
     { "source": "/photos", "destination": "https://api.getworkbuddy.com/photos" },
+    { "source": "/reviews/:path*", "destination": "https://api.getworkbuddy.com/reviews/:path*" },
     { "source": "/start/:slug*", "destination": "https://api.getworkbuddy.com/start/:slug*" },
     { "source": "/confirm/:slug*", "destination": "https://api.getworkbuddy.com/confirm/:slug*" },
     { "source": "/unsubscribe", "destination": "https://api.getworkbuddy.com/unsubscribe" },
