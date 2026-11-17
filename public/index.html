@@ -37,8 +37,9 @@
 <script>
 document.documentElement.classList.add("js");
 if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("rm");
-// Local previews stay out of PostHog and Google Ads, like the Meta pixel below stays out of every test.
-if (!/^(localhost|127\.0\.0\.1|\[::1\])$|\.(localhost|test)$/.test(location.hostname)) {
+// Tracking runs only on the real site: local copies, Vercel previews and ?wb_test=1 visits stay out of PostHog, Google Ads, RB2B and the Meta pixel.
+window.WB_LIVE = /^(www\.)?getworkbuddy\.com$/.test(location.hostname) && !/[?&]wb_test=1(&|$)/.test(location.search);
+if (window.WB_LIVE) {
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.defer=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
 posthog.init('phc_e0A64xYOCQZAQdGXQ1aBnFMopZDvUHVtsciGPFjgr2U',{api_host:'https://us.i.posthog.com',capture_pageview:true,capture_pageleave:true,persistence:'localStorage+cookie'});
 posthog.register({ funnel: 'website', page_kind: 'homepage', page_version: 'v3' });
@@ -1470,7 +1471,8 @@ const CONFIG = {
   const $ = (id) => document.getElementById(id);
   const root = document.documentElement;
   const params = new URLSearchParams(window.location.search);
-  const LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])$|\.(localhost|test)$/.test(location.hostname);
+  // Anything but getworkbuddy.com (local copies, Vercel previews) counts as a test: no pixel.
+  const LOCAL = !window.WB_LIVE;
   // ?demo=1 fills in a sample booking so the personal version of the page can be previewed.
   const DEMO = params.get("demo") === "1";
   const TEST = params.get("wb_test") === "1" || DEMO || LOCAL;
