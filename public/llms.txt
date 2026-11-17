@@ -9,16 +9,20 @@
 - [Results](https://getworkbuddy.com/#results): Six client case studies with before-and-after numbers
 - [Pricing](https://getworkbuddy.com/#pricing): $297 a month, everything included, no contract
 - [Questions](https://getworkbuddy.com/#answers): Straight answers to what owners ask most
-- [Apply for a call](https://getworkbuddy.com/vsl/page-one/apply): See if your business qualifies
+- [Apply for a call](https://getworkbuddy.com/apply): See if your business qualifies
 - [Blog](https://getworkbuddy.com/blog)
 
 ## What's included in the Page One Package
 
-- The website, rebuilt to rank: fast, mobile-ready, with a page for every service the business offers
-- SEO for the first page of Google: local keyword and competitor research, every service page optimized, a new article every week, local citations and backlinks
-- The Google Business Profile, actively managed: fully built out, new posts a couple of times a week, every review answered within a day
-- ChatGPT and AI search: the business set up so AI answers can find it and recommend it by name
-- A dedicated account manager the owner can text any time
+- ChatGPT and AI search: the business set up so ChatGPT, Gemini, Claude, Perplexity and Google's AI answers can find it and recommend it by name
+- An AI receptionist: a business phone number with an assistant that answers the calls the owner misses, day or night
+- Instant replies to new leads: every website lead gets a text back within seconds, in the business's name
+- Review requests: automated review requests to the business's customers (WorkBuddy never filters, hides or buys reviews)
+- The Google Business Profile, actively managed: fully built out, new posts every week, every review answered within a day
+- The website, rebuilt to rank: fast, mobile-ready, with a page for every service the business offers, a lead form and hosting
+- SEO for the first page of Google: local keyword and competitor research, every service page optimized, a new article every week
+- Listings: accurate, matching details on major directories such as Yelp, Apple Maps, Bing Maps and the BBB
+- A dedicated account manager the owner can text any time, and a dashboard to see results
 
 ## Key facts
 

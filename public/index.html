@@ -637,8 +637,8 @@ window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer
   .get-head .lede { margin-top: 24px; }
   .bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; margin-top: clamp(48px, 6vw, 84px); }
   .bx { position: relative; grid-column: span 6; display: flex; flex-direction: column; gap: 26px; padding: clamp(24px, 3vw, 38px); border-radius: 30px; background: var(--white); overflow: hidden; isolation: isolate; }
-  .bx:nth-child(1), .bx:nth-child(4) { grid-column: span 7; }
-  .bx:nth-child(2), .bx:nth-child(3) { grid-column: span 5; }
+  .bx:nth-child(4n+1), .bx:nth-child(4n) { grid-column: span 7; }
+  .bx:nth-child(4n+2), .bx:nth-child(4n+3) { grid-column: span 5; }
   .bx-k { font-size: 14px; font-weight: 650; color: var(--azure-ink); }
   .bx h3 { margin-top: 8px; font-size: clamp(26px, 2.4vw, 34px); font-weight: 650; line-height: 1.06; letter-spacing: -0.035em; }
   .bx p { margin-top: 12px; font-size: 17px; line-height: 1.5; color: var(--slate); max-width: 46ch; }
@@ -693,6 +693,45 @@ window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer
   .js:not(.rm) .bx .res.other { transition: transform 1s var(--ease) 0.35s; }
   .js:not(.rm) .bx:not(.in) .res.other { transform: translateY(calc(-100% - 8px)); }
 
+  /* AI receptionist: a missed call, answered */
+  .rc-top { display: flex; align-items: center; gap: 11px; }
+  .rc-ic { flex: none; width: 36px; height: 36px; border-radius: 50%; background: #22B36B; color: var(--white); display: grid; place-items: center; }
+  .rc-top b { display: block; font-size: 14.5px; font-weight: 650; color: var(--ink); }
+  .rc-top small { display: block; font-size: 12.5px; color: var(--soft); }
+  .rc-top .chip { margin-left: auto; }
+  /* AI systems: a lead texted back in seconds */
+  .sms { display: grid; gap: 8px; }
+  .bx .sms-meta { max-width: none; margin: 0 0 2px; text-align: center; font-size: 12px; font-weight: 600; color: var(--soft); }
+  .bx .sms-out, .bx .sms-in { margin: 0; max-width: 88%; padding: 11px 14px; font-size: 14.5px; line-height: 1.45; }
+  .sms-out { justify-self: end; border-radius: 18px 18px 6px 18px; background: var(--azure-ink); color: var(--white); }
+  .sms-in { justify-self: start; border-radius: 18px 18px 18px 6px; background: var(--white); color: var(--ink); }
+  .bx .sms-time { max-width: none; margin: -2px 4px 0 0; justify-self: end; font-size: 12px; font-weight: 600; color: #157346; }
+  .js:not(.rm) .bx .sms-in, .js:not(.rm) .bx .sms-time { transition: opacity 0.7s var(--ease) 0.6s, transform 0.9s var(--ease) 0.6s; }
+  .js:not(.rm) .bx .sms-in { transition-delay: 1.1s; }
+  .js:not(.rm) .bx:not(.in) .sms-in, .js:not(.rm) .bx:not(.in) .sms-time { opacity: 0; transform: translateY(8px); }
+  /* Reviews: the ask, and the count */
+  .rvw { display: grid; gap: 14px; }
+  .bx .rvw-ask { max-width: 92%; }
+  .rvw-ask small { display: block; margin-bottom: 3px; font-size: 12px; font-weight: 600; color: #BFE0EA; }
+  .rvw-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 14px; color: var(--soft); }
+  .rvw-row b { font-size: 22px; font-weight: 650; letter-spacing: -0.03em; color: var(--ink); }
+  .rvw-row .chip { background: #E6F6EE; }
+  .js:not(.rm) .bx .rvw-row { transition: opacity 0.7s var(--ease) 0.6s, transform 0.9s var(--ease) 0.6s; }
+  .js:not(.rm) .bx:not(.in) .rvw-row { opacity: 0; transform: translateY(8px); }
+  /* Listings: the same details on every directory */
+  .dirs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .dir { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 42px; padding: 0 12px 0 14px; border-radius: 14px; background: var(--white); font-size: 14px; font-weight: 600; color: var(--ink); }
+  .dir--more { justify-content: center; background: transparent; box-shadow: inset 0 0 0 1.5px #D6DEE2; color: var(--soft); }
+  .dir .ok { flex: none; width: 22px; height: 22px; border-radius: 50%; background: #E6F6EE; color: #157346; display: grid; place-items: center; }
+  .bx .dirs-note { max-width: none; grid-column: 1 / -1; margin: 4px 0 0; font-size: 13px; color: var(--soft); }
+  .js:not(.rm) .bx .dir { transition: opacity 0.6s var(--ease), transform 0.8s var(--ease); }
+  .js:not(.rm) .bx .dir:nth-child(1) { transition-delay: 390ms; }
+  .js:not(.rm) .bx .dir:nth-child(2) { transition-delay: 480ms; }
+  .js:not(.rm) .bx .dir:nth-child(3) { transition-delay: 570ms; }
+  .js:not(.rm) .bx .dir:nth-child(4) { transition-delay: 660ms; }
+  .js:not(.rm) .bx .dir:nth-child(5) { transition-delay: 750ms; }
+  .js:not(.rm) .bx .dir:nth-child(6) { transition-delay: 840ms; }
+  .js:not(.rm) .bx:not(.in) .dir { opacity: 0; transform: translateY(8px); }
   .ai { display: grid; gap: 10px; }
   .ai-q { justify-self: end; max-width: 88%; padding: 12px 14px; border-radius: 18px 18px 6px 18px; background: var(--ink); color: var(--white); font-size: 14.5px; }
   .ai-a { max-width: 94%; padding: 13px 15px; border-radius: 18px 18px 18px 6px; background: var(--white); color: var(--slate); font-size: 14.5px; line-height: 1.5; }
@@ -735,6 +774,13 @@ window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer
   .vow-h em { font-style: normal; color: var(--gold); }
   .vow-p { margin-top: 18px; font-size: 18px; line-height: 1.5; color: var(--on-night-soft); max-width: 40ch; }
   .vow-own { margin-top: auto; padding-top: 34px; }
+  .vow-sms { position: relative; display: grid; gap: 10px; margin-top: auto; padding-top: 34px; }
+  .vs-in, .vs-out { max-width: 82%; padding: 12px 15px; font-size: 15.5px; line-height: 1.45; }
+  .vs-in { justify-self: end; border-radius: 18px 18px 6px 18px; background: rgba(255, 255, 255, 0.12); color: var(--on-night); }
+  .vs-out { justify-self: start; border-radius: 18px 18px 18px 6px; background: var(--azure); color: var(--night); }
+  .vs-note { margin-top: 2px; font-size: 13.5px; font-weight: 600; color: var(--on-night-soft); }
+  .js:not(.rm) .vow .vs-out { transition: opacity 0.7s var(--ease) 0.9s, transform 0.9s var(--ease) 0.9s; }
+  .js:not(.rm) .vow:not(.in) .vs-out { opacity: 0; transform: translateY(8px); }
   .vow-own h3 { font-size: 15px; font-weight: 650; color: var(--on-night); }
   .vow-own ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; font-size: 15.5px; color: var(--on-night-soft); }
   .vow-own li { display: flex; gap: 10px; }
@@ -870,9 +916,59 @@ window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer
     <div class="wrap">
       <div class="get-head">
         <h2 class="h2" id="get-title" data-r>Everything it takes to get found. Done for you.</h2>
-        <p class="lede" data-r="90">When someone in your town needs what you do, they call one of the first few names they see. Here's everything we do, every week, to make that you.</p>
+        <p class="lede" data-r="90">When someone in your town needs what you do, they call one of the first few names they see. Here's everything we do to make that you, and to make sure you never miss them.</p>
       </div>
       <div class="bento">
+        <article class="bx" data-r>
+          <div>
+            <p class="bx-k">AI search</p>
+            <h3>The name AI recommends.</h3>
+            <p>More people ask ChatGPT and Google's AI who to hire than ever. We set your business up so ChatGPT, Gemini, Claude, Perplexity and Google's AI answers can find you and recommend you by name.</p>
+          </div>
+          <div class="bx-vis mini ai" aria-hidden="true">
+            <div class="ai-q">Who's the best fence company in Lincoln?</div>
+            <div class="ai-a">For fences in Lincoln, owners point to <strong>Your Business</strong>: 4.9 stars, fast quotes, and installs across the city.</div>
+            <div class="ai-who"><span class="chip">ChatGPT</span><span class="chip">Google AI</span><span class="chip">Gemini</span><span class="chip">Claude</span><span class="chip">Perplexity</span></div>
+          </div>
+        </article>
+        <article class="bx" data-r="80">
+          <div>
+            <p class="bx-k">AI receptionist</p>
+            <h3>Never miss a call again.</h3>
+            <p>You get a business number with an AI receptionist that picks up the calls you miss, day or night, and takes down who called and what they need.</p>
+          </div>
+          <div class="bx-vis mini rc" aria-hidden="true">
+            <div class="rc-top"><span class="rc-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span><b>Call you missed</b><small>Answered by your AI receptionist</small></span><span class="chip chip--g">Answered</span></div>
+            <div class="rev">
+              <div class="rev-in"><small>Caller · 9:47 PM</small>Hi, do you do emergency repairs? Water's coming through the ceiling.</div>
+              <div class="rev-out"><small>Your AI receptionist</small>We do. Let me get your name and address so the team can call you right back.</div>
+            </div>
+          </div>
+        </article>
+        <article class="bx" data-r>
+          <div>
+            <p class="bx-k">AI systems</p>
+            <h3>Every lead gets a reply in seconds.</h3>
+            <p>When someone fills out your website form, an AI assistant texts them back right away, in your business's name, before they call the next guy.</p>
+          </div>
+          <div class="bx-vis mini sms" aria-hidden="true">
+            <p class="sms-meta">New lead from yourbusiness.com · 2:14 PM</p>
+            <div class="sms-out">Hi Dana, thanks for reaching out to Your Business! What's the address, and when's a good time for a quote?</div>
+            <p class="sms-time">Sent 5 seconds after she asked</p>
+            <div class="sms-in">Tomorrow morning works. 14 Elm St.</div>
+          </div>
+        </article>
+        <article class="bx" data-r="80">
+          <div>
+            <p class="bx-k">Reviews</p>
+            <h3>More 5-star reviews, on autopilot.</h3>
+            <p>Share your customers with us and review requests go out for you after every job. More reviews means more trust and a higher spot on the map. We never filter, hide or buy reviews.</p>
+          </div>
+          <div class="bx-vis mini rvw" aria-hidden="true">
+            <div class="sms-out rvw-ask"><small>Text to Sarah · after the job</small>Thanks for choosing Your Business, Sarah! Would you mind leaving us a quick review? It really helps.</div>
+            <div class="rvw-row"><span class="stars"><i>★★★★★</i></span><b>4.9</b><span>164 reviews</span><span class="chip chip--g">+12 this month</span></div>
+          </div>
+        </article>
         <article class="bx" data-r>
           <div>
             <p class="bx-k">Google Maps</p>
@@ -918,18 +1014,22 @@ window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer
         </article>
         <article class="bx" data-r="80">
           <div>
-            <p class="bx-k">AI search</p>
-            <h3>The name AI recommends.</h3>
-            <p>Your business set up so ChatGPT, Perplexity, Gemini and Google's AI answers can find you and recommend you by name.</p>
+            <p class="bx-k">Listings</p>
+            <h3>Listed right, everywhere.</h3>
+            <p>Your name, address and phone number, the same on Yelp, Apple Maps, Bing, the BBB and the other directories that matter, so Google and AI tools trust you.</p>
           </div>
-          <div class="bx-vis mini ai" aria-hidden="true">
-            <div class="ai-q">Who's the best fence company in Lincoln?</div>
-            <div class="ai-a">For fences in Lincoln, owners point to <strong>Your Business</strong>: 4.9 stars, fast quotes, and installs across the city.</div>
-            <div class="ai-who"><span class="chip">ChatGPT</span><span class="chip">Google AI</span><span class="chip">Gemini</span><span class="chip">Perplexity</span></div>
+          <div class="bx-vis mini dirs" aria-hidden="true">
+            <span class="dir">Google<span class="ok"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></span>
+            <span class="dir">Apple Maps<span class="ok"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></span>
+            <span class="dir">Yelp<span class="ok"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></span>
+            <span class="dir">Bing Maps<span class="ok"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></span>
+            <span class="dir">BBB<span class="ok"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></span>
+            <span class="dir dir--more">And more</span>
+            <p class="dirs-note">Same name, address and phone on every one.</p>
           </div>
         </article>
       </div>
-      <p class="get-foot" data-r><span class="av" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><strong>Plus a dedicated account manager.</strong> Text us any time: a change to your website, a question about your Google page, anything.</span></p>
+      <p class="get-foot" data-r><span class="av" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><strong>Plus a dedicated account manager.</strong> Text us any time: a change to your website, a question about your Google page, anything. And a dashboard where you can see your results.</span></p>
     </div>
   </section>
 
@@ -1023,11 +1123,15 @@ window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer
           <p class="plan-amt"><b>$297</b><span>a month</span></p>
           <div class="plan-chips"><span class="chip">No contract</span><span class="chip">No setup fee</span><span class="chip">Cancel any month</span></div>
           <ul>
-            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Your website, rebuilt to rank.</strong> Fast, mobile-ready, with a page for every service you offer.</span></li>
-            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>SEO for the first page of Google.</strong> Keyword and competitor research, a new article every week, local citations and backlinks.</span></li>
-            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Your Google page, actively managed.</strong> Posts a couple of times a week, every review answered within a day.</span></li>
             <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>ChatGPT and AI search.</strong> Set up so AI answers can find you and recommend you by name.</span></li>
-            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>A dedicated account manager.</strong> Text us any time.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>An AI receptionist.</strong> A business number with an assistant that answers the calls you miss.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Instant replies to new leads.</strong> Every website lead gets a text back in seconds.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Review requests, sent for you.</strong> More 5-star reviews from the customers you already have.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Your Google page, actively managed.</strong> Posts a couple of times a week, every review answered within a day.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Your website, rebuilt to rank.</strong> Fast, mobile-ready, with a page for every service you offer.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>SEO for the first page of Google.</strong> Keyword and competitor research and a new article every week.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Listed everywhere that matters.</strong> Yelp, Apple Maps, Bing, the BBB and more, all matching.</span></li>
+            <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>A dedicated account manager.</strong> Text us any time, and see your results in your dashboard.</span></li>
           </ul>
           <div class="cta-row">
             <a class="btn btn--ink btn--lg mag" href="/apply?utm_source=website&amp;utm_medium=homepage" data-track="apply_pricing">See if you qualify <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -1037,6 +1141,11 @@ window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer
           <p class="vow-k"><span class="promise-ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>No contract</p>
           <p class="vow-h">We earn it <em>every month.</em></p>
           <p class="vow-p">No contract, no setup fee, no cancellation fee. If it's not working, you leave, and you keep everything that's yours.</p>
+          <div class="vow-sms" aria-hidden="true">
+            <div class="vs-in">Hey, I want to cancel.</div>
+            <div class="vs-out">No problem. You won't be charged again, and your domain, Google page and reviews stay yours.</div>
+            <p class="vs-note">Cancelling takes one text.</p>
+          </div>
           <div class="vow-own">
             <h3>What stays yours</h3>
             <ul>
