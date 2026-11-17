@@ -81,7 +81,7 @@ function App() {
         <Route path="/blog/:slug" element={<R><BlogArticle /></R>} />
         <Route path="/faq" element={<Leave to="/#answers" />} />
         <Route path="/contact" element={<R><Contact /></R>} />
-        <Route path="/demo" element={<Leave to="/vsl/page-one/apply" />} />
+        <Route path="/demo" element={<Leave to="/apply" />} />
 
         {/* ── Lead Magnets ── */}
         <Route path="/free-makeover" element={<R><FreeMakeoverPage /></R>} />

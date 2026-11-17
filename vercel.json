@@ -13,7 +13,7 @@
     { "source": "/pricing", "destination": "/#pricing", "permanent": false },
     { "source": "/about", "destination": "/", "permanent": false },
     { "source": "/faq", "destination": "/#answers", "permanent": false },
-    { "source": "/demo", "destination": "/vsl/page-one/apply?utm_source=website&utm_medium=demo_link", "permanent": false },
+    { "source": "/demo", "destination": "/apply?utm_source=website&utm_medium=demo_link", "permanent": false },
     { "source": "/index.html", "destination": "/", "permanent": false }
   ],
   "rewrites": [
@@ -37,6 +37,7 @@
     { "source": "/ads/start", "destination": "https://api.getworkbuddy.com/ads/start/" },
     { "source": "/engineering-agency/vsl", "destination": "https://api.getworkbuddy.com/engineering-agency/vsl/" },
     { "source": "/engineering-agency/:path*", "destination": "https://api.getworkbuddy.com/engineering-agency/:path*" },
+    { "source": "/apply", "destination": "https://api.getworkbuddy.com/vsl/page-one/apply" },
     { "source": "/vsl/page-one", "destination": "https://api.getworkbuddy.com/vsl/page-one/" },
     { "source": "/vsl/:path*", "destination": "https://api.getworkbuddy.com/vsl/:path*" },
     { "source": "/progress/:slug", "destination": "https://api.getworkbuddy.com/progress/:slug/" },
