@@ -35,6 +35,13 @@ import { AiAdsCall } from './pages/AiAdsCall/AiAdsCall';
 import { NotFound } from './pages/NotFound/NotFound';
 
 /* Wrap receptionist pages so they keep their old Apple-style typography */
+// The homepage is static (public/index.html) since 11/17, and /pricing, /about, /faq and /demo live on it. A client-side
+// link to one of them leaves the React app and loads the real page.
+const Leave = ({ to }: { to: string }) => {
+  window.location.replace(to);
+  return null;
+};
+
 const R = ({ children }: { children: React.ReactNode }) => (
   <ReceptionistLayout>{children}</ReceptionistLayout>
 );
@@ -46,10 +53,10 @@ function App() {
       <SmoothScroll />
       <Routes>
         {/* ── New main pages ── */}
-        <Route path="/" element={<R><LaundromatLP /></R>} />
-        <Route path="/about" element={<R><About /></R>} />
+        <Route path="/" element={<Leave to="/" />} />
+        <Route path="/about" element={<Leave to="/" />} />
         <Route path="/customers" element={<CustomersPage />} />
-        <Route path="/pricing" element={<R><Pricing /></R>} />
+        <Route path="/pricing" element={<Leave to="/#pricing" />} />
 
         {/* ── Receptionist / Laundromat vertical (under /receptionist) ── */}
         <Route path="/receptionist" element={<R><LaundromatLP /></R>} />
@@ -72,9 +79,9 @@ function App() {
         {/* ── Shared pages (use receptionist layout for legacy pages) ── */}
         <Route path="/blog" element={<R><Blog /></R>} />
         <Route path="/blog/:slug" element={<R><BlogArticle /></R>} />
-        <Route path="/faq" element={<R><FAQ /></R>} />
+        <Route path="/faq" element={<Leave to="/#answers" />} />
         <Route path="/contact" element={<R><Contact /></R>} />
-        <Route path="/demo" element={<R><Demo /></R>} />
+        <Route path="/demo" element={<Leave to="/vsl/page-one/apply" />} />
 
         {/* ── Lead Magnets ── */}
         <Route path="/free-makeover" element={<R><FreeMakeoverPage /></R>} />

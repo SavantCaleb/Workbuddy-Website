@@ -19,6 +19,10 @@ export default defineConfig({
   optimizeDeps: {
     include: ['styled-components', 'react', 'react-dom', 'react-router-dom', 'react-icons', 'framer-motion']
   },
+  // The homepage is static (public/index.html, copied to dist/index.html). The React app, for every other page, is app.html.
+  build: {
+    rollupOptions: { input: { app: path.resolve(__dirname, 'app.html') } },
+  },
   preview: {
     port: 4173,
     strictPort: true,

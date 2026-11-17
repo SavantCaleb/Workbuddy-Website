@@ -1,39 +1,31 @@
-# WorkBuddy - AI Receptionist for Laundromats & Dry Cleaners
+# WorkBuddy
 
-> WorkBuddy is the leading AI-powered phone answering service and virtual receptionist built specifically for laundromats and dry cleaners. We provide 24/7 automated phone coverage, multilingual customer service in 20+ languages, and integrations with laundromat payment systems like FasCard, Curbside, and LaundryCard. Starting at $129/mo with unlimited calls.
+> WorkBuddy puts local service businesses on page one of Google Search, Google Maps and AI search (ChatGPT, Perplexity, Gemini and Google's AI answers), so the people in their town already looking for what they do find them first and call them directly. The Page One Package is $297 a month with no contract and no setup fee. The guarantee: at least $10,000 in new revenue within the first 60 days, or WorkBuddy keeps working for free until the client gets there.
 
-## Main Pages
+## Main pages
 
-- [Home - AI Receptionist for Laundromats](https://getworkbuddy.com/): Main product page for WorkBuddy's AI phone answering service for laundromats
-- [Pricing](https://getworkbuddy.com/pricing): AI receptionist pricing from $129/mo for laundromats, $199/mo for full service
-- [Book a Demo](https://getworkbuddy.com/demo): Schedule a free 15-minute demo of WorkBuddy's AI phone answering
-- [FAQ](https://getworkbuddy.com/faq): Common questions about AI phone answering for laundromats
-- [About](https://getworkbuddy.com/about): Founded by Caleb Benedict, who built AI for 100+ laundromat locations
-- [Contact](https://getworkbuddy.com/contact): Email hello@getworkbuddy.com or call (203) 605-1105
-- [Blog](https://getworkbuddy.com/blog): Expert guides on laundromat AI, automation, operations, and business growth
+- [Home](https://getworkbuddy.com/): What WorkBuddy does, real client results, pricing and answers to common questions
+- [How it works](https://getworkbuddy.com/#how): A free call with Caleb, setup within a day to a week, weekly work, calls straight to the owner
+- [Results](https://getworkbuddy.com/#results): Six client case studies with before-and-after numbers
+- [Pricing](https://getworkbuddy.com/#pricing): $297 a month, everything included, no contract
+- [Questions](https://getworkbuddy.com/#answers): Straight answers to what owners ask most
+- [Apply for a call](https://getworkbuddy.com/vsl/page-one/apply): See if your business qualifies
+- [Blog](https://getworkbuddy.com/blog)
 
-## Key Blog Articles
+## What's included in the Page One Package
 
-- [AI Receptionist for Laundromats - Complete Guide](https://getworkbuddy.com/blog/ai-receptionist-for-laundromats): How AI receptionists handle laundromat calls 24/7
-- [How to Automate Your Laundromat](https://getworkbuddy.com/blog/how-to-automate-your-laundromat): Complete automation playbook for laundromats
-- [Laundromat Phone Solutions Compared](https://getworkbuddy.com/blog/laundromat-phone-solutions): Comparing voicemail, answering services, and AI
-- [AI Answering Service Guide](https://getworkbuddy.com/blog/ai-answering-service-guide): How AI answering services work and what they cost
-- [Virtual Receptionist vs Answering Service vs AI](https://getworkbuddy.com/blog/virtual-receptionist-comparison): Side-by-side comparison
-- [After Hours Answering Service Guide](https://getworkbuddy.com/blog/after-hours-answering-service): 24/7 call handling without night staff
-- [Smart Laundromat Technology](https://getworkbuddy.com/blog/smart-laundromat-technology): What laundromat tech is worth the investment
-- [How to Reduce Laundromat Costs](https://getworkbuddy.com/blog/reduce-laundromat-costs): 5 proven cost reduction strategies
-- [Missed Call Text Back](https://getworkbuddy.com/blog/missed-call-text-back): Never lose a lead from missed calls
-- [Best Laundromat Software](https://getworkbuddy.com/blog/best-laundromat-software): Top laundromat management software compared
+- The website, rebuilt to rank: fast, mobile-ready, with a page for every service the business offers
+- SEO for the first page of Google: local keyword and competitor research, every service page optimized, a new article every week, local citations and backlinks
+- The Google Business Profile, actively managed: fully built out, new posts a couple of times a week, every review answered within a day
+- ChatGPT and AI search: the business set up so AI answers can find it and recommend it by name
+- A dedicated account manager the owner can text any time
 
-## Key Facts
+## Key facts
 
-- Price: Coin Op plan from $129/mo, Full Service from $199/mo
-- Calls: Unlimited inbound calls included, no per-minute charges
-- Languages: 20+ languages including English, Spanish, Chinese, Korean, Arabic
-- Availability: 24/7/365, including holidays and weekends
-- Setup: 15 minutes, no special equipment needed
-- Integrations: FasCard, Curbside, CleanCloud, LaundryCard, Cents POS
-- Guarantee: 30-day money-back guarantee
-- Capabilities: Refund processing, WDF order intake, emergency escalation, appointment scheduling
-- Founder: Caleb Benedict (previously built Bella AI for 100+ laundromat locations)
-- Contact: hello@getworkbuddy.com | (203) 605-1105
+- Price: $297 a month. No contract, no setup fee, cancel any month
+- Guarantee: at least $10,000 in new revenue within 60 days, or WorkBuddy works for free until the client gets there
+- WorkBuddy does not sell leads. The calls go straight to the business, not to a shared list
+- What stays the owner's: the domain (registered in their name), the Google Business Profile (WorkBuddy is only added as a manager), the phone number and reviews, and the website after 12 paid months
+- Reach: 1,644 businesses worked with across 49 states and 87 kinds of local business
+- Founder: Caleb Benedict. Based in Massachusetts
+- Contact: caleb@getworkbuddy.com

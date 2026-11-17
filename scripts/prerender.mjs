@@ -56,11 +56,8 @@ async function findChrome() {
 
 // ── All routes to pre-render ──────────────────────────────────────────
 const routes = [
-  '/',
-  '/pricing',
-  '/about',
+  // '/', '/pricing' and '/about' are the static homepage since 11/17 (public/index.html), not React pages.
   '/blog',
-  '/faq',
   '/contact',
   '/demo',
   '/property-management',
@@ -125,7 +122,7 @@ function startServer() {
         } else if (fs.existsSync(filePath + '.html')) {
           filePath = filePath + '.html';
         } else {
-          filePath = path.join(DIST, 'index.html');
+          filePath = path.join(DIST, 'app.html');
         }
       }
 
@@ -135,7 +132,7 @@ function startServer() {
         res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
         res.end(content);
       } catch {
-        const content = fs.readFileSync(path.join(DIST, 'index.html'));
+        const content = fs.readFileSync(path.join(DIST, 'app.html'));
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end(content);
       }
@@ -240,8 +237,8 @@ body {
 async function main() {
   console.log('\n🔍 Pre-rendering WorkBuddy pages...\n');
 
-  if (!fs.existsSync(path.join(DIST, 'index.html'))) {
-    console.error('❌ dist/index.html not found. Run `vite build` first.');
+  if (!fs.existsSync(path.join(DIST, 'app.html'))) {
+    console.error('❌ dist/app.html not found. Run `vite build` first.');
     process.exit(1);
   }
 
