@@ -41,6 +41,8 @@
     { "source": "/photos/:path*", "destination": "https://api.getworkbuddy.com/photos/:path*" },
     { "source": "/photos", "destination": "https://api.getworkbuddy.com/photos" },
     { "source": "/reviews/:path*", "destination": "https://api.getworkbuddy.com/reviews/:path*" },
+    { "source": "/customers/:token", "destination": "https://api.getworkbuddy.com/customers/:token" },
+    { "source": "/customers/:token/:file", "destination": "https://api.getworkbuddy.com/customers/:token/:file" },
     { "source": "/start/:slug*", "destination": "https://api.getworkbuddy.com/start/:slug*" },
     { "source": "/confirm/:slug*", "destination": "https://api.getworkbuddy.com/confirm/:slug*" },
     { "source": "/unsubscribe", "destination": "https://api.getworkbuddy.com/unsubscribe" },
