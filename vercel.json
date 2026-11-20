@@ -1,24 +1,76 @@
 {
   "redirects": [
-    {
-      "source": "/laundromats",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
-      "source": "/favicon.ico",
-      "destination": "/favicon.png",
-      "statusCode": 301
-    },
-    { "source": "/pricing", "destination": "/#pricing", "permanent": false },
-    { "source": "/about", "destination": "/", "permanent": false },
-    { "source": "/faq", "destination": "/#answers", "permanent": false },
+    { "source": "/laundromats", "destination": "/", "statusCode": 301 },
+    { "source": "/favicon.ico", "destination": "/favicon.png", "statusCode": 301 },
+    { "source": "/about", "destination": "/company", "permanent": false },
+    { "source": "/faq", "destination": "/pricing#questions", "permanent": false },
     { "source": "/demo", "destination": "/apply?utm_source=website&utm_medium=demo_link", "permanent": false },
     { "source": "/index.html", "destination": "/", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/ads-admin/:path*", "destination": "https://api.getworkbuddy.com/ads-admin/:path*" },                                                                                                               
-    { "source": "/ads-admin", "destination": "https://api.getworkbuddy.com/ads-admin" },                                                                                                                             
+    { "source": "/google-maps", "destination": "/google-maps/index.html" },
+    { "source": "/seo", "destination": "/seo/index.html" },
+    { "source": "/website", "destination": "/website/index.html" },
+    { "source": "/leads", "destination": "/leads/index.html" },
+    { "source": "/pricing", "destination": "/pricing/index.html" },
+    { "source": "/industries", "destination": "/industries/index.html" },
+    { "source": "/industries/roofing", "destination": "/industries/roofing/index.html" },
+    { "source": "/industries/plumbing", "destination": "/industries/plumbing/index.html" },
+    { "source": "/industries/hvac", "destination": "/industries/hvac/index.html" },
+    { "source": "/industries/electrical", "destination": "/industries/electrical/index.html" },
+    { "source": "/industries/general-contracting", "destination": "/industries/general-contracting/index.html" },
+    { "source": "/industries/remodeling", "destination": "/industries/remodeling/index.html" },
+    { "source": "/industries/concrete", "destination": "/industries/concrete/index.html" },
+    { "source": "/industries/fencing", "destination": "/industries/fencing/index.html" },
+    { "source": "/industries/landscaping", "destination": "/industries/landscaping/index.html" },
+    { "source": "/industries/tree-service", "destination": "/industries/tree-service/index.html" },
+    { "source": "/industries/pressure-washing", "destination": "/industries/pressure-washing/index.html" },
+    { "source": "/industries/painting", "destination": "/industries/painting/index.html" },
+    { "source": "/industries/handyman", "destination": "/industries/handyman/index.html" },
+    { "source": "/industries/junk-removal", "destination": "/industries/junk-removal/index.html" },
+    { "source": "/industries/garage-door-repair", "destination": "/industries/garage-door-repair/index.html" },
+    { "source": "/industries/pool-service", "destination": "/industries/pool-service/index.html" },
+    { "source": "/industries/well-drilling", "destination": "/industries/well-drilling/index.html" },
+    { "source": "/industries/water-damage-restoration", "destination": "/industries/water-damage-restoration/index.html" },
+    { "source": "/industries/flooring", "destination": "/industries/flooring/index.html" },
+    { "source": "/industries/foundation-repair", "destination": "/industries/foundation-repair/index.html" },
+    { "source": "/industries/masonry", "destination": "/industries/masonry/index.html" },
+    { "source": "/industries/house-cleaning", "destination": "/industries/house-cleaning/index.html" },
+    { "source": "/industries/window-cleaning", "destination": "/industries/window-cleaning/index.html" },
+    { "source": "/industries/chimney-sweeping", "destination": "/industries/chimney-sweeping/index.html" },
+    { "source": "/industries/appliance-repair", "destination": "/industries/appliance-repair/index.html" },
+    { "source": "/industries/air-duct-cleaning", "destination": "/industries/air-duct-cleaning/index.html" },
+    { "source": "/industries/auto-repair", "destination": "/industries/auto-repair/index.html" },
+    { "source": "/industries/mobile-auto-repair", "destination": "/industries/mobile-auto-repair/index.html" },
+    { "source": "/industries/auto-body-repair", "destination": "/industries/auto-body-repair/index.html" },
+    { "source": "/industries/auto-detailing", "destination": "/industries/auto-detailing/index.html" },
+    { "source": "/industries/towing", "destination": "/industries/towing/index.html" },
+    { "source": "/industries/moving", "destination": "/industries/moving/index.html" },
+    { "source": "/industries/chiropractic", "destination": "/industries/chiropractic/index.html" },
+    { "source": "/industries/massage-therapy", "destination": "/industries/massage-therapy/index.html" },
+    { "source": "/industries/mental-health-counseling", "destination": "/industries/mental-health-counseling/index.html" },
+    { "source": "/industries/hair-salons", "destination": "/industries/hair-salons/index.html" },
+    { "source": "/industries/personal-training", "destination": "/industries/personal-training/index.html" },
+    { "source": "/industries/insurance", "destination": "/industries/insurance/index.html" },
+    { "source": "/industries/mortgage-lending", "destination": "/industries/mortgage-lending/index.html" },
+    { "source": "/industries/real-estate", "destination": "/industries/real-estate/index.html" },
+    { "source": "/industries/event-venues", "destination": "/industries/event-venues/index.html" },
+    { "source": "/industries/dog-training", "destination": "/industries/dog-training/index.html" },
+    { "source": "/industries/catering", "destination": "/industries/catering/index.html" },
+    { "source": "/industries/laundromats", "destination": "/industries/laundromats/index.html" },
+    { "source": "/customers", "destination": "/customers/index.html" },
+    { "source": "/customers/teeth-whitening-studio-oregon", "destination": "/customers/teeth-whitening-studio-oregon/index.html" },
+    { "source": "/customers/floor-refinisher-pennsylvania", "destination": "/customers/floor-refinisher-pennsylvania/index.html" },
+    { "source": "/customers/junk-removal-southern-california", "destination": "/customers/junk-removal-southern-california/index.html" },
+    { "source": "/customers/well-driller-michigan", "destination": "/customers/well-driller-michigan/index.html" },
+    { "source": "/customers/laundromat-group-san-diego", "destination": "/customers/laundromat-group-san-diego/index.html" },
+    { "source": "/customers/laundromat-fort-worth", "destination": "/customers/laundromat-fort-worth/index.html" },
+    { "source": "/customers/laundromat-westchester-new-york", "destination": "/customers/laundromat-westchester-new-york/index.html" },
+    { "source": "/company", "destination": "/company/index.html" },
+    { "source": "/careers", "destination": "/careers/index.html" },
+    { "source": "/careers/client-success-manager", "destination": "/careers/client-success-manager/index.html" },
+    { "source": "/ads-admin/:path*", "destination": "https://api.getworkbuddy.com/ads-admin/:path*" },
+    { "source": "/ads-admin", "destination": "https://api.getworkbuddy.com/ads-admin" },
     { "source": "/ads-dashboard/:path*", "destination": "https://api.getworkbuddy.com/ads-dashboard/:path*" },
     { "source": "/ads-dashboard", "destination": "https://api.getworkbuddy.com/ads-dashboard" },
     { "source": "/admin/:path*", "destination": "https://api.getworkbuddy.com/admin/:path*" },
@@ -66,15 +118,12 @@
     { "source": "/_next/:path*", "destination": "https://sites-psi-five.vercel.app/_next/:path*" },
     { "source": "/sites/:slug*", "destination": "https://sites-psi-five.vercel.app/:slug*" },
     { "source": "/lp/:path*", "destination": "https://sites-psi-five.vercel.app/lp/:path*" },
-    { "source": "/:path*", "has": [{ "type": "header", "key": "rsc" }], "destination": "https://sites-psi-five.vercel.app/:path*" },
-    { "source": "/:path*", "has": [{ "type": "query", "key": "_rsc" }], "destination": "https://sites-psi-five.vercel.app/:path*" },
+    { "source": "/:path*", "has": [{ "type": "header", "key": "rsc" }],"destination": "https://sites-psi-five.vercel.app/:path*" },
+    { "source": "/:path*", "has": [{ "type": "query", "key": "_rsc" }],"destination": "https://sites-psi-five.vercel.app/:path*" },
     { "source": "/s/:slug", "destination": "/api/s/:slug" },
     { "source": "/sitemap-business.xml", "destination": "/api/sitemap-business.xml" },
-    { "source": "/pricing", "destination": "/app.html" },
-    { "source": "/about", "destination": "/app.html" },
     { "source": "/blog", "destination": "/app.html" },
     { "source": "/blog/:slug", "destination": "/app.html" },
-    { "source": "/faq", "destination": "/app.html" },
     { "source": "/contact", "destination": "/app.html" },
     { "source": "/demo", "destination": "/app.html" },
     { "source": "/property-management", "destination": "/app.html" },
@@ -89,7 +138,6 @@
     { "source": "/free-makeover", "destination": "/app.html" },
     { "source": "/free-audit", "destination": "/app.html" },
     { "source": "/free-report", "destination": "/app.html" },
-    { "source": "/customers", "destination": "/app.html" },
     { "source": "/ai-ads-call", "destination": "/app.html" },
     { "source": "/receptionist/:path*", "destination": "/app.html" }
   ],
@@ -97,41 +145,71 @@
     {
       "source": "/robots.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/plain" }
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
       ]
     },
     {
       "source": "/sitemap.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
       ]
     },
     {
       "source": "/llms.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/plain" }
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
       ]
     },
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/s/:slug*",
       "headers": [
-        { "key": "Content-Security-Policy", "value": "frame-ancestors 'self' https://getworkbuddy.com https://api.getworkbuddy.com" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self' https://getworkbuddy.com https://api.getworkbuddy.com"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ],

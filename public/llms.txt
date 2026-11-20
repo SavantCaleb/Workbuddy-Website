@@ -4,11 +4,16 @@
 
 ## Main pages
 
-- [Home](https://getworkbuddy.com/): What WorkBuddy does, everything included, pricing and answers to common questions
-- [What you get](https://getworkbuddy.com/#get): AI search, an AI receptionist, instant replies to new leads, review requests, the Google page, the website, SEO and listings
-- [How it works](https://getworkbuddy.com/#how): A free call with Caleb, setup within a day to a week, weekly work, calls straight to the owner
-- [Pricing](https://getworkbuddy.com/#pricing): $297 a month, everything included, no contract
-- [Questions](https://getworkbuddy.com/#answers): Straight answers to what owners ask most
+- [Home](https://getworkbuddy.com/): What WorkBuddy does, the four services, real client results and how it works
+- [Google Maps](https://getworkbuddy.com/google-maps): Google Business Profile management, weekly posts, review replies and review requests
+- [Search & AI](https://getworkbuddy.com/seo): Local SEO, a page for every service, a new article every week, and AI search setup
+- [Website](https://getworkbuddy.com/website): A fast website built to rank, owned by the business from day one
+- [Calls & leads](https://getworkbuddy.com/leads): Instant text replies to website leads, a business number and an assistant for missed calls
+- [Pricing](https://getworkbuddy.com/pricing): $297 a month, everything included, no contract, with answers to common questions
+- [Customers](https://getworkbuddy.com/customers): Real client results, measured from Google and WorkBuddy's records, names hidden
+- [Industries](https://getworkbuddy.com/industries): Pages for 44 kinds of local business, with real Google search volumes
+- [Company](https://getworkbuddy.com/company): About WorkBuddy and its founder, Caleb Benedict
+- [Careers](https://getworkbuddy.com/careers): Open roles
 - [Apply for a call](https://getworkbuddy.com/apply): See if your business qualifies
 - [Blog](https://getworkbuddy.com/blog)
 
