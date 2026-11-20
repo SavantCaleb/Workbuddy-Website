@@ -33,7 +33,7 @@ const company = (() => {
   </div></section>
 
   <section class="sec sec--paper"><div class="wrap founder">
-    <img src="/site/caleb.webp" width="800" height="768" alt="Caleb Benedict, founder of WorkBuddy" loading="lazy" data-r>
+    <img src="/site/caleb.webp" width="1080" height="1080" alt="Caleb Benedict, founder of WorkBuddy" loading="lazy" data-r>
     <div>
       <span class="eyebrow" data-r>The founder</span>
       <h2 class="d2" data-r style="margin-top:14px">Hi, I’m Caleb. <span class="ac">You’ll talk to me first.</span></h2>
